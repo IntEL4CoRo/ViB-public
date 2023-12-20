@@ -1,0 +1,111 @@
+<!--
+If you want to include any custom html just before </body>, put it in /layouts/partials/footer_custom.html
+Do not put anything in this file - it's only here so that hugo won't throw an error if /layouts/partials/footer_custom.html doesn't exist.
+-->
+<script type="text/javascript">
+  // disable some elements, if in iframe
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.top != window.self) {
+      // header with big image
+      const header = document.querySelector("header.header-section.has-img");
+      if (header != null) {
+        header.style.display = "none";
+      }
+
+      // navbar
+      const navbar = document.querySelector("nav.navbar");
+      if (navbar != null ) {
+          navbar.style.display = "none";
+      }
+
+      // footer
+      footer = document.querySelector("footer");
+      if (footer != null) {
+        footer.style.display = "none";
+      }
+    }
+  });
+</script>
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function() {
+    function setImage(obj, imgData) {
+      obj.src = imgData["src"];
+    }
+    
+    // change image after some time
+    const tcImgs = document.querySelectorAll("img.timer-change-image");
+    function createTimerChangeImage(obj) {
+      const data = JSON.parse(obj.dataset.imgs);
+      const numImg = data.length - 1;
+      const defaultWait = parseInt(obj.dataset.wait) || 5000;
+      
+      var index = 0;
+      
+      function changeImg() {
+        var curImg = data[index];
+        
+        setImage(obj, curImg);
+        index = index >= numImg ? 0 : index + 1;
+        
+        // prefetch next image
+        var prefetchImg = new Image()
+        prefetchImg.src = data[index]["src"]
+        
+        // start timer for next change
+        setTimeout(changeImg, curImg["wait"] || defaultWait);
+      }
+      
+      // init image timer
+      changeImg();
+    }
+    for (const tcImg of tcImgs) {
+      createTimerChangeImage(tcImg);
+    }
+    
+    // change image after some time, if mouse is over it
+    const otcImgs = document.querySelectorAll("img.over-timer-change-image");
+    function createOverTimerChangeImage(obj) {
+      const data = JSON.parse(obj.dataset.imgs);
+      const numImg = data.length - 1;
+      const defaultWait = parseInt(obj.dataset.wait) || 5000;
+      
+      var timerOn = false;
+      var timeout = null;
+      var index = 1;
+      
+      function changeImg() {
+        var curImg = data[index];
+        
+        setImage(obj, curImg);
+        index = index >= numImg ? 0 : index + 1;
+        
+        // prefetch next image
+        var prefetchImg = new Image()
+        prefetchImg.src = data[index]["src"]
+        
+        // start timer for next change
+        timeout = setTimeout(changeImg, curImg["wait"] || defaultWait);
+      }
+      obj.addEventListener("mouseover", function () {
+        if (!timerOn) {
+          timerOn = true;
+          changeImg();
+        }
+      });
+      obj.addEventListener("mouseout", function () {
+        if (timerOn) {
+          clearTimeout(timeout);
+          timerOn = false;
+          index = 0;
+          setImage(obj, data[index]);
+        }
+      });
+      
+      // init image
+      setImage(obj, data[0]);
+    }
+    for (const otcImg of otcImgs) {
+      createOverTimerChangeImage(otcImg);
+    }
+  });
+</script>

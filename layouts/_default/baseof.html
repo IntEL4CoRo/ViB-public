@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+    {{ partial "nav.html" . }}
+    
+    {{ if isset .Site.Params "rightsideimg" }}
+    <div class="flex-container">
+      <div class="flex-item-left">
+        <div class="sidebar-image-conatiner">
+          <img class="sidebar-image-sticky" src="{{ .Site.Params.rightsideimg | absURL }}">
+        </div>
+      </div>
+      <div class="flex-item-right">
+    {{ end }}
+      
+        {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
+        {{ block "main" . }}{{ end }}
+    
+    {{ if isset .Site.Params "rightsideimg" }}
+      </div>
+    </div>
+    {{ end }}
+    
+    {{ partial "footer.html" . }}
+    {{ block "footer" . }}{{ end }}
+  </body>
+</html>
+

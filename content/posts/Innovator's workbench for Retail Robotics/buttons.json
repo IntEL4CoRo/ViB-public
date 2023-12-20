@@ -1,0 +1,63 @@
+{
+  "options": {
+    "environments": [
+      {
+        "name": "Retail",
+        "value": "retail",
+        "img": "https://intel4coro.github.io/coai-vib/img/retail.png"
+      },
+      {
+        "name": "Waterfront DM Store",
+        "value": "water_front"
+      }
+    ],
+    "robots": [
+      {
+        "name": "PR2",
+        "value": "pr2",
+        "img": "https://intel4coro.github.io/coai-vib/img/pr2_urdf_white1.png",
+        "knowledge_bases": "https://data.open-ease.org/QA?q=findall%28%5BDuration%2C%20Evt%5D%2C%0A%20%20%28%20%20event_interval%28Evt%2C%20Begin%2C%20End%29%2C%0A%20%20%20%20%20number%28End%29%2C%0A%20%20%20%20%20Duration%20is%20End%20-%20Begin%0A%20%20%29%2C%0A%20%20Durations%29%2C%0Amax_member%28%5BMaxDuration%2C%20LongestEvt%5D%2C%20Durations%29."
+      },
+      {
+        "name": "Pepper",
+        "value": "pepper"
+      },
+      {
+        "name": "Donbot",
+        "value": "donbot",
+        "img": "https://intel4coro.github.io/coai-vib/img/donbot_urdf_white1.png"
+      }
+    ]
+  },
+  "actions": [
+    {
+      "name": "Run Code",
+      "value": "run",
+      "primary": true,
+      "description": "Run code on Binderhub.",
+      "url": "https://binder.intel4coro.de/v2/gh/IntEL4CoRo/COAI/master?urlpath=lab%2Ftree%2Fnotebooks%2F",
+      "options": [
+        "environments",
+        "robots"
+      ],
+      "available": {
+        "environments=retail|robots=donbot": "https://binder.intel4coro.de/v2/gh/IntEL4CoRo/cram_teaching/legacy?urlpath=lab%2Ftree%2Flectures%2Fdemos%2Fretail.ipynb%3Frobot%3Ddonbot%26environment%3Dretail",
+        "environments=retail|robots=pr2": "https://binder.intel4coro.de/v2/gh/IntEL4CoRo/cram_teaching/legacy?urlpath=lab%2Ftree%2Flectures%2Fdemos%2Fretail.ipynb%3Frobot%3Dpr2%26environment%3Dretail"
+      }
+    },
+    {
+      "name": "Experimental Data",
+      "value": "openease"
+    },
+    {
+      "name": "Source Code",
+      "value": "source",
+      "description": "View source code on Github.",
+      "url": "https://github.com/IntEL4CoRo/COAI/blob/master/notebooks/"
+    },
+    {
+      "name": "Assets",
+      "value": "assets"
+    }
+  ]
+}
