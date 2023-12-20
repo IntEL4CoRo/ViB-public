@@ -238,6 +238,11 @@ footer div.disclaimer {
   background-color: #00326d;
   border-color: #0068b4;
 }
+.btn-success[disabled]:hover  {
+  color: #fff;
+  background-color: #0068b4;
+  border-color: #89b4e1;
+}
 .btn-primary {
   color: #fff;
   background-color: #d50c2f;
@@ -247,6 +252,11 @@ footer div.disclaimer {
   color: #fff;
   background-color: #9d2246;
   border-color: #d50c2f;
+}
+.btn-primary[disabled]:hover  {
+  color: #fff;
+  background-color: #d50c2f;
+  border-color: #f39ca9;
 }
 
 /* change post view link colors */

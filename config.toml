@@ -1,5 +1,5 @@
 baseurl = "https://intel4coro.github.io/ViB-public/"
-DefaultContentLanguage = "en-us"
+DefaultContentLanguage = "en"
 title = "Virtual Research Building (ViB)"
 theme = "beautifulhugo"
 pygmentsStyle = "trac"

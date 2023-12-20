@@ -29,3 +29,5 @@ Interactive Actions and/or Examples
 <a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/MrSkooma/jpt-gui/jupiter-branch?urlpath=notebooks%2Fsrc%2Fjpt_gui%2Fapp.ipynb%3Fautorun%3Dtrue">Run Code</a>
 <a class="btn btn-success" target="_blank" href="https://github.com/joint-probability-trees/">Source Code</a>
 </div>
+
+</br>
