@@ -1,7 +1,7 @@
 ---
-title: "Researcher's workbench for Household Robotics"
+title: "Research Lab for Household Transportation tasks"
 date: 2023-12-01T10:35:35-05:00
-subtitle: "Household Robotics Workbench."
+subtitle: ""
 tags: ["Research"]
 dropCap: false
 displayInMenu: false
@@ -12,7 +12,7 @@ resources:
   src: "buttons.json"
 ---
 
-This project deals with the problem of teaching robots how to execute unknown tasks in the household domain.
+In the research lab, you have access to and can experiment with a generalized robot plans for transporting objects within man-made human living and working environments, including apartments and retail stores. The generalized robot plan controls different robots, transporting a variety of objects in different environments for different purposes in different contexts.
 
 <param class="hidde-after-preview">
 {{<action_form data="ActionButtons">}}

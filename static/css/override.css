@@ -111,20 +111,19 @@ div.right-main-well-flex {
 }
 .intro-header.big-img .page-heading,
 .intro-header.big-img .post-heading {
-  padding: 80px 0;
+  padding: 60px 0;
   color: #FFF;
   text-shadow: 1px 1px 3px #000;
 }
 @media only screen and (min-width: 768px) {
   .intro-header.big-img .page-heading,
   .intro-header.big-img .post-heading  {
-    padding: 80px 0;
+    padding: 60px 0;
   }
   .intro-header .page-heading h1 {
     font-size: 60px;
   }
 }
-
 
 
 /* make its border and backgound transparent/invisible */
@@ -157,7 +156,7 @@ div.right-main-well-flex {
   position: sticky;
   top: 51px;
 }
-.sidebar-image-conatiner {
+.sidebar-image-container {
   height: 100%;
   width: 100%;
 }
@@ -228,38 +227,67 @@ footer div.disclaimer {
 
 
 /* change action button color to Uni Bremen Corpo Design */
-.btn-success {
+a.btn-success {
   color: #fff;
   background-color: #0068b4;
   border-color: #89b4e1;
 }
-.btn-success:hover {
+a.btn-success:hover,
+a.btn-success:focus {
   color: #fff;
   background-color: #00326d;
   border-color: #0068b4;
 }
-.btn-success[disabled]:hover  {
+a.btn-success[disabled]:hover,
+a.btn-success[disabled]:focus {
   color: #fff;
   background-color: #0068b4;
   border-color: #89b4e1;
 }
-.btn-primary {
+
+
+a.btn-primary {
   color: #fff;
   background-color: #d50c2f;
   border-color: #f39ca9;
 }
-.btn-primary:hover {
+a.btn-primary:hover,
+a.btn-primary:focus {
   color: #fff;
   background-color: #9d2246;
   border-color: #d50c2f;
 }
-.btn-primary[disabled]:hover  {
+a.btn-primary[disabled]:hover,
+a.btn-primary[disabled]:focus {
   color: #fff;
   background-color: #d50c2f;
   border-color: #f39ca9;
 }
 
-/* change post view link colors */
-.post-preview > a:hover {
+
+/* change normal in page, navbar, post view and link colors */
+p a {
+ color: #0068b4;
+}
+p a:hover,
+p a:focus {
+  color: #00326d;
+}
+div.navbar-header a.navbar-brand:hover,
+div.navbar-header a.navbar-brand:focus {
   color: #0068b4;
+}
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus {
+  color:#0068b4;
+}
+.post-preview > a:hover,
+.post-preview > a:focus {
+  color: #0068b4;
+}
+
+
+/* make all vue action button alert messages invisible */
+div pre.alert.alert-warning {
+  display: none;
 }

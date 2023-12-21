@@ -44,9 +44,11 @@
 
   <!-- Buttons -->
   <div class="action-buttons">
-    <a class="btn mr-2 mb-2" v-for="action in actions" target="_blank" v-text="action.name" :title="action.description"
-      :href="getActionUrl(action)"
-      :class="{ 'btn-primary': action.primary,'btn-success': !action.primary, 'disabled': !getActionUrl(action) }"></a>
+    <div class="action-button-wrapper" v-for="action in actions" :class="{ 'disabled-action-button-wrapper': !getActionUrl(action) }">
+      <a class="btn mr-2 mb-2" target="_blank" v-text="action.name" :title="action.description"
+        :href="getActionUrl(action)"
+        :class="{ 'btn-primary': action.primary,'btn-success': !action.primary, 'disabled': !getActionUrl(action) }"></a>
+    </div>
   </div>
 </div>
 

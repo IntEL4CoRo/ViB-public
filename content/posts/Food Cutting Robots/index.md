@@ -1,7 +1,7 @@
 ---
 title: "Food Cutting Robots"
 date: 2023-11-30T14:33:42-04:00
-subtitle: "Household Robotics Workbench"
+subtitle: ""
 tags: ["Research"]
 dropCap: false
 displayInMenu: false
@@ -12,11 +12,7 @@ resources:
   src: "buttons.json"
 ---
 
-This project deals with the problem of teaching robots how to execute unknown tasks in the household domain.
-The focus of this repository lies on the task of Cutting Food, especially fruits and vegetables.
-You can
-<a class="btn btn-success" target="_blank" href="https://food-ninja.github.io/FoodCutting/Webinterface.html"><b>try out the web interface</b></a>
-to get an idea on how a robot would parameterise cutting actions.
+In this research lab you can join our research activity targeting robots learning abstract knowledge into comprehensive knowledge graphs, and making the knowledge "activable" in robot agents.
 
 <param class="hidde-after-preview">
 {{<action_form data="ActionButtons">}}

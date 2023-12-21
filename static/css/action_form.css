@@ -60,3 +60,11 @@
   height: 2rem;
   background-color: #ebebeb;
 }
+
+/* allows disabled buttons to have not-allowed curser */
+.action-button-wrapper {
+  display: inline-block;
+}
+.disabled-action-button-wrapper {
+  cursor: not-allowed;
+}

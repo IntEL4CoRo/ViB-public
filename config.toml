@@ -12,8 +12,8 @@ pygmentsCodefencesGuessSyntax = true
   unsafe = true # Allow HTML in md files
 
 [Params]
- homeTitle = "Interactive Research Space" # Set a different text for the header on the home page
-  subtitle = "Research Challenge Laboratories"
+ homeTitle = "Our virtual research and training building for cognition-enabled robotics" # Set a different text for the header on the home page
+  subtitle = ""
   mainSections = ["posts"]
   logo = "img/logo.png" # Expecting square dimensions
   favicon = "favicon.ico"
@@ -61,11 +61,6 @@ pygmentsCodefencesGuessSyntax = true
   youtube = "agkiunibremen"
 
 [[menu.main]]
-    name = ""
-    url = ""
-    weight = 1
-
-[[menu.main]]
     name = "contact"
     url = "page/contact/"
-    weight = 2
+    weight = 1
