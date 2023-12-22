@@ -61,6 +61,6 @@ pygmentsCodefencesGuessSyntax = true
   youtube = "agkiunibremen"
 
 [[menu.main]]
-    name = "contact"
+    name = "Contact"
     url = "page/contact/"
     weight = 1

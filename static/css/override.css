@@ -285,9 +285,3 @@ div.navbar-header a.navbar-brand:focus {
 .post-preview > a:focus {
   color: #0068b4;
 }
-
-
-/* make all vue action button alert messages invisible */
-div pre.alert.alert-warning {
-  display: none;
-}

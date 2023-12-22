@@ -68,3 +68,9 @@
 .disabled-action-button-wrapper {
   cursor: not-allowed;
 }
+
+
+/* make all vue action button alert messages invisible */
+div pre.alert.alert-warning {
+  display: none;
+}
