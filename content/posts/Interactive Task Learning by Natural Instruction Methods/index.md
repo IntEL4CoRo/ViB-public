@@ -13,7 +13,7 @@ draft: false
 This research project addresses the challenge of instructing a robot agent to learn novel tasks interactively, specifically in the household domain. The focus of this repository lies on the task of teaching the pouring task by using written instructions with PyCRAM.
 
 For more information, you can
-<a class="btn btn-success" target="_blank" href="https://ease-crc.github.io/itl/"><b>visit the webpage</b></a>  of Interative task learning to get a better idea on how a robot can learn from different teaching methodologies.
+<a class="btn btn-success" target="_blank" href="https://ease-crc.github.io/itl/"><b>visit the webpage</b></a> of Interactive Task Learning to get a better idea on how a robot can learn from different teaching methodologies.
 
 <div class="hidde-after-preview">
 <a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/AbhijitVyas/pycram.git/binder?urlpath=lab%2Ftree%2Fexamples%2Fboostrapping_instructions.ipynb">Run code</a>

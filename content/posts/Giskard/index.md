@@ -10,7 +10,7 @@ draft: false
 ---
 
 Giskard is an open source motion planning and control framework, which uses constraint and optimization based task space control to generate trajectories for the whole body of mobile manipulators.
-It offers easy to use Pyhton and ROS interfaces that facilitate the specification of constraints for the underlying optimization problem, which is solved for the instantaneous joint velocities of the robot.
+It offers easy to use Python and ROS interfaces that facilitate the specification of constraints for the underlying optimization problem, which is solved for the instantaneous joint velocities of the robot.
 
 
 <div class="hidde-after-preview">

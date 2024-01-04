@@ -28,61 +28,67 @@ Do not put anything in this file - it's only here so that hugo won't throw an er
 </script>
 <script type="text/javascript">
   document.addEventListener("DOMContentLoaded", function() {
-    function setImage(obj, imgData) {
-      obj.src = imgData["src"];
+    // test for "my-url/page/number/" then correct relative path
+    let paginateRelPathCor = new RegExp("^.*\/page\/\\d+\/$").test(window.location.pathname) ? "../../" : "";
+
+    function getImageUrl(imgData) {
+      return paginateRelPathCor + imgData["src"];
     }
-    
+    function setImage(obj, imgData) {
+      obj.src = getImageUrl(imgData);
+    }
+
     // change image after some time
     const tcImgs = document.querySelectorAll("img.timer-change-image");
     function createTimerChangeImage(obj) {
       const data = JSON.parse(obj.dataset.imgs);
       const numImg = data.length - 1;
       const defaultWait = parseInt(obj.dataset.wait) || 5000;
-      
-      var index = 0;
-      
+
+      let index = 0;
+
       function changeImg() {
-        var curImg = data[index];
-        
+        let curImg = data[index];
+
         setImage(obj, curImg);
         index = index >= numImg ? 0 : index + 1;
-        
+
         // prefetch next image
-        var prefetchImg = new Image()
-        prefetchImg.src = data[index]["src"]
-        
+        let prefetchImg = new Image()
+        prefetchImg.src = getImageUrl(data[index]);
+
         // start timer for next change
         setTimeout(changeImg, curImg["wait"] || defaultWait);
       }
-      
+
       // init image timer
       changeImg();
     }
     for (const tcImg of tcImgs) {
       createTimerChangeImage(tcImg);
     }
-    
+
     // change image after some time, if mouse is over it
     const otcImgs = document.querySelectorAll("img.over-timer-change-image");
     function createOverTimerChangeImage(obj) {
       const data = JSON.parse(obj.dataset.imgs);
       const numImg = data.length - 1;
       const defaultWait = parseInt(obj.dataset.wait) || 5000;
-      
-      var timerOn = false;
-      var timeout = null;
-      var index = 1;
-      
+
+      let timerOn = false;
+      let timeout = null;
+      let index = 1;
+
       function changeImg() {
-        var curImg = data[index];
-        
+        let curImg = data[index];
+
         setImage(obj, curImg);
         index = index >= numImg ? 0 : index + 1;
-        
+
         // prefetch next image
-        var prefetchImg = new Image()
-        prefetchImg.src = data[index]["src"]
-        
+        let prefetchImg = new Image()
+        prefetchImg.src = getImageUrl(data[index]);
+
         // start timer for next change
         timeout = setTimeout(changeImg, curImg["wait"] || defaultWait);
       }
@@ -100,7 +106,7 @@ Do not put anything in this file - it's only here so that hugo won't throw an er
           setImage(obj, data[index]);
         }
       });
-      
+
       // init image
       setImage(obj, data[0]);
     }

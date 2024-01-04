@@ -4,6 +4,7 @@ var main = {
 
   bigImgEl : null,
   numImgs : null,
+  paginateRelPathCor : null,
 
   init : function() {
     // Shorten the navbar after scrolling a little bit down
@@ -72,6 +73,9 @@ var main = {
       main.bigImgEl = $("#header-big-imgs");
       main.numImgs = main.bigImgEl.attr("data-num-img");
 
+      // test for "my-url/page/number/" then correct relative path
+      paginateRelPathCor = new RegExp("^.*\/page\/\\d+\/$").test(window.location.pathname) ? "../../" : "";
+
           // 2fc73a3a967e97599c9763d05e564189
     // set an initial image
     var imgInfo = main.getImgInfo();
@@ -119,7 +123,7 @@ var main = {
 
   getImgInfo : function() {
     var randNum = Math.floor((Math.random() * main.numImgs) + 1);
-    var src = main.bigImgEl.attr("data-img-src-" + randNum);
+    var src = paginateRelPathCor + main.bigImgEl.attr("data-img-src-" + randNum);
   var desc = main.bigImgEl.attr("data-img-desc-" + randNum);
   var position = main.bigImgEl.attr("data-img-position-" + randNum);
 

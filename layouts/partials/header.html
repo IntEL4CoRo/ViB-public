@@ -29,7 +29,7 @@
   <header class="header-section {{ if $bigimg }}has-img{{ end }}">
     {{ if $bigimg }}
       {{ $firstimg := index $bigimg 0 }}
-      <div class="intro-header big-img" style="background-image: url('{{$firstimg.src}}');">
+      <div class="intro-header big-img" style="background-image: url('{{if or .IsHome (fileExists $firstimg.src)}}{{$firstimg.src | absURL}}{{else}}{{$firstimg.src}}{{end}}');">
         {{ $subtitle := $.Scratch.Get "subtitle" }}
         <div class="container">
           <div class="row">

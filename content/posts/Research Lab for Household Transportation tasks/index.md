@@ -12,7 +12,7 @@ resources:
   src: "buttons.json"
 ---
 
-In the research lab, you have access to and can experiment with a generalized robot plans for transporting objects within man-made human living and working environments, including apartments and retail stores. The generalized robot plan controls different robots, transporting a variety of objects in different environments for different purposes in different contexts.
+In the research lab you have access to and can experiment with generalized robot plans for transporting objects within man-made human living and working environments, including apartments and retail stores. The generalized robot plan controls different robots transporting a variety of objects in different environments for different purposes in different contexts.
 
 <param class="hidde-after-preview">
 {{<action_form data="ActionButtons">}}
@@ -36,7 +36,7 @@ Description
 
 Every time we think that we're getting a little bit closer to a household robot, new research comes out showing just how far we have to go. Certainly, we’ve seen lots of progress in specific areas like grasping and semantic understanding and whatnot, but putting it all together into a hardware platform that can actually get stuff done autonomously still seems quite a way off.
 
-In a paper presented at ICRA 2021 this month, researchers from the University of Bremen conducted a “Robot Household Marathon Experiment,” where a PR2 robot was tasked with first setting a table for a simple breakfast and then cleaning up afterwards in order to “investigate and evaluate the scalability and the robustness aspects of mobile manipulation.” While this sort of thing kinda seems like something robots should have figured out, it may not surprise you to learn that it's actually still a significant challenge.
+In a paper presented at ICRA 2021, researchers from the University of Bremen conducted a “Robot Household Marathon Experiment,” where a PR2 robot was tasked with first setting a table for a simple breakfast and then cleaning up afterwards in order to “investigate and evaluate the scalability and the robustness aspects of mobile manipulation.” While this sort of thing kinda seems like something robots should have figured out, it may not surprise you to learn that it's actually still a significant challenge.
 
 
 Example Videos
