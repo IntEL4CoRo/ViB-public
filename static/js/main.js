@@ -121,9 +121,16 @@ var main = {
     }
   },
 
+  isUrlAbsolute : function(url) {
+    return url.indexOf('//') === 0 ? true : url.indexOf('://') === -1 ? false : url.indexOf('.') === -1 ? false : url.indexOf('/') === -1 ? false : url.indexOf(':') > url.indexOf('/') ? false : url.indexOf('://') < url.indexOf('.') ? true : false;
+  },
+
   getImgInfo : function() {
     var randNum = Math.floor((Math.random() * main.numImgs) + 1);
-    var src = paginateRelPathCor + main.bigImgEl.attr("data-img-src-" + randNum);
+    var src = main.bigImgEl.attr("data-img-src-" + randNum);
+    if (!main.isUrlAbsolute(src)) {
+      src = paginateRelPathCor + src;
+    }
   var desc = main.bigImgEl.attr("data-img-desc-" + randNum);
   var position = main.bigImgEl.attr("data-img-position-" + randNum);
 

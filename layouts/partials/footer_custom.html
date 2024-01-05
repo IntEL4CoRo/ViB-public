@@ -31,8 +31,15 @@ Do not put anything in this file - it's only here so that hugo won't throw an er
     // test for "my-url/page/number/" then correct relative path
     let paginateRelPathCor = new RegExp("^.*\/page\/\\d+\/$").test(window.location.pathname) ? "../../" : "";
 
+    function isUrlAbsolute(url) {
+      return url.indexOf('//') === 0 ? true : url.indexOf('://') === -1 ? false : url.indexOf('.') === -1 ? false : url.indexOf('/') === -1 ? false : url.indexOf(':') > url.indexOf('/') ? false : url.indexOf('://') < url.indexOf('.') ? true : false;
+    }
     function getImageUrl(imgData) {
-      return paginateRelPathCor + imgData["src"];
+      let src = imgData["src"];
+      if (!isUrlAbsolute(src)) {
+        src = paginateRelPathCor + src;
+      }
+      return src;
     }
     function setImage(obj, imgData) {
       obj.src = getImageUrl(imgData);
