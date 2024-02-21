@@ -1,4 +1,4 @@
-baseurl = "https://srikanth635.github.io/ViB-public/"
+baseurl = "https://intel4coro.github.io/ViB-public/"
 DefaultContentLanguage = "en"
 title = "Virtual Research Building (ViB)"
 theme = "beautifulhugo"
@@ -62,5 +62,20 @@ pygmentsCodefencesGuessSyntax = true
 
 [[menu.main]]
     name = "Contact"
-    url = "page/contact/"
-    weight = 1
+    url = "page/contact/contact/"
+    weight = 20
+
+[[menu.main]]
+    name = "Learning"
+    url = "page/learning/"
+    weight = 10
+
+[[menu.main]]
+    name = "In Process"
+    url = "page/inprocess/"
+    weight = 15
+
+[[menu.main]]
+    name = "Virtual Labs"
+    url = "page/labs/"
+    weight = 5
