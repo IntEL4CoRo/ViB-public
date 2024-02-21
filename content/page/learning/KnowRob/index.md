@@ -12,7 +12,7 @@ draft: false
 KnowRob is a knowledge processing system designed for robots. Its purpose is to equip robots with the capability to organize information in re-usable knowledge chunks, and to perform reasoning in an expressive logic. It further provides a set of tools for visualization and acquisition of knowledge.
 
 <div class="hidde-after-preview">
-<a class="btn btn-primary" target="_blank" href="">Run Code</a>
+<!-- <a class="btn btn-primary" target="_blank" href="">Run Code</a> -->
 <a class="btn btn-success" target="_blank" href="https://github.com/knowrob/knowrob">Source Code</a>
 </div>
 
@@ -25,7 +25,7 @@ Interactive Actions and/or Examples
 ---
 
 <div>
-<a class="btn btn-primary" target="_blank" href="">Run Code</a>
+<!-- <a class="btn btn-primary" target="_blank" href="">Run Code</a> -->
 <a class="btn btn-success" target="_blank" href="https://github.com/knowrob/knowrob">Source Code</a>
 </div>
  
