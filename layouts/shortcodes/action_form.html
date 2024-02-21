@@ -191,6 +191,12 @@
           : ''
         return newValue
       },
+      selectedNotebookIdUpdated() {
+        const newValue = this.selectOptions
+          ? this.updatedOptions.map(v => v.name + '=' + v.selected.value).join('|')
+          : ''
+        return newValue
+      },
       errorMsgs() {
         let _arr = this.actions
           .filter(act => !this.getActionUrl(act))
@@ -226,7 +232,7 @@
         if (!action.url) return ''
         let _url = action.url
         if (action.options && action.available) {
-          let _notebookUrl = action.available[this.selectedNotebookId]
+          let _notebookUrl = action.available[this.selectedNotebookIdUpdated]
           if (!_notebookUrl) return ''
           if (isAbsoluteUrl(_notebookUrl)) return _notebookUrl
           _url += _notebookUrl
