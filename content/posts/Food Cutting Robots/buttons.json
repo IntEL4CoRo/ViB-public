@@ -6,12 +6,6 @@
         "value": "kitchen",
         "img": "https://intel4coro.github.io/coai-vib/img/household.png",
         "knowledge_bases": "https://data.open-ease.org/QA?neem_id=64ccc8bc24cdd341ebdb2aa3&q=findall([Duration%2C Evt]%2C ( event_interval(Evt%2C Begin%2C End)%2C number(End)%2C Duration is End - Begin )%2C Durations)%2C max_member([MaxDuration%2C LongestEvt]%2C Durations)."
-      },
-      {
-        "name": "Apartment",
-        "value": "apartment",
-        "img": "https://intel4coro.github.io/coai-vib/img/apartment.png",
-        "knowledge_bases": "https://data.open-ease.org/QA?neem_id=64ccbe76181caf1b5ed3c19c&q=findall([Duration%2C Evt]%2C ( event_interval(Evt%2C Begin%2C End)%2C number(End)%2C Duration is End - Begin )%2C Durations)%2C max_member([MaxDuration%2C LongestEvt]%2C Durations)."
       }
     ],
     "robots": [
@@ -26,10 +20,6 @@
       {
         "name": "Cutting: Technique halving",
         "value": "halving"
-      },
-      {
-        "name": "Cuting: Technique chopping",
-        "value": "chopping"
       }
     ]
   },
