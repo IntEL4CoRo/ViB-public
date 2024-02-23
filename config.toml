@@ -30,7 +30,7 @@ pygmentsCodefencesGuessSyntax = true
 #  hideAuthor = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 #  disclaimerText = "The opinions expressed herein are my own personal opinions and do not represent my employer’s view in any way."
-  rightSideImg = "img/ViB_neutral.jpg"
+  rightSideImg = "img/Wimmelbild_clean short.png"
   showHomeBigImg = true
 
 
@@ -62,5 +62,20 @@ pygmentsCodefencesGuessSyntax = true
 
 [[menu.main]]
     name = "Contact"
-    url = "page/contact/"
-    weight = 1
+    url = "page/contact/contact/"
+    weight = 20
+
+[[menu.main]]
+    name = "Software Tools"
+    url = "page/softwaretools/"
+    weight = 10
+
+[[menu.main]]
+    name = "Coming Soon"
+    url = "page/comingsoon/"
+    weight = 15
+
+[[menu.main]]
+    name = "Virtual Labs"
+    url = "page/labs/"
+    weight = 5
