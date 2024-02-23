@@ -51,13 +51,14 @@ div.post-entry param.hidde-after-preview + *, div.post-entry div.hidde-after-pre
 }
 .flex-item-right {
   flex: 75%;
+  overflow-y: auto;
 }
+
 @media only screen and (max-width: 1280px) { /* remove left side image when screen to small */
   .flex-item-left {
     display: none;
   }
 }
-
 
 /* homepage main content about block */
 div.main-well-flex-container {
@@ -165,7 +166,6 @@ div.right-main-well-flex {
   height: 100%;
   width: 100%;
 }
-
 
 /* remove the bottum gap on homepage because of empty meta */
 div.page-meta {
