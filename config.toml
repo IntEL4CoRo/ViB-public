@@ -1,4 +1,4 @@
-baseurl = "https://srikanth635.github.io/ViB-public/"
+baseurl = "https://intel4coro.github.io/ViB-public/"
 DefaultContentLanguage = "en"
 title = "Virtual Research Building (ViB)"
 theme = "beautifulhugo"
