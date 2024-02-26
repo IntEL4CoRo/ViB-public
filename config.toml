@@ -52,6 +52,9 @@ pygmentsCodefencesGuessSyntax = true
 [[Params.bigimg]]
  src = "img/Neujahrskarte_2023_ViB_layer_11.jpg"
 
+ [[Params.bigredimg]]
+ src = "img/ViB_banner_Uni-Rot.png"
+
 
 [Author]
   # Set only your "username" for default hosts and full URLs otherwise (e.g., "https://MyGitLab.org/username")
