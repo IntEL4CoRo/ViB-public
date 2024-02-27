@@ -6,6 +6,6 @@
   </div>
   <div class="right-main-well-flex">
     <!-- <img class="timer-change-image" data-wait="5000" data-imgs='[{"src":"img/popcorn_making.jpg"},{"src":"img/pot_grasping.jpg"},{"src":"img/learning_from_videos.jpg"},{"src":"img/picking_up_actions.jpg"}]'> -->
-    <img class="timer-change-image" height="100%" data-wait="5000" data-imgs='[{"src":"img/pr2_holding_pot.png"},{"src":"img/pr2_image_sequence.png"},{"src":"img/pr2_learning_human.png"}]'>
+    <img class="timer-change-image" data-wait="5000" data-imgs='[{"src":"img/pr2_holding_pot.png"},{"src":"img/pr2_image_sequence.png"},{"src":"img/pr2_learning_human.png"}]'>
   </div>
 </div>

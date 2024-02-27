@@ -11,7 +11,7 @@
 
       <div class="flex-item-left">
         <div class="sidebar-image-container">
-          <img class="sidebar-image-sticky" src="{{ .Site.Params.rightsideimg | absURL }}" width="1500px" height="1000px">
+          <img class="sidebar-image-sticky" src="{{ .Site.Params.rightsideimg | absURL }}" width="100%" height="1000px">
         </div>
       </div>
 
@@ -23,7 +23,8 @@
             {{ end }}
           
             <!-- {{ block "header" . }}{{ partial "header.html" . }}{{ end }} -->
-            <img src="img/ViB_banner_Uni_Rot.png" width="80%" style="margin-top: 30px;">
+            <!-- <div class="intro-header big-img" style="background-image: url('img/ViB_banner_Uni_Rot.png')"> -->
+            <img src="img/ViB_banner_Uni_Rot.png" width="90%" style="margin-top: 30px;padding: 25px; margin-left: 50px;">
 
             {{ block "main" . }}{{ end }}
         
