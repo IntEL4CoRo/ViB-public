@@ -942,6 +942,9 @@ h4.see-also {
   .flex-container {
     background-color: #303030;
   }
+  .flex-item-right {
+    background-color: #3b3b3b;
+  }
 
   pre.chroma {
     color: white;

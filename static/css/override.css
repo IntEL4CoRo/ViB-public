@@ -43,32 +43,47 @@ div.post-entry param.hidde-after-preview + *, div.post-entry div.hidde-after-pre
 /* right side image*/
 .flex-container {
   display: flex;
-  /*flex-direction: row; */
   flex-wrap: nowrap;
+  flex-direction: row;
 }
 .flex-item-left {
-  flex: 1;
+  /*flex-basis: 10%;*/
   min-width: 200px;
   min-height: 100px;
   overflow: hidden;
+  flex-grow: 1;
+  flex-shrink: 2;
   aspect-ratio: 1;
+  flex-basis: 10vw;
 }
 .flex-item-center {
-  flex: 1;
-  overflow-y: auto;
-  flex-basis: content;
+  overflow-y: hidden;
+  /*flex-basis: 100%; */
+  flex-grow: 2;
+  flex-shrink: 1;
+  /*width: fit-content;*/
+  /*min-width: fit-content; */
+  min-width: fit-content;
+  flex-basis: 70vw;
 }
-
+.flex-item-right {
+  /*flex-basis: 25%; */
+  max-width: 200px;
+  flex-grow: 1;
+  flex-shrink: 2;
+  overflow-y: hidden;
+  min-width: 200px;
+  /*width: 200px;*/
+  flex-basis: 10vw;
+}
 /* item with the logos */
- @media only screen and (max-width: 1280px) and (max-height: 900px) { /* remove left side image when screen to small */
-  .flex-item-right {
-    /* display: none; */
-    /* flex: content; */
-    /* min-width: 100px;
-    min-height: 100px;*/
-    max-width: 50px;
-    overflow: hidden;
-    aspect-ratio: 1;
+/* @media only screen and (max-width: 1280px) and (max-height: 900px) { /* remove left side image when screen to small */
+/*  .flex-item-right {
+    flex-basis: 200px;
+    max-width: 200px;
+    flex-grow: 2;
+    flex-shrink: 2;
+    overflow-y: hidden;
   }
 } 
 
