@@ -87,6 +87,12 @@ div.post-entry param.hidde-after-preview + *, div.post-entry div.hidde-after-pre
   }
 } 
 
+@media only screen and (max-width: 1280px) { /* remove left side image when screen to small */
+  .flex-item-right {
+    display: none;
+  }
+}
+
 /* homepage main content about block */
 div.main-well-flex-container {
   display: flex;
