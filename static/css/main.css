@@ -5,7 +5,7 @@ body {
   font-size: 18px;
   color: #3b3b3b;
   position: relative;
-  background: #FFF;
+  /*background: #FFF;*/
   display: flex;
   flex-flow: column;
   height: 100vh;
@@ -135,7 +135,7 @@ img {
 }
 @media (prefers-color-scheme: dark) {
 figure:not(.dark) img, img.white {
-  background-color: rgb(80, 78, 78);
+  background-color: white;
 }
 }
 
@@ -924,13 +924,23 @@ h4.see-also {
     color: #ccc;
   }
   .well {
-    background-color: #444;
+    background-color: #3b3b3b;
   }
   .panel {
-    background-color: #222;
+    background-color: #3b3b3b;
   }
   .list-group-item {
-    background-color: #333;
+    background-color: #3b3b3b;
+  }
+  .div {
+    background-color: #3b3b3b;
+  }
+  .body {
+    background-color: #3b3b3b;
+    color: #808080;
+  }
+  .flex-container {
+    background-color: #303030;
   }
 
   pre.chroma {
@@ -951,6 +961,24 @@ h4.see-also {
   }
   pre.chroma .ow {
     color: #CC0;
+  }
+}
+
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  .div {
+    background-color: #ffffff;
+  }
+  .well {
+    background-color: #ffffff;
+  }
+  .body {
+    background-color: #ffffff;
+    color: #181818;
+  }
+  .flex-container {
+    background-color: #ffffff;
   }
 }
 
