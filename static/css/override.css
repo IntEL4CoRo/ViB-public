@@ -47,11 +47,11 @@ div.post-entry param.hidde-after-preview + *, div.post-entry div.hidde-after-pre
   flex-wrap: nowrap;
 }
 .flex-item-left {
-  flex: 25%;
+  flex: 30%;
   justify-content: center;
 }
 .flex-item-center {
-  flex: 65%;
+  flex: 60%;
   justify-content: center;
   align-content: center;
   overflow-y: auto;
