@@ -43,20 +43,29 @@ div.post-entry param.hidde-after-preview + *, div.post-entry div.hidde-after-pre
 /* right side image*/
 .flex-container {
   display: flex;
-  flex-direction: row;
   flex-wrap: nowrap;
+  flex-direction: row;
 }
 .flex-item-left {
-  flex: 30%;
-  justify-content: center;
+  /*flex-basis: 10%;*/
+  min-width: 200px;
+  min-height: 100px;
+  overflow: hidden;
+  flex-grow: 1;
+  flex-shrink: 2;
+  aspect-ratio: 1;
+  flex-basis: 10vw;
 }
 .flex-item-center {
-  flex: 60%;
-  justify-content: center;
-  align-content: center;
-  overflow-y: auto;
+  overflow-y: hidden;
+  /*flex-basis: 100%; */
+  flex-grow: 2;
+  flex-shrink: 1;
+  /*width: fit-content;*/
+  /*min-width: fit-content; */
+  min-width: fit-content;
+  flex-basis: 70vw;
 }
-
 .flex-item-right {
   flex: 5%;
 }
@@ -64,8 +73,9 @@ div.post-entry param.hidde-after-preview + *, div.post-entry div.hidde-after-pre
 @media only screen and (max-width: 1280px) and (max-height: 900px) { /* remove left side image when screen to small */
   .flex-item-left {
     display: none;
+
   }
-}
+} 
 
 @media only screen and (max-width: 1280px) { /* remove left side image when screen to small */
   .flex-item-right {
@@ -78,6 +88,7 @@ div.main-well-flex-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  /*background-color: #3b3b3b; */
 }
 div.left-main-well-flex {
   flex: 50%;
@@ -150,7 +161,7 @@ div.right-main-well-flex {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
-  background-color: white;
+  /*background-color: #3b3b3b; */
   border: none;
   box-shadow: none;
 }
