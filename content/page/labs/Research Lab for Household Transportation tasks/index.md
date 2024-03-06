@@ -7,6 +7,7 @@ dropCap: false
 displayInMenu: false
 displayInList: true
 draft: false
+order: 1
 resources:
 - name: ActionButtons
   src: "buttons.json"
@@ -14,15 +15,14 @@ resources:
 ![](https://iris.informatik.uni-bremen.de/textbook/content/picking_up_actions.png)
 
 
-<h1> The Lab</h1>
 
 In the research lab you have access to and can experiment with generalized robot plans for transporting objects within man-made human living and working environments, including apartments and retail stores. The generalized robot plan controls different robots transporting a variety of objects in different environments for different purposes in different contexts.
 
 <param class="hidde-after-preview">
 {{<action_forms data="ActionButtons">}}
-
+For Detailed information click 
+<a href="http://localhost:1313/ViB-public/page/labs/research-lab-for-household-transportation-tasks/">here!</a> 
 <!--more-->
-
 
 ![](https://iris.informatik.uni-bremen.de/textbook/content/picking_up_actions.png)
 
