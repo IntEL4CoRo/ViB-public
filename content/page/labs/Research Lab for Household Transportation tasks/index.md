@@ -11,6 +11,10 @@ resources:
 - name: ActionButtons
   src: "buttons.json"
 ---
+![](https://iris.informatik.uni-bremen.de/textbook/content/picking_up_actions.png)
+
+
+<h1> The Lab</h1>
 
 In the research lab you have access to and can experiment with generalized robot plans for transporting objects within man-made human living and working environments, including apartments and retail stores. The generalized robot plan controls different robots transporting a variety of objects in different environments for different purposes in different contexts.
 

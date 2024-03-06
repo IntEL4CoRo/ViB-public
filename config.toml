@@ -62,22 +62,22 @@ pygmentsCodefencesGuessSyntax = true
   email = "ai-office@cs.uni-bremen.de "
   github = "IntEL4CoRo"
   youtube = "agkiunibremen"
-
 [[menu.main]]
     name = "Contact"
     url = "page/contact/contact/"
     weight = 20
-
-[[menu.main]]
-    name = "Software Tools"
-    url = "page/softwaretools/"
-    weight = 10
-
 [[menu.main]]
     name = "Coming Soon"
     url = "page/comingsoon/"
     weight = 15
-
+[[menu.main]]
+    name = "Software Tools"
+    url = "page/softwaretools/"
+    weight = 10
+[[menu.main]]
+    name = "Learning Hub"
+    url = "page/learninghub/"
+    weight = 9
 [[menu.main]]
     name = "Virtual Labs"
     url = "page/labs/"
