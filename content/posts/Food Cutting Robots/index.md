@@ -31,8 +31,7 @@ Interactive Actions and/or Examples
 {{<action_form data="ActionButtons">}}
 
 
-For Detailed information click 
-<a href="https://food-ninja.github.io/WebKat-MealRobot//">here!</a> 
+For Detailed information click <a href="https://food-ninja.github.io/WebKat-MealRobot//">here!</a> 
 
 
 <hr>
