@@ -1,5 +1,5 @@
 ---
-title: "Research Lab for Household Transportation tasks"
+title: ""
 date: 2023-12-01T10:35:35-05:00
 subtitle: ""
 tags: ["Research", "Lab", "Transportation", "Live-Experiment"]
