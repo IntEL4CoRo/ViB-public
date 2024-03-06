@@ -14,7 +14,7 @@ resources:
 ---
 
  <div style="margin-top: 50px;">
-    <h1> Research Lab for Household Transportation tasks </h1>
+    <h1> <a href="http://localhost:1313/ViB-public/page/labs/research-lab-for-household-transportation-tasks/">Research Lab for Household Transportation tasks</a>  </h1>
   </div>
 In the research lab you have access to and can experiment with generalized robot plans for transporting objects within man-made human living and working environments, including apartments and retail stores. The generalized robot plan controls different robots transporting a variety of objects in different environments for different purposes in different contexts.
 
