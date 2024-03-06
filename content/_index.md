@@ -11,3 +11,8 @@
     <img class="timer-change-image" data-wait="5000" data-imgs='[{"src":"img/pr2_holding_pot.png"},{"src":"img/pr2_image_sequence.png"},{"src":"img/pr2_learning_human.png"}]'>
   </div>
 </div>
+
+
+
+<figure class="video_container">
+  <iframe width="60%" height="300"  src="Coai-Vib-Video.mp4" title="COAI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
