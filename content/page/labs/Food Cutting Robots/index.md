@@ -18,7 +18,7 @@ resources:
 Challenge: We want to enable robots to learn everyday manipulation tasks from the Web and thus make abstract knowledge 
 actionable. This challenge is important for robots that can perform a wide breadth of manipulation tasks and task variations, that can be performed by various robots using various tools for a variety of purposes. For a robot to successfully perform such a breadth of maniulation actions, it needs to understand given tasks. We start tackling this challenge by focusing on selected task domains, starting with cutting.
 <param class="hidde-after-preview">
-{{<action_form data="ActionButtons">}}
+
 
 
 
@@ -27,9 +27,6 @@ actionable. This challenge is important for robots that can perform a wide bread
 
 Interactive Actions and/or Examples
 ---
-
-{{<action_form data="ActionButtons">}}
-
 
 For Detailed information click 
 <a href="https://food-ninja.github.io/WebKat-MealRobot//">here!</a> 
