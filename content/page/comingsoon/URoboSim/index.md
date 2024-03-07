@@ -34,8 +34,9 @@ real robot, thus creating a continuous belief state. For this, URoboSim makes it
 possible to import robots to Unreal Engine from SDF files, which can be auto
 generated from URDF. The model can that be controlled using ROS. The controllers
 allow the robot to be moved in a kinetically (without physics) or dynamically (with physics).
-Some ROS interfaces such as joint state publishers or follow joint trajectory
-actions that are required to be used with the CRAM architecture are already included.
+The ROS interfaces such as joint state publishers or follow joint trajectory
+actions that are required to be used with the CRAM architecture as well as
+emulating the robots action are already included.
 
 
 <div>
