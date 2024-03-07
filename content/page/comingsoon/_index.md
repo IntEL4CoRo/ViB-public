@@ -1,6 +1,6 @@
 [comment]: <> (without this comment hugo fails)
 
-<div style="margin-top: 50px;">
+<div>
     <h1> Coming Soon </h1>
     
 Our labs are on the horizon of innovation, not yet fully tested but already partially incorporated into our 
