@@ -9,8 +9,6 @@ displayInList: true
 draft: false
 ---
 
----
-
 RoboKudo is a cognitive perception framework targeted for robot manipulation tasks. It is a multi-expert approach to analyze unstructured sensor data and annotate particular regions of the data given the expertise of specific computer vision algorithms.
 
 <div class="hidde-after-preview">
