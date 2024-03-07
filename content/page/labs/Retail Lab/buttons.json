@@ -43,7 +43,6 @@
         "tasks"
       ],
       "available": {
-        "environments=retail_lab|robots=kuka_kmr_iiwa|tasks=scanning": "https://data.open-ease.org/QA?neem_id=601042627e765711e2c10ab0&q=findall([Duration%2C Evt]%2C ( event_interval(Evt%2C Begin%2C End)%2C number(End)%2C Duration is End - Begin )%2C Durations)%2C max_member([MaxDuration%2C LongestEvt]%2C Durations).",
         "environments=retail_lab|robots=donbot|tasks=refilling": "https://binder.intel4coro.de/v2/gh/IntEL4CoRo/cram_teaching/legacy?urlpath=lab%2Ftree%2Flectures%2Fdemos%2Fretail.ipynb%3Frobot%3Ddonbot%26environment%3Dretail"
       }
     },

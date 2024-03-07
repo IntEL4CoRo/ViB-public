@@ -11,23 +11,21 @@ resources:
 - name: ActionButtons
   src: "buttons.json"
 ---
-![](https://iris.informatik.uni-bremen.de/textbook/content/picking_up_actions.png)
 
 
-<h1> The Lab</h1>
-
-In the dynamic environment of a retail store, robots encounter unique challenges not found in household settings. They navigate through crowded spaces, manage a diverse array of products on shelves, and interact directly with customers to assist in locating items or answering queries. With the task of operating in large, complex layouts, these robots must also excel in inventory management, adapting to varying store layouts and policies, and coordinating with other robots to optimize efficiency. Safety, security, and the ability to handle delicate items with care are paramount, ensuring a seamless integration into the bustling retail ecosystem.
+In the dynamic environment of a retail store, robots encounter unique challenges not found in household settings. 
+They navigate through crowded spaces, manage a diverse array of products on shelves, and interact directly with customers to assist in locating items or answering queries. 
+With the task of operating in large, complex layouts, these robots must also excel in inventory management, adapting to varying store layouts and policies, and coordinating with other robots to optimize efficiency. 
+Safety, security, and the ability to handle delicate items with care are paramount, ensuring a seamless integration into the bustling retail ecosystem.
 
 <param class="hidde-after-preview">
 {{<action_forms data="ActionButtons">}}
-For Detailed information click 
-<a href="http://localhost:1313/ViB-public/page/labs/retail-lab/">here!</a> 
+<div class="hidde-after-preview">
+  For Detailed information click 
+  <a href="retail-lab">here!</a> 
+</div>
+
 <!--more-->
-
-
-![](https://iris.informatik.uni-bremen.de/textbook/content/picking_up_actions.png)
-
-<!-- ***"The EASE household challenge is subject of the IEEE spectrum article 'It's (Still) Really Hard for Robots to Autonomously Do Household Chores'"*** by Evan Ackerman (IEEE Spectrum, 17.06.2021) -->
 
 
 Interactive Actions and/or Examples
@@ -125,22 +123,3 @@ Software Components
 - ### [PyCRAM <img class="sc-image" src="https://pycram.readthedocs.io/en/latest/_images/pycram_logo.png" height=50>](https://pycram.readthedocs.io/en/latest/index.html)
   is the Python 3 re-implementation of [CRAM](https://cram-system.org/). [PyCRAM](https://pycram.readthedocs.io/en/latest/index.html) is a toolbox for designing, implementing and deploying software on autonomous robots.\
   [<img class="sc-image" src="https://iris.informatik.uni-bremen.de/images/github.svg" height=10> source code](https://github.com/cram2/pycram)
-
-
-Courses and/or Tutorial
----
-
-- ### Courses:
-
-  + ##### [Integrated Intelligent Systems](https://ai.uni-bremen.de/teaching/le-iis-ws23)
-    This lecture covers contemporary techniques of AI in cognitive robotics.
-
-  + ##### [Robot Programming with ROS](https://ai.uni-bremen.de/teaching/cs-ros-ws23)
-    Getting into the Robot Operating System ROS is a steptone for future roboticists.
-
-
-- ### Tutorials:
-
-  + ##### [CRAM Plan Executive](https://cram-system.org/tutorials)
-    Check out the online hands-on tutorials on the CRAM plan executive.
-
