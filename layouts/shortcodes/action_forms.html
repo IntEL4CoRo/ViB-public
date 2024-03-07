@@ -208,7 +208,8 @@
         return _url
       },
       filterOptions(selectedEnv = '',selectedRobo = ''){
-        const availableConfigs = this.actions[0].available;
+        const availableConfigs = this.actions.reduce((acc, action) => ({...acc, ...action.available}), {});
+
         if (availableConfigs !== null){
           const OptionSet = new Set();
           let OptionList = []
