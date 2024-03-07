@@ -35,43 +35,69 @@ Interactive Actions and/or Examples
 
 {{<action_forms data="ActionButtons">}}
 
+Robots Collecting Data: Modelling Stores
+---
+<h4>Abstract</h4> Retail stores are a promising application domain for autonomous robotics.
+Unlike other domains, such as households, the environments are more structured, products are designed to be easily recognizable, and items are consciously placed to facilitate their detection and manipulation. 
+In this book chapter we exploit these properties and propose a mobile robot systems that can be deployed in drugstores and autonomously acquire a semantic digital twin model of the store. 
+This facilitates autonomous robot fetch and place and shopping in a virtual replica of the store. 
+The potential commercial impact is substantial because in the retail business stores are an information blackbox and being able to automate inventory on a regular basis could improve the knowledge of retailers about their business drastically.
+
+In this video the Kuka KMR IIWA performs a stock tacking action in the retail lab.
+<figure class="video_container">
+  <iframe width="100%" height="360" src="https://www.youtube.com/embed/nwfbI4-rJUY?si=DoCZDlNF8PIjiXDb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
+</figure>
+
+#### Publication
+
+- [Beetz M, Stelter S, Beßler D, Dhanabalachandran K, Neumann M, Mania P, Haidu A. Robots collecting data: Modelling stores. InRobotics for Intralogistics in Supermarkets and Retail Stores 2022 Sep 2 (pp. 41-64). Cham: Springer International Publishing.](https://link.springer.com/chapter/10.1007/978-3-031-06078-6_2)
 
 Manipulation planning and control for shelf replenishment
 ---
-The paper "Manipulation Planning and Control for Shelf Replenishment" introduces a novel method integrating manipulation planning and reactive control for robotic shelf replenishment tasks. It addresses the challenges of manipulating a wide variety of objects in supermarkets with specific constraints, emphasizing the importance of dexterous manipulation without the need for high degrees of freedom in robotic grippers. By leveraging a new force/tactile sensor-equipped gripper and a control strategy that alternates between slipping avoidance and controlled sliding, the proposed approach enables robots to perform tasks previously unattainable with standard fixed grasps. This method significantly enhances a robot's autonomy in executing complex manipulation tasks, particularly in the constrained and cluttered environment of retail shelves.
+<h4>Abstract</h4>
+Manipulation planning and control are relevant building blocks of a robotic system and their tight integration is a key factor to improve robot autonomy and allows robots to perform manipulation tasks of increasing complexity, such as those needed in the in-store logistics domain. 
+Supermarkets contain a large variety of objects to be placed on the shelf layers with specific constraints, doing this with a robot is a challenge and requires a high dexterity. 
+However, an integration of reactive grasping control and motion planning can allow robots to perform such tasks even with grippers with limited dexterity. 
+The main contribution of the letter is a novel method for planning manipulation tasks to be executed using a reactive control layer that provides more control modalities, i.e., slipping avoidance and controlled sliding.
+Experiments with a new force/tactile sensor equipping the gripper of a mobile manipulator show that the approach allows the robot to successfully perform manipulation tasks unfeasible with a standard fixed grasp.
 
 <figure class="video_container">
-  <iframe width="100%" height="360" src="https://www.youtube.com/embed/PAk1sXif25Y?si=K2Ys3XvBMhEWzdyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
+  <iframe width="100%" height="360" src="https://www.youtube.com/embed/7IaRh5FfA5E?si=Rtqxnc7-u5AbxWMy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
 </figure>
 
 #### Publication
 
 - [Costanzo M, Stelter S, Natale C, Pirozzi S, Bartels G, Maldonado A, Beetz M. Manipulation planning and control for shelf replenishment. IEEE Robotics and Automation Letters. 2020 Jan 24;5(2):1595-601.](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8968346)
 
+
+Robotic Clerks: Autonomous Shelf Refilling
+---
+<h4>Abstract</h4>
+Nowadays, robots are used in the retail market mostly for warehousing, while they could be of great help in different in-store logistics processes as discussed in previous chapters. 
+The present chapter deals with the shelf replenishment task; 
+its execution by a robot requires overcoming of technological and methodological barriers in the handling of single products rather than the boxes containing them.
+The challenges a robot has to face to replenish a supermarket shelf are all related to manipulation in narrow spaces of products with a large variety of size, shape, weight, and fragility. 
+The solution proposed by REFILLS is based on a robotic system where perception is used at all hierarchical levels of the control architecture, from high-level task planning algorithms and motion planning to reactive control layers based on physics models, where tactile and visual perception are combined to achieve highly reliable manipulation of items. 
+Experiments in an emulated supermarket shelf are carried out to demonstrate the effectiveness of the approach.
+
+<figure class="video_container">
+  <iframe width="100%" height="360" src="https://www.youtube.com/embed/7SX306sxEaI?si=eZ1R4ebIeHURaJT5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
+</figure>
+
+#### Publication
+
+- [Cavallo A, Costanzo M, De Maria G, Natale C, Pirozzi S, Stelter S, Kazhoyan G, Koralewski S, Beetz M. Robotic Clerks: Autonomous Shelf Refilling. InRobotics for Intralogistics in Supermarkets and Retail Stores 2022 Sep 2 (pp. 137-170). Cham: Springer International Publishing.](https://link.springer.com/chapter/10.1007/978-3-031-06078-6_6)
+
+
 Shelf replenishment in Simulation
 ---
-The retail environments are also available in simulation.
-Refilling tasks have been executed with multiple robots in both of them.
 
 <figure class="video_container">
   <iframe width="100%" height="360" src="https://www.youtube.com/embed/lDCk80t-uqM?si=Kjvv9YP5BImjRl19" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
 </figure>
-<figure class="video_container">
+<!-- <figure class="video_container">
   <iframe width="100%" height="360" src="https://www.youtube.com/embed/N-MsJOz8ID0?si=qP-8I6k1Kk9Tjyq9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
-</figure>
-
-
-Stock Tacking
----
-Here is a video of the Kuka KMR performing a stock tacking action in the retail lab.
-<figure class="video_container">
-  <iframe width="100%" height="360" src="https://www.youtube.com/embed/nwfbI4-rJUY?si=DoCZDlNF8PIjiXDb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
-</figure>
-
-
-
-
-
+</figure> -->
 
 Software Components
 ---
