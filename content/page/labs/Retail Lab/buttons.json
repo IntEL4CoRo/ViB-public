@@ -11,7 +11,7 @@
       {
         "name": "KUKA KMR IIWA",
         "value": "kuka_kmr_iiwa",
-        "img": "http://localhost:1313/ViB-public/img/Kuka_Robot-cut_out.png"
+        "img": "https://intel4coro.github.io/ViB-public/img/Kuka_Robot-cut_out.png"
       },
       {
         "name": "Donbot",
