@@ -1,0 +1,13 @@
+version: '3'
+services:
+  hugo-dev:
+    image: 'klakegg/hugo:0.111.3-ext-ubuntu-ci'
+    stdin_open: true
+    tty: true
+    user: root
+    command: hugo server
+    working_dir: /src
+    ports:
+      - 1313:1313
+    volumes:
+      - .:/src:rw
