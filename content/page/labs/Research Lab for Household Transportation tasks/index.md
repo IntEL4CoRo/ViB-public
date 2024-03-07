@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Research Lab for Household Transportation tasks"
 date: 2023-12-01T10:35:35-05:00
 subtitle: ""
 tags: ["Research", "Lab", "Transportation", "Live-Experiment"]
@@ -13,9 +13,6 @@ resources:
   src: "buttons.json"
 ---
 
- <div style="margin-top: 50px;">
-    <h1> <a href="http://localhost:1313/ViB-public/page/labs/research-lab-for-household-transportation-tasks/">Research Lab for Household Transportation tasks</a>  </h1>
-  </div>
 In the research lab you have access to and can experiment with generalized robot plans for transporting objects within man-made human living and working environments, including apartments and retail stores. The generalized robot plan controls different robots transporting a variety of objects in different environments for different purposes in different contexts.
 
 <param class="hidde-after-preview">
@@ -24,6 +21,7 @@ For Detailed information click
 <a href="http://localhost:1313/ViB-public/page/labs/research-lab-for-household-transportation-tasks/">here!</a> 
 
 <!--more-->
+
 
 ![](https://iris.informatik.uni-bremen.de/textbook/content/picking_up_actions.png)
 

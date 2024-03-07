@@ -18,6 +18,7 @@ KnowRob is a knowledge processing system designed for robots. Its purpose is to 
 
 <!--more-->
 
+
 ![](knowrob2.png)
 
 

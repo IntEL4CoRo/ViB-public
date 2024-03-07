@@ -13,7 +13,7 @@
 {{ $title := $.Scratch.Get "title" }}
 {{ $subtitle := $.Scratch.Get "subtitle" }}
 
-{{ if or $bigimg $title }}
+{{ if and (or $bigimg $title) (not .IsHome) }} }}
   {{ if $bigimg }}
     <div id="header-big-imgs" data-num-img={{len $bigimg}}
       {{range $i, $img := $bigimg}}

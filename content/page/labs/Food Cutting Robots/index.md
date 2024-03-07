@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Using Web Knowledge For Flexible Meal Preparation"
 date: 2019-02-27T14:33:42-04:00
 subtitle: ""
 tags: ["Research"]
@@ -11,16 +11,10 @@ resources:
 - name: ActionButtons
   src: "buttons.json"
 ---
- <div style="margin-top: 50px;">
-    <h1> <a href="http://localhost:1313/ViB-public/page/labs/food-cutting-robots/">Using Web Knowledge For Flexible Meal Preparation</a>  </h1>
-  </div>
 
 Challenge: We want to enable robots to learn everyday manipulation tasks from the Web and thus make abstract knowledge 
 actionable. This challenge is important for robots that can perform a wide breadth of manipulation tasks and task variations, that can be performed by various robots using various tools for a variety of purposes. For a robot to successfully perform such a breadth of maniulation actions, it needs to understand given tasks. We start tackling this challenge by focusing on selected task domains, starting with cutting.
 <param class="hidde-after-preview">
-
-
-
 
 <!--more-->
 
