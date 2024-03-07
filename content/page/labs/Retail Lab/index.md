@@ -17,6 +17,8 @@ In the dynamic environment of a retail store, robots encounter unique challenges
 They navigate through crowded spaces, manage a diverse array of products on shelves, and interact directly with customers to assist in locating items or answering queries. 
 With the task of operating in large, complex layouts, these robots must also excel in inventory management, adapting to varying store layouts and policies, and coordinating with other robots to optimize efficiency. 
 Safety, security, and the ability to handle delicate items with care are paramount, ensuring a seamless integration into the bustling retail ecosystem.
+Furthermore detailed product information is required
+More user assistant applications are described on this [website](https://michaelakuempel.github.io/ProductKG/).
 
 <param class="hidde-after-preview">
 {{<action_forms data="ActionButtons">}}
@@ -32,6 +34,41 @@ Interactive Actions and/or Examples
 ---
 
 {{<action_forms data="ActionButtons">}}
+
+ProductKG: A Product Knowledge Graph for User Assistance in Daily Activities
+---
+#### Abstract
+The Web offers plenty of product information that is valuable for supporting decision processes. Research
+on Web knowledge acquisition and the Semantic Web has led to the creation of many domain ontologies
+and Web applications. What still is lacking is a connection of such knowledge to the real world. If object
+information is linked to environment information, users can get better, more personalised support in
+their daily activities like shopping or cooking since this enables them to link information about leftover
+products in the fridge to recipe information or a health profile to products the user is looking at in
+the store. It has been shown that semantic Digital Twins can successfully link object to environment
+information that can be used by agents like smartphone or service robot. Such semantic Digital Twins
+can offer even more services to users if they are connected to product information from the Web.
+This work introduces ProductKG, an open-source product knowledge graph integrating modular
+product information from the Web as well as accurate environment information from a semantic Digital
+Twin that can be customised for different applications and used devices as an example knowledge graph
+for assisting users in daily activities. We describe the design process and modularity of the knowledge
+graph as well as example applications of it, including an Augmented Reality shopping assistant, a dietary
+recommender and a hands-free recipe application. The modular ontologies enable personalisation of
+applications as well as accessing object information in relation to the current environment. We evaluate
+the acceptance of one example application through a user study. ProductKG is publicly available and
+will be maintained and extended over time in order to facilitate various applications such as in the retail
+and household domain.  
+**Resource Website**: [https://michaelakuempel.github.io/ProductKG/](https://michaelakuempel.github.io/ProductKG/)  
+**Application Website**: [http://productkg.informatik.uni-bremen.de/](http://productkg.informatik.uni-bremen.de/)
+and [https://ai.uni-bremen.de/productkg](https://ai.uni-bremen.de/productkg)
+
+<figure class="video_container">
+  <iframe width="100%" height="360" src="https://www.youtube.com/embed/nb-q137DylY?si=RFxBqHGVwc7XK47x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
+</figure>
+
+#### Publication
+
+- [Kümpel, M. and Beetz, M. (2023). ProductKG: A Product Knowledge Graph for User Assistance in Daily Activities. In: Ontology Showcase and Demonstrations Track, 9th Joint Ontology Workshops (JOWO 2023), co-located with FOIS 2023. 19-20 July, 2023, Sherbrooke, Quèbec, Canada, 2023.](https://ceur-ws.org/Vol-3637/paper52.pdf)
+
 
 Robots Collecting Data: Modelling Stores
 ---

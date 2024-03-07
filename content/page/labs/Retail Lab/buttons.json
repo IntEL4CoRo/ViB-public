@@ -71,7 +71,7 @@
         "tasks"
       ],
       "available": {
-          "environments=retail_lab|robots=donbot|tasks=scanning": "https://binder.intel4coro.de/v2/gh/Food-Ninja/FoodCutting.git/HEAD?urlpath=notebooks%2f Notebooks%2F Food Cutting Queries.ipynb"
+          "environments=retail_lab|robots=donbot|tasks=scanning": "https://github.com/michaelakuempel/ProductKG/blob/master/notebooks/ProductQueries.ipynb"
       }
     }
   ]
