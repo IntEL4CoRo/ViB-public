@@ -17,8 +17,11 @@ In the research lab you have access to and can experiment with generalized robot
 
 <param class="hidde-after-preview">
 {{<action_forms data="ActionButtons">}}
-For Detailed information click 
-<a href="http://localhost:1313/ViB-public/page/labs/research-lab-for-household-transportation-tasks/">here!</a> 
+<div class="hidde-after-preview">
+  For Detailed information click  
+  <a href="research-lab-for-household-transportation-tasks">here!</a> 
+</div>
+
 
 <!--more-->
 
