@@ -314,3 +314,17 @@ div.navbar-header a.navbar-brand:focus {
 .post-preview > a:focus {
   color: #0068b4;
 }
+
+
+/* makes all preview title in Uni Bremen Corpo Design */
+h2.post-title {
+  color: #0068b4;
+}
+@media (prefers-color-scheme: dark) {
+  h2.post-title {
+    color: #89b4e1;
+  }
+}
+/*h2.post-title::after {
+ content: "\1F446";
+}*/
