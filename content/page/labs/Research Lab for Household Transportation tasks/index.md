@@ -7,7 +7,7 @@ dropCap: false
 displayInMenu: false
 displayInList: true
 draft: false
-order: 1
+on_homepage: true
 resources:
 - name: ActionButtons
   src: "buttons.json"

@@ -14,7 +14,7 @@ pygmentsCodefencesGuessSyntax = true
 [Params]
  homeTitle = "Our virtual research and training building for cognition-enabled robotics" # Set a different text for the header on the home page
   subtitle = ""
-  mainSections = ["posts"]
+  mainSections = ["page"]
   logo = "img/logo.png" # Expecting square dimensions
   favicon = "favicon.ico"
   dateFormat = "2 January 2006"
