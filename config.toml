@@ -82,3 +82,7 @@ pygmentsCodefencesGuessSyntax = true
     name = "Virtual Labs"
     url = "page/labs/"
     weight = 5
+[[menu.main]]
+    name = "About"
+    url = "page/about/"
+    weight = 4
