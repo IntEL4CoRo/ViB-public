@@ -1,0 +1,78 @@
+{
+  "options": {
+    "environments": [
+      {
+        "name": "Retail Lab",
+        "value": "retail_lab",
+        "img": "https://intel4coro.github.io/coai-vib/img/retail.png"
+      }
+    ],
+    "robots": [
+      {
+        "name": "KUKA KMR IIWA",
+        "value": "kuka_kmr_iiwa",
+        "img": "https://intel4coro.github.io/ViB-public/img/Kuka_Robot-cut_out.png"
+      },
+      {
+        "name": "Donbot",
+        "value": "donbot",
+        "img": "https://intel4coro.github.io/coai-vib/img/donbot_urdf_white1.png"
+      }
+    ],
+    "tasks": [
+      {
+        "name": "Refilling",
+        "value": "refilling"
+      },
+      {
+        "name": "Scanning",
+        "value": "scanning"
+      }
+    ]
+  },
+  "actions": [
+    {
+      "name": "Run Code",
+      "value": "run",
+      "description": "Run code on Binderhub.",
+      "primary": true,
+      "url": "https://binder.intel4coro.de/v2/gh/IntEL4CoRo/COAI/master?urlpath=lab%2Ftree%2Fnotebooks%2F",
+      "options": [
+        "environments",
+        "robots",
+        "tasks"
+      ],
+      "available": {
+        "environments=retail_lab|robots=donbot|tasks=refilling": "https://binder.intel4coro.de/v2/gh/IntEL4CoRo/cram_teaching/legacy?urlpath=lab%2Ftree%2Flectures%2Fdemos%2Fretail.ipynb%3Frobot%3Ddonbot%26environment%3Dretail"
+      }
+    },
+    {
+      "name": "Experimental Data",
+      "value": "openease",
+      "description": "OpenEASE",
+      "url": "https://data.open-ease.org/QA?neem_id=",
+      "options": [
+        "environments",
+        "robots",
+        "tasks"
+      ],
+      "available": {
+          "environments=retail_lab|robots=kuka_kmr_iiwa|tasks=scanning": "601042627e765711e2c10ab0&q=findall([Duration%2C Evt]%2C ( event_interval(Evt%2C Begin%2C End)%2C number(End)%2C Duration is End - Begin )%2C Durations)%2C max_member([MaxDuration%2C LongestEvt]%2C Durations)."
+      }
+    },
+    {
+      "name": "Inspect Knowledge Graph",
+      "value": "openease",
+      "description": "OpenEASE",
+      "url": "href=\"https://binder.intel4coro.de/v2/gh/Food-Ninja/FoodCutting.git/HEAD?urlpath=notebooks%2Fnotebooks%2FFoodCuttingQueries.ipynb",
+      "options": [
+        "environments",
+        "robots",
+        "tasks"
+      ],
+      "available": {
+          "environments=retail_lab|robots=donbot|tasks=scanning": "https://github.com/michaelakuempel/ProductKG/blob/master/notebooks/ProductQueries.ipynb"
+      }
+    }
+  ]
+}
