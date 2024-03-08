@@ -93,7 +93,8 @@ div.main-well-flex-container {
 div.left-main-well-flex {
   flex: 50%;
   text-align: left;
-  height: 350px;	/* needed because images have different sizes */
+  height: 350px;
+  margin-bottom: 70px;/* needed because images have different sizes */
 }
 div.right-main-well-flex {
   flex: 50%;
