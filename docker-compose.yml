@@ -5,7 +5,7 @@ services:
     stdin_open: true
     tty: true
     user: root
-    command: hugo server
+    command: hugo server --buildDrafts --disableFastRender
     working_dir: /src
     ports:
       - 1313:1313
