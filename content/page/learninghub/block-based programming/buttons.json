@@ -1,0 +1,16 @@
+{
+  "options": {},
+  "actions": [
+    {
+      "name": "Try it out!",
+      "value": "run",
+      "description": "Online blockly playground",
+      "url": "https://binder.intel4coro.de/v2/gh/IntEL4CoRo/blockly-playground.git/main?labpath=examples/playground.jpblockly"
+    },
+    {
+      "name": "Source Code",
+      "value": "source",
+      "url": "https://github.com/IntEL4CoRo/blockly-playground"
+    }
+  ]
+}
