@@ -12,7 +12,7 @@ resources:
   src: "buttons.json"
 ---
 
-Another example lecture that aims at tackling the challenge of representing knowledge for various agent applications and teaching students how to integrate knowledge representation in a web application is <i>"Actionable Knowledge Representation"<\i>. <br>
+Another example lecture that aims at tackling the challenge of representing knowledge for various agent applications and teaching students how to integrate knowledge representation in a web application is <i>"Actionable Knowledge Representation"</i>. <br>
 You can take a look at the GitHub repository with course material. Again, we aim to bridge the gap between theoretical knowledge and practical application, ensuring that students are well-prepared for the challenges of agent programming in real-world scenarios with a focus on user support scenarios.
 
 For Detailed information click 
