@@ -1,6 +1,6 @@
 baseurl = "https://intel4coro.github.io/ViB-public/"
 DefaultContentLanguage = "en"
-title = "Virtual Research Building (ViB)"
+title = "AICOR Virtual Research Building (VRB)"
 theme = "beautifulhugo"
 pygmentsStyle = "trac"
 pygmentsUseClasses = true
@@ -82,3 +82,7 @@ pygmentsCodefencesGuessSyntax = true
     name = "Virtual Labs"
     url = "page/labs/"
     weight = 5
+[[menu.main]]
+    name = "About"
+    url = "page/about/"
+    weight = 4
