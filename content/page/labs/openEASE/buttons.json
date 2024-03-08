@@ -1,0 +1,75 @@
+{
+  "options": {
+    "environments": [
+      {
+        "name": "Household",
+        "value": "household",
+        "img": "https://intel4coro.github.io/coai-vib/img/household.png",
+        "knowledge_bases": "https://data.open-ease.org/QA?neem_id=64ccc8bc24cdd341ebdb2aa3&q=findall([Duration%2C Evt]%2C ( event_interval(Evt%2C Begin%2C End)%2C number(End)%2C Duration is End - Begin )%2C Durations)%2C max_member([MaxDuration%2C LongestEvt]%2C Durations)."
+      },
+      {
+        "name": "Apartment",
+        "value": "apartment",
+        "img": "https://intel4coro.github.io/coai-vib/img/apartment.png",
+        "knowledge_bases": "https://data.open-ease.org/QA?neem_id=64ccbe76181caf1b5ed3c19c&q=findall([Duration%2C Evt]%2C ( event_interval(Evt%2C Begin%2C End)%2C number(End)%2C Duration is End - Begin )%2C Durations)%2C max_member([MaxDuration%2C LongestEvt]%2C Durations)."
+      },
+      {
+        "name": "Retail Lab",
+        "value": "retail_lab",
+        "img": "https://intel4coro.github.io/coai-vib/img/retail.png"
+      }
+    ],
+    "robots": [
+      {
+        "name": "PR2",
+        "value": "pr2",
+        "img": "https://intel4coro.github.io/coai-vib/img/pr2_urdf_white1.png",
+        "knowledge_bases": "https://data.open-ease.org/QA?neem_id=6526790ced1a1bfc415a1d38&q=findall%28%5BDuration%2C%20Evt%5D%2C%0A%20%20%28%20%20event_interval%28Evt%2C%20Begin%2C%20End%29%2C%0A%20%20%20%20%20number%28End%29%2C%0A%20%20%20%20%20Duration%20is%20End%20-%20Begin%0A%20%20%29%2C%0A%20%20Durations%29%2C%0Amax_member%28%5BMaxDuration%2C%20LongestEvt%5D%2C%20Durations%29"
+      },
+      {
+        "name": "Tiago",
+        "value": "tiago",
+        "img": "https://intel4coro.github.io/coai-vib/img/tiago_urdf_white1.png",
+        "knowledge_bases": "https://data.open-ease.org/QA?neem_id=630614f0ff954448f792b2c3&q=findall([Duration%2C Evt]%2C ( event_interval(Evt%2C Begin%2C End)%2C number(End)%2C Duration is End - Begin )%2C Durations)%2C max_member([MaxDuration%2C LongestEvt]%2C Durations)."
+      },
+      {
+        "name": "KUKA KMR IIWA",
+        "value": "kuka_kmr_iiwa",
+        "img": "https://intel4coro.github.io/ViB-public/img/Kuka_Robot-cut_out.png"
+      }
+    ],
+    "tasks": [
+      {
+        "name": "Setting & cleaning the table",
+        "value": "setting_table"
+      },
+      {
+        "name": "Making Popcorn",
+        "value": "popcorn"
+      },
+      {
+        "name": "Scanning Shelves (Retail)",
+        "value": "scanning"
+      }
+    ]
+  },
+  "actions": [
+    {
+      "name": "Experimental Data",
+      "value": "openease",
+      "description": "OpenEASE",
+      "url": "https://data.open-ease.org/QA?neem_id=",
+      "options": [
+        "environments",
+        "robots",
+        "tasks"
+      ],
+      "available": {
+        "environments=household|robots=pr2|tasks=setting_table": "62d5729bb3869a9a9c942f24",
+        "environments=household|robots=pr2|tasks=popcorn": "6357fad897fdbc7c4d98ccbc",
+        "environments=apartment|robots=tiago|tasks=setting_table": "633819942a459501ef4d4209",
+        "environments=retail_lab|robots=kuka_kmr_iiwa|tasks=scanning": "601042627e765711e2c10ab0"
+      }
+    }
+  ]
+}
