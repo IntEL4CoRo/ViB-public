@@ -322,6 +322,10 @@ div.navbar-header a.navbar-brand:focus {
 h2.post-title {
   color: #0068b4;
 }
+
+a > h2.post-title:hover {
+  text-decoration: underline;
+}
 @media (prefers-color-scheme: dark) {
   h2.post-title {
     color: #89b4e1;
