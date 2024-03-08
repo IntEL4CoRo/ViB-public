@@ -17,8 +17,6 @@ In the dynamic environment of a retail store, robots encounter unique challenges
 They navigate through crowded spaces, manage a diverse array of products on shelves, and interact directly with customers to assist in locating items or answering queries. 
 With the task of operating in large, complex layouts, these robots must also excel in inventory management, adapting to varying store layouts and policies, and coordinating with other robots to optimize efficiency. 
 Safety, security, and the ability to handle delicate items with care are paramount, ensuring a seamless integration into the bustling retail ecosystem.
-Furthermore detailed product information is required
-More user assistant applications are described on this [website](https://michaelakuempel.github.io/ProductKG/).
 
 <param class="hidde-after-preview">
 {{<action_forms data="ActionButtons">}}
