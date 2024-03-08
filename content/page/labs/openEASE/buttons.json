@@ -70,11 +70,6 @@
         "environments=apartment|robots=tiago|tasks=setting_table": "633819942a459501ef4d4209",
         "environments=retail_lab|robots=kuka_kmr_iiwa|tasks=scanning": "601042627e765711e2c10ab0"
       }
-    },
-    {
-      "name": "Assets",
-      "value": "assets",
-      "url": "https://coai-jrc.de/virtual-building/"
     }
   ]
 }
