@@ -71,7 +71,7 @@
         "tasks"
       ],
       "available": {
-          "environments=retail_lab|robots=donbot|tasks=scanning": "https://github.com/michaelakuempel/ProductKG/blob/master/notebooks/ProductQueries.ipynb"
+          "environments=retail_lab|robots=donbot|tasks=scanning": "https://binder.intel4coro.de/v2/gh/michaelakuempel/ProductKG.git/master?labpath=notebooks%2FProductQueries.ipynb"
       }
     }
   ]
