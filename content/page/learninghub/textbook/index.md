@@ -1,7 +1,7 @@
 ---
 title: "Intel4Coro Textbook"
 date: 2024-02-27T14:33:42-04:00
-subtitle: ""
+subtitle: "Open interactive textbook"
 tags: ["Research", "Writing", "Teaching", "Book", "Lecture"]
 dropCap: false
 displayInMenu: false
@@ -16,9 +16,10 @@ InteL4CoRo stands as a pioneering platform, combining the features of an interac
 its offerings into their learning and teaching strategies, fostering a dynamic, hands-on approach to understanding and innovating within the realm of cognitive robotics.
 
 For Detailed information click 
-<a href="https://iris.informatik.uni-bremen.de/textbook/content/0_Abstract.html">here!</a> 
+<a href="https://moodle.intel4coro.de/#Textbook" target="_blank">here!</a>
 
 <!--more-->
 
-
-<img src="textbook.png" width="200" alt=""/><br>
+---
+<iframe src="https://iris.informatik.uni-bremen.de/textbook/" width="100%" height=1300 style="border:none;box-shadow: 1px 1px 3px #000;" allowfullscreen></iframe>
+---
