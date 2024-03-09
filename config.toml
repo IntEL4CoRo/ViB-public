@@ -75,9 +75,20 @@ pygmentsCodefencesGuessSyntax = true
     url = "page/softwaretools/"
     weight = 10
 [[menu.main]]
+    identifier = "learninghub"
     name = "Learning Hub"
     url = "page/learninghub/"
     weight = 9
+[[menu.main]]
+    name = "Top-level Textbook"
+    parent = "learninghub"
+    url = "page/learninghub/topleveltextbook"
+    weight = 10
+[[menu.main]]
+    name = "EASE Learning Hub"
+    parent = "learninghub"
+    url = "page/learninghub/easelearninghub"
+    weight = 20
 [[menu.main]]
     name = "Virtual Labs"
     url = "page/labs/"

@@ -11,7 +11,7 @@
 
       <div class="flex-item-left">
         <div class="sidebar-image-container">
-          <img class="sidebar-image-sticky" src="{{ .Site.Params.rightsideimg | absURL }}" width="100%" height="1200px">
+          <img class="sidebar-image-sticky" src="{{ .Site.Params.rightsideimg | absURL }}" width="90%" height="1200px">
         </div>
       </div>
 
@@ -37,13 +37,16 @@
         <div style="position: relative;">
             <div style="position: fixed; top: 45px; overflow-y: scroll;">
               <a href="https://www.uni-bremen.de/">
-                <img src='{{"img/UHB_Logo_Web_RGB.png" | absURL }}' style="padding: 30%;">
+                <img src='{{"img/UHB_Logo_Web_RGB.png" | absURL }}' style="margin-top: 50%; padding:10%;">
               </a>
               <a href="https://ai.uni-bremen.de/">
-                <img src='{{"img/Logo - IAI Schrift.png" | absURL }}' style="padding: 25%; margin-top: -15%;">
+                <img src='{{"img/Logo - IAI Schrift.png" | absURL }}' style="margin-top: 40%; padding:10%;">
+              </a>
+              <a href="https://www.eurobin-project.eu/">
+                <img src='{{"img/euROBIN-Logo.png" | absURL }}' style="margin-top: 40%; padding:10%;">
               </a>
               <a id="myImageURL" href="">
-                <img id="myImage" src='{{"img/bmbf.png" | absURL }}' style="padding: 25%; margin-top: -10%;">
+                <img id="myImage" src='{{"img/bmbf.png" | absURL }}' style="margin-top: 40%; padding:10%;">
               </a>
             </div>
         </div>
@@ -64,8 +67,8 @@
     {{ block "footer" . }}{{ end }}
 
     <script>
-      const images = ['{{"img/bmbf.png" | absURL }}', '{{"img/zmml.png" | absURL }}', '{{"img/van.png" | absURL }}'];
-      const urls = ["https://www.bmbf.de/bmbf/de/home/home_node.html","https://www.uni-bremen.de/zmml", "https://oncourse.uni-bremen.de/?redirect=0&theme=ocboosterchild2"]
+      const images = ['{{"img/BMBF_Logo 2.png" | absURL }}', '{{"img/fame_logo_rgb.jpg" | absURL }}', '{{"img/Hansestadt_Bremen.jpg" | absURL }}', '{{"img/EASE logo_2019_with_space.png" | absURL }}'];
+      const urls = ["https://www.bmbf.de/bmbf/de/home/home_node.html","https://ai.uni-bremen.de/research", "", "https://ease-crc.org/"]
       let currentImageIndex = 0;
 
       setInterval(changeImage, 2000); // change image every second
