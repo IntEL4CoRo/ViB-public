@@ -14,26 +14,13 @@ resources:
 ---
 
 
+The AICOR Virtual Research Building (VRB) is an innovative digital ecosystem designed to revolutionize the field of AI-powered and cognition-enabled robotics. Our vision is to establish a global leadership position by fostering open collaboration and innovation within this dynamic community. Through integrating artificial intelligence and cognitive technologies with robotics we aim to accelerate technological advancements and share them with the research community. Our mission is to build a vibrant community of researchers educators and innovators focused on the entire lifecycle of robotics technologies from conception to application. To achieve this the VRB encompasses five core components:
 
-<div class="main-well-flex-container" style="margin-bottom: 20px;">
-  <div class="left-main-well-flex">
-The virtual research building for AI-based and cognition-enabled robotics serves as a dynamic hub for innovation and exploration in the field. 
-Within this digital environment, researchers have access to virtual research laboratories that are meticulously designed as digital twins of real-world research facilities, 
-mirroring their layout, equipment, and capabilities. Researchers can immerse themselves in these virtual spaces, leveraging cutting-edge technologies to conduct experiments, 
-simulate scenarios, and develop novel algorithms for robotic systems.  
-</div>
- <div class="right-main-well-flex">
-    At the heart of the virtual research building lies an operating environment tailored to support a wide range of research endeavors. 
-    Here, researchers can interact with virtual robots, manipulate their configurations, and deploy software algorithms seamlessly.
-    The environment is highly adaptable, allowing researchers to simulate various environmental conditions, test different control strategies,
-    and evaluate the performance of AI-based algorithms in diverse scenarios. By running the research labs as Docker software containers,
-    researchers can easily access and manage their experiments, fostering collaboration and reproducibility across different projects. 
-  </div>
-</div>
+1. Virtual Research Labs: Offering digital environments for experimental research and development in robotics.
+2. Learning Hub and Interactive Textbook: Providing immersive educational resources for learners at all levels.
+3. Open-source and Research Data Assets: Facilitating collaboration with a repository of software and datasets.
+4. Competition and Benchmark Arenas: Stimulating innovation through competitive challenges and industry benchmarks.
+5. Digital Research and Innovation Platform: Supporting end-to-end research development and innovation processes. 
 
 
-The overarching research mission of the virtual building is to advance the frontiers of AI-based and cognition-enabled robotics through experimentation, 
-innovation, and knowledge sharing. By providing a flexible and accessible platform for conducting research, the virtual building accelerates the pace of
-discovery and facilitates interdisciplinary collaboration among researchers from around the globe. It serves as a catalyst for breakthroughs in robotics technology, 
-driving progress towards the development of intelligent, autonomous systems capable of navigating complex real-world environments and solving a wide range of practical challenges. 
-
+These components are intricately linked creating an ecosystem that not only propels forward the field of robotics but also encourages widespread application and understanding of these technologies. Join us in our journey to shape the future of AI-powered and cognition-enabled robotics. The creation of the AICOR VRB is an activity of the Institute for Artificial Intelligence at the University of Bremen.

@@ -2,29 +2,18 @@
 <h1>AICOR Virtual Research Building (VRB)</h1>
 
 
-Welcome to the **AICOR Virtual Research Building (VRB)**, a pioneering hub where the future
-of AI-powered and cognition-enabled robotics unfolds. Within the AICOR VRB, we extend
-an invitation to delve into our cutting-edge research laboratories, including those in develop-
-ment and dedicated to software components. Here, innovation meets collaboration, pushing
-technology beyond its limits. Engage with the initial chapter of our interactive textbook to
-discover the foundational principles and insights that guide our research, complemented by
-practical programming exercises in the virtual labs. Explore the seminal work that underpins
-our functional laboratories, offering a glimpse into how we’re sculpting the future. Join us
-on this journey to transcend the imaginable, today.
+Welcome to the AICOR Virtual Research Building (VRB) which aims at being a hub where the future of AI-powered and cognition-enabled robotics unfolds. Within the AICOR VRB you can visit our cutting-edge research laboratories including those in development and dedicated to software components. Here innovation meets collaboration pushing research and technology beyond its limits. Engage with the initial chapter of our interactive textbook to discover the foundational principles and insights that guide our research complemented by practical programming exercises in the virtual labs. Explore the seminal work that underpins our functional laboratories offering a glimpse into how we’re envisioning the intelligent robots of the future. Join us on this journey to transcend the imaginable today.
 
+The AICOR Virtual Research Building (VRB) is an integrated ecosystem designed to enhance the development of AI-powered and cognition-enabled robotics. It supports the entire research and innovation pipeline from talent acquisition and training to leading-edge research collaboration and knowledge transfer for economic and societal benefits. The VRB offers comprehensive access to essential software components and the CRAM cognitive robot architecture for creating operational robot agents. Education and training are facilitated through a learning hub that includes interactive materials video lectures and a unique experimental infrastructure. Research is advanced via customizable virtual laboratories fostering dynamic collaborations and open-source contributions. Additionally, the platform encourages innovation through industry partnerships and provides a framework for sharing resources and data underpinned by a Digital Research and Innovation Platform to drive continuous innovation and sustainable growth in robotics applications.
 
-The **AICOR Virtual Research Building (VRB)** is an integrated ecosystem designed to en-
-hance the development of AI-powered and cognition-enabled robotics. It supports the entire
-innovation pipeline, from talent acquisition and training to leading-edge research collabora-
-tion and knowledge transfer for economic and societal benefits. The VRB offers comprehen-
-sive access to essential software components and the CRAM cognitive robot architecture for
-creating operational robot agents. Education and training are facilitated through a learning
-hub that includes interactive materials, video lectures, and a unique experimental infras-
-tructure. Research is advanced via customizable virtual laboratories, fostering dynamic
-collaborations and open-source contributions. Additionally, the platform encourages innova-
-tion through industry partnerships and provides a framework for sharing resources and data,
-underpinned by a Digital Research and Innovation Platform to drive continuous innovation
-and sustainable growth in robotics applications.
+The creation of the AICOR VRB is an activity of the Institute for Artificial Intelligence at the University of Bremen. The activity is supported by:
+
+- The Collaborative Research Center EASE (“Everyday Activity Science and Engineering”) funded by the German Science Foundation (DFG)
+- the European Network of Excellence Centers in Robotics euROBIN funded through Horizon Europe of the European Commission
+- the Excellence Programme of the University of Bremen and the Federal State of Bremen.
+- the ERC Advanced Grant FAME (Future Action Modelling Engine) of the European Research Council
+- the collaboration project InteL4CoRo funded by the BMBF developing an interactive textbook and immersive learning environment for cognitive robotics.
+
 
 <figure class="video_container">
   <video width="100%%" height="300" autoplay loop muted controls>

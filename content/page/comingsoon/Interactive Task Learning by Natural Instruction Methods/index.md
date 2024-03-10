@@ -1,6 +1,6 @@
 ---
-title: "Interactive Task Learning by Natural Instruction Methods"
-date: 2023-11-29T10:35:35-05:00
+title: "Interactive Robot Task Learning Laboratory"
+date: 2018-11-29T10:35:35-05:00
 subtitle: ""
 tags: ["Research"]
 dropCap: false
@@ -9,7 +9,23 @@ displayInList: true
 draft: false
 ---
 
-This research project addresses the challenge of instructing a robot agent to learn novel tasks interactively, specifically in the household domain. The focus of this repository lies on the task of teaching the pouring task by using written instructions with PyCRAM.
+The ”Interactive Task Learning” Lab delves into the forefront of robotics, exploring
+advanced learning methodologies that empower robots with the ability to not only
+perform specific tasks but also to grasp the essence of the tasks themselves. This
+includes understanding the goals, identifying potential unwanted side effects, and
+determining suitable metrics for evaluating task performance. Beyond mere
+execution, this approach necessitates that robots comprehend the physical laws
+governing their environment, predict the outcomes of their actions, and align their
+behavior with human expectations. Central to this lab’s research is the dynamic
+interaction between robots and humans, where the human acts as a teacher,
+imparting knowledge about the conceptual framework of tasks—encompassing both
+the underlying concepts and their interrelations. Robots are thus challenged to
+recognize the limits of their knowledge and actively seek assistance, integrating and
+acting upon advice in a manner that reflects an understanding of its purpose and
+implications for modifying their actions. This innovative lab not only pushes the
+boundaries of robot learning but also paves the way for more intuitive and
+collaborative human-robot interactions.
+
 
 For more information, you can
 <a class="btn btn-success" target="_blank" href="https://ease-crc.github.io/itl/"><b>visit the webpage</b></a> of Interactive Task Learning to get a better idea on how a robot can learn from different teaching methodologies.

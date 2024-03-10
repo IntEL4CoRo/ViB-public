@@ -1,6 +1,6 @@
 ---
 title: "Multiverse Labs"
-date: 2023-11-28T14:33:42-04:00
+date: 2005-11-28T14:33:42-04:00
 subtitle: ""
 tags: ["Research"]
 dropCap: false
