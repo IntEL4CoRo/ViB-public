@@ -1,4 +1,7 @@
 [comment]: <> (without this comment hugo fails)
+
+<img src="ViB_banner_Uni_Rot.png">
+
 <h1>AICOR Virtual Research Building (VRB)</h1>
 
 
