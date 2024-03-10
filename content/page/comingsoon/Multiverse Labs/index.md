@@ -1,5 +1,5 @@
 ---
-title: "VR Labs"
+title: "Multiverse Labs"
 date: 2023-11-28T14:33:42-04:00
 subtitle: ""
 tags: ["Research"]
@@ -14,7 +14,7 @@ resources:
     height: 200px
 ---
 
-Interactive Virtual Reality (VR) Labs, powered by Unreal Engine for rendering compatible with the Meta Quest 3 Headset and MuJoCo for physics computation, enable the operation of multiple labs concurrently and allow several users to interact simultaneously.
+The [Multiverse Framework](https://github.com/Multiverse-Framework/Multiverse), supported by [euROBIN](https://www.eurobin-project.eu/), incorporates Interactive Virtual Reality Labs, which is powered by Unreal Engine for rendering compatible with the Meta Quest 3 Headset and MuJoCo for physics computation, enable the operation of multiple labs concurrently and allow several users to interact simultaneously.
 
 <!--more-->
 
