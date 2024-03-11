@@ -32,12 +32,17 @@ sectors.
 {{<action_form data="ActionButtons">}}
 
 For more information, you can
-<a class="btn btn-success" target="_blank"
-href="https://www.tracebot.eu/"><b>visit the webpage</b></a> of TraceBot to get
-a better idea of the complete project.
+<a class="btn btn-success" target="_blank" href="https://www.tracebot.eu/"><b>visit the webpage</b></a>
+of TraceBot to get a better idea of the complete project.
+
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="the-tracebot-laboratory"><b>here!</b></a>
+</div>
+
+<!--more-->
 
 ![](SemDT-Astech-w-CEA-Gripper.png)
-<!--more-->
 
 
 Interactive Actions and/or Examples

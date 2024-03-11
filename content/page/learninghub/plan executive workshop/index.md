@@ -16,6 +16,9 @@ Using Jupyter Notebooks in a Docker environment, our learning environment is eas
 
 Get into the online lecture <a href="https://binder.intel4coro.de/v2/gh/artnie/pycram.git/binder?urlpath=lab/tree/examples/tutorial_iros_2023.ipynb">here</a>. Get the slides and more <a href="https://ease-crc.org/teaching-cognition-enabled-cognitive-robotics-in-an-integrated-learning-environment/">here</a>.
 
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="plan-executive-workshop"><b>here!</b></a>
+</div>
 
 <!--more-->
-

@@ -21,6 +21,11 @@ TIAGo robot in the IAI Bremen apartment laboratory.
 <a class="btn btn-success" target="_blank" href="https://github.com/Multiverse-Framework/Multiverse">Source Code</a>
 </div>
 
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="eurobin-demo"><b>here!</b></a>
+</div>
+
 <!--more-->
 
 

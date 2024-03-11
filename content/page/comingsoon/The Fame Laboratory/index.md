@@ -29,5 +29,9 @@ research could enable a robot to adeptly cut any fruit, using any tool, for any
 purpose, in any context, showcasing the potential for robots to achieve a remarkable
 level of autonomous functionality and versatility.
 
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="the-fame-laboratory"><b>here!</b></a>
+</div>
 
-
+<!--more-->

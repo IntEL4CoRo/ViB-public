@@ -25,6 +25,11 @@ robotic solutions.
 <a class="btn btn-success" target="_blank" href="https://github.com/cram2/pycram">Source Code</a>
 </div>
 
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="pycram-laboratory"><b>here!</b></a>
+</div>
+
 <!--more-->
 
 

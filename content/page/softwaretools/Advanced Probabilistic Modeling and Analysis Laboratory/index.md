@@ -29,6 +29,11 @@ advancements in robot performance and decision-making processes.
 <a class="btn btn-success" target="_blank" href="https://github.com/joint-probability-trees/">Source Code</a>
 </div>
 
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="advanced-probabilistic-modeling-and-analysis-laboratory"><b>here!</b></a>
+</div>
+
 <!--more-->
 
 

@@ -17,6 +17,11 @@ and practice complex tasks in a lifelike, physically governed virtual environmen
 the gap between theoretical learning and practical execution but also enriches the robotic understanding
 of human actions, significantly boosting their adaptability and efficiency in real-world scenarios.
 
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="video-based-human-activity-interpretation-laboratory"><b>here!</b></a>
+</div>
+
 <!--more-->
 
 

@@ -27,9 +27,10 @@ task, and robot, and then run it within a software container.
 {{<action_forms data="ActionButtons">}}
 
 <div class="hidde-after-preview">
-  For Detailed information click  
-  <a href="domestic-object-transportation-laboratory">here!</a> 
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="domestic-object-transportation-laboratory"><b>here!</b></a>
 </div>
+
 <!--more-->
 
 
