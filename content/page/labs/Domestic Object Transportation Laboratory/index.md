@@ -19,7 +19,7 @@ This laboratory is dedicated to advancing the capabilities of robot agents in se
 {{<action_forms data="ActionButtons">}}
 <div class="hidde-after-preview">
   For Detailed information click  
-  <a href="research-lab-for-household-transportation-tasks">here!</a> 
+  <a href="domestic-object-transportation-laboratory">here!</a> 
 </div>
 
 
