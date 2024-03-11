@@ -1,68 +1,58 @@
 {
   "options": {
-    "environments": [
+    "lecture": [
       {
-        "name": "Kitchen",
-        "value": "kitchen",
-        "img": "https://intel4coro.github.io/coai-vib/img/household.png",
-        "knowledge_bases": "https://data.open-ease.org/QA?neem_id=64ccc8bc24cdd341ebdb2aa3&q=findall([Duration%2C Evt]%2C ( event_interval(Evt%2C Begin%2C End)%2C number(End)%2C Duration is End - Begin )%2C Durations)%2C max_member([MaxDuration%2C LongestEvt]%2C Durations)."
-      }
-    ],
-    "robots": [
+        "name": "Coordinates",
+        "value": "coordinates"        
+      },
       {
-        "name": "PR2",
-        "value": "pr2",
-        "img": "https://intel4coro.github.io/coai-vib/img/pr2_urdf_white1.png",
-        "knowledge_bases": "https://data.open-ease.org/QA?neem_id=6526790ced1a1bfc415a1d38&q=findall%28%5BDuration%2C%20Evt%5D%2C%0A%20%20%28%20%20event_interval%28Evt%2C%20Begin%2C%20End%29%2C%0A%20%20%20%20%20number%28End%29%2C%0A%20%20%20%20%20Duration%20is%20End%20-%20Begin%0A%20%20%29%2C%0A%20%20Durations%29%2C%0Amax_member%28%5BMaxDuration%2C%20LongestEvt%5D%2C%20Durations%29"
-      }
-    ],
-    "tasks": [
+        "name": "ROS",
+        "value": "ros"        
+      },
       {
-        "name": "Cutting: Technique halving",
-        "value": "halving"
+        "name": "Kinematics",
+        "value": "kinematics"        
+      },
+      {
+        "name": "Sensors",
+        "value": "sensors"        
+      },
+      {
+        "name": "Navigation",
+        "value": "navigation"        
+      },
+      {
+        "name": "Control strategies",
+        "value": "control"        
       }
     ]
   },
   "actions": [
     {
-      "name": "Run Code",
+      "name": "Open hands-on lecture",
       "value": "run",
       "description": "Run code on Binderhub.",
       "primary": true,
-      "url": "https://binder.intel4coro.de/v2/gh/IntEL4CoRo/COAI/master?urlpath=lab%2Ftree%2Fnotebooks%2F",
+      "url": "https://binder.intel4coro.de/v2/gh/artnie/rpwr-assignments.git/HEAD",
       "options": [
-        "environments",
-        "robots",
-        "tasks"
+        "lecture"
       ],
       "available": {
-        "environments=apartment|robots=pr2|tasks=chopping": "https://binder.intel4coro.de/v2/gh/sunava/pycram/6083d5a6c005a862a56bf60deefc13a615f89121?urlpath=lab%2Ftree%2Fdemos%2Fpycram_cutting_demo%2Fcutting-example.ipynb",
-        "environments=apartment|robots=pr2|tasks=halving": "https://binder.intel4coro.de/v2/gh/sunava/pycram/6083d5a6c005a862a56bf60deefc13a615f89121?urlpath=lab%2Ftree%2Fdemos%2Fpycram_cutting_demo%2Fcutting-example.ipynb",
-        "environments=kitchen|robots=pr2|tasks=halving": "https://binder.intel4coro.de/v2/gh/sunava/pycram/6083d5a6c005a862a56bf60deefc13a615f89121?urlpath=lab%2Ftree%2Fdemos%2Fpycram_cutting_demo%2Fcutting-example.ipynb",
-        "environments=kitchen|robots=pr2|tasks=chopping": "https://binder.intel4coro.de/v2/gh/sunava/pycram/6083d5a6c005a862a56bf60deefc13a615f89121?urlpath=lab%2Ftree%2Fdemos%2Fpycram_cutting_demo%2Fcutting-example.ipynb"
-    }
-    },
-    {
-      "name": "Inspect Knowledge Graph",
-      "value": "openease",
-      "description": "OpenEASE",
-      "url": "href=\"https://binder.intel4coro.de/v2/gh/Food-Ninja/FoodCutting.git/HEAD?urlpath=notebooks%2Fnotebooks%2FFoodCuttingQueries.ipynb",
-      "options": [
-        "environments",
-        "robots",
-        "tasks"
-      ],
-      "available": {
-         "environments=apartment|robots=pr2|tasks=chopping": "https://binder.intel4coro.de/v2/gh/Food-Ninja/FoodCutting.git/HEAD?urlpath=notebooks%2f Notebooks%2F Food Cutting Queries.ipynb",
-          "environments=apartment|robots=pr2|tasks=halving": "https://binder.intel4coro.de/v2/gh/Food-Ninja/FoodCutting.git/HEAD?urlpath=notebooks%2f Notebooks%2F Food Cutting Queries.ipynb",
-          "environments=kitchen|robots=pr2|tasks=halving": "https://binder.intel4coro.de/v2/gh/Food-Ninja/FoodCutting.git/HEAD?urlpath=notebooks%2f Notebooks%2F Food Cutting Queries.ipynb",
-          "environments=kitchen|robots=pr2|tasks=chopping": "https://binder.intel4coro.de/v2/gh/Food-Ninja/FoodCutting.git/HEAD?urlpath=notebooks%2f Notebooks%2F Food Cutting Queries.ipynb"
+        "lecture=coordinates": "https://binder.intel4coro.de/v2/gh/artnie/rpwr-assignments.git/HEAD?urlpath=lab%2Ftree%2Frpwr-assignments%2F02_coordinates-tf%2Fa2_coordinates-tf.ipynb",
+        "lecture=ros": "https://binder.intel4coro.de/v2/gh/artnie/rpwr-assignments.git/HEAD?urlpath=lab%2Ftree%2Frpwr-assignments%2F03_ros%2Fa3_ros.ipynb",
+        "lecture=kinematics": "https://binder.intel4coro.de/v2/gh/artnie/rpwr-assignments.git/HEAD?urlpath=lab%2Ftree%2Frpwr-assignments%2F04_kinematics%2Fa4_kinematics.ipynb",
+        "lecture=sensors": "https://binder.intel4coro.de/v2/gh/artnie/rpwr-assignments.git/HEAD?urlpath=lab%2Ftree%2Frpwr-assignments%2F05_sensors%2Fa5_sensors.ipynb",
+        "lecture=navigation": "https://binder.intel4coro.de/v2/gh/artnie/rpwr-assignments.git/HEAD?urlpath=lab%2Ftree%2Frpwr-assignments%2F06_navigation%2Fa6_navigation.ipynb",
+        "lecture=control": "https://binder.intel4coro.de/v2/gh/artnie/rpwr-assignments.git/HEAD?urlpath=lab%2Ftree%2Frpwr-assignments%2F07_control%2Fa7_control.ipynb"
       }
     },
     {
-      "name": "Assets",
-      "value": "assets",
-      "url": "https://coai-jrc.de/virtual-building/"
+      "name": "Lecture Overview",
+      "value": "lecture",
+      "description": "Lecture Material",
+      "url": "https://ai.uni-bremen.de/teaching/cs-ros-ws23"
     }
   ]
 }
+
+

@@ -1,5 +1,5 @@
 ---
-title: "Lecture Course: Robot programming with ROS"
+title: "Lecture Course: Robot Programming with ROS"
 date: 2011-02-27T14:33:42-04:00
 subtitle: ""
 tags: ["Research", "Learning", "Teaching", "Study", "Lecture"]
@@ -28,8 +28,7 @@ ROS but are also prepared to navigate and innovate within the evolving landscape
 robotics technology.
 
 
-For Detailed information get to the <a href="https://ai.uni-bremen.de/teaching/cs-ros-ws23">lecture page</a>, see the assignments in the <a href="https://github.com/artnie/rpwr-assignments">github repository</a>, or dive directly into the <a href="https://binder.intel4coro.de/v2/gh/artnie/rpwr-assignments.git/HEAD?urlpath=lab%2Ftree%2Frpwr-assignments%2F05_sensors%2Fa5_sensors.ipynb">hands-on course for LiDAR sensors</a>. 
-
+{{<action_form data="ActionButtons">}}
 
 <!--more-->
 
