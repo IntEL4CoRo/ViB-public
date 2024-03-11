@@ -1,6 +1,6 @@
 ---
 title: "openEASE Knowledge Service Laboratory"
-date: 2010-12-01T10:35:35-05:00
+date: 2011-12-01T10:35:35-05:00
 subtitle: ""
 tags: ["Research", "Lab", "Knowledge", "Episodic Memory"]
 dropCap: false
@@ -27,6 +27,15 @@ queries and reason about the data to extract specific information. This function
 allows robots to articulate insights about their actions, motivations, methodologies,
 outcomes, and observations, thereby facilitating a deeper understanding of robotic
 operations and interactions within their environments.
+
+In this laboratory, you have access to openEASE, a web-based interactive platform
+that offers knowledge services. Through openEASE, you can choose from various
+knowledge bases, each representing a robotic experiment or an episode where humans
+demonstrate tasks to robots. To start, select a knowledge base—for instance,
+”ease-2020-urobosim-fetch-and-place”—and activate it. Then, by clicking on the
+”examples” button, you can choose specific knowledge queries to run on the selected
+experiment’s knowledge bases, facilitating a deeper understanding and interaction
+with the data. For a detailed overview of the episodes in openEASE click [here](https://data.open-ease.org/).
 
 <param class="hidde-after-preview">
 {{<action_forms data="ActionButtons">}}

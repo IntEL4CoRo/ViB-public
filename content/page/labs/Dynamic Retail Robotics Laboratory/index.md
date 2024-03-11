@@ -1,6 +1,6 @@
 ---
 title: "Dynamic Retail Robotics Laboratory"
-date: 2011-12-01T10:35:35-05:00
+date: 2010-12-01T10:35:35-05:00
 subtitle: ""
 tags: ["Research"]
 dropCap: false
@@ -21,6 +21,13 @@ integrate real-time product information from various sources into actionable
 knowledge. Our goal is to develop robots that not only support shopping and
 inventory tasks but also seamlessly adjust to new products and store layouts,
 enhancing customer service and operational efficiency in the retail ecosystem.
+
+In this laboratory, you are provided with two versatile robot action plans tailored for
+retail environments. The first plan focuses on creating semantic digital twins of shelf
+systems in retail stores, while the second is designed for restocking shelves. You have
+the flexibility to choose the specific task, robot, and environment. Once selected, you
+can execute the action plan through a software container, streamlining the process of
+implementing these robotic solutions in real-world retail settings.
 
 <param class="hidde-after-preview">
 {{<action_forms data="ActionButtons">}}
