@@ -55,7 +55,7 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Config CNAME
-        run: echo "vib.iai.uni-bremen.de" >> ./public/CNAME
+        run: echo "vib.ai.uni-bremen.de" >> ./public/CNAME
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
