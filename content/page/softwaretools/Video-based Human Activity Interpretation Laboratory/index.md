@@ -9,16 +9,13 @@ displayInList: true
 draft: false
 ---
 
-In the field of robotics and AI, teaching robots human like daily activities, especially handling
-and manipulating objects, is challenging due to the variety of tasks and conditions. In this software
-paltform, "Video-Enhanced Human Activity Understanding," harnesses advanced machine learning algorithms
-alongside MetaHuman avatars within Unreal Engine simulations. This combination enables robots to grasp
-and execute tasks by interpreting video-generated activity instructions and subsequently simulating these
-activities in a virtual world governed by physical parameters. As a component of the Physics-enabled Virtual
-Demonstration (PVD) framework, our platform offers a lifelike and effective training environment for robots,
-leveraging physical laws to ensure safer and more productive learning outcomes. This innovative approach significantly
-enhances robotic competence in complex activities, effectively narrowing the gap between theoretical
-learning and practical application.
+This project integrates advanced machine learning techniques with Unreal Engine's MetaHuman avatars,
+providing a sophisticated platform for robotic agents to acquire knowledge of everyday activities and
+object manipulation. As part of the comprehensive Physics-enabled Virtual Demonstration (PVD) framework,
+this platform utilizes video instructions to facilitate realistic simulations, ensuring that robots can interpret
+and practice complex tasks in a lifelike, physically governed virtual environment. This methodology not only bridges
+the gap between theoretical learning and practical execution but also enriches the robotic understanding
+of human actions, significantly boosting their adaptability and efficiency in real-world scenarios.
 
 <!--more-->
 
@@ -26,47 +23,71 @@ learning and practical application.
 DeepActionObserver: Refining Instructions for objects Manipulation Actions
 ---
 
-Robotic agents are tasked with learning diverse manipulation actions, a challenge compounded
-by the variability in object interactions, tool usage, task contexts, and operational environments.
-Addressing the complexity of determining the appropriate execution of these actions, the DeepActionObserver
-framework empowers robots to interpret text instructions and analyze corresponding video demonstrations
-. This process generates symbolic action descriptions, enriched and clarified by video content, aligning
-closely with advanced cognition-enabled robotic control schemes.
-
-DeepActionObserver synergizes two advanced learning and reasoning paradigms: the Multi-Task
-Network and Markov Logic Networks. The Multi-Task Network utilizes convolutional architectures
-to accurately recognize objects, hand positions, and to predict poses and movements. Meanwhile,
-Markov Logic Networks augment the framework's ability to reason by using joint probabilities to navigate
-and clarify instructional content, thus resolving ambiguities and enriching action descriptions.
-This concise description captures the complementary functionalities of these technologies in enhancing
-the framework's overall performance.
+The DeepActionObserver framework addresses the challenge of teaching robotic agents to perform diverse
+manipulation tasks, amid varying object interactions, tool usage, and environmental conditions. It empowers
+robots to interpret text instructions and analyze video demonstrations, generating symbolic action
+descriptions that are enriched and clarified by the video content. This framework combines the strengths
+of Multi-Task Networks, with their convolutional architectures for object and movement recognition, and
+Markov Logic Networks, which enhance reasoning through joint probabilities. Together, these technologies
+synergize to improve the framework's performance, aligning with advanced cognition-enabled control schemes
+and effectively simplifying complex task execution for robots.
 
 DeepActionObserver
 ---
 
 <figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/zRAmyKp8CiY?si=Z_MC4DT_PSAHG_kA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+  
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/doov3Mz3b5c?si=O3IljhBEmReit1zn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
 </figure>
+
+AvagentIEASim: Avatar Agent Inspect Extrapolate Accomplish Simulator
+---
+
+![AvagentIEASim a physics enable smulator](avagentiea.jpg)
+
+To enable physics-based simulations, we utilized MetaHuman from the Unreal Engine Simulator. We crafted
+a proficient whole-body FK-IK solver employing the Control Rig, Unreal Engine's animation toolkit, to facilitate
+real-time character animation. We introduced HarmonicNet, a Deep Neural Network tailored for comprehensive
+body mesh recovery, emphasizing synchronized, feature-aware processing. HarmonicNet tackles the intricate challenge
+of inferring 3D parameters for the human body, face, and hands from single images. It revolutionizes the
+understanding of interrelations among body segments, notably enhancing the precision of upper body rotations and orientations.
+
 
 Physics-enable Virtual Demonstration
 ---
-We've been actively engaged in developing the Physics-enabled Virtual Demonstration (PVD) framework, meticulously crafted to
-enhance robotics manipulation activities. PVD functions as an instructional tool for both robots and virtual humans (MetaHumans),
-utilizing advanced machine learning within a controlled, simulated environment to comprehend essential principles of physics.
-This virtual environment meticulously replicates real-world physics, encompassing crucial aspects such as gravity and object interactions.
-The primary aim of PVD is to assist robots and MetaHumans in adapting and learning through practical exercises within these
-highly realistic simulations, significantly improving their efficiency and safety when confronted with real-world scenarios.
-Furthermore, within the PVD framework, the Human Demonstration element serves as a comprehensive guide, systematically breaking
-down human actions within controlled settings. It simplifies these actions into understandable instructions for robots,
-enhancing their understanding of actions, conditions, movements, and the forces involved. This knowledge equips robots
-to plan their actions more effectively, resulting in improved outcomes and reduced errors across various tasks.
+
+
+We've been actively engaged in developing the Physics-enabled Virtual Demonstration (PVD) framework to
+improve robotics manipulation. PVD, an advanced machine learning tool within a simulated environment,
+teaches robots and MetaHumans to grasp physics fundamentals, such as gravity and object interactions.
+Its goal is to enhance the adaptability, efficiency, and safety of robots and MetaHumans through practical
+exercises that closely mimic real-world conditions. Additionally, PVD's Human Demonstration feature breaks 
+down human actions into simple instructions, boosting robots' understanding and planning capabilities, 
+thereby improving task performance and reducing errors.
 
 Virtual Demonstrations through Human Manipulation Observation
 ---
 
 <figure class="video_container">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pATzTwBOfUs?si=SV3J_niVKi9RPRXv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5SnSibZ8gQI?si=BvouCT80WUv_EljI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</figure>
+
+
+Human-Inspired Robotic Action: Sharing and Exploring Knowledge:
+---
+Leveraging our framework, the 3D mesh reconstructed from video demonstrations, along with the extracted hierarchical joint
+orientations, can be shared with other agents possessing nearly similar skeletal structures through joint mapping. As a
+demonstration, we use the humanoid NAO robot, mapped with human-centric pouring motion data. The experiment goes beyond mere
+replication of human actions; it delves into the realm of knowledge transfer, where human-inspired techniques are not only
+shared but also expanded upon within the robotic domain. This exploration paves the way for robots to enhance their interaction
+with the physical world in tasks that demand a high level of finesse and adaptability.
+
+<figure class="NAO Robot Pouring Demonstration from Human Observation">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l8vd1K--5ZY?si=9P569MDu85ql9o2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 </figure>
 
