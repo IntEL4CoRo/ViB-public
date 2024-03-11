@@ -32,7 +32,7 @@ operations and interactions within their environments.
 {{<action_forms data="ActionButtons">}}
 <div class="hidde-after-preview">
   For Detailed information click  
-  <a href="openEASE">here!</a> 
+  <a href="openease-knowledge-service-laboratory">here!</a> 
 </div>
 
 

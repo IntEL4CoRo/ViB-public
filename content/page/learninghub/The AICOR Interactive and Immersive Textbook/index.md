@@ -28,7 +28,7 @@ in cognitive robotics.
 
 
 For Detailed information click 
-<a href="https://moodle.intel4coro.de/#Textbook" target="_blank">here!</a>
+<a href="the-aicor-interactive-and-immersive-textbook/" target="_blank">here!</a>
 
 <!--more-->
 
