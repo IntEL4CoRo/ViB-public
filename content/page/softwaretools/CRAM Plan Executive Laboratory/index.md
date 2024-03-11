@@ -31,5 +31,10 @@ The link below directs you to the CRAM homepage, where you can find open-source
 code, installation instructions, tutorials, and comprehensive documentation for the
 CRAM software framework.
 
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="cram-plan-executive-laboratory"><b>here!</b></a>
+</div>
 
 <!--more-->
+

@@ -31,7 +31,9 @@ GitHub, students are provided with an accessible and comprehensive learning
 experience that bridges the gap between theoretical knowledge representation
 concepts and their practical applications in enhancing daily life through technology.
 
-For Detailed information click 
-<a href="https://github.com/michaelakuempel/ActionableKnowledgeRepresentation">here!</a> 
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="actionable-knowledge-representation"><b>here!</b></a>
+</div>
 
 <!--more-->

@@ -22,6 +22,12 @@ designed specifically for fruit cutting tasks. This enables you to select a spec
 task, such as ”quartering an apple,” at which point the system will adapt the general
 fruit cutting plan to the nuances of your chosen task. The customized plan can then
 be tested and refined within a simulated environment.
+
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="actionable-knowledge-graph-laboratory/"><b>here!</b></a>
+</div>
+
 <!--more-->
 
 

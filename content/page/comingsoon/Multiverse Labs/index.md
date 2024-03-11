@@ -16,7 +16,13 @@ resources:
 
 The [Multiverse Framework](https://github.com/Multiverse-Framework/Multiverse), supported by [euROBIN](https://www.eurobin-project.eu/), incorporates Interactive Virtual Reality Labs, which is powered by Unreal Engine for rendering compatible with the Meta Quest 3 Headset and MuJoCo for physics computation, enable the operation of multiple labs concurrently and allow several users to interact simultaneously.
 
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="multiverse-labs"><b>here!</b></a>
+</div>
+
 <!--more-->
+
 
 <h2>Single User</h2>
 <figure class="video_container">
