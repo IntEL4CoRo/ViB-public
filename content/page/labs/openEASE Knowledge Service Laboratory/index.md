@@ -39,11 +39,11 @@ with the data. For a detailed overview of the episodes in openEASE click [here](
 
 <param class="hidde-after-preview">
 {{<action_forms data="ActionButtons">}}
-<div class="hidde-after-preview">
-  For Detailed information click  
-  <a href="openease-knowledge-service-laboratory">here!</a> 
-</div>
 
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="openease-knowledge-service-laboratory"><b>here!</b></a>
+</div>
 
 <!--more-->
 

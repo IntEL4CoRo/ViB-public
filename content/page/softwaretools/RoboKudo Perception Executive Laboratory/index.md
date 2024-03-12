@@ -26,9 +26,13 @@ methods to accomplish the tasks at hand.
 <a class="btn btn-success" target="_blank" href="https://gitlab.informatik.uni-bremen.de/robokudo/robokudo">Source Code</a>
 </div>
 
-<!-- This could be used to properly link to this page for 'For further details click here' {{< ref "/page/softwaretools/RoboKudo Perception Executive Laboratory/index.md" >}} -->
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="robokudo-perception-executive-laboratory"><b>here!</b></a>
+</div>
 
 <!--more-->
+
 
 Description
 ---

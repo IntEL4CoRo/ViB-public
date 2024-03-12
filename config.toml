@@ -1,4 +1,4 @@
-baseurl = "https://intel4coro.github.io/ViB-public/"
+baseurl = "/"
 DefaultContentLanguage = "en"
 title = "AICOR Virtual Research Building (VRB)"
 theme = "beautifulhugo"

@@ -35,6 +35,11 @@ For more information, you can
 <a class="btn btn-success" target="_blank" href="https://github.com/AbhijitVyas/pycram/tree/binder">Source Code</a>
 </div>
 
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="interactive-task-learning-by-natural-instruction-methods"><b>here!</b></a>
+</div>
+
 <!--more-->
 
 ![](ITL_framework.png)

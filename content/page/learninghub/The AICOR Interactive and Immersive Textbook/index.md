@@ -26,11 +26,13 @@ its early stages, the textbook offers an introductory chapter as a glimpse into 
 comprehensive educational approach, setting a new standard for academic resources
 in cognitive robotics.
 
-
-For Detailed information click 
-<a href="the-aicor-interactive-and-immersive-textbook/" target="_blank">here!</a>
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="the-aicor-interactive-and-immersive-textbook"><b>here!</b></a>
+</div>
 
 <!--more-->
+
 
 ---
 <iframe src="https://iris.informatik.uni-bremen.de/textbook/" width="100%" height=1300 style="border:none;box-shadow: 1px 1px 3px #000;" allowfullscreen></iframe>

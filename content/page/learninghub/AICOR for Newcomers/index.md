@@ -32,9 +32,15 @@ Traditional text-based programming languages can pose a significant barrier to e
 Feel free to try it out with the link below.
 
 {{<action_form data="ActionButtons">}}
----
+
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="aicor-for-newcomers"><b>here!</b></a>
+</div>
 
 <!--more-->
+
+
 ### Example Video
 <video width="100%" height="480" controls>
   <source src="https://iris.informatik.uni-bremen.de/videos/blockly-demo.mp4" type="video/mp4">

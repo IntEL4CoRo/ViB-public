@@ -27,15 +27,22 @@ environments like healthcare. Through this approach, the TraceBot Lab is setting
 new benchmarks for the reliability and accountability of robotic systems in critical
 sectors.
 
+
 <param class="hidde-after-preview">
 {{<action_form data="ActionButtons">}}
 
 For more information, you can
-<a class="btn btn-success" target="_blank"
-href="https://www.tracebot.eu/"><b>visit the webpage</b></a> of TraceBot to get
-a better idea of the complete project.
+<a class="btn btn-success" target="_blank" href="https://www.tracebot.eu/"><b>visit the webpage</b></a>
+of TraceBot to get a better idea of the complete project.
+
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="the-tracebot-laboratory"><b>here!</b></a>
+</div>
 
 <!--more-->
+
+![](SemDT-Astech-w-CEA-Gripper.png)
 
 
 Interactive Actions and/or Examples

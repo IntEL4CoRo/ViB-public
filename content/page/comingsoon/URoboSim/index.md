@@ -15,15 +15,17 @@ Using URoboSim it is not only possible to execute real robot plans in
 simulation, it is also possible to emulate the actions of a real robot in order
 to build a continuous belief state of the world.
 
-You can
-<a class="btn btn-success" target="_blank"
-href="https://github.com/urobosim/DemoProject"><b>try out
-an example project </b></a> here.
+You can <a class="btn btn-success" target="_blank" href="https://github.com/urobosim/DemoProject"><b>try out an example project </b></a> here.
 
 
 <div class="hidde-after-preview">
 <a class="btn btn-primary" disabled target="_blank">Run Code</a>
 <a class="btn btn-success" target="_blank" href="https://github.com/urobosim/URoboSim">Source Code</a>
+</div>
+
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="urobosim"><b>here!</b></a>
 </div>
 
 <!--more-->

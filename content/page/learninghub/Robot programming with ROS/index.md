@@ -30,5 +30,9 @@ robotics technology.
 
 {{<action_form data="ActionButtons">}}
 
-<!--more-->
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="robot-programming-with-ros"><b>here!</b></a>
+</div>
 
+<!--more-->
