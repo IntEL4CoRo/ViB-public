@@ -7,13 +7,18 @@ dropCap: false
 displayInMenu: false
 displayInList: true
 draft: false
+resources:
+- name: ActionButtons
+  src: "buttons.json"
 ---
 
 In order to make huge amount of data accessible to the research community, allow to analyze the data, create machine learning models from the data and support version control for the data and models, we have made an effort of releasing an infrastructure which can handle such requirements with one solution.
 
+<param class="hidde-after-preview">
+{{<action_forms data="ActionButtons">}}
 <div class="hidde-after-preview">
-<!-- <a class="btn btn-primary" target="_blank" href="">Run Code</a> -->
-<a class="btn btn-success" target="_blank" href="https://neemgit.informatik.uni-bremen.de/neems">Source Code</a>
+  For Detailed information click  
+  <a href="NEEMHub">here!</a> 
 </div>
 
 <!--more-->
