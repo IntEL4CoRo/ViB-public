@@ -21,7 +21,7 @@ modern and accessible platform that supports the development of sophisticated ro
 control systems, fostering innovation in the design of intelligent and autonomous
 robotic solutions.
 <div class="hidde-after-preview">
-<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/IntEL4CoRo/pycram/binder-xpra?urlpath=lab%2Ftree%2Fexamples%2Faction_designator.ipynb%3Frobot%3Dpr2%26environment%3Dkitchen">Run Code</a>
+<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/artnie/pycram.git/rpwr-0.2?urlpath=lab/tree/examples/tutorial_iros_2023.ipynb">Run Code</a>
 <a class="btn btn-success" target="_blank" href="https://github.com/cram2/pycram">Source Code</a>
 </div>
 
