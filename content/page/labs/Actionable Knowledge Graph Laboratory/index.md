@@ -39,6 +39,22 @@ For Detailed information click
 
 
 <hr>
+<h2>Parameterising General Action Plans with Web Knowledge</h2>
+
+<font size=3>To achieve our goal of enabling a robotic agent to handle unkown task variations by parameterising general action plans using web knowledge, we employ the following architecture:</font>
+
+<p align="center">
+  <img src="Motivation4.jpg" width="600" alt="Action Plans"/><br>
+</p>
+
+<font size=3>In general, the robot needs to have access to a general action designator of cutting that can be parameterised.
+When the robot is given a task request, it can either query the graph database with the knowledge graph directly via its SPARQL REST API or use a knowledge framework with additional functionalities such as the KnowRob knowledge processing system[^1] and pose Prolog queries, which then are translated to SPARQL queries.
+More information on the different ways of querying the knowledge graph can be found <a href="https://food-ninja.github.io/WebKat-MealRobot/posts/querylikearobot/">here</a>.</font>
+
+<img src="CuttingWithParameters.png" width="800" alt="Parameters"/>
+
+
+<hr>
 <h2>Gathering and Linking Web Knowledge</h2>
 
 <font size="3">To support robotic agents in executing variations of <i>Cutting</i> on different <i>fruits and vegetables</i>, we collect two types of knowledge in our knowledge graph: <b>action</b> and <b>object knowledge</b>.
@@ -58,7 +74,7 @@ Based on our observations in <a href="https://www.wikihow.com/">WikiHow</a> data
 <br>
 Based on the remaining 14 words, we created the following 6 <b>action groups</b>:</font>
 <p align="center">
-  <img src="ActionGroups.png" width="800" alt="Table summarizing the 6 action groups and their parameters"/><br>
+  <img src="ActionGroups.png" width="400" alt="Table summarizing the 6 action groups and their parameters"/><br>
 </p>
 
 
@@ -91,7 +107,7 @@ In total, the knowledge graph contains:
 We set both kinds of knowledge in relation through <i>dispositions</i> and <i>affordances</i>, as visualised below for an apple:</font>
 
 <p align="center">
-  <img src="Apple Example Affordances.png" width="800" alt="Connecting affordances and dispositions for an apple"/><br>
+  <img src="affordance pipeline.jpg" width="800" alt="Connecting affordances and dispositions for an apple"/><br>
 </p>
 
 <font size=3>In general, a disposition describes the property of an object, thereby enabling an agent to perform a certain task[^9] as in a knife can be used for cutting, whereas an affordance describes what an object or the environment offers an agent[^10] as in an apple affords to be cut.
@@ -107,7 +123,7 @@ The tool uses basic NLP techniques like Part-of-Speech Tagging and Coreference R
 The WikiHow articles analysed by our tool are structured in the following way:
 
 <p align="center">
-  <img src="WikiHow Article Structure.png" width="800" alt="Summarising the structure of a WikiHow article"/><br>
+  <img src="WikiHow Article Structure.jpg" width="800" alt="Summarising the structure of a WikiHow article"/><br>
 </p>
 
 ## Action Verb Frames
