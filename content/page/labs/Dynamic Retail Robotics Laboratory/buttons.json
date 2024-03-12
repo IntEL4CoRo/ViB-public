@@ -72,7 +72,10 @@
         "tasks"
       ],
       "available": {
-          "environments=retail_lab|robots=donbot|tasks=scanning": "https://binder.intel4coro.de/v2/gh/michaelakuempel/ProductKG.git/master?labpath=notebooks%2FProductQueries.ipynb"
+          "environments=retail_lab|robots=donbot|tasks=refilling": "https://binder.intel4coro.de/v2/gh/michaelakuempel/ProductKG.git/master?labpath=notebooks%2FProductQueries.ipynb",
+          "environments=retail_lab|robots=donbot|tasks=scanning": "https://binder.intel4coro.de/v2/gh/michaelakuempel/ProductKG.git/master?labpath=notebooks%2FProductQueries.ipynb",
+          "environments=retail_lab|robots=kuka_kmr_iiwa|tasks=refilling": "https://binder.intel4coro.de/v2/gh/michaelakuempel/ProductKG.git/master?labpath=notebooks%2FProductQueries.ipynb",
+          "environments=retail_lab|robots=kuka_kmr_iiwa|tasks=scanning": "https://binder.intel4coro.de/v2/gh/michaelakuempel/ProductKG.git/master?labpath=notebooks%2FProductQueries.ipynb"
       }
     }
   ]
