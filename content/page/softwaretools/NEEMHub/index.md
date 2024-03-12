@@ -16,10 +16,6 @@ In order to make huge amount of data accessible to the research community, allow
 
 <param class="hidde-after-preview">
 {{<action_forms data="ActionButtons">}}
-<div class="hidde-after-preview">
-  For Detailed information click  
-  <a href="NEEMHub">here!</a> 
-</div>
 
 <div class="hidde-after-preview">
   For Detailed information click
