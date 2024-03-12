@@ -16,7 +16,8 @@
       {
         "name": "Donbot",
         "value": "donbot",
-        "img": "https://intel4coro.github.io/coai-vib/img/donbot_urdf_white1.png"
+        "img": "https://intel4coro.github.io/coai-vib/img/donbot_urdf_white1.png",
+        "knowledge_bases": "https://data.open-ease.org/QA?neem_id=65f0326f4d110ee0ae5c762b&q=findall([Duration%2C Evt]%2C%0A%20 (%20 event_interval(Evt%2C Begin%2C End)%2C%0A%20%20%20%20 number(End)%2C%0A%20%20%20%20 Duration is End - Begin%0A%20 )%2C%0A%20 Durations)%2C%0Amax_member([MaxDuration%2C LongestEvt]%2C Durations)"
       }
     ],
     "tasks": [
