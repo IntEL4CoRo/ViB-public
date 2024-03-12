@@ -107,7 +107,7 @@ In total, the knowledge graph contains:
 We set both kinds of knowledge in relation through <i>dispositions</i> and <i>affordances</i>, as visualised below for an apple:</font>
 
 <p align="center">
-  <img src="Apple Example Affordances.png" width="800" alt="Connecting affordances and dispositions for an apple"/><br>
+  <img src="affordance pipeline.jpg" width="800" alt="Connecting affordances and dispositions for an apple"/><br>
 </p>
 
 <font size=3>In general, a disposition describes the property of an object, thereby enabling an agent to perform a certain task[^9] as in a knife can be used for cutting, whereas an affordance describes what an object or the environment offers an agent[^10] as in an apple affords to be cut.
@@ -123,7 +123,7 @@ The tool uses basic NLP techniques like Part-of-Speech Tagging and Coreference R
 The WikiHow articles analysed by our tool are structured in the following way:
 
 <p align="center">
-  <img src="WikiHow Article Structure.png" width="800" alt="Summarising the structure of a WikiHow article"/><br>
+  <img src="WikiHow Article Structure.jpg" width="800" alt="Summarising the structure of a WikiHow article"/><br>
 </p>
 
 ## Action Verb Frames
