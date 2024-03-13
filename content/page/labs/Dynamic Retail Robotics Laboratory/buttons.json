@@ -44,7 +44,7 @@
         "tasks"
       ],
       "available": {
-        "environments=retail_lab|robots=donbot|tasks=refilling": "https://binder.intel4coro.de/v2/gh/IntEL4CoRo/cram_teaching/legacy?urlpath=lab%2Ftree%2Flectures%2Fdemos%2Fretail.ipynb%3Frobot%3Ddonbot%26environment%3Dretail"
+        "environments=retail_lab|robots=donbot|tasks=refilling": "https://binder.intel4coro.de/v2/gh/hawkina/COAI/save-state?urlpath=lab/tree/notebooks/retail_donbot.ipynb"
       }
     },
     {
