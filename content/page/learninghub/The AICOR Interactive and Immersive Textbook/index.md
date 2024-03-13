@@ -32,7 +32,7 @@ in cognitive robotics.
 </div>
 
 <!--more-->
-
+For Detailed information and the full moodle click <a class="btn btn-success" target="_blank" href="the-aicor-interactive-and-immersive-textbook"><b>here!</b></a>
 
 ---
 <iframe src="https://iris.informatik.uni-bremen.de/textbook/" width="100%" height=1300 style="border:none;box-shadow: 1px 1px 3px #000;" allowfullscreen></iframe>
