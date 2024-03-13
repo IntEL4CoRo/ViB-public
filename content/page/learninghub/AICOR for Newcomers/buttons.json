@@ -5,7 +5,7 @@
       "name": "Try it out!",
       "value": "run",
       "description": "Online blockly playground",
-      "url": "https://binder.intel4coro.de/v2/gh/IntEL4CoRo/blockly-playground.git/main?labpath=examples/playground.jpblockly"
+      "url": "https://binder.intel4coro.de/v2/gh/IntEL4CoRo/blockly-playground.git/main?urlpath=lab/tree/examples/playground.jpblockly"
     },
     {
       "name": "Source Code",
