@@ -37,11 +37,11 @@ demonstrate tasks to robots. To start, select a knowledge base—for instance,
 experiment’s knowledge bases, facilitating a deeper understanding and interaction
 with the data. For a detailed overview of the episodes in openEASE click [here](https://data.open-ease.org/).
 
-{{<action_form data="ActionButtons">}}
-
 <div class="hidde-after-preview">
+  {{<action_form data="ActionButtons">}}
+
   For Detailed information click
-  <a class="btn btn-success" target="_blank" href="aicor-for-newcomers"><b>here!</b></a>
+  <a class="btn btn-success" target="_blank" href="openease-knowledge-service-laboratory"><b>here!</b></a>
 </div>
 
 <!--more-->
