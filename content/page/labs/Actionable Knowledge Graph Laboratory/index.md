@@ -25,6 +25,7 @@ be tested and refined within a simulated environment.
 
 
 <param class="hidde-after-preview">
+{{<action_forms data="ActionButtons">}}
 {{<Webinterface>}}
 
 
@@ -40,7 +41,6 @@ be tested and refined within a simulated environment.
 
 Interactive Actions and/or Examples
 ---
-{{<action_forms data="ActionButtons">}}
 
 For Detailed information click 
 <a href="https://food-ninja.github.io/WebKat-MealRobot//">here!</a> 
