@@ -163,6 +163,7 @@ div.right-main-well-flex {
   padding: 19px;
   margin-bottom: 20px;
   /*background-color: #3b3b3b; */
+  background: none;
   border: none;
   box-shadow: none;
 }
@@ -327,7 +328,12 @@ h2.post-title {
 a > h2.post-title:hover {
   text-decoration: underline;
 }
-@media (prefers-color-scheme: dark) {
+/* 
+  Disable the dark scheme,
+  to enable it,
+  replace "--dark--" to "dark"
+*/
+@media (prefers-color-scheme: --dark--) {
   h2.post-title {
     color: #89b4e1;
   }
