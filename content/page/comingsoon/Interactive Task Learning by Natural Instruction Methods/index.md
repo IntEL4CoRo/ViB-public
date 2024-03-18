@@ -42,6 +42,24 @@ For more information, you can
 
 <!--more-->
 
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+
+  <div style="flex:30%;">
+      <img src="avyas2.jpg" style="clip-path: circle(35%);">
+  </div>
+
+  <div style="flex:70%;">
+    <h3>Abhijit Vyas</h3>
+    Tel:     +49 421 218 64026 <br>
+    Fax:     +49 421 218 64047 <br>
+    Mail:    <a href="mailto:avyas@cs.uni-bremen.de">avyas@cs.uni-bremen.de</a> <br>
+    <a style="color:red" href="https://ai.uni-bremen.de/team/abhijit_vyas">
+      <span style="font-size: 15px;">Profile</span>
+    </a>
+  </div>
+
+</div>
+
 ![](ITL_framework.png)
 
 
