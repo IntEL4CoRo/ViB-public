@@ -15,7 +15,7 @@ Platform address: https://binder.intel4coro.de/
 
 <div class="hidde-after-preview">
   For Detailed information click
-  <a class="btn btn-success" target="_blank" href="ccloud-based-robotics-platform"><b>here!</b></a>
+  <a class="btn btn-success" target="_blank" href="cloud-based-robotics-platform"><b>here!</b></a>
 </div>
 
 <!--more-->
