@@ -54,9 +54,11 @@ binder.intel4coro.de cannot access private repositories as this would require a 
 
 Go to **<a href="https://binder.intel4coro.de" target="_blank">binder.intel4coro.de</a>**
 
-- Copy the URL of your repo to the "GitHub repository name or URL" box.
-The URL should look like this: https://github.com/YOUR-USERNAME/YOUR-REPO-NAME
-![binder](./binder.png)
+- Type the GitHub repository name in the "GitHub repository name or URL" box. The name should be in such format:
+
+  **YOUR-USERNAME/YOUR-REPO-NAME**
+  ![binder](./binder.png)
+
 - As you type, the webpage generates a link in the "Copy the URL below..." box
     It should look like this:
     > https://binder.intel4coro.de/v2/gh/YOUR-USERNAME/YOUR-REPO-NAME/HEAD
@@ -159,12 +161,11 @@ Before making changes to the repo we need to know about the two folders and file
     WORKDIR ${ROS_WS}
     RUN catkin build
 
-    # Download the example_neem
+    # Download the example neem data
     USER root
     RUN mkdir /neem_data && chown ${NB_USER}:users /neem_data
     USER ${NB_USER}
     RUN cd /neem_data && \
-        ln -s /neem_data ${HOME}/jupyter-knowrob/lectures/data && \
         wget https://seafile.zfn.uni-bremen.de/f/b66a71b257084d459b6c/?dl=1 -O example_neem.zip && \
         unzip example_neem.zip && \
         mv example_neem/* ./ && \
@@ -172,24 +173,27 @@ Before making changes to the repo we need to know about the two folders and file
     #===========================================================#
     ```
 
-    The Dockerfiles instructions are similar to Linux `shell` commands, the main difference is, they start with keywords like `RUN`, `WORKDIR`, and `USER`. For more details of these Dockerfile instructions can be found in docs [Dockerfile instructions](https://docs.docker.com/develop/develop-images/instructions/). A docker container is basically a Linux environment, so containerizing a repo is writing a series of Linux operations explicitly to the `Dockerfile`.
- 
+    The main purpose of this step is to write the installation process of the software required to run Knowrob into Dockerfile instructions. The installation methods for each software are listed in the comments. The Dockerfile instructions are similar to Linux `shell` commands, the main difference is, they start with keywords like `RUN`, `WORKDIR`, and `USER`. For more details of these Dockerfile instructions can be found in docs [Dockerfile instructions](https://docs.docker.com/develop/develop-images/instructions/). A docker container is basically a Linux environment, so containerizing a repo is writing a series of Linux operations explicitly to the `Dockerfile`. Therefore, the primary requirement for writing Dockerfile instructions is knowing how to use the [Linux command line](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview).
+
 1. Launch KnowRob once the environment starts, copy the following code to `binder/entrypoint.sh` (before the command `exec "$@"`):
 
     ```bash
     # Start MongoDB and save data on working directory
     MONGODB_URL=mongodb://127.0.0.1:27017
-    mkdir -p ${PWD}/mongodb/data
-    mongod --fork --logpath ${PWD}/mongodb/mongod.log --dbpath ${PWD}/mongodb/data
+    mongod --fork --logpath ${HOME}/mongod.log
+
+    # Create a symbolic link to the folder neem_data
+    ln -s /neem_data ${PWD}/neem_data
 
     # Launch Knowrob
     export KNOWROB_MONGODB_URI=${MONGODB_URL}/?appname=knowrob
     roslaunch --wait knowrob knowrob.launch &
     ```
+
 1. Commit all the changes and push the updates to GitHub.
 1. Now your repo should be similar to this [completed repo](https://github.com/yxzhan/knowrob-example).
 
-Open the launch URL generated in step 2, if you forgot the URL just repeat "[Launch your repo](#2-launch-your-repo)".
+Open the launch URL, if you forgot the URL just repeat "[Launch your repo](#2-launch-your-repo)".
 
 ### 4. Changing the Interface
 
