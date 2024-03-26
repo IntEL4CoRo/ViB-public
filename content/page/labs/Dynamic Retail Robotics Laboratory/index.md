@@ -39,23 +39,26 @@ implementing these robotic solutions in real-world retail settings.
 
 <!--more-->
 
-<!-- <div class="main-well-flex-container" style="margin:20px;align-items: center;">
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
   <div style="flex:30%;">
-      <img src="profile_picture.png" style="clip-path: circle(35%);">
+      <img src="MichaelaKümpel.png" style="clip-path: circle(35%);">
   </div>
 
   <div style="flex:70%;">
-    <h3>Replace with Name</h3>
-    Tel:     +49 XXXXXXXXXX <br>
-    Fax:     +49 XXXXXXXXXX <br>
-    Mail:    <a href="mailto:XXXXXXX@cs.uni-bremen.de">XXXXXX@cs.uni-bremen.de</a> <br>
-    <a style="color:red" href="https://ai.uni-bremen.de/team/XXXXXXXXX">
-      <span style="font-size: 15px;">Profile</span>
+    <h3>Michaela Kümpel and Simon Stelter</h3>
+    Tel:     +49 421 218 64021,  +49 421 218 64014<br>
+    <!--Fax:     +49 XXXXXXXXXX <br> -->
+    Mail:    <a href="mailto:michaela.kuempel@cs.uni-bremen.de">michaela.kuempel@cs.uni-bremen.de</a>, 
+    <a href="mailto:stelter@cs.uni-bremen.de">stelter@cs.uni-bremen.de</a><br>
+    <a style="color:red" href="https://ai.uni-bremen.de/team/michaela_kuempel">
+      <span style="font-size: 15px;">Profile Michaela Kümpel</span></a>
+      <a style="color:red" href="https://ai.uni-bremen.de/team/simon_stelter">
+      <span style="font-size: 15px;">Profile Simon Stelter</span>
     </a>
   </div>
 
-</div> -->
+</div> 
 
 Interactive Actions and/or Examples
 ---
