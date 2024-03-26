@@ -41,7 +41,7 @@ be tested and refined within a simulated environment.
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
   <div style="flex:30%;">
-      <img src="VHuMK3.png" width="100" style="clip-path: circle(35%);">
+      <img src="VHuMK3.png" width="200" style="clip-path: circle(35%);">
   </div>
 
   <div style="flex:70%;">
