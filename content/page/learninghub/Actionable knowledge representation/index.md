@@ -38,18 +38,18 @@ concepts and their practical applications in enhancing daily life through techno
 
 <!--more-->
 
-<!-- <div class="main-well-flex-container" style="margin:20px;align-items: center;">
+ <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
   <div style="flex:30%;">
-      <img src="profile_picture.png" style="clip-path: circle(35%);">
+      <img src="MichaelaKümpel.png" width="200" style="clip-path: circle(35%);">
   </div>
 
   <div style="flex:70%;">
-    <h3>Replace with Name</h3>
-    Tel:     +49 XXXXXXXXXX <br>
-    Fax:     +49 XXXXXXXXXX <br>
-    Mail:    <a href="mailto:XXXXXXX@cs.uni-bremen.de">XXXXXX@cs.uni-bremen.de</a> <br>
-    <a style="color:red" href="https://ai.uni-bremen.de/team/XXXXXXXXX">
+    <h3>Michaela Kümpel</h3>
+    Tel:     +49 421 218 64021 <br>
+<!--    Fax:     +49 XXXXXXXXXX <br> -->
+    Mail:    <a href="mailto:michaela.kuempel@cs.uni-bremen.de">michaela.kuempel@cs.uni-bremen.de</a> <br>
+    <a style="color:red" href="https://ai.uni-bremen.de/team/michaela_kuempel">
       <span style="font-size: 15px;">Profile</span>
     </a>
   </div>
