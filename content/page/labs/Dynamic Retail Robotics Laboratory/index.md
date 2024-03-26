@@ -42,11 +42,11 @@ implementing these robotic solutions in real-world retail settings.
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
   <div style="flex:30%;">
-      <img src="MichaelaKümpel.png" style="clip-path: circle(35%);">
+      <img src="MichaelaKümpel.png" style="clip-path: circle(15%);">
   </div>
 
   <div style="flex:70%;">
-    <h3>Michaela Kümpel and Simon Stelter</h3>
+    <h3>Michaela Kümpel (Knowledge Graph) and Simon Stelter (Robot Stocktaking and Manipulation)</h3>
     Tel:     +49 421 218 64021,  +49 421 218 64014<br>
     <!--Fax:     +49 XXXXXXXXXX <br> -->
     Mail:    <a href="mailto:michaela.kuempel@cs.uni-bremen.de">michaela.kuempel@cs.uni-bremen.de</a>, 
