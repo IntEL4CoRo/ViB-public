@@ -33,23 +33,27 @@ in cognitive robotics.
 
 <!--more-->
 
-<!-- <div class="main-well-flex-container" style="margin:20px;align-items: center;">
+ <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
   <div style="flex:30%;">
-      <img src="profile_picture.png" style="clip-path: circle(35%);">
+      <img src="MichaelaKümpel.png" width="200" style="clip-path: circle(35%);">
   </div>
 
   <div style="flex:70%;">
-    <h3>Replace with Name</h3>
-    Tel:     +49 XXXXXXXXXX <br>
-    Fax:     +49 XXXXXXXXXX <br>
-    Mail:    <a href="mailto:XXXXXXX@cs.uni-bremen.de">XXXXXX@cs.uni-bremen.de</a> <br>
-    <a style="color:red" href="https://ai.uni-bremen.de/team/XXXXXXXXX">
-      <span style="font-size: 15px;">Profile</span>
+    <h3>Jörn Syrbe and Michaela Kümpel</h3>
+    Tel:     +49 421 218 64031, +49 421 218 64021 <br>
+<!--    Fax:     +49 XXXXXXXXXX <br> -->
+    Mail:    <a href="mailto:syrbe@cs.uni-bremen.de">syrbe@cs.uni-bremen.de</a>,
+     <a href="mailto:michaela.kuempel@cs.uni-bremen.de">michaela.kuempel@cs.uni-bremen.de</a><br>
+    <a style="color:red" href="https://ai.uni-bremen.de/team/dr._jörn_syrbe">
+      <span style="font-size: 15px;">Profile Jörn Syrbe</span>
+    </a>
+    <a style="color:red" href="https://ai.uni-bremen.de/team/michaela_kuempel">
+      <span style="font-size: 15px;">Profile Michaela Kümpel</span>
     </a>
   </div>
 
-</div> -->
+</div> 
 
 For Detailed information and the full moodle click <a class="btn btn-success" target="_blank" href="https://moodle.intel4coro.de/"><b>here!</b></a>
 
