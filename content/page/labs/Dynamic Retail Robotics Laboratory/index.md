@@ -42,7 +42,7 @@ implementing these robotic solutions in real-world retail settings.
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
   <div style="flex:30%;">
-      <img src="MichaelaKümpel.png" width="200" style="clip-path: circle(15%);">
+      <img src="MichaelaKümpel.png" width="200" style="clip-path: circle(35%);">
   </div>
 
   <div style="flex:70%;">
