@@ -38,23 +38,25 @@ be tested and refined within a simulated environment.
 
 <!--more-->
 
-<!-- <div class="main-well-flex-container" style="margin:20px;align-items: center;">
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
   <div style="flex:30%;">
-      <img src="profile_picture.png" style="clip-path: circle(35%);">
+      <img src="VHuMK3.png" width="200" style="clip-path: circle(35%);">
   </div>
 
   <div style="flex:70%;">
-    <h3>Replace with Name</h3>
-    Tel:     +49 XXXXXXXXXX <br>
-    Fax:     +49 XXXXXXXXXX <br>
-    Mail:    <a href="mailto:XXXXXXX@cs.uni-bremen.de">XXXXXX@cs.uni-bremen.de</a> <br>
-    <a style="color:red" href="https://ai.uni-bremen.de/team/XXXXXXXXX">
-      <span style="font-size: 15px;">Profile</span>
+    <h3>Michaela Kümpel (Knowledge Graphs) and Vanessa Hassouna (Robot Action Execution)</h3>
+    Tel:     +49 421 218 64021, +49 421 218 99651 <br>
+    <!--Fax:     +49 XXXXXXXXXX <br> -->
+    Mail:    <a href="mailto:michaela.kuempel@cs.uni-bremen.de">michaela.kuempel@cs.uni-bremen.de</a>, <a href="mailto:hassouna@cs.uni-bremen.de">hassouna@cs.uni-bremen.de</a> <br>
+    <a style="color:red" href="https://ai.uni-bremen.de/team/michaela_kümpel">
+      <span style="font-size: 15px;">Profile Michaela Kümpel</span>
+      <a style="color:red" href="https://ai.uni-bremen.de/team/vanessa_hassouna">
+      <span style="font-size: 15px;">Profile Vanessa Hassouna</span>
     </a>
   </div>
 
-</div> -->
+</div> 
 
 Interactive Actions and/or Examples
 ---
