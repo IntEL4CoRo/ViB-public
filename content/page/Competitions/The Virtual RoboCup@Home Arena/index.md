@@ -26,20 +26,90 @@ This diverse focus aims to push the envelope in autonomous domestic robotics, ch
 
 <!--more-->
 
-<!-- <div class="main-well-flex-container" style="margin:20px;align-items: center;">
+<script>
+    // Add Authors(1 or 2) info to the list
 
-  <div style="flex:30%;">
-      <img src="profile_picture.png" style="clip-path: circle(35%);">
-  </div>
-
-  <div style="flex:70%;">
-    <h3>Replace with Name</h3>
-    Tel:     +49 XXXXXXXXXX <br>
-    Fax:     +49 XXXXXXXXXX <br>
-    Mail:    <a href="mailto:XXXXXXX@cs.uni-bremen.de">XXXXXX@cs.uni-bremen.de</a> <br>
-    <a style="color:red" href="https://ai.uni-bremen.de/team/XXXXXXXXX">
-    <span style="font-size: 15px;">Profile</span>
-    </a>
-  </div>
-
-</div> -->
+    // var authors = [
+      // {
+      //     img: "********.png",
+      //     name: "********",
+      //     tel: "+49 421 218 ********",
+      //     fax: "+49 421 218 ********",
+      //     mail: "********@cs.uni-bremen.de",
+      //     profile: "https://ai.uni-bremen.de/team/*********"
+      // },
+      // {
+      //     img: "********.png",
+      //     name: "********",
+      //     tel: "+49 421 218 ********",
+      //     fax: "+49 421 218 ********",
+      //     mail: "********@cs.uni-bremen.de",
+      //     profile: "https://ai.uni-bremen.de/team/*********"
+      // },
+      // ];
+  </script>
+  
+  <script>
+    if (authors.length === 1)
+    {
+      document.write(
+        '<div class="main-well-flex-container2">' +
+          '<div class="left-main-well-flex2">' +
+              '<img src="' + authors[0].img + '">' +
+          '</div>' +
+          '<div class="right-main-well-flex2">' +
+              '<h3>' + authors[0].name + '</h3>' +
+              'Tel: ' + authors[0].tel + ' <br>' +
+              'Fax: ' + authors[0].fax + ' <br>' +
+              'Mail: <a href="mailto:' + authors[0].mail + '">' + authors[0].mail + '</a> <br>' +
+              '<a href="' + authors[0].profile + '">' +
+                '<span>Profile</span>' +
+              '</a>' +
+          '</div>' +
+        '</div>'
+      );
+    }
+    else
+    {
+      document.write(
+        '<div class="main-well-flex-container2">' +
+  
+          '<div class="left-main-well-flex2">' +
+              '<div class="main-well-flex-container2">' +
+                  '<div class="left-main-well-flex3">' +
+                      '<img src="' + authors[0].img + '" >' +
+                  '</div>' +
+                  '<div class="right-main-well-flex3">' +
+                      '<h3>' + authors[0].name + '</h3>' +
+                      'Tel: ' + authors[0].tel + ' <br>' +
+                      'Fax: ' + authors[0].fax + ' <br>' +
+                      'Mail: <a href="mailto:' + authors[0].mail + '">' + authors[0].mail + '</a> <br>' +
+                      '<a href="' + authors[0].profile + '">' +
+                        '<span>Profile</span>' +
+                      '</a>' +
+                  '</div>' +
+              '</div>' +
+          '</div>' +
+  
+          '<div class="left-main-well-flex2">' +
+              '<div class="main-well-flex-container2">' +
+                  '<div class="left-main-well-flex3">' +
+                      '<img src="' + authors[1].img + '" >' +
+                  '</div>' +
+                  '<div class="right-main-well-flex3">' +
+                      '<h3>' + authors[1].name + '</h3>' +
+                      'Tel: ' + authors[1].tel + ' <br>' +
+                      'Fax: ' + authors[1].fax + ' <br>' +
+                      'Mail: <a href="mailto:' + authors[1].mail + '">' + authors[1].mail + '</a> <br>' +
+                      '<a href="' + authors[1].profile + '">' +
+                        '<span>Profile</span>' +
+                      '</a>' +
+                  '</div>' +
+              '</div>' +
+          '</div>' +
+  
+          '</div>'
+      );
+    }
+  
+  </script>

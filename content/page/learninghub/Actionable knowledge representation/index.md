@@ -38,20 +38,81 @@ concepts and their practical applications in enhancing daily life through techno
 
 <!--more-->
 
- <div class="main-well-flex-container" style="margin:20px;align-items: center;">
+ <script>
+  // Add Authors(1 or 2) info to the list
+  var authors = [
+    {
+        img: "MichaelaKümpel.png",
+        name: "Michaela Kümpel",
+        tel: "+49 421 218 64021",
+        fax: "+49 421 218 64047",
+        mail: "michaela.kuempel@cs.uni-bremen.de",
+        profile: "https://ai.uni-bremen.de/team/michaela_kümpel"
+    },
+    ];
+</script>
 
-  <div style="flex:30%;">
-      <img src="MichaelaKümpel.png" width="200" style="clip-path: circle(35%);">
-  </div>
+<script>
+  if (authors.length === 1)
+  {
+    document.write(
+      '<div class="main-well-flex-container2">' +
+        '<div class="left-main-well-flex2">' +
+            '<img src="' + authors[0].img + '">' +
+        '</div>' +
+        '<div class="right-main-well-flex2">' +
+            '<h3>' + authors[0].name + '</h3>' +
+            'Tel: ' + authors[0].tel + ' <br>' +
+            'Fax: ' + authors[0].fax + ' <br>' +
+            'Mail: <a href="mailto:' + authors[0].mail + '">' + authors[0].mail + '</a> <br>' +
+            '<a href="' + authors[0].profile + '">' +
+              '<span>Profile</span>' +
+            '</a>' +
+        '</div>' +
+      '</div>'
+    );
+  }
+  else
+  {
+    document.write(
+      '<div class="main-well-flex-container2">' +
 
-  <div style="flex:70%;">
-    <h3>Michaela Kümpel</h3>
-    Tel:     +49 421 218 64021 <br>
-<!--    Fax:     +49 XXXXXXXXXX <br> -->
-    Mail:    <a href="mailto:michaela.kuempel@cs.uni-bremen.de">michaela.kuempel@cs.uni-bremen.de</a> <br>
-    <a style="color:red" href="https://ai.uni-bremen.de/team/michaela_kuempel">
-      <span style="font-size: 15px;">Profile</span>
-    </a>
-  </div>
+        '<div class="left-main-well-flex2">' +
+            '<div class="main-well-flex-container2">' +
+                '<div class="left-main-well-flex3">' +
+                    '<img src="' + authors[0].img + '" >' +
+                '</div>' +
+                '<div class="right-main-well-flex3">' +
+                    '<h3>' + authors[0].name + '</h3>' +
+                    'Tel: ' + authors[0].tel + ' <br>' +
+                    'Fax: ' + authors[0].fax + ' <br>' +
+                    'Mail: <a href="mailto:' + authors[0].mail + '">' + authors[0].mail + '</a> <br>' +
+                    '<a href="' + authors[0].profile + '">' +
+                      '<span>Profile</span>' +
+                    '</a>' +
+                '</div>' +
+            '</div>' +
+        '</div>' +
 
-</div> 
+        '<div class="left-main-well-flex2">' +
+            '<div class="main-well-flex-container2">' +
+                '<div class="left-main-well-flex3">' +
+                    '<img src="' + authors[1].img + '" >' +
+                '</div>' +
+                '<div class="right-main-well-flex3">' +
+                    '<h3>' + authors[1].name + '</h3>' +
+                    'Tel: ' + authors[1].tel + ' <br>' +
+                    'Fax: ' + authors[1].fax + ' <br>' +
+                    'Mail: <a href="mailto:' + authors[1].mail + '">' + authors[1].mail + '</a> <br>' +
+                    '<a href="' + authors[1].profile + '">' +
+                      '<span>Profile</span>' +
+                    '</a>' +
+                '</div>' +
+            '</div>' +
+        '</div>' +
+
+        '</div>'
+    );
+  }
+
+</script>
