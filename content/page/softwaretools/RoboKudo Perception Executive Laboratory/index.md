@@ -79,3 +79,4 @@ Publications
 
 - [P. Mania; S. Stelter; G. Kazhoyan; M. Beetz, "An Open and Flexible Robot Perception Framework for Mobile Manipulation Tasks" 2024 IEEE International Conference on Robotics and Automation(ICRA). IEEE, 2024. Accepted for publication.](https://robokudo.ai.uni-bremen.de/)
 - [P. Mania; F. K. Kenfack; M. Neumann; M. Beetz, "Imagination-enabled robot perception." 2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). IEEE, 2021.](https://ieeexplore.ieee.org/abstract/document/9636359)
+

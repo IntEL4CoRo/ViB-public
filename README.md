@@ -58,14 +58,14 @@ git submodule update --init
 
 ## Site preview
 
-Open [http://localhost:1313/coai-vib/]()
+Open [http://localhost:1313/]()
 
 ## Add/Edit Pages
 
-Page contents are store in directory [content/page](). To add a new page, just copy the directory [blueprint/template](content/template), rename it and edit the therein contained file "index.md" to change the corresponding web page according to your wishes.
+Page contents are store in directory [content/page](). To add a new page, just copy the directory [blueprint/template](blueprint/template), rename it and edit the therein contained file "index.md" to change the corresponding web page according to your wishes.
 ***Warning:*** Ensure to change line 9 from "draft: true"to "draft: false", otherwise your web page will be invisible when published.
 
-You can also take a look at the [Household Robotics Project](<content/posts/Researcher's workbench for Household Robotics/>) and its "index.md" file as a good example.
+You can also take a look at the [Domestic Object Transportation Laboratory](<content/page/labs/Domestic Object Transportation Laboratory/>) and its "index.md" file as a good example.
 
 Alternative just create a folder under the [content/page]() directory with a markdown file named "index.md". The file "index.md" should contain the following metadata:
 

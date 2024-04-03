@@ -84,7 +84,3 @@ Publications
 
 - [S. Stelter, G. Bartels and M. Beetz, "An open-source motion planning framework for mobile manipulators using constraint-based task space control with linear MPC," 2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Kyoto, Japan, 2022, pp. 1671-1678, doi: 10.1109/IROS47612.2022.9982245.](https://ieeexplore.ieee.org/document/9982245)
 
-
-  
-
-

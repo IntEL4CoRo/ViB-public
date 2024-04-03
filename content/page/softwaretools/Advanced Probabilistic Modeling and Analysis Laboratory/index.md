@@ -62,7 +62,7 @@ Interactive Actions and/or Examples
 <a class="btn btn-success" target="_blank" href="https://github.com/joint-probability-trees/">Source Code</a>
 </div>
 
-<br>
+<br/>
 
 Software Components
 ---
@@ -82,3 +82,4 @@ Software Components
 - ### [PyCRAM <img class="sc-image" src="https://pycram.readthedocs.io/en/latest/_images/pycram_logo.png" height=50>](https://pycram.readthedocs.io/en/latest/index.html)
   is the Python 3 re-implementation of [CRAM](https://cram-system.org/). [PyCRAM](https://pycram.readthedocs.io/en/latest/index.html) is a toolbox for designing, implementing and deploying software on autonomous robots.\
   [<img class="sc-image" src="https://iris.informatik.uni-bremen.de/images/github.svg" height=10> source code](https://github.com/cram2/pycram)
+

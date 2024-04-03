@@ -81,7 +81,6 @@ The TraceBot project brings together six strong partners from five countries: As
 </figure>
 
 ---
-
 <figure class="video_container">
   <iframe width="100%" height="360" src="https://www.youtube.com/embed/FGplce7JJzo?si=abPUJoLtAfvsd4SH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
 </figure>
@@ -91,7 +90,6 @@ More Videos on the <a href="https://www.youtube.com/@tracebot1243">TraceBot</a> 
 
 Publications
 ---
-
 
 - [F. K. Kenghagho et al., "NaivPhys4RP - Towards Human-like Robot Perception “Physical Reasoning based on Embodied Probabilistic Simulation”," 2022 IEEE-RAS 21st International Conference on Humanoid Robots (Humanoids), Ginowan, Japan, 2022, pp. 815-822, doi: 10.1109/Humanoids53995.2022.10000153.](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10000153)
 
@@ -124,3 +122,4 @@ Software Components
 - ### [ROBOKUDO <img class="sc-image" src="https://ai.uni-bremen.de/_media/team/rk_logo_v3-300px.png" height=25>](https://robokudo.ai.uni-bremen.de/)
   is a perception framework targeted for robot manipulation tasks.\
   [<img class="sc-image" src="https://iris.informatik.uni-bremen.de/images/github.svg" height=10> source code](https://gitlab.informatik.uni-bremen.de/robokudo/robokudo)
+

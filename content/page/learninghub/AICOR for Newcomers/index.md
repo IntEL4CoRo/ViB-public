@@ -60,4 +60,3 @@ Try out our online playground:
   <source src="https://iris.informatik.uni-bremen.de/videos/blockly-demo.mp4" type="video/mp4">
 </video>
 
----

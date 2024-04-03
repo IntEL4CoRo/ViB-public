@@ -58,9 +58,7 @@ DeepActionObserver
 ---
 
 <figure class="video_container">
-  
   <iframe width="560" height="315" src="https://www.youtube.com/embed/doov3Mz3b5c?si=O3IljhBEmReit1zn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  
 </figure>
 
 AvagentIEASim: Avatar Agent Inspect Extrapolate Accomplish Simulator
@@ -92,9 +90,7 @@ Virtual Demonstrations through Human Manipulation Observation
 ---
 
 <figure class="video_container">
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5SnSibZ8gQI?si=BvouCT80WUv_EljI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/5SnSibZ8gQI?si=BvouCT80WUv_EljI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </figure>
 
 
@@ -108,8 +104,6 @@ shared but also expanded upon within the robotic domain. This exploration paves 
 with the physical world in tasks that demand a high level of finesse and adaptability.
 
 <figure class="NAO Robot Pouring Demonstration from Human Observation">
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/l8vd1K--5ZY?si=9P569MDu85ql9o2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/l8vd1K--5ZY?si=9P569MDu85ql9o2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </figure>
 

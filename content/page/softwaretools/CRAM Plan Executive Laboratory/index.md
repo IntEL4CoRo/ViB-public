@@ -12,7 +12,6 @@ resources:
   src: "images/pycram_logo.png"
 ---
 
-
 In CRAM plan executive Laboratory, we delve into the innovative capabilities of
 CRAM – Cognitive Robot Abstract Machine. CRAM is a comprehensive toolbox
 designed for the development, implementation, and deployment of software on
@@ -55,3 +54,4 @@ CRAM software framework.
   </div>
 
 </div> -->
+

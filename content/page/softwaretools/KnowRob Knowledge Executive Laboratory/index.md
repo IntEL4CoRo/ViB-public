@@ -79,7 +79,3 @@ Publications
 - [KnowRob 2.0 – A 2nd Generation Knowledge Processing Framework for Cognition-enabled Robotic Agents (Michael Beetz, Daniel Beßler, Andrei Haidu, Mihai Pomarlan, Asil Kaan Bozcuoglu and Georg Bartels), In International Conference on Robotics and Automation (ICRA), 2018.](https://ai.uni-bremen.de/papers/beetz18knowrob.pdf)
 - [KnowRob – A Knowledge Processing Infrastructure for Cognition-enabled Robots (Moritz Tenorth and Michael Beetz), In International Journal of Robotics Research (IJRR), volume 32, 2013.](https://journals.sagepub.com/doi/full/10.1177/0278364913481635)
 
-
-  
-
-

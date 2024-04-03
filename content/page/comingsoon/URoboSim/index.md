@@ -86,3 +86,4 @@ Publications
 - [Michael Neumann, Andrei Haidu and Michael Beetz, "URoboSim — a simulation-based predictive modelling engine forcognition-enabled robot manipulation", In 2nd Embodied AI Workshop (CVPR), 2021.](https://embodied-ai.org/papers/URoboSim.pdf)
 
 - [Patrick Mania, Franklin Kenghagho Kenfack, Michael Neumann and Michael Beetz, "Imagination-enabled Robot Perception", 2020.](https://arxiv.org/abs/2011.11397)
+

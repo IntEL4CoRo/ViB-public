@@ -52,6 +52,3 @@ Publications
 - [NEEM Handbook (Michael Beetz, Daniel Beßler, Sebastian Koralewski, Mihai Pomarlan, Abhijit Vyas,
 Alina Hawkin, Kaviya Dhanabalachandran, Sascha Jongebloed)](https://ease-crc.github.io/soma/owl/current/NEEM-Handbook.pdf)
 
-  
-
-
