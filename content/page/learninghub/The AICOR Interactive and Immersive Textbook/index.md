@@ -36,20 +36,32 @@ in cognitive robotics.
  <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
   <div style="flex:30%;">
-      <img src="MichaelaKümpel.png" width="200" style="clip-path: circle(35%);">
+      <img src="mbeetz.jpg" width="200" style="clip-path: circle(35%);">
   </div>
 
   <div style="flex:70%;">
-    <h3>Jörn Syrbe and Michaela Kümpel</h3>
-    Tel:     +49 421 218 64031, +49 421 218 64021 <br>
+    <h3>Michael Beetz, Jörn Syrbe, Michaela Kümpel, Petra Wenzl, Leonie Dziomba</h3>
+    Tel:     +49 421 218 64001, +49 421 218 64031, +49 421 218 64021, +49 421 218 64019, +49 421 218 64047 <br>
 <!--    Fax:     +49 XXXXXXXXXX <br> -->
-    Mail:    <a href="mailto:syrbe@cs.uni-bremen.de">syrbe@cs.uni-bremen.de</a>,
-     <a href="mailto:michaela.kuempel@cs.uni-bremen.de">michaela.kuempel@cs.uni-bremen.de</a><br>
+    Mail:    <a href="mailto:beetz@cs.uni-bremen.de">beetz@cs.uni-bremen.de</a>,
+    <a href="mailto:syrbe@cs.uni-bremen.de">syrbe@cs.uni-bremen.de</a>,
+     <a href="mailto:michaela.kuempel@cs.uni-bremen.de">michaela.kuempel@cs.uni-bremen.de</a><br>,
+    <a href="mailto:pwenzl@cs.uni-bremen.de">pwenzl@cs.uni-bremen.de</a>,
+    <a href="mailto:dziomba@cs.uni-bremen.de">dziomba@cs.uni-bremen.de</a><br>
+    <a style="color:red" href="https://ai.uni-bremen.de/team/michael_beetz">
+      <span style="font-size: 15px;">Profile Prof. Michael Beetz, PhD</span>
+    </a>
     <a style="color:red" href="https://ai.uni-bremen.de/team/dr._jörn_syrbe">
       <span style="font-size: 15px;">Profile Jörn Syrbe</span>
     </a>
     <a style="color:red" href="https://ai.uni-bremen.de/team/michaela_kuempel">
       <span style="font-size: 15px;">Profile Michaela Kümpel</span>
+    </a>
+    <a style="color:red" href="https://ai.uni-bremen.de/team/petra_wenzl">
+      <span style="font-size: 15px;">Profile Petra Wenzl</span>
+    </a>
+    <a style="color:red" href="https://ai.uni-bremen.de/team/leonie_dziomba">
+      <span style="font-size: 15px;">Profile Leonie Dziomba</span>
     </a>
   </div>
 
