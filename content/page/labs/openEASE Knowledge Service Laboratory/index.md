@@ -46,23 +46,22 @@ with the data. For a detailed overview of the episodes in openEASE click [here](
 
 <!--more-->
 
-<!-- <div class="main-well-flex-container" style="margin:20px;align-items: center;">
+<script>
+    // Add Authors(1 or 2) info to the list as dictionary
 
-  <div style="flex:30%;">
-      <img src="profile_picture.png" style="clip-path: circle(35%);">
-  </div>
-
-  <div style="flex:70%;">
-    <h3>Replace with Name</h3>
-    Tel:     +49 XXXXXXXXXX <br>
-    Fax:     +49 XXXXXXXXXX <br>
-    Mail:    <a href="mailto:XXXXXXX@cs.uni-bremen.de">XXXXXX@cs.uni-bremen.de</a> <br>
-    <a style="color:red" href="https://ai.uni-bremen.de/team/XXXXXXXXX">
-      <span style="font-size: 15px;">Profile</span>
-    </a>
-  </div>
-
-</div> -->
+    var authors = [
+      // {
+      //     img: "********.png",
+      //     name: "********",
+      //     tel: "+49 421 218 ********",
+      //     fax: "+49 421 218 ********",
+      //     mail: "********@cs.uni-bremen.de",
+      //     profile: "https://ai.uni-bremen.de/team/*********"
+      // },
+      ];
+  </script>
+  
+  {{<author_block>}}
 
 Interactive Actions and/or Examples
 ---

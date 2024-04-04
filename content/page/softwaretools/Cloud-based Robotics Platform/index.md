@@ -20,7 +20,23 @@ Platform address: https://binder.intel4coro.de/
 
 <!--more-->
 
+<script>
+    // Add Authors(1 or 2) info to the list as dictionary
 
+    var authors = [
+      // {
+      //     img: "********.png",
+      //     name: "********",
+      //     tel: "+49 421 218 ********",
+      //     fax: "+49 421 218 ********",
+      //     mail: "********@cs.uni-bremen.de",
+      //     profile: "https://ai.uni-bremen.de/team/*********"
+      // },
+      ];
+  </script>
+  
+  {{<author_block>}}
+  
 # Zero-to-Binder
 
 > Note: This tutorial covers only the usage of the platform, and is modified from the [official binder manual](https://the-turing-way.netlify.app/communication/binder/zero-to-binder.html). For more information about the architecture, use, and setup of BinderHub, see the [BinderHub documentation](https://binderhub.readthedocs.io/en/latest/) and our [installation guide](https://github.com/IntEL4CoRo/docker-stacks/blob/binderhub/README.md).

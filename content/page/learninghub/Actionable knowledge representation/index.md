@@ -38,21 +38,20 @@ concepts and their practical applications in enhancing daily life through techno
 
 <!--more-->
 
- <div class="main-well-flex-container" style="margin:20px;align-items: center;">
+ <script>
+    // Add Authors(1 or 2) info to the list as dictionary
 
-  <div style="flex:30%;">
-      <img src="MichaelaKümpel.png" width="200" style="clip-path: circle(35%);">
-  </div>
-
-  <div style="flex:70%;">
-    <h3>Michaela Kümpel</h3>
-    Tel:     +49 421 218 64021 <br>
-<!--    Fax:     +49 XXXXXXXXXX <br> -->
-    Mail:    <a href="mailto:michaela.kuempel@cs.uni-bremen.de">michaela.kuempel@cs.uni-bremen.de</a> <br>
-    <a style="color:red" href="https://ai.uni-bremen.de/team/michaela_kuempel">
-      <span style="font-size: 15px;">Profile</span>
-    </a>
-  </div>
-
-</div>
+    var authors = [
+      {
+        img: "MichaelaKümpel.png",
+        name: "Michaela Kümpel",
+        tel: "+49 421 218 64021",
+        fax: "+49 421 218 64047",
+        mail: "michaela.kuempel@cs.uni-bremen.de",
+        profile: "https://ai.uni-bremen.de/team/michaela_kümpel"
+    },
+      ];
+  </script>
+  
+  {{<author_block>}}
 

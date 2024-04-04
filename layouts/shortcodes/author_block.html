@@ -1,0 +1,71 @@
+<html>
+
+    <body>
+
+        <script>
+            if (authors && authors.length === 1)
+            {
+                document.write(
+                '<div class="main-well-flex-container2">' +
+                    '<div class="left-main-well-flex2">' +
+                        '<img src="' + authors[0].img + '">' +
+                    '</div>' +
+                    '<div class="right-main-well-flex2">' +
+                        '<h3>' + authors[0].name + '</h3>' +
+                        'Tel: ' + authors[0].tel + ' <br>' +
+                        'Fax: ' + authors[0].fax + ' <br>' +
+                        'Mail: <a href="mailto:' + authors[0].mail + '">' + authors[0].mail + '</a> <br>' +
+                        '<a href="' + authors[0].profile + '">' +
+                        '<span>Profile</span>' +
+                        '</a>' +
+                    '</div>' +
+                '</div>'
+                );
+            }
+            else if (authors && authors.length === 2)
+            {
+                document.write(
+                '<div class="main-well-flex-container2">' +
+
+                    '<div class="left-main-well-flex2">' +
+                        '<div class="main-well-flex-container2">' +
+                            '<div class="left-main-well-flex3">' +
+                                '<img src="' + authors[0].img + '" >' +
+                            '</div>' +
+                            '<div class="right-main-well-flex3">' +
+                                '<h3>' + authors[0].name + '</h3>' +
+                                'Tel: ' + authors[0].tel + ' <br>' +
+                                'Fax: ' + authors[0].fax + ' <br>' +
+                                'Mail: <a href="mailto:' + authors[0].mail + '">' + authors[0].mail + '</a> <br>' +
+                                '<a href="' + authors[0].profile + '">' +
+                                '<span>Profile</span>' +
+                                '</a>' +
+                            '</div>' +
+                        '</div>' +
+                    '</div>' +
+
+                    '<div class="left-main-well-flex2">' +
+                        '<div class="main-well-flex-container2">' +
+                            '<div class="left-main-well-flex3">' +
+                                '<img src="' + authors[1].img + '" >' +
+                            '</div>' +
+                            '<div class="right-main-well-flex3">' +
+                                '<h3>' + authors[1].name + '</h3>' +
+                                'Tel: ' + authors[1].tel + ' <br>' +
+                                'Fax: ' + authors[1].fax + ' <br>' +
+                                'Mail: <a href="mailto:' + authors[1].mail + '">' + authors[1].mail + '</a> <br>' +
+                                '<a href="' + authors[1].profile + '">' +
+                                '<span>Profile</span>' +
+                                '</a>' +
+                            '</div>' +
+                        '</div>' +
+                    '</div>' +
+
+                    '</div>'
+                );
+            }
+        </script>
+
+    </body>
+
+</html>

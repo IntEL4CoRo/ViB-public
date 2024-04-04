@@ -39,26 +39,30 @@ implementing these robotic solutions in real-world retail settings.
 
 <!--more-->
 
-<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+<script>
+    // Add Authors(1 or 2) info to the list as dictionary
 
-  <div style="flex:30%;">
-      <img src="MichaelaKümpel.png" width="200" style="clip-path: circle(35%);">
-  </div>
-
-  <div style="flex:70%;">
-    <h3>Michaela Kümpel (Knowledge Graph) and Simon Stelter (Robot Stocktaking and Manipulation)</h3>
-    Tel:     +49 421 218 64021,  +49 421 218 64014<br>
-    <!--Fax:     +49 XXXXXXXXXX <br> -->
-    Mail:    <a href="mailto:michaela.kuempel@cs.uni-bremen.de">michaela.kuempel@cs.uni-bremen.de</a>, 
-    <a href="mailto:stelter@cs.uni-bremen.de">stelter@cs.uni-bremen.de</a><br>
-    <a style="color:red" href="https://ai.uni-bremen.de/team/michaela_kuempel">
-      <span style="font-size: 15px;">Profile Michaela Kümpel</span></a>
-      <a style="color:red" href="https://ai.uni-bremen.de/team/simon_stelter">
-      <span style="font-size: 15px;">Profile Simon Stelter</span>
-    </a>
-  </div>
-
-</div>
+    var authors = [
+      {
+        img: "MichaelaKümpel.png",
+        name: "Michaela Kümpel",
+        tel: "+49 421 218 64021",
+        fax: "+49 421 218 64047",
+        mail: "michaela.kuempel@cs.uni-bremen.de",
+        profile: "https://ai.uni-bremen.de/team/michaela_kümpel"
+    },
+    {
+        img: "simon.jpg",
+        name: "Simon Stelter",
+        tel: "+49 421 218 64014",
+        fax: "+49 421 218 64047",
+        mail: "stelter@cs.uni-bremen.de",
+        profile: "https://ai.uni-bremen.de/team/simon_stelter"
+    },
+      ];
+  </script>
+  
+  {{<author_block>}}
 
 Interactive Actions and/or Examples
 ---

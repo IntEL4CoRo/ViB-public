@@ -38,25 +38,30 @@ be tested and refined within a simulated environment.
 
 <!--more-->
 
-<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+<script>
+    // Add Authors(1 or 2) info to the list as dictionary
 
-  <div style="flex:30%;">
-      <img src="VHuMK3.png" width="200" style="clip-path: circle(35%);">
-  </div>
-
-  <div style="flex:70%;">
-    <h3>Michaela Kümpel (Knowledge Graphs) and Vanessa Hassouna (Robot Action Execution)</h3>
-    Tel:     +49 421 218 64021, +49 421 218 99651 <br>
-    <!--Fax:     +49 XXXXXXXXXX <br> -->
-    Mail:    <a href="mailto:michaela.kuempel@cs.uni-bremen.de">michaela.kuempel@cs.uni-bremen.de</a>, <a href="mailto:hassouna@cs.uni-bremen.de">hassouna@cs.uni-bremen.de</a> <br>
-    <a style="color:red" href="https://ai.uni-bremen.de/team/michaela_kümpel">
-      <span style="font-size: 15px;">Profile Michaela Kümpel</span>
-      <a style="color:red" href="https://ai.uni-bremen.de/team/vanessa_hassouna">
-      <span style="font-size: 15px;">Profile Vanessa Hassouna</span>
-    </a>
-  </div>
-
-</div> 
+    var authors = [
+      {
+        img: "MichaelaKümpel.png",
+        name: "Michaela Kümpel",
+        tel: "+49 421 218 64021",
+        fax: "+49 421 218 64047",
+        mail: "michaela.kuempel@cs.uni-bremen.de",
+        profile: "https://ai.uni-bremen.de/team/michaela_kümpel"
+    },
+    {
+        img: "hassouna.jpg",
+        name: "Vanessa Hassouna",
+        tel: "+49 421 218 99651",
+        fax: "+49 421 218 64047",
+        mail: "hassouna@cs.uni-bremen.de",
+        profile: "https://ai.uni-bremen.de/team/vanessa_hassouna"
+    },
+      ];
+  </script>
+  
+  {{<author_block>}}
 
 Interactive Actions and/or Examples
 ---

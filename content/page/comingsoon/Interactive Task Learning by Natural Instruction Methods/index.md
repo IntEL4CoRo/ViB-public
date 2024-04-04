@@ -42,23 +42,22 @@ For more information, you can
 
 <!--more-->
 
-<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+<script>
+    // Add Authors(1 or 2) info to the list as dictionary
 
-  <div style="flex:30%;">
-      <img src="avyas2.jpg" style="clip-path: circle(35%);">
-  </div>
-
-  <div style="flex:70%;">
-    <h3>Abhijit Vyas</h3>
-    Tel:     +49 421 218 64026 <br>
-    Fax:     +49 421 218 64047 <br>
-    Mail:    <a href="mailto:avyas@cs.uni-bremen.de">avyas@cs.uni-bremen.de</a> <br>
-    <a style="color:red" href="https://ai.uni-bremen.de/team/abhijit_vyas">
-      <span style="font-size: 15px;">Profile</span>
-    </a>
-  </div>
-
-</div>
+    var authors = [
+      {
+          img: "avyas2.jpg",
+        name: "Abhijit Vyas",
+        tel: "+49 421 218 64026",
+        fax: "+49 421 218 64047",
+        mail: "avyas@cs.uni-bremen.de",
+        profile: "https://ai.uni-bremen.de/team/abhijit_vyas"
+      },
+      ];
+  </script>
+  
+  {{<author_block>}}
 
 ![](ITL_framework.png)
 
