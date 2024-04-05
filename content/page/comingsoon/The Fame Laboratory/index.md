@@ -54,3 +54,12 @@ level of autonomous functionality and versatility.
 
 </div> -->
 
+
+Example Videos
+---
+
+- FAME Trailer: Show the Robot what to do! 
+  <figure class="video_container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_IQt39io0dE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </figure>
+
