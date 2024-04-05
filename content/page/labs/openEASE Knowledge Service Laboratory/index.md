@@ -13,7 +13,7 @@ resources:
   src: "buttons.json"
 ---
 
-OpenEASE is a cutting-edge, web-based knowledge service that leverages the
+openEASE is a cutting-edge, web-based knowledge service that leverages the
 KnowRob robot knowledge representation and reasoning system to offer a
 machine-understandable and processable platform for sharing knowledge and
 reasoning capabilities. It encompasses a broad spectrum of knowledge, including
