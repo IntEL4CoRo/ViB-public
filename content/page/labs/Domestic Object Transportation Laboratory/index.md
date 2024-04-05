@@ -13,10 +13,10 @@ resources:
   src: "buttons.json"
 ---
 
-This laboratory is dedicated to advancing the capabilities of robot agents in seamlessly executing object transportation tasks within human-centric environments such as homes and retail spaces. It provides a versatile platform for exploring and refining generalized robot plans that manage the movement of diverse objects across varied settings for multiple purposes. By focusing on the adaptability and scalability of robotic programming the lab aims to enhance the understanding and application of robotics in everyday contexts ultimately improving their generalizability transferability and effectiveness in real-world scenarios.
+This laboratory is dedicated to advancing the capabilities of robot agents in seamlessly executing object transportation tasks within human-centric environments such as homes and retail spaces. It provides a versatile platform for exploring and refining generalized robot plans that manage the movement of diverse objects across varied settings for multiple purposes. By focusing on the adaptability and scalability of robotic programming, the lab aims to enhance the understanding and application of robotics in everyday contexts ultimately improving their generalizability transferability and effectiveness in real-world scenarios.
 
 
-In the laboratory, you’re equipped with a generalized open-source robotic plan
+In the laboratory, you are equipped with a generalized open-source robotic plan
 capable of executing various object transportation-related tasks, including both table
 setting and cleaning, across diverse domestic settings. These settings range from
 entire apartments to kitchen environments, and the plan is adaptable to various

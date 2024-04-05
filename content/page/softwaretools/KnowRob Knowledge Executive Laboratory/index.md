@@ -10,7 +10,7 @@ draft: false
 ---
 
 KnowRob is a knowledge processing framework designed specifically for robots.
-KnowRob offers a comprehensive suite of tools for knowledge acquisition,
+KnowRob offers a comprehensive set of tools for knowledge acquisition,
 representation, and reasoning. It enables robots to organize information into reusable
 knowledge chunks and perform reasoning using an expressive logic formalism.
 Furthermore, KnowRob provides visualization tools and mechanisms for knowledge
