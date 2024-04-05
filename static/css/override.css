@@ -67,9 +67,21 @@ div.post-entry param.hidde-after-preview + *, div.post-entry div.hidde-after-pre
   flex-basis: 70vw;
 }
 .flex-item-right {
-  min-width: 150px;
+  width: 8%;
+  height: 100%;
+  right: 0;
   flex-grow: 1;
   flex-shrink: 2;
+  position: fixed;
+}
+
+.flex-item-right a {
+  padding: 100px 8px 1px 16px;
+  display: block;
+}
+
+@media screen and (max-height: 790px) {
+  .flex-item-right {display: none;}
 }
 
 @media only screen and (max-width: 1280px) and (max-height: 900px) { /* remove left side image when screen to small */
@@ -79,7 +91,7 @@ div.post-entry param.hidde-after-preview + *, div.post-entry div.hidde-after-pre
   }
 } 
 
-@media only screen and (max-width: 1280px) { /* remove right side image when screen to small */
+@media only screen and (max-width: 1310px) { /* remove right side image when screen to small */
   .flex-item-right {
     display: none;
   }
