@@ -11,8 +11,8 @@ draft: false
 
 URoboSim is an Unreal Engine 4/5 plugin that allows importing robots
 to Unreal Engine using the URDF/SDF format and control them using various ROS interfaces.
-Using URoboSim it is not only possible to execute real robot plans in
-simulation, it is also possible to emulate the actions of a real robot in order
+With using URoboSim, it is not only possible to execute real robot plans in
+simulation, it is also achievable to emulate the actions of a real robot in order
 to build a continuous belief state of the world.
 
 You can <a class="btn btn-success" target="_blank" href="https://github.com/urobosim/DemoProject"><b>try out an example project </b></a> here.

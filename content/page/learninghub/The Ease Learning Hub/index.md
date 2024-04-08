@@ -25,7 +25,9 @@ cognition-enabled robot agents. This makes the EASE Learning Hub an invaluable
 resource for students, researchers, and enthusiasts eager to deepen their
 understanding and skills in the field of intelligent robotics.
 
-For detailed information and the full teaching and learning materials click <a class="btn btn-success" target="_blank" href="https://learning-hub.ease-crc.org/"><b>here!</b></a>
+<div class="hidde-after-preview">
+For detailed information and the full teaching and learning materials click <a class="btn btn-success" target="_blank" href="the-ease-learning-hub/"><b>here!</b></a>
+</div>
 
 <!--more-->
 
@@ -47,3 +49,5 @@ For detailed information and the full teaching and learning materials click <a c
 
 </div> -->
 
+
+For full teaching and learning materials click <a class="btn btn-success" target="_blank" href="https://learning-hub.ease-crc.org/"><b>here!</b></a>

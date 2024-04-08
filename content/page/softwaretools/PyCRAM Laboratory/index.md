@@ -13,7 +13,7 @@ resources:
 ---
 
 The PyCRAM Laboratory focuses on leveraging the capabilities of PyCRAM, a
-Python 3 re-implementation of the original CRAM framework, designed to serve as a
+Python 3 re-implementation of the original CRAM framework designed to serve as a
 comprehensive toolbox for the creation, implementation, and deployment of
 AI-driven and cognition-enabled control software on autonomous robots. This
 laboratory is dedicated to advancing the frontiers of robot autonomy by providing a

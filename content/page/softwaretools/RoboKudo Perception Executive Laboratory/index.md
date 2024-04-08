@@ -18,7 +18,7 @@ of task-specific perception processes by integrating multiple vision methods. Th
 technical backbone of RoboKudo is the Perception Pipeline Tree (PPT), a novel data
 structure that enhances Behavior Trees with a focus on robot perception. Developed
 to function within a robot’s perception-action loop, RoboKudo interprets perception
-task queries—such as locating a milk box in a fridge—and crafts specialized
+task queries, such as locating a milk box in a fridge, and crafts specialized
 perception processes in the form of PPTs, integrating appropriate computer vision
 methods to accomplish the tasks at hand.
 <div class="hidde-after-preview">

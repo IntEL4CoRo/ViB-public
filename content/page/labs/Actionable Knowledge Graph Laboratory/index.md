@@ -11,7 +11,7 @@ resources:
 - name: ActionButtons
   src: "buttons.json"
 ---
-In this virtual research lab we aim to empower robots with the ability to transform abstract knowledge from the web into actionable tasks particularly in everyday manipulations like cutting pouring or whisking. By extracting information from diverse internet sources—ranging from biology textbooks and Wikipedia entries to cookbooks and instructional websites—the robots create knowledge graphs that inform generalized action plans. These plans enable robots to adapt cutting techniques such as slicing quartering and peeling to various fruits using suitable tools making abstract web knowledge practically applicable in robot perception-action loops.
+In this virtual research lab, we aim to empower robots with the ability to transform abstract knowledge from the web into actionable tasks, particularly in everyday manipulations like cutting pouring or whisking. By extracting information from diverse internet sources — ranging from biology textbooks and Wikipedia entries to cookbooks and instructional websites —, the robots create knowledge graphs that inform generalized action plans. These plans enable robots to adapt cutting techniques such as slicing, quartering, and peeling to various fruits using suitable tools making abstract web knowledge practically applicable in robot perception-action loops.
 <param class="hidde-after-preview">
 
 In this laboratory, you have the opportunity to explore knowledge graphs tailored to
