@@ -18,7 +18,7 @@ designed to offer an immersive learning experience, uniquely combining theoretic
 knowledge with practical application. It features video lectures from world-leading
 experts on various topics within the domain, providing students with first-class
 insights into the subject matter. Additionally, the textbook includes exercises that
-can be conducted within virtual research laboratories, utilizing open-source,
+can be conducted within virtual research laboratories, utilizing open-source
 cutting-edge research software to bridge the gap between theory and practice.
 Students also have direct access to a wealth of resources and background material
 through a learning hub, enhancing their study and research capabilities. Currently in

@@ -12,7 +12,7 @@ resources:
   src: "buttons.json"
 ---
 
-In order to make huge amount of data accessible to the research community, allow to analyze the data, create machine learning models from the data and support version control for the data and models, we have made an effort of releasing an infrastructure which can handle such requirements with one solution.
+In order to make large amounts of data accessible to the research community, allow to analyze the data, create machine learning models from the data, and support version control for the data and models, we have made an effort of releasing an infrastructure which can handle such requirements with one solution in NEEMHub.
 
 <div class="hidde-after-preview">
   {{<action_form data="ActionButtons">}}

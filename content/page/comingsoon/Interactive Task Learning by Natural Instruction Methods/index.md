@@ -9,16 +9,16 @@ displayInList: true
 draft: false
 ---
 
-The ”Interactive Task Learning” Lab delves into the forefront of robotics, exploring
+The Interactive Task Learning Lab delves into the forefront of robotics, exploring
 advanced learning methodologies that empower robots with the ability to not only
-perform specific tasks but also to grasp the essence of the tasks themselves. This
+perform specific tasks, but also to grasp the essence of the tasks themselves. This
 includes understanding the goals, identifying potential unwanted side effects, and
 determining suitable metrics for evaluating task performance. Beyond mere
 execution, this approach necessitates that robots comprehend the physical laws
 governing their environment, predict the outcomes of their actions, and align their
 behavior with human expectations. Central to this lab’s research is the dynamic
-interaction between robots and humans, where the human acts as a teacher,
-imparting knowledge about the conceptual framework of tasks—encompassing both
+interaction between robots and humans where the human acts as a teacher,
+imparting knowledge about the conceptual framework of tasks, encompassing both
 the underlying concepts and their interrelations. Robots are thus challenged to
 recognize the limits of their knowledge and actively seek assistance, integrating and
 acting upon advice in a manner that reflects an understanding of its purpose and

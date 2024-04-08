@@ -12,7 +12,7 @@ resources:
   src: "buttons.json"
 ---
 
-”AICOR for Newcomers” is an innovative educational initiative designed to introduce
+”AICOR for Newcomers” is an innovative educational initiative, designed to introduce
 high school students and other interested individuals to the captivating realm of
 AI-powered and cognition-enabled robotics. This program employs a visual
 programming interface powered by [Blockly](https://developers.google.com/blockly), offering an intuitive and user-friendly

@@ -21,7 +21,7 @@ This diverse focus aims to push the envelope in autonomous domestic robotics, ch
 
 <div class="hidde-after-preview">
   For Detailed information click
-  <a class="btn btn-success" target="_blank" href="the-virtual-robocuphome-arena"><b>here!</b></a>
+  <a class="btn btn-success" target="_blank" href="the-virtual-robocup@home-arena"><b>here!</b></a>
 </div>
 
 <!--more-->

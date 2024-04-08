@@ -20,10 +20,10 @@ bases of the KnowRob system, the interactive capabilities of the web-based knowl
 service openEASE, and the practical scenarios provided by virtual robot laboratories.
 The course is designed to explore the methodologies of representing knowledge in a
 form that is both machine-understandable and actionable, focusing on the acquisition
-of knowledge from diverse sources such as web scraping, and the integration of
+of knowledge from diverse sources such as web scraping and the integration of
 various knowledge segments. It addresses the critical aspects of reasoning about
 knowledge and demonstrates how this knowledge can be utilized by different
-agents—ranging from websites and AR applications to robots—to assist users in their
+agents — ranging from websites and AR applications to robots — to assist users in their
 daily activities. The practical component of the course is facilitated through
 platform-independent Jupyter notebooks based on Python, ensuring accessibility and
 minimal software requirements for all participants. With course materials hosted on

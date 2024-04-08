@@ -21,7 +21,7 @@ acquiring and grounding knowledge, serving as a semantic framework for integrati
 information from different sources and making it actionable in robots.
 
 
-Clicking on the link below will take you to the KnowRob homepage. There, you’ll
+Clicking on the link below will take you to the KnowRob homepage. There, you
 have access to everything you need to get started with KnowRob, including its
 open-source code, step-by-step installation guides, helpful tutorials, and detailed
 documentation for the software framework.

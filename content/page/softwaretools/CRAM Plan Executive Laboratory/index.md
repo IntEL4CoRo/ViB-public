@@ -21,12 +21,12 @@ simulation mechanisms. These features are pivotal for creating cognition-enabled
 control programs that significantly enhance robot autonomy. Additionally, CRAM
 includes introspection tools, allowing robots to reflect on their actions and
 autonomously refine their strategies for improved performance. Developed primarily
-in Common Lisp, with elements of C/C++, and integrated within the ROS
+in Common Lisp with elements of C/C++ and integrated within the ROS
 middleware ecosystem, this laboratory aims to pioneer advancements in cognitive
 robotics through the sophisticated use of CRAM.
 
 
-The link below directs you to the CRAM homepage, where you can find open-source
+The link below directs you to the CRAM homepage where you can find open-source
 code, installation instructions, tutorials, and comprehensive documentation for the
 CRAM software framework.
 
