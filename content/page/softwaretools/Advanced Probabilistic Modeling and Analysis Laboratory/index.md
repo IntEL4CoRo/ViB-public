@@ -66,7 +66,7 @@ Representing and Learning Robot Plans as JPD
 ---
 
 <figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/HfDqJ97UHmg?si=cA8jhQW-scNWvPKS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/kXC0G_TtNug?si=uC9gV3wuRxy-nfww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </figure>
 
 Software Components
