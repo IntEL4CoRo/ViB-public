@@ -21,7 +21,7 @@ Together, these arenas foster a unique ”Coopetition” environment where innov
 
 <div class="hidde-after-preview">
   For Detailed information click
-  <a class="btn btn-success" target="_blank" href="the-eurobin-coopetition--cooperative-competition-arenas"><b>here!</b></a>
+  <a class="btn btn-success" target="_blank" href="the-eurobin-coopetition-cooperative-competition-arenas"><b>here!</b></a>
 </div>
 
 <!--more-->
