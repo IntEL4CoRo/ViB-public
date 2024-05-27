@@ -64,7 +64,7 @@
     {
       "name": "Inspect Knowledge Graph",
       "value": "openease",
-      "description": "OpenEASE",
+      "description": "product KG",
       "url": "href=\"https://binder.intel4coro.de/v2/gh/Food-Ninja/FoodCutting.git/HEAD?urlpath=notebooks%2Fnotebooks%2FFoodCuttingQueries.ipynb",
       "options": [
         "environments",
