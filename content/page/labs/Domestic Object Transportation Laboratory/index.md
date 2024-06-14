@@ -13,13 +13,13 @@ resources:
   src: "buttons.json"
 ---
 
-This laboratory is dedicated to advancing the capabilities of robot agents in seamlessly executing object transportation tasks within human-centric environments such as homes and retail spaces. It provides a versatile platform for exploring and refining generalized robot plans that manage the movement of diverse objects across varied settings for multiple purposes. By focusing on the adaptability and scalability of robotic programming, the lab aims to enhance the understanding and application of robotics in everyday contexts ultimately improving their generalizability transferability and effectiveness in real-world scenarios.
+This laboratory is dedicated to advancing the capabilities of robot agents in seamlessly executing object transportation tasks within human-centric environments such as homes and retail spaces. It provides a versatile platform for exploring and refining generalized robot plans that manage the movement of diverse objects across varied settings for multiple purposes. By focusing on the adaptability and scalability of robotic programming, the lab aims to enhance the understanding and application of robotics in everyday contexts ultimately improving their generalizability, transferability, and effectiveness in real-world scenarios.
 
 
 In the laboratory, you are equipped with a generalized open-source robotic plan
 capable of executing various object transportation-related tasks, including both table
 setting and cleaning, across diverse domestic settings. These settings range from
-entire apartments to kitchen environments, and the plan is adaptable to various
+entire apartments to kitchen environments and the plan is adaptable to various
 robots. You can customize the execution by selecting the appropriate environment,
 task, and robot, and then run it within a software container.
 
@@ -65,9 +65,9 @@ Interactive Actions and/or Examples
 Description
 ---
 
-Every time we think that we're getting a little bit closer to a household robot, new research comes out showing just how far we have to go. Certainly, we’ve seen lots of progress in specific areas like grasping and semantic understanding and whatnot, but putting it all together into a hardware platform that can actually get stuff done autonomously still seems quite a way off.
+Every time we think that we are getting a little bit closer to a household robot, new research comes out showing just how far we have to go. Certainly, we have seen a lot of progress in specific areas like grasping and semantic understanding etc., but putting it all together into a hardware platform that can actually do things autonomously still seems to be a long way to go.
 
-In a paper presented at ICRA 2021, researchers from the University of Bremen conducted a “Robot Household Marathon Experiment,” where a PR2 robot was tasked with first setting a table for a simple breakfast and then cleaning up afterwards in order to “investigate and evaluate the scalability and the robustness aspects of mobile manipulation.” While this sort of thing kinda seems like something robots should have figured out, it may not surprise you to learn that it's actually still a significant challenge.
+In a paper presented at ICRA 2021, researchers from the University of Bremen conducted a “Robot Household Marathon Experiment,” where a PR2 robot was tasked with first setting a table for a simple breakfast and then cleaning up afterwards in order to “investigate and evaluate the scalability and the robustness aspects of mobile manipulation.” While this may seem like something robots should have figured out, you might not be surprised to learn that it is actually still a significant challenge.
 
 
 Example Videos
