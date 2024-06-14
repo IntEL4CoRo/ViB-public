@@ -7,12 +7,7 @@
       "name": "Run Code",
       "value": "run",
       "primary": true,
-      "url": "",
-      "options": [
-        "environments",
-        "robots"
-      ],
-      "available": null
+      "url": "https://binder.intel4coro.de/v2/gh/yxzhan/giskard-examples/main?labpath=notebooks/tracy.ipynb"
     }
   ]
 }
