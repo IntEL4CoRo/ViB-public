@@ -12,31 +12,21 @@ resources:
   src: "buttons.json"
 ---
 In this virtual research lab, we aim to empower robots with the ability to transform abstract knowledge from the web into actionable tasks, particularly in everyday manipulations like cutting pouring or whisking. By extracting information from diverse internet sources — ranging from biology textbooks and Wikipedia entries to cookbooks and instructional websites —, the robots create knowledge graphs that inform generalized action plans. These plans enable robots to adapt cutting techniques such as slicing, quartering, and peeling to various fruits using suitable tools making abstract web knowledge practically applicable in robot perception-action loops.
-<param class="hidde-after-preview">
 
-In this laboratory, you have the opportunity to explore knowledge graphs tailored to
-specific task domains, including fruit cutting, by utilizing resources like Wikipedia,
-biology textbooks, nutrition information sources, and instructional websites such as
-WikiHow. Additionally, you’ll have access to a comprehensive robotic action plan
-designed specifically for fruit cutting tasks. This enables you to select a specialized
-task, such as ”quartering an apple,” at which point the system will adapt the general
-fruit cutting plan to the nuances of your chosen task. The customized plan can then
-be tested and refined within a simulated environment.
-
-
-<param class="hidde-after-preview">
-{{<action_forms data="ActionButtons">}}
-{{<Webinterface>}}
-
-
+In this laboratory, you have the opportunity to select a VR task demonstration to then explore actionable knowledge graph content tailored to specific task domains, including fruit cutting, by utilizing resources like Wikipedia, biology textbooks, nutrition information sources, and instructional websites such as WikiHow. Additionally, you’ll have access to a comprehensive robotic action plan designed specifically for fruit cutting tasks. The integration of actionable knowledge graph information with the task demonstration, such as ”quartering an apple,” can be translated into specific action parameters of the robot. The customized plan can be tested and refined within a simulated environment.
 
 
 <div class="hidde-after-preview">
+  {{<action_forms data="ActionButtons">}}
+  </br>
+  {{<Webinterface>}}
+  </br>
   For Detailed information click
   <a class="btn btn-success" target="_blank" href="actionable-knowledge-graph-laboratory/"><b>here!</b></a>
 </div>
 
 <!--more-->
+
 
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
@@ -60,6 +50,10 @@ be tested and refined within a simulated environment.
 
 Interactive Actions and/or Examples
 ---
+{{<action_forms data="ActionButtons">}}
+</br>
+{{<Webinterface>}}
+</br>
 
 For Detailed information click 
 <a href="https://food-ninja.github.io/WebKat-MealRobot//">here!</a> 

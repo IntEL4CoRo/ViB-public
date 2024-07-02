@@ -12,31 +12,16 @@ resources:
   src: "buttons.json"
 ---
 In this virtual research lab, we aim to empower robots with the ability to semantically enhance task knowledge included in task demonstrations so that robots are enabled to reason about the logged memories and differentiate between performed tasks, particularly in everyday manipulations like cutting or pouring. By integrating actionable knowledge graphs, robots are enabled to link contained object and environment information to ation information and map the information to the parameters from their generalized action plans. These plans then enable robots to adapt cutting techniques such as slicing, quartering, and peeling as looged in the task demonstrations, allowing for more specialised task execution.
-<param class="hidde-after-preview">
 
-In this laboratory, you have the opportunity to select a VR task demonstration to then 
-explore actionable knowledge graph content tailored to
-specific task domains, including fruit cutting, by utilizing resources like Wikipedia,
-biology textbooks, nutrition information sources, and instructional websites such as
-WikiHow. Additionally, you’ll have access to a comprehensive robotic action plan
-designed specifically for fruit cutting tasks. The integration of actionable knowledge graph information with the task demonstration,
-such as ”quartering an apple,” can be translated into specific action parameters of the robot. The customized plan can
-be tested and refined within a simulated environment.
-
-
-<param class="hidde-after-preview">
-{{<action_forms data="ActionButtons">}}
-{{<Webinterface>}}
-
-
+In this laboratory, you have the opportunity to select a VR task demonstration to then explore actionable knowledge graph content tailored to specific task domains, including fruit cutting, by utilizing resources like Wikipedia, biology textbooks, nutrition information sources, and instructional websites such as WikiHow. Additionally, you’ll have access to a comprehensive robotic action plan designed specifically for fruit cutting tasks. The integration of actionable knowledge graph information with the task demonstration, such as ”quartering an apple,” can be translated into specific action parameters of the robot. The customized plan can be tested and refined within a simulated environment.
 
 
 <div class="hidde-after-preview">
-  For Detailed information click
-  <a class="btn btn-success" target="_blank" href="ETL-AKG-laboratory/"><b>here!</b></a>
+  {{<Webinterface>}}
 </div>
 
 <!--more-->
+
 
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
@@ -69,6 +54,7 @@ be tested and refined within a simulated environment.
 
 Interactive Actions and/or Examples
 ---
+{{<Webinterface>}}
 
 <!--For Detailed information click 
 <a href="https://food-ninja.github.io/WebKat-MealRobot//">here!</a> 
