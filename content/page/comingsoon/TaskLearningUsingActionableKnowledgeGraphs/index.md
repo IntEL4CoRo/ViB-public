@@ -55,16 +55,13 @@ In this laboratory, you have the opportunity to select a VR task demonstration t
 Interactive Actions and/or Examples
 ---
 
- 
-
-<p> <b>Query the NEEMs with Knowledge graph</b>
+Query the NEEMs with Knowledge graph
 <a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/ease-crc/bootstrapping_giskard/72f355d5e906880d85a566afbe1a1041f8e0a3eb?urlpath=lab%2Ftree%2Fnotebooks%2Fneem_query.ipynb">Run Code</a>
-</p>
-
- 
-
 
 {{<Webinterface>}}
+
+<br>
+<br>
 
 <!--For Detailed information click 
 <a href="https://food-ninja.github.io/WebKat-MealRobot//">here!</a> 
