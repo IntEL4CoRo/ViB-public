@@ -54,7 +54,6 @@ In this laboratory, you have the opportunity to select a VR task demonstration t
 
 Interactive Actions and/or Examples
 ---
-
  
 
 <p> <b>Query the Virtual Reality Demonstrations NEEMs</b>
