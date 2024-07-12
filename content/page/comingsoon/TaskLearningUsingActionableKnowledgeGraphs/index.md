@@ -55,28 +55,13 @@ In this laboratory, you have the opportunity to select a VR task demonstration t
 Interactive Actions and/or Examples
 ---
 
-Query the NEEMs with Knowledge graph
-<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/ease-crc/bootstrapping_giskard/72f355d5e906880d85a566afbe1a1041f8e0a3eb?urlpath=lab%2Ftree%2Fnotebooks%2Fneem_query.ipynb">Run Code</a>
+Query the Virtual Reality Demonstrations NEEMs
+<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/ease-crc/bootstrapping_giskard/74a869a38b3b62da3054e1f8fc74d54ba908a873?urlpath=lab%2Ftree%2Fnotebooks%2Fneem_query.ipynb">Run Code</a>
 
-{{<Webinterface>}}
+Query the Knowledge graph
+<a class="btn btn-primary" target="_blank" href="">Run Code</a>
+
+Query the Robot Demonstrations
+<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/LucaKro/pycram/f61804babfbe54652a3080684561d5de6b3a2737?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Fcutting_actions%2Fcutting_demo_armar.ipynb">Run Code</a>
 
 <br>
-<br>
-
-<!--For Detailed information click 
-<a href="https://food-ninja.github.io/WebKat-MealRobot//">here!</a> 
--->
-
-<!--<hr>
-<h2>Parameterising General Action Plans with Web Knowledge</h2>
-
-<font size=3>To achieve our goal of enabling a robotic agent to handle unkown task variations by parameterising general action plans using web knowledge, we employ the following architecture:</font>
-
-<p align="center">
-  <img src="Motivation4.jpg" width="600" alt="Action Plans"/><br>
-</p>
-
-<font size=3>In general, the robot needs to have access to a general action designator of cutting that can be parameterised.
-When the robot is given a task request, it can either query the graph database with the knowledge graph directly via its SPARQL REST API or use a knowledge framework with additional functionalities such as the KnowRob knowledge processing system[^1] and pose Prolog queries, which then are translated to SPARQL queries.
-More information on the different ways of querying the knowledge graph can be found <a href="https://food-ninja.github.io/WebKat-MealRobot/posts/querylikearobot/">here</a>.</font>
--->
