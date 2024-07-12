@@ -57,15 +57,15 @@ Interactive Actions and/or Examples
 
  
 
-<p> <b>Query the Virtual Reality Demonstrations NEEMs</b>
+<p>Query the Virtual Reality Demonstrations NEEMs
 <a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/ease-crc/bootstrapping_giskard/74a869a38b3b62da3054e1f8fc74d54ba908a873?urlpath=lab%2Ftree%2Fnotebooks%2Fneem_query.ipynb">Run Code</a>
 </p>
 
-<p> <b>Query the Knowledge graph</b>
+<p>Query the Knowledge graph
 <a class="btn btn-primary" disabled="" target="_blank" href="">Run Code</a>
 </p>
 
-<p> <b>Run the Robot Demonstrations</b>
+<p>Run the Robot Demonstrations
 <a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/LucaKro/pycram/f61804babfbe54652a3080684561d5de6b3a2737?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Fcutting_actions%2Fcutting_demo_armar.ipynb">Run Code</a>
 </p>
 
