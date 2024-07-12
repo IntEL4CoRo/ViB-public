@@ -63,12 +63,12 @@ Our framework consists of three steps.
 Step 1 is to select and load an episodic memory/ human task demonstration from our logged experience database. This can be done in the following notebook:
 
 Load and Query the Virtual Reality Demonstrations NEEMs
-<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/ease-crc/bootstrapping_giskard/74a869a38b3b62da3054e1f8fc74d54ba908a873?urlpath=lab%2Ftree%2Fnotebooks%2Fneem_query.ipynb">Run Code</a>
+<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/ease-crc/bootstrapping_giskard/74a869a38b3b62da3054e1f8fc74d54ba908a873?urlpath=lab%2Ftree%2Fnotebooks%2Fneem_query.ipynb">Load NEEM</a>
 
 Step 2 is to query the linked actionable knowledge graph for task information. This is demonstrated in the following notebook:
 
 Query the actionable knowledge graph
-<a class="btn btn-primary" target="_blank" href="">Run Code</a>
+<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/WebKat-MealRobot/main?labpath=notebooks%2FFindOutTask.ipynb">Query AKG</a>
 
 Step 3 is to use the parameters for action parametrisation of the robot action plan. This is done in the following notebook:
 
