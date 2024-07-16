@@ -57,7 +57,7 @@ Interactive Actions and/or Examples
  
 
 <p>Query the Virtual Reality Demonstrations NEEMs
-<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/ease-crc/bootstrapping_giskard/74a869a38b3b62da3054e1f8fc74d54ba908a873?urlpath=lab%2Ftree%2Fnotebooks%2Fneem_query.ipynb">Run Code</a>
+<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/ease-crc/bootstrapping_giskard/866af66a9bb8e18b8bec5384a394b81bc02962ed?urlpath=lab%2Ftree%2Fnotebooks%2Fneem_query.ipynb">Run Code</a>
 </p>
 
 <p>Query the Knowledge graph
