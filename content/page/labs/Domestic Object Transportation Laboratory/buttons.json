@@ -32,6 +32,11 @@
         "knowledge_bases": "https://data.open-ease.org/QA?neem_id=630614f0ff954448f792b2c3&q=findall([Duration%2C Evt]%2C ( event_interval(Evt%2C Begin%2C End)%2C number(End)%2C Duration is End - Begin )%2C Durations)%2C max_member([MaxDuration%2C LongestEvt]%2C Durations)."
       },
       {
+        "name": "Stretch",
+        "img": "/img/stretch.png",
+        "value": "stretch"
+      },
+      {
         "name": "Armar",
         "value": "armar"
       },
@@ -82,7 +87,9 @@
         "environments=household|robots=donbot|tasks=setting_table": "household_donbot_setting_table.ipynb",
         "environments=household|robots=pr2|tasks=setting_table": "household_pr2_setting_table.ipynb",
         "environments=household|robots=tiago|tasks=setting_table": "household_tiago_setting_table.ipynb",
-        "environments=household|robots=pr2|tasks=popcorn": "https://binder.intel4coro.de/v2/gh/IntEL4CoRo/cram_teaching/legacy?urlpath=lab%2Ftree%2Flectures%2Fdemos%2Fpopcorn.ipynb"
+        "environments=household|robots=pr2|tasks=popcorn": "https://binder.intel4coro.de/v2/gh/IntEL4CoRo/cram_teaching/legacy?urlpath=lab%2Ftree%2Flectures%2Fdemos%2Fpopcorn.ipynb",
+        "environments=apartment|robots=stretch|tasks=setting_table": "https://binder.intel4coro.de/v2/gh/maltehue/pycram/stretch?urlpath=lab/tree/demos/stretch_demo.ipynb"
+        
       }
     },
     {
