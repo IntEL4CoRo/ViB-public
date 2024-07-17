@@ -68,7 +68,7 @@ Load and Query the Virtual Reality Demonstrations NEEMs
 Step 2 is to query the linked actionable knowledge graph for task information. This is demonstrated in the following notebook:
 
 Query the actionable knowledge graph
-<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/WebKat-MealRobot/main?labpath=notebooks%2FFindOutTask.ipynb">Query AKG</a>
+<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/Food-Ninja/WebKat-MealRobot/a8f389f4053b18155abead27b42139b549e0e605?urlpath=lab%2Ftree%2Fnotebooks%2FFindOutTask.ipynb">Query AKG</a>
 
 Step 3 is to use the parameters for action parametrisation of the robot action plan. This is done in the following notebook:
 
