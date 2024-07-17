@@ -37,7 +37,7 @@
       "name": "Inspect Knowledge Graph",
       "value": "akg",
       "description": "cutting KG",
-      "url": "https://binder.intel4coro.de/v2/gh/WebKat-MealRobot/main?labpath=notebooks%2FFindOutTask.ipynb",
+      "url": "https://binder.intel4coro.de/v2/gh/Food-Ninja/WebKat-MealRobot/a8f389f4053b18155abead27b42139b549e0e605?urlpath=lab%2Ftree%2Fnotebooks%2FFindOutTask.ipynb",
       "options": [
         "environments",
         "robots",
