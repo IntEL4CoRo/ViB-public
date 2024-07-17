@@ -17,7 +17,7 @@ In this laboratory, you have the opportunity to select a VR task demonstration t
 
 
 <div class="hidde-after-preview">
-    {{<action_forms data="ActionButtons">}}
+  {{<action_forms data="ActionButtons">}}
   </br>
   {{<Webinterface>}}
 </div>
