@@ -1,5 +1,5 @@
 ---
-title: "The Ease Learning Hub"
+title: "The EASE Learning Hub"
 date: 2012-01-27T14:33:42-04:00
 subtitle: ""
 tags: ["Research", "Teaching", "Education"]
