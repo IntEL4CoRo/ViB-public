@@ -11,7 +11,7 @@ To contribute to the content of the website, do the following steps:
   1. Create your own fork of the repository, see [Fork A Repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo) for details.
   2. Clone the files of your fork repository to your local computer (see also fork page for details).
   3. Open a terminal in the newly created project directory and follow the "Installation" instructions to setup and start a local hugo server.
-  4. Go to your directory in "content/posts" and edit the "index.md" file to change the corresponding web page according to your wishes.
+  4. Go to your directory in "content/page" and edit the "index.md" file to change the corresponding web page according to your wishes.
   5. Commit changes to the (fork) repository
   6. After all changes and redesigns are finalized, start a pull request to transfer the fork changes to the main repository, see [Creating A Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) for details.
 
@@ -43,7 +43,7 @@ git submodule update --init
   ```bash
   hugo server --buildDrafts
   ```
-  to start a local dev Hugo server with adress: [http://localhost:1313/coai-vib/]()
+  to start a local dev Hugo server with adress: [http://localhost:1313/]()
 
 
 ### Option 4. Start with docker
@@ -164,7 +164,7 @@ resources:
 }
 ```
 
-> Example: [button.json](content/posts/Researcher's%20workbench%20for%20Household%20Robotics/buttons.json)
+> Example: [button.json](content/page/labs/Domestic Object Transportation Laboratory/buttons.json)
 
 ## Development
 
