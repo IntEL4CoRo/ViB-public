@@ -67,9 +67,47 @@ in cognitive robotics.
 
 </div>
 
-For Detailed information and the full moodle click <a class="btn btn-success" target="_blank" href="https://moodle.intel4coro.de/"><b>here!</b></a>
+> **To view the full Integrated Intelligent Systems course, please click <a class="btn btn-success" target="_blank" href="https://intel4coro.informatik.uni-bremen.de"><b>here!</b></a>**
 
 ---
-<iframe src="https://iris.informatik.uni-bremen.de/textbook/" width="100%" height=1300 style="border:none;box-shadow: 1px 1px 3px #000;" allowfullscreen></iframe>
+
+Textbook
+
+<iframe src="https://textbook.intel4coro.de" width="100%" height=500 style="border:none;box-shadow: 1px 1px 3px #000;" allowfullscreen></iframe>
+
 ---
 
+Exercises
+
+<div style="display:flex; overflow:auto;">
+  <a href="https://binder.intel4coro.de/v2/gh/IntEL4CoRo/cram_teaching/researcher?urlpath=lab%2Ftree%2Flectures%2Fdemos%2Fhousehold.ipynb"
+    target="_blank"
+    style="display:flex; flex-direction:column;"
+    class="btn btn-default">
+      <img src="https://iris.informatik.uni-bremen.de/textbook/content/Ch01/18-joint-action.png" alt="household">
+      <div>Household Environment</div>
+  </a>
+  <a href="https://binder.intel4coro.de/v2/gh/hawkina/COAI/save-state?urlpath=lab/tree/notebooks/retail_donbot.ipynb"
+    target="_blank"
+    style="display:flex; flex-direction:column;"
+    class="btn btn-default">
+      <img src="https://iris.informatik.uni-bremen.de/textbook/content/Ch01/14-retail-robots.png">
+      <div>Retail Environment</div>
+  </a>
+  <a href="https://binder.intel4coro.de/v2/gh/IntEL4CoRo/cram_teaching/legacy?urlpath=lab%2Ftree%2Flectures%2Fdemos%2Fpopcorn.ipynb"
+    target="_blank"
+    style="display:flex; flex-direction:column;"
+    class="btn btn-default">
+      <img src="https://iris.informatik.uni-bremen.de/textbook/content/Ch01/01-holding-pot.png">
+      <div>Popcorn Making</div>
+  </a>
+  <a href="https://binder.intel4coro.de/v2/git/https%3A%2F%2Fgitlab.informatik.uni-bremen.de%2Fyanxiang%2Frobokudo.git/binderhub"
+    target="_blank"
+    style="display:flex; flex-direction:column;"
+    class="btn btn-default">
+      <img src="https://robokudo.ai.uni-bremen.de/_images/rk_logo_v3-1000px.png">
+      <div>RoboKudo Perception</div>
+  </a>
+</div>
+
+---
