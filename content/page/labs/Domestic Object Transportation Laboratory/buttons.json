@@ -49,7 +49,7 @@
         "name": "Donbot",
         "value": "donbot",
         "img": "https://intel4coro.github.io/coai-vib/img/donbot_urdf_white1.png"
-      }
+      },
       {
         "name": "Multi-Agent",
         "value": "multiagent"
