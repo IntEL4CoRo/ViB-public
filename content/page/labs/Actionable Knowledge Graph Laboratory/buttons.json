@@ -33,8 +33,9 @@
         "robots"
       ],
       "available": {
-        "environments=apartment|robots=pr2": "https://binder.intel4coro.de/v2/gh/sunava/pycram/be9d0c0a8a37d9ca154a956c04d9c01975e4aed3?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Fcutting_actions%2Fcutting_demo.ipynb",
-        "environments=apartment|robots=armar6": "https://binder.intel4coro.de/v2/gh/LucaKro/pycram/f61804babfbe54652a3080684561d5de6b3a2737?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Fcutting_actions%2Fcutting_demo_armar.ipynb"
+        "environments=apartment|robots=pr2": "https://binder.intel4coro.de/v2/gh/sunava/pycram/b96e23b87a9b8f888bba36948f5e5897eadb16ea?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Fcutting_actions%2Fcutting_demo.ipynb",
+        "environments=apartment|robots=armar6": "https://binder.intel4coro.de/v2/gh/LucaKro/pycram/armar_binder?labpath=demos/pycram_virtual_building_demos/cutting_actions/cutting_demo_armar.ipynb",
+        "environments=apartment|robots=Tiago": "https://binder.intel4coro.de/v2/gh/LucaKro/pycram/tiago_binder?labpath=demos/pycram_virtual_building_demos/cutting_actions/cutting_demo_tiago.ipynb"
       }
     },
     {
