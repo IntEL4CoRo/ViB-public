@@ -17,7 +17,13 @@
         "name": "ARMAR-6",
         "value": "armar6",
         "img": "https://github.com/sunava/pycram/blob/binder-robot-manipulation-actions/demos/pycram_virtual_building_demos/img/A6_cropped_hq_fixed_tablet4_rdax_1200x2048.png?raw=true"
-       }
+       },
+       {
+        "name": "Tiago",
+        "value": "tiago",
+        "img": "https://intel4coro.github.io/coai-vib/img/tiago_urdf_white1.png",
+        "knowledge_bases": "https://data.open-ease.org/QA?neem_id=630614f0ff954448f792b2c3&q=findall([Duration%2C Evt]%2C ( event_interval(Evt%2C Begin%2C End)%2C number(End)%2C Duration is End - Begin )%2C Durations)%2C max_member([MaxDuration%2C LongestEvt]%2C Durations)."
+      }
     ]
 
   },
