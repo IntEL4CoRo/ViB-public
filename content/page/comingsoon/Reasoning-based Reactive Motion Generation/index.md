@@ -12,7 +12,12 @@ author: "Kaviya Dhanabalachandran"
 
 This virtual research lab explores reactive motion generation through reasoning. We propose image schema-based reasoning for decision-making within motion controllers. Our reasoner is tightly coupled with the controller, continuously monitoring actions and inferring motion primitives to adapt to dynamic environments. By providing real-time feedback, the reasoner enables the controller to make informed decisions and generate appropriate motion responses.
 
-<a class="btn btn-success" target="_blank" href="https://github.com/kaviyachandran/silkie_ros">Source code</a>
+Source code
+---
+- [Rule with semantic interpreter](https://github.com/kaviyachandran/silkie_ros)
+- [Giskard](https://github.com/SemRoCo/giskardpy/tree/mujoco_actions_devel)
+- [Reasoner](https://github.com/kaviyachandran/silkie)
+- [Simulation](https://github.com/HoangGiang93/mujoco_sim)
 
 <div class="hidde-after-preview">
   For Detailed information click
