@@ -26,7 +26,7 @@
       "name": "Load episodic memory",
       "value": "openease",
       "description": "cutting VR",
-      "url": "https://binder.intel4coro.de/v2/gh/ease-crc/bootstrapping_giskard/74a869a38b3b62da3054e1f8fc74d54ba908a873?urlpath=lab%2Ftree%2Fnotebooks%2Fneem_query.ipynb",
+      "url": "https://binder.intel4coro.de/v2/gh/ease-crc/bootstrapping_giskard/478dab58f7c858980ae02c723db6b737950ef1e8?urlpath=lab%2Ftree%2Fnotebooks%2Fneem_query.ipynb",
       "options": [
         "environments",
         "robots",

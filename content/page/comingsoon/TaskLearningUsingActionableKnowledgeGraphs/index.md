@@ -63,7 +63,7 @@ Our framework consists of three steps.
 Step 1 is to select and load an episodic memory/ human task demonstration from our logged experience database. This can be done in the following notebook:
 
 Load and Query the Virtual Reality Demonstrations NEEMs
-<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/ease-crc/bootstrapping_giskard/74a869a38b3b62da3054e1f8fc74d54ba908a873?urlpath=lab%2Ftree%2Fnotebooks%2Fneem_query.ipynb">Load NEEM</a>
+<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/ease-crc/bootstrapping_giskard/478dab58f7c858980ae02c723db6b737950ef1e8?urlpath=lab%2Ftree%2Fnotebooks%2Fneem_query.ipynb">Load NEEM</a>
 
 Step 2 is to query the linked actionable knowledge graph for task information. This is demonstrated in the following notebook:
 
