@@ -2,7 +2,7 @@
 title: "NaivPhys4RP - Dark Perception Laboratory"
 date: 2024-08-10T11:08:00+00:00
 subtitle: ""
-tags: ["Research"]
+tags: ["Research", "Prospective Perception", "Cognitive Emulation", "Scene Grammar"]
 dropCap: false
 displayInMenu: false
 displayInList: true
