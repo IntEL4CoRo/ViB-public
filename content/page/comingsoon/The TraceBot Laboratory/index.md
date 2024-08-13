@@ -100,8 +100,7 @@ Publications
   2024 International Conference on Robotics and Automation (ICRA),
   2024(Accepted for publication)
 
-- IROS March 2024 [Submitted]
-RobAuditor — A Highly Scalable Framework for Automated Verification and Audit Trail Generation in Mission-Critical Processes: “When robots understand what they see and do, then give account of”
+- [F. Kenghagho K.; J.B. Weibel; S. Aloui; M. Prada; M. Neumann; M. Grossard; A. Remazeilles; M. Vincze; M. Beetz, "RobAuditor: A Flexible Framework for Automated Verification and Audit Trail Generation in Safety-Critical Processes: "Plug, Trace, Verify, (Recover,) Report"", 2024 IEEE International Conference on Humanoid Robots (Humanoids). Submitted](https://www.researchgate.net/publication/379310647_RobAuditor_-_A_Highly_Scalable_Framework_for_Automated_Verification_and_Audit_Trail_Generation_in_Mission-Critical_Processes_When_robots_understand_what_they_see_and_do_then_give_account_of)
 
 
 Software Components
