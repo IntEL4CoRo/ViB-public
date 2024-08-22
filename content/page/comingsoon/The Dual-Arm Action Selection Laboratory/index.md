@@ -52,6 +52,8 @@ While a multitude of planning algorithms already exist, they do not provide effi
 
 Concurrently, achieving behavior that is more predictable for humans interacting with the robot is assumed to increase trust in robot systems in the context of human-robot interaction. We implement two heuristics modeled on human behavior intended to create more naturalistic behavior patterns for the robot, which aim to increase user friendliness and user acceptance in human-robot interaction. Using human behavior as a baseline is proposed to achieve a better match between robot behavior and human expectations than, e.g., a model based on optimizing behavior in terms of efficiency. This improved match between what people expect and how the robot performs household tasks could in turn improve user acceptance.
 
+<img src="img/flowchart.png" alt="Task Execution Flowchart" width="150" />
+
 Dual-Arm Grasp Action Planner (DAGAP)
 ---
 DAGAP (Dual-Arm Grasp Action Planner) is a heuristic strategy that allows a certain level of autonomy, choosing which hand to grasp an object with.
@@ -59,17 +61,21 @@ The framework takes the type of task and the objects that are to be manipulated 
 The framework first analyzes the robot based on its model and finds the number of available grippers.
 It then categorizes the tasks based on a dual-arm taxonomy.
 
+<img src="img/dagap-algorithm.png" alt="DAGAP Model" width="250" />
+
 Opportunistic Planning Model (OPM)
 ---
 The OPM is an action selection model for action sequences in everyday activities based on human behavior. The OPM minimizes the required effort by taking spatial properties of the task environment into account and optimizing stepwise: The next action to be performed is based on the current location as well as the perceived cost of each possible next action, with the lowest-cost action being chosen in each step.
 
 The OPM is based on bounded rationality, minimization of effort, and the effective use of space, and takes three spatial aspects of the task environment into account when deciding for an action sequence: Minimizing the traversed distance, relational dependencies between items, and topology (containment).
 
+<img src="img/example_model_visual.png" alt="OPM Example Model" width="500" />
+
 Simulation
 ---
 
 <figure class="video_container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NXUWJXekih4?si=quAW9Y5WikVnZofR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NXUWJXekih4?si=quAW9Y5WikVnZofR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
 </figure>
 
 Publications
