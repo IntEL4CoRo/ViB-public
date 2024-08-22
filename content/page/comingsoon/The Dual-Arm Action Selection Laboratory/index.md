@@ -2,7 +2,7 @@
 title: "The Dual-Arm Action Selection Laboratory"
 date: 2020-05-02T14:33:42-04:00  # TODO: update date
 subtitle: ""
-tags: ["Research", "Everyday Activities", "Cognitive Modeling", "Dual-Arm Manipulation", "Action Selection"]  # TODO: update tags
+tags: ["Research", "Everyday Activities", "Cognitive Modeling", "Dual-Arm Manipulation", "Action Selection"]
 dropCap: false
 displayInMenu: false
 displayInList: true
@@ -28,22 +28,75 @@ Here you can explore the table setting demo, create your own object order and ex
 <!--more-->
 
 <!-- <div class="main-well-flex-container" style="margin:20px;align-items: center;">
-
-  <div style="flex:30%;">
-      <img src="profile_picture.png" style="clip-path: circle(35%);">
-  </div>
-
-  <div style="flex:70%;">
-    <h3>Replace with Name</h3>
-    Tel:     +49 XXXXXXXXXX <br>
-    Fax:     +49 XXXXXXXXXX <br>
-    Mail:    <a href="mailto:XXXXXXX@cs.uni-bremen.de">XXXXXX@cs.uni-bremen.de</a> <br>
-    <a style="color:red" href="https://ai.uni-bremen.de/team/XXXXXXXXX">
-      <span style="font-size: 15px;">Profile</span>
-    </a>
-  </div>
-
+    <div style="flex:20%;">
+        <img src="https://ai.uni-bremen.de/_media/wiki/schaefer2024.jpg?h=180&tok=e70912" width="200" style="clip-path: circle(50%);">
+    </div>
+    <div style="flex:20%;">
+        <img src="https://ai.uni-bremen.de/_media/wiki/wenzl.jpg" width="200" style="clip-path: circle(50%);">
+    </div>
+    <div style="flex:60%;">
+        <h3>Jeroen Schäfer (DAGAP) and Petra Wenzl (OPM)</h3>
+        Tel:     +49 421 218 64022, +49 421 218 64019 <br>
+        Mail:    <a href="mailto:jeroen.schaefer@uni-bremen.de">jeroen.schaefer@uni-bremen.de</a>, <a href="mailto:pwenzl@uni-bremen.de">pwenzl@uni-bremen.de</a> <br>
+        <a style="color:red" href="https://ai.uni-bremen.de/team/jeroen_schaefer">
+        <span style="font-size: 15px;">Profile Jeroen Schäfer</span></a>,
+        <a style="color:red" href="https://ai.uni-bremen.de/team/petra_wenzl">
+        <span style="font-size: 15px;">Profile Petra Wenzl</span>
+        </a>
+    </div>
 </div> -->
+
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+    <div style="flex:50%;">
+        <img src="https://ai.uni-bremen.de/_media/wiki/schaefer2024.jpg?h=180&tok=e70912" width="200" style="clip-path: circle(50%);">
+        <h3>Jeroen Schäfer (DAGAP)</h3>
+        Tel: +49 421 218 64022 <br>
+        Mail: <a href="mailto:jeroen.schaefer@uni-bremen.de">jeroen.schaefer@uni-bremen.de</a><br>
+        <div class="main-well-flex-container" style="margin:1px;align-items: left;text-align:left">
+            <div style="flex:50%;">
+            <a style="color:red" href="https://ai.uni-bremen.de/team/jeroen_schaefer">
+            <span style="font-size: 15px;">Profile Jeroen Schäfer</span></a>
+            </div>
+            <div style="flex:10%;">
+            <a href="https://www.linkedin.com/in/jeroen-sch%C3%A4fer-62b163183/">
+                <img src="https://edent.github.io/SuperTinyIcons/images/svg/linkedin.svg" height="30" alt="LinkedIn: Jeroen Schäfer"/>
+            </a>
+            </div>
+            <div style="flex:10%;">
+            <a href="https://github.com/j-schaefer/">
+                <img src="https://edent.github.io/SuperTinyIcons/images/svg/github.svg" height="30" alt="Github: Jeroen Schäfer"/>
+            </a>
+            </div>
+            <div style="flex:30%;">
+            </div>
+        </div>
+    </div>
+    <div style="flex:50%;">
+        <img src="https://ai.uni-bremen.de/_media/wiki/wenzl.jpg" width="200" style="clip-path: circle(50%);">
+        <h3>Petra Wenzl (OPM)</h3>
+        Tel: +49 421 218 64019 <br>
+        Mail: <a href="mailto:pwenzl@uni-bremen.de">pwenzl@uni-bremen.de</a> <br>
+        <div class="main-well-flex-container" style="margin:1px;align-items: left;text-align:left">
+            <div style="flex:50%;">
+            <a style="color:red" href="https://ai.uni-bremen.de/team/petra_wenzl">
+            <span style="font-size: 15px;">Profile Petra Wenzl</span>
+            </div>
+            <div style="flex:10%;">
+            <a href="https://www.linkedin.com/in/petra-wenzl/">
+                <img src="https://edent.github.io/SuperTinyIcons/images/svg/linkedin.svg" height="30" alt="LinkedIn: Petra Wenzl"/>
+            </a>
+            </div>
+            <div style="flex:10%;">
+            <a href="https://github.com/zauri/">
+                <img src="https://edent.github.io/SuperTinyIcons/images/svg/github.svg" height="30" alt="Github: Petra Wenzl"/>
+            </a>
+            </div>
+            <div style="flex:30%;">
+            </div>
+        </div>
+        </a>
+    </div>
+</div>
 
 Description
 ---
