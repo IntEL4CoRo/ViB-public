@@ -18,7 +18,7 @@ The ultimate goal is to develop a system that can intelligently adapt to changin
 
 Currently, the lab showcases two heuristics: The Opportunistic Planning Model (OPM) for action selection, and the Dual-Arm Grasp Action Planner (DAGAP) which decides which gripper to use.
 
-Here you can explore the table setting demo, create your own object order and experiment with it.
+<!-- Here you can explore the table setting demo, create your own object order and experiment with it. -->
 
 <div class="hidde-after-preview">
   For Detailed information click
