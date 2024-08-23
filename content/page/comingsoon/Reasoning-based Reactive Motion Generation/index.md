@@ -8,16 +8,14 @@ displayInMenu: false
 displayInList: true
 draft: false
 author: "Kaviya Dhanabalachandran"
+resources:
+- name: ActionButtons
+  src: "buttons.json"
 ---
 
 This virtual research lab explores reactive motion generation through reasoning. We propose image schema-based reasoning for decision-making within motion controllers. Our reasoner is tightly coupled with the controller, continuously monitoring actions and inferring motion primitives to adapt to dynamic environments. By providing real-time feedback, the reasoner enables the controller to make informed decisions and generate appropriate motion responses.
 
-Source code
----
-- [Rule with semantic interpreter](https://github.com/kaviyachandran/silkie_ros)
-- [Giskard](https://github.com/SemRoCo/giskardpy/tree/mujoco_actions_devel)
-- [Reasoner](https://github.com/kaviyachandran/silkie)
-- [Simulation](https://github.com/HoangGiang93/mujoco_sim)
+{{<action_form data="ActionButtons">}}
 
 <div class="hidde-after-preview">
   For Detailed information click
@@ -30,6 +28,13 @@ Videos
 ---
 
 <iframe width="100%" height="450" src="https://www.youtube.com/embed/0wi6gHP-MFU?si=fTgjckZCvXlrWzsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Source code
+---
+- [Rule with semantic interpreter](https://github.com/kaviyachandran/silkie_ros)
+- [Giskard](https://github.com/SemRoCo/giskardpy/tree/mujoco_actions_devel)
+- [Reasoner](https://github.com/kaviyachandran/silkie)
+- [Simulation](https://github.com/HoangGiang93/mujoco_sim)
 
 Publications
 ---
