@@ -57,7 +57,7 @@ Key components
 
 The Multiverse Framework is built with three main pillars: the Multiverse Server/Client, Multiverse Parser, and Multiverse Knowledge. Each pillar operates independently, making separate installation and operation possible. To simplify the launching and visualizing of clusters, Multiverse includes Multiverse Launch and Multiverse View. The software runs on both Linux and Windows, with seamless communication across systems via TCP socket.
 
-For further information, please refer to this [documentation](multiverseframework.readthedocs.io).
+For further information, please refer to this [documentation](https://multiverseframework.readthedocs.io/).
 
 <h2>Single User</h2>
 <figure class="video_container">
