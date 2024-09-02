@@ -26,7 +26,7 @@
          {
         "name": "Justin",
         "value": "justin",
-        "img": "https://github.com/sunava/pycram/blob/binder-robot-manipulation-actions/demos/pycram_virtual_building_demos/img/justin.jpeg"
+        "img": "https://github.com/sunava/pycram/blob/07f83024258983131934ee3f8a4acaa32d1ffc46/demos/pycram_virtual_building_demos/img/justin.png?raw=true"
        }
     ]
 
@@ -44,7 +44,7 @@
       ],
       "available": {
         "environments=apartment|robots=pr2": "https://binder.intel4coro.de/v2/gh/sunava/pycram/b96e23b87a9b8f888bba36948f5e5897eadb16ea?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Fcutting_actions%2Fcutting_demo.ipynb",
-        "environments=apartment|robots=armar6": "https://binder.intel4coro.de/v2/gh/LucaKro/pycram/armar_binder?labpath=demos/pycram_virtual_building_demos/cutting_actions/cutting_demo_armar.ipynb",
+        "environments=apartment|robots=armar6": "https://binder.intel4coro.de/v2/gh/LucaKro/pycram/04b1475e88e101454a0647571e22d6fd32f8994d?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Ftransporting_actions%2Ftransport_demo_armar.ipynb",
         "environments=apartment|robots=tiago": "https://binder.intel4coro.de/v2/gh/LucaKro/pycram/tiago_binder?labpath=demos/pycram_virtual_building_demos/cutting_actions/cutting_demo_tiago.ipynb",
         "environments=apartment|robots=justin": "https://binder.intel4coro.de/v2/gh/LucaKro/pycram/1410769d61f9ab6e8b9f8dc3b5ce5eda8c0cc6ca?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Fcutting_actions%2Fcutting_demo_justin.ipynb"
       }
