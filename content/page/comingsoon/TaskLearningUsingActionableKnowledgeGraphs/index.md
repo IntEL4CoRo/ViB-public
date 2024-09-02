@@ -59,7 +59,10 @@ Interactive Actions and/or Examples
 ---
 In this lab, we want to show how robots can perform task learning.
 
-<font size=3>To achieve our goal of enabling a robotic agent to learn tasks from human demonstrations, we follow the idea below, which is also described in[^1]:</font>
+<font size=3>To achieve our goal of enabling a robotic agent to learn tasks from human demonstrations, we follow the idea below, which is also described in<br>
+<br>
+Kümpel, Michaela, Vyas, Abhijit, Hassouna, Vanessa and Beetz, Michaela, <b>"Task Learning Using Actionable Knowledge Graphs"</b>, In <i>ICRA40- 40th Anniversary of the IEEE International Conference on Robotics and Automation</i>, 2024.
+</font>
 
 <p align="center">
   <img src="TaskLearningAKG.jpg" width="600" alt="Motivation"/><br>
