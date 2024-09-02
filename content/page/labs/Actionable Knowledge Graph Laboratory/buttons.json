@@ -50,10 +50,21 @@
       }
     },
     {
-      "name": "Inspect Knowledge Graph",
-      "value": "openease",
+      "name": "Inspect Cutting Knowledge Graph",
+      "value": "cutKG",
       "description": "cutting KG",
-      "url": "https://binder.intel4coro.de/v2/gh/Food-Ninja/FoodCutting.git/HEAD?urlpath=notebooks%2Fnotebooks%2FFoodCuttingQueries.ipynb",
+      "url": "https://binder.intel4coro.de/v2/gh/Food-Ninja/CuttingFood/4389edfb0ec2dc6c1339cbea00fd641ceb38ef3a?urlpath=lab%2Ftree%2Fjupyter%2FFoodCuttingQueries.ipynb",
+      "options": [
+        "environments",
+        "robots",
+        "tasks"
+      ]
+    },
+    {
+      "name": "Inspect Pouring Knowledge Graph",
+      "value": "pourKG",
+      "description": "pouring KG",
+      "url": "https://binder.intel4coro.de/v2/gh/Food-Ninja/PouringFood/75001188f65a00c42e02020740c5eed32eff651e?urlpath=lab%2Ftree%2Fjupyter%2FPouringFoodQueries.ipynb",
       "options": [
         "environments",
         "robots",
