@@ -63,7 +63,7 @@ For Detailed information click
 <font size=3>To achieve our goal of enabling a robotic agent to handle unkown task variations by parameterising general action plans using web knowledge, we employ the following architecture.</font>
 
 For more information, please check and cite:<br>
-Kümpel, Michaela, Vyas, Abhijit, Hassouna, Vanessa and Beetz, Michaela, <b>"Task Learning Using Actionable Knowledge Graphs"</b>, In <i>ICRA40- 40th Anniversary of the IEEE International Conference on Robotics and Automation</i>, 2024.<br>
+Kümpel, Michaela, Töberg, Jan-Phillip, Hassouna, Vanessa, Cimiano, Phillip and Beetz, Michael, <b>"Towards a Knowledge Engineering Methodology for Flexible Robot Manipulation in Everyday Tasks"</b>, In <i>Actionable Knowledge Representation and Reasoning for Robots (AKR^3) at European Semantic Web Conference (ESWC)</i>, 2024.<br>
 
 <p align="center">
   <img src="Motivation4.jpg" width="600" alt="Action Plans"/><br>
