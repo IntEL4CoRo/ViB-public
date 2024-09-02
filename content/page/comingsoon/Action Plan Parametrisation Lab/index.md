@@ -77,9 +77,9 @@ Kümpel, Michaela, Töberg, Jan-Phillip, Hassouna, Vanessa, Cimiano, Phillip and
 
 
 <font size=3>In general, the robot needs to have access to a general action designator of cutting that can be parameterised.
-When the robot is given a task request, it can either query the graph database with the knowledge graph directly via its SPARQL REST API or use a knowledge framework with additional functionalities such as the KnowRob knowledge processing system[^1] and pose Prolog queries, which then are translated to SPARQL queries.
+When the robot is given a task request, it can either query the graph database with the knowledge graph directly via its SPARQL REST API or use a knowledge framework with additional functionalities such as the KnowRob knowledge processing system and pose Prolog queries, which then are translated to SPARQL queries.
 More information on the different ways of querying the knowledge graph can be found <a href="https://food-ninja.github.io/WebKat-MealRobot/posts/querylikearobot/">here</a>.</font>
-
+<p align="center">
 <img src="CuttingWithParameters.png" width="800" alt="Parameters"/>
-
+</p>
 
