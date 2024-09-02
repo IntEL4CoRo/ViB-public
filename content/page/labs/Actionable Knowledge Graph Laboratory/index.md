@@ -11,9 +11,7 @@ resources:
 - name: ActionButtons
   src: "buttons.json"
 ---
-In this virtual research lab, we aim to empower robots with the ability to transform abstract knowledge from the web into actionable tasks, particularly in everyday manipulations like cutting pouring or whisking. By extracting information from diverse internet sources — ranging from biology textbooks and Wikipedia entries to cookbooks and instructional websites —, the robots create knowledge graphs that inform generalized action plans. These plans enable robots to adapt cutting techniques such as slicing, quartering, and peeling to various fruits using suitable tools making abstract web knowledge practically applicable in robot perception-action loops.
-
-In this laboratory, you have the opportunity to select a VR task demonstration to then explore actionable knowledge graph content tailored to specific task domains, including fruit cutting, by utilizing resources like Wikipedia, biology textbooks, nutrition information sources, and instructional websites such as WikiHow. Additionally, you’ll have access to a comprehensive robotic action plan designed specifically for fruit cutting tasks. The integration of actionable knowledge graph information with the task demonstration, such as ”quartering an apple,” can be translated into specific action parameters of the robot. The customized plan can be tested and refined within a simulated environment.
+In this virtual research lab, we aim to empower robots with the ability to transform abstract knowledge from the web into actionable tasks, particularly in everyday manipulations like cutting, pouring or whisking. By extracting information from diverse internet sources — ranging from biology textbooks and Wikipedia entries to cookbooks and instructional websites —, the robots create knowledge graphs that inform generalized action plans. These plans enable robots to adapt cutting techniques such as slicing, quartering, and peeling to various fruits using suitable tools making abstract web knowledge practically applicable in robot perception-action loops.
 
 
 <div class="hidde-after-preview">
@@ -62,24 +60,35 @@ For Detailed information click
 <hr>
 <h2>Parameterising General Action Plans with Web Knowledge</h2>
 
-<font size=3>To achieve our goal of enabling a robotic agent to handle unkown task variations by parameterising general action plans using web knowledge, we employ the following architecture:</font>
+<font size=3>To achieve our goal of enabling a robotic agent to handle unkown task variations by parameterising general action plans using web knowledge, we employ the following architecture, which is described in[^15]:</font>
 
 <p align="center">
   <img src="Motivation4.jpg" width="600" alt="Action Plans"/><br>
 </p>
 
-<font size=3>In general, the robot needs to have access to a general action designator of cutting that can be parameterised.
-When the robot is given a task request, it can either query the graph database with the knowledge graph directly via its SPARQL REST API or use a knowledge framework with additional functionalities such as the KnowRob knowledge processing system[^1] and pose Prolog queries, which then are translated to SPARQL queries.
-More information on the different ways of querying the knowledge graph can be found <a href="https://food-ninja.github.io/WebKat-MealRobot/posts/querylikearobot/">here</a>.</font>
 
-<img src="CuttingWithParameters.png" width="800" alt="Parameters"/>
 
 
 <hr>
 <h2>Gathering and Linking Web Knowledge</h2>
 
 <font size="3">To support robotic agents in executing variations of <i>Cutting</i> on different <i>fruits and vegetables</i>, we collect two types of knowledge in our knowledge graph: <b>action</b> and <b>object knowledge</b>.
-Both kinds of knowledge need to be linked to enable task execution as explained <a href="https://food-ninja.github.io/WebKat-MealRobot/posts/architektur/">here</a>.</font> 
+Both kinds of knowledge need to be linked to enable task execution as explained <a href="https://food-ninja.github.io/WebKat-MealRobot/posts/architektur/">here</a>.</font>
+
+
+## WikiHow Analysis Tool
+
+To gather additional knowledge about manipulation actions and their associated verbs, we developed a tool analysing a [WikiHow](https://www.wikihow.com) corpus[^11].
+The goal is to better the understanding of manipulation verbs and their parameterization for different objects, goals and environments.
+The tool uses basic NLP techniques like Part-of-Speech Tagging and Coreference Resolution from the Stanford CoreNLP Toolkit[^12] to extract verb frames.
+
+The WikiHow articles analysed by our tool are structured in the following way:
+
+<p align="center">
+  <img src="WikiHow Article Structure.jpg" width="800" alt="Summarising the structure of a WikiHow article"/><br>
+</p>
+
+ 
 
 ## Action Knowledge
 
@@ -135,50 +144,17 @@ We set both kinds of knowledge in relation through <i>dispositions</i> and <i>af
 Both concepts are set in relation by stating that dispositions allow objects to participate in events, realising affordances that are more abstract descriptions of dispositions[^1].
 In our concrete knowledge graph, this is done by using the <i>affordsTask, affordsTrigger</i> and <i>hasDisposition</i> relations introduced in the SOMA ontology[^1].</font>
 
-## WikiHow Analysis Tool
 
-To gather additional knowledge about manipulation actions and their associated verbs, we developed a tool analysing a [WikiHow](https://www.wikihow.com) corpus[^11].
-The goal is to better the understanding of manipulation verbs and their parameterization for different objects, goals and environments.
-The tool uses basic NLP techniques like Part-of-Speech Tagging and Coreference Resolution from the Stanford CoreNLP Toolkit[^12] to extract verb frames.
 
-The WikiHow articles analysed by our tool are structured in the following way:
+<font size=3>In general, the robot needs to have access to a general action designator of cutting that can be parameterised.
+When the robot is given a task request, it can either query the graph database with the knowledge graph directly via its SPARQL REST API or use a knowledge framework with additional functionalities such as the KnowRob knowledge processing system[^1] and pose Prolog queries, which then are translated to SPARQL queries.
+More information on the different ways of querying the knowledge graph can be found <a href="https://food-ninja.github.io/WebKat-MealRobot/posts/querylikearobot/">here</a>.</font>
 
-<p align="center">
-  <img src="WikiHow Article Structure.jpg" width="800" alt="Summarising the structure of a WikiHow article"/><br>
-</p>
-
-## Action Verb Frames
-
-For the current search target, the tool extracts a verb frame. 
-The structure of each frame is manually set for different action groups based on example data from the corpus.
-Currently, frames for the verb groups centered around *Cutting* and *Pouring* are available:
-
-- *Cutting* Structure: `(Verb, Target, Preposition, Shape)`
-- *Cutting* Example: `(dice, 1 sweet potato, into, squares)`
-- *Pouring* Structure: `(Verb, Object, Preposition, Target Location)`
-- *Pouring* Example: `(pour, the brown sugar, into, the bowl)`
-
-In general, a frame is filled with content from a single sentence found in a step description.
-For the extraction, we use POS Tagging to find the preposition and extract the other two frame elements based on their location in the sentence in relation to the verb and the preposition.
-
-## Extracting Verb Occurrences
-
-One current use case for the analysis tool is counting the occurrences of specific synonyms / hyponyms for the representative word for a specific group.
-We gather these synonyms and hyponyms using WordNet[^13], VerbNet[^14] and [Thesaurus](https://www.thesaurus.com/).
-In a first step, we manually filter these verbs to only include verbs relevant for the household / cooking domain.
-Afterwards we count the number of occurrences in the different parts of a WikiHow article.
-The exemplary result for the *Cutting* verb group can be seen below:
-
-<p align="center">
-  <img src="CuttingWikiHowResults.png" width="600" alt="Occurrences of Cutting and its hyponyms in the WikiHow corpus"/><br>
-</p>
-
-In the table, the three verbs with the most occurrences per column (apart from *cut*) were marked in **bold**.
-In our ontology, we currently cover *slice*, *dice*, *halve*, *quarter* and *cube*.
-With this knowledge, the relevance of different hyponyms for the application domain can be assessed.
+<img src="CuttingWithParameters.png" width="800" alt="Parameters"/>
 
 
 ## References
+[^15] M. Kümpel et al., ‘Towards a Knowledge Engineering Methodology for Flexible Robot Manipulation in Everyday Tasks’, in Actionable Knowledge Representation and Reasoning for Robots (AKR^3) at European Semantic Web Conference (ESWC), 2024.
 [^1]: D. Beßler et al., ‘Foundations of the Socio-physical Model of Activities (SOMA) for Autonomous Robotic Agents’, in Formal Ontology in Information Systems, vol. 344, IOS Press, 2022, pp. 159–174. Accessed: Jul. 25, 2022. doi: [10.3233/FAIA210379](https://doi.org/10.3233/FAIA210379).
 [^2]: V. Presutti and A. Gangemi, ‘Dolce+ D&S Ultralite and its main ontology design patterns’, in Ontology Engineering with Ontology Design Patterns: Foundations and Applications, P. Hitzler, A. Gangemi, K. Janowicz, A. Krisnadhi, and V. Presutti, Eds. AKA GmbH Berlin, 2016, pp. 81–103.
 [^3]: G. A. Miller, ‘WordNet: A Lexical Database for English’, Communications of the ACM, vol. 38, no. 11, pp. 39–41, 1995, doi: [10.1145/219717.219748](https://dl.acm.org/doi/10.1145/219717.219748).
