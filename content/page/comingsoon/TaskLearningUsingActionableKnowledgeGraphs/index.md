@@ -58,21 +58,27 @@ In the laboratory below, you have the opportunity to select a VR task demonstrat
 Interactive Actions and/or Examples
 ---
 In this lab, we want to show how robots can perform task learning.
-Our framework consists of three steps.
 
-Step 1 is to select and load an episodic memory/ human task demonstration from our logged experience database. This can be done in the following notebook:
+<font size=3>To achieve our goal of enabling a robotic agent to learn tasks from human demonstrations, we follow the idea below, which is also described in[^1]:</font>
+
+<p align="center">
+  <img src="TaskLearningAKG.jpg" width="600" alt="Motivation"/><br>
+</p>
+
+Our framework consists of two steps.
+
+Step 1 is to select and load an episodic memory/ human task demonstration from our logged experience database and query it for task information. This can be done in the following notebook:
 
 Load and Query the Virtual Reality Demonstrations NEEMs
 <a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/ease-crc/bootstrapping_giskard/478dab58f7c858980ae02c723db6b737950ef1e8?urlpath=lab%2Ftree%2Fnotebooks%2Fneem_query.ipynb">Load NEEM</a>
 
-Step 2 is to query the linked actionable knowledge graph for task information. This is demonstrated in the following notebook:
-
-Query the actionable knowledge graph
-<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/Food-Ninja/WebKat-MealRobot/a8f389f4053b18155abead27b42139b549e0e605?urlpath=lab%2Ftree%2Fnotebooks%2FFindOutTask.ipynb">Query AKG</a>
-
-Step 3 is to use the parameters for action parametrisation of the robot action plan. This is done in the following notebook:
+Step 2 is to use the parameters for action parametrisation of the robot action plan. This is done in the following notebook:
 
 Query the Robot Demonstrations
 <a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/LucaKro/pycram/f61804babfbe54652a3080684561d5de6b3a2737?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Fcutting_actions%2Fcutting_demo_armar.ipynb">Run Code</a>
-
 <br>
+
+## References
+[^1] M. Kümpel et al., ‘Task Learning Using Actionable Knowledge Graphs’, in ICRA40- 40th Anniversary of the IEEE International Conference on Robotics and Automation, 2024.
+
+
