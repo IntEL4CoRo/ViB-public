@@ -3,70 +3,31 @@
 	<body>
 
 		<script>
-        	async function check_food_part(food, part) {
-            	// Construct your SPARQL query
-                const sparqlQuery = `
-                    PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                    PREFIX cut: <http://www.ease-crc.org/ont/food_cutting#>
-                    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                    PREFIX foodon: <http://purl.obolibrary.org/obo/>
-                    ASK {
-                      foodon:${food} rdfs:subClassOf* ?dis.
-                      ?dis owl:onProperty 	cut:hasPart.
-                      ?dis owl:someValuesFrom ?tar.
-                      ?tar owl:intersectionOf ?tar_int.
-                      ?tar_int rdf:first cut:${part}.
-		      ?tar_int rdf:rest ?rest.
-		      ?rest rdf:first ?first.
-		      ?first owl:onProperty cut:hasEdibility.
-		      {?first owl:someValuesFrom cut:MustBeAvoided.}
-		      UNION
-		      {?first owl:someValuesFrom cut:ShouldBeAvoided.}
-                    }
-                `;
 
-            	// Uni Bremen SPARQL endpoint URL
-                const endpointUrl = 'http://knowledgedb.informatik.uni-bremen.de:3031/#/dataset/MealPreparation/query'
-
-                const requestOptions = {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/sparql-query',
-                    },
-                    body: sparqlQuery,
-                }
-
-                try {
-                    const response = await fetch(endpointUrl, requestOptions)
-                    const data = await response.json()
-                    return data.boolean
-                } catch (error) {
-                    console.error('Error:', error)
-                    return false
-                }
-            }
-
-            async function get_prior_task(verb) {
+	    // function to check if a tool is needed for the task (input: action verb, output: tool)
+            async function get_needed_tool(verb) {
             	const sparqlQuery = `
                     PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                    PREFIX cut: <http://www.ease-crc.org/ont/food_cutting#>
+                    PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>
                     PREFIX soma: <http://www.ease-crc.org/ont/SOMA.owl#>
                     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+		    PREFIX obo: <http://purl.obolibrary.org/obo/>
                     SELECT ?res WHERE {
-                        ${verb} rdfs:subClassOf* ?sub.
-                        ?sub owl:onProperty cut:requiresPriorTask .
-                        ?sub owl:someValuesFrom ?priortask.
-                        BIND(REPLACE(STR(?priortask), "^.*[#/]", "") AS ?res).
+                        ${verb} rdfs:subClassOf ?sub.
+                        ?sub owl:onProperty dul:hasParticipant.
+                        ?sub owl:someValuesFrom ?neededtool.
+                        BIND(REPLACE(STR(?neededtool), "^.*[#/]", "") AS ?res).
                     }
                 `;
 
             	return query_text(sparqlQuery, '')
             }
+			
 
+	    // function to query the SPARQL endpoint
             async function query_text(query, alternative) {
-            	// Triply SPARQL endpoint URL
-                const endpointUrl = 'https://api.triplydb.com/datasets/kording/Food-cutting-KG/sparql'
+            	// UniB SPARQL endpoint URL
+                const endpointUrl = 'http://knowledgedb.informatik.uni-bremen.de:3031/#/dataset/MealPreparation/query'
 
                 const requestOptions = {
                     method: 'POST',
@@ -87,144 +48,166 @@
                 }
             }
 
-            async function get_peel_tool(food) {
-                const sparqlQuery = `
-                    PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                    PREFIX cut: <http://www.ease-crc.org/ont/food_cutting#>
-                    PREFIX soma: <http://www.ease-crc.org/ont/SOMA.owl#>
-                    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                    PREFIX foodon: <http://purl.obolibrary.org/obo/>
-                    SELECT ?res WHERE {
-                        foodon:${food} rdfs:subClassOf* ?peel_dis.
-                        ?peel_dis owl:onProperty soma:hasDisposition.
-                        ?peel_dis owl:someValuesFrom ?peel_dis_vals.
-                        ?peel_dis_vals owl:intersectionOf ?afford_vals.
-                        ?afford_vals rdf:first cut:Peelability.
-                        ?afford_vals rdf:rest ?task_trigger.
-                        ?task_trigger rdf:rest ?trigger.
-                        ?trigger rdf:first ?trigger_wo_nil.
-                        ?trigger_wo_nil owl:onProperty soma:affordsTrigger.
-                        ?trigger_wo_nil owl:allValuesFrom ?trigger_tool.
-                        ?trigger_tool owl:allValuesFrom ?tool.
-                        BIND(REPLACE(STR(?tool), "^.*[#/]", "") AS ?res).
-                    }
-                `;
-
-            	return query_text(sparqlQuery, 'Peeler')
-            }
-
-            async function get_cut_tool(food) {
-                const sparqlQuery = `
-                    PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                    PREFIX soma: <http://www.ease-crc.org/ont/SOMA.owl#>
-                    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                    PREFIX foodon: <http://purl.obolibrary.org/obo/>
-                    PREFIX sit_aware: <http://www.ease-crc.org/ont/situation_awareness#>
-                    SELECT ?res WHERE {
-                        foodon:${food} rdfs:subClassOf* ?peel_dis.
-                        ?peel_dis owl:onProperty soma:hasDisposition.
-                        ?peel_dis owl:someValuesFrom ?peel_dis_vals.
-                        ?peel_dis_vals owl:intersectionOf ?afford_vals.
-                        ?afford_vals rdf:first sit_aware:Cuttability.
-                        ?afford_vals rdf:rest ?task_trigger.
-                        ?task_trigger rdf:rest ?trigger.
-                        ?trigger rdf:first ?trigger_wo_nil.
-                        ?trigger_wo_nil owl:onProperty soma:affordsTrigger.
-                        ?trigger_wo_nil owl:allValuesFrom ?trigger_tool.
-                        ?trigger_tool owl:allValuesFrom ?tool.
-                        BIND(REPLACE(STR(?tool), "^.*[#/]", "") AS ?res).
-                    }
-                `;
-
-            	return query_text(sparqlQuery, 'Knife')
-            }
-
-            async function get_target(verb) {
-                const sparqlQuery = `
-                    PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                    PREFIX soma: <http://www.ease-crc.org/ont/SOMA.owl#>
-                    PREFIX cut: <http://www.ease-crc.org/ont/food_cutting#>
-                    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                    SELECT ?res WHERE {
-                      {
-                        ${verb} rdfs:subClassOf* ?inter_node.
-                        ?inter_node owl:intersectionOf ?in_res_node.
-                        ?in_res_node rdf:first ?input_node.
-                        ?input_node owl:onProperty cut:hasInputObject.
-                        ?input_node owl:someValuesFrom ?target.
-                        FILTER NOT EXISTS {
-                            ?target owl:unionOf ?union_node.
-                        }
-                        BIND(REPLACE(STR(?target), "^.*[#/]", "") AS ?res).
-                      }
-                      UNION
-                      {
-                        ${verb} rdfs:subClassOf* ?inter_node.
-                        ?inter_node owl:intersectionOf ?in_res_node.
-                        ?in_res_node rdf:first ?input_node.
-                        ?input_node owl:onProperty cut:hasInputObject.
-                        ?input_node owl:someValuesFrom ?targets_node.
-                        ?targets_node owl:unionOf ?union_node.
-                        ?union_node rdf:first ?target.
-                        BIND(REPLACE(STR(?target), "^.*[#/]", "") AS ?res).
-                      }
-                    }
-                `;
-
-            	return query_text(sparqlQuery, 'Food')
-            }
-
-            async function get_repetitions(verb) {
+            
+		// function to get the min angle needed for the task (input: food object, output: angle)
+            async function get_minangle(food) {
             	const sparqlQuery = `
                     PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                    PREFIX cut: <http://www.ease-crc.org/ont/food_cutting#>
+                    PREFIX pour: <http://www.ease-crc.org/ont/pouring_food#>
                     PREFIX soma: <http://www.ease-crc.org/ont/SOMA.owl#>
                     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
+		    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      		    PREFIX qudt: <http://qudt.org/schema/qudt#>
+	  	    PREFIX obo: <http://purl.obolibrary.org/obo/>
                     SELECT ?res WHERE {
-                      {
-                        ${verb} rdfs:subClassOf* ?rep_node.
-                        ?rep_node owl:onProperty cut:repetitions.
-                        FILTER EXISTS {
-                            ?rep_node owl:hasValue ?val.
-                        }
-                        BIND("exactly 1" AS ?res)
-                      }
-                      UNION
-                      {
-                        ${verb} rdfs:subClassOf* ?rep_node.
-                        ?rep_node owl:onProperty cut:repetitions.
-                        FILTER EXISTS {
-                            ?rep_node owl:minQualifiedCardinality ?val.
-                        }
-                        BIND("at least 1" AS ?res)
-                      }
+                        ${verb} rdfs:subClassOf ?cons_node.
+                        ?cons_node owl:onProperty pour:hasConsistency.
+			?cons_node owl:someValuesFrom ?consistency.
+                        ?union rdf:first*/rdf:rest* ?consistency.
+ 			 {
+ 			 ?rest rdf:first*/rdf:rest* ?union.
+  			?start owl:unionOf ?rest.
+ 			 ?a owl:someValuesFrom ?start.
+ 			 }
+ 			 UNION
+ 			 {
+ 			   ?a owl:allValuesFrom ?union.
+ 			 }
+ 			 ?f rdf:first*/rdf:rest* ?a.
+			  ?r rdf:first*/rdf:rest* ?f.
+			  ?i owl:intersectionOf ?r.
+			  ?inter owl:someValuesFrom ?i.
+			  ?param rdfs:subClassOf ?inter.
+			  ?param rdfs:subClassOf pour:PouringAngle.
+			  ?param rdfs:subClassOf ?degree1.
+			  ?degree1 owl:onProperty qudt:valueQuantity.
+			  ?degree1 owl:minQualifiedCardinality ?res.
                     }
                 `;
 
-            	return query_text(sparqlQuery, '1')
+            	return query_text(sparqlQuery, '0')
             }
 
-            async function get_cutting_position(verb) {
+
+		// function to get the max angle needed for the task (input: food object, output: angle)
+            async function get_maxangle(food) {
             	const sparqlQuery = `
                     PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                    PREFIX cut: <http://www.ease-crc.org/ont/food_cutting#>
+                    PREFIX pour: <http://www.ease-crc.org/ont/pouring_food#>
                     PREFIX soma: <http://www.ease-crc.org/ont/SOMA.owl#>
                     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                    SELECT * WHERE {
-                        ${verb} rdfs:subClassOf* ?pos_node.
-                        ?pos_node owl:onProperty cut:affordsPosition.
-                        ?pos_node owl:someValuesFrom ?pos.
-                        BIND(REPLACE(STR(?pos), "^.*[#/]", "") AS ?res).
+		    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      		    PREFIX qudt: <http://qudt.org/schema/qudt#>
+	    	    PREFIX obo: <http://purl.obolibrary.org/obo/>
+                    SELECT ?res WHERE {
+                        ${verb} rdfs:subClassOf ?cons_node.
+                        ?cons_node owl:onProperty pour:hasConsistency.
+			?cons_node owl:someValuesFrom ?consistency.
+                        ?union rdf:first*/rdf:rest* ?consistency.
+ 			 {
+ 			 ?rest rdf:first*/rdf:rest* ?union.
+  			?start owl:unionOf ?rest.
+ 			 ?a owl:someValuesFrom ?start.
+ 			 }
+ 			 UNION
+ 			 {
+ 			   ?a owl:allValuesFrom ?union.
+ 			 }
+ 			 ?f rdf:first*/rdf:rest* ?a.
+			  ?r rdf:first*/rdf:rest* ?f.
+			  ?i owl:intersectionOf ?r.
+			  ?inter owl:someValuesFrom ?i.
+			  ?param rdfs:subClassOf ?inter.
+			  ?param rdfs:subClassOf pour:PouringAngle.
+			  ?param rdfs:subClassOf ?degree1.
+			  ?degree1 owl:onProperty qudt:valueQuantity.
+			  ?degree1 owl:maxQualifiedCardinality ?res.
                     }
                 `;
 
-            	return query_text(sparqlQuery, 'middle')
+            	return query_text(sparqlQuery, '90')
             }
 
+			// function to get the min duration needed for the task (input: food object, output: duration)
+            async function get_minduration(food) {
+            	const sparqlQuery = `
+                    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                    PREFIX pour: <http://www.ease-crc.org/ont/pouring_food#>
+                    PREFIX soma: <http://www.ease-crc.org/ont/SOMA.owl#>
+                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+		    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      		    PREFIX qudt: <http://qudt.org/schema/qudt#>
+	    	    PREFIX obo: <http://purl.obolibrary.org/obo/>
+                    SELECT ?res WHERE {
+                        ${verb} rdfs:subClassOf ?cons_node.
+                        ?cons_node owl:onProperty cut:affordsPosition.
+                        ?cons_node owl:someValuesFrom ?consistency.
+                        ?union rdf:first*/rdf:rest* ?consistency.
+			  {
+			  ?rest rdf:first*/rdf:rest* ?union.
+			  ?start owl:unionOf ?rest.
+			  ?a owl:someValuesFrom ?start.
+			  }
+			  UNION
+ 			 {
+			    ?a owl:allValuesFrom ?union.
+			  }
+ 			 ?f rdf:first*/rdf:rest* ?a.
+			  ?r rdf:first*/rdf:rest* ?f.
+			  ?i owl:intersectionOf ?r.
+			  ?inter owl:someValuesFrom ?i.
+			  ?param rdfs:subClassOf ?inter.
+			  ?param rdfs:subClassOf pour:PouringDuration.
+			  ?param rdfs:subClassOf ?degree1.
+			  ?degree1 owl:onProperty qudt:valueQuantity.
+			  ?degree1 owl:minQualifiedCardinality ?res.
+                    }
+                `;
+
+            	return query_text(sparqlQuery, '0')
+            }
+
+		// function to get the max duration needed for the task (input: food object, output: duration)
+			// function to get the min duration needed for the task (input: food object, output: duration)
+            async function get_maxduration(food) {
+            	const sparqlQuery = `
+                    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                    PREFIX pour: <http://www.ease-crc.org/ont/pouring_food#>
+                    PREFIX soma: <http://www.ease-crc.org/ont/SOMA.owl#>
+                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+		    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      		    PREFIX qudt: <http://qudt.org/schema/qudt#>
+	    	    PREFIX obo: <http://purl.obolibrary.org/obo/>
+                    SELECT ?res WHERE {
+                        ${verb} rdfs:subClassOf ?cons_node.
+                        ?cons_node owl:onProperty cut:affordsPosition.
+                        ?cons_node owl:someValuesFrom ?consistency.
+                        ?union rdf:first*/rdf:rest* ?consistency.
+			  {
+			  ?rest rdf:first*/rdf:rest* ?union.
+			  ?start owl:unionOf ?rest.
+			  ?a owl:someValuesFrom ?start.
+			  }
+			  UNION
+ 			 {
+			    ?a owl:allValuesFrom ?union.
+			  }
+ 			 ?f rdf:first*/rdf:rest* ?a.
+			  ?r rdf:first*/rdf:rest* ?f.
+			  ?i owl:intersectionOf ?r.
+			  ?inter owl:someValuesFrom ?i.
+			  ?param rdfs:subClassOf ?inter.
+			  ?param rdfs:subClassOf pour:PouringDuration.
+			  ?param rdfs:subClassOf ?degree1.
+			  ?degree1 owl:onProperty qudt:valueQuantity.
+			  ?degree1 owl:maxQualifiedCardinality ?res.
+                    }
+                `;
+
+            	return query_text(sparqlQuery, '10')
+            }
+
+			
             function add_to_table(number, motion, inference) {
             	var motion_table = document.getElementById("motions");
             	var row = motion_table.insertRow(-1);
@@ -260,16 +243,12 @@
 				header.textContent = "Motions for " + selected_verb + " a / an " + selected_food + ":"
 
                 // query the ontology
-                var remove_peel = await check_food_part(foods.value, 'Peel')
-                var remove_shell = await check_food_part(foods.value, 'Shell')
-                var remove_stem = await check_food_part(foods.value, 'Stem')
-                var remove_core = await check_food_part(foods.value, 'Core')
-                var prior_task = await get_prior_task(verbs.value)
-                var peel_tool = await get_peel_tool(foods.value)
-                var cut_tool = await get_cut_tool(foods.value)
-                var reps = await get_repetitions(verbs.value)
-                var pos = await get_cutting_position(verbs.value)
-                var shape = await get_target(verbs.value)
+                var needed_tool = await get_needed_tool(verbs.value)
+		var minangle = await get_minangle(foods.value)
+		var maxangle = await get_maxangle(foods.value)
+		var minduration = await get_minduration(foods.value)
+		var maxduration = await get_maxduration(foods.value)
+             //   var shape = await get_target(verbs.value)
 
                 // create motion list from ontology query
                 clear_table()
@@ -277,86 +256,49 @@
                 target = ''
 
                 // optional preconditions
-                if (remove_peel || remove_shell) {
-                	add_to_table(curr_step++, "Peeling using a peeling tool", "has peel = true<br>peeling tool = " + peel_tool)
-                }
-                if (remove_stem) {
-                	add_to_table(curr_step++, "Removing the stem", "has stem = true")
-                }
-                if (remove_core) {
-                	add_to_table(curr_step++, "Removing the core", "has core = true")
-                }
-                if (prior_task != '') {
-                	add_to_table(curr_step++, "Execute a prior task: " + prior_task, "has prior task = true<br>prior task = " + prior_task)
+                if (needed_tool != '') {
+                	add_to_table(curr_step++, "Use the following tool for the task: " + needed_tool, "requires tool = true<br>needed tool = " + needed_tool)
                 }
 
-                // picking up the tool
-                add_to_table(curr_step, "Picking up the cutting tool by ...", "cutting tool = " + cut_tool)
-                add_to_table(curr_step + "a", " ... approaching the cutting tool", "cutting tool = " + cut_tool)
-                add_to_table(curr_step + "b", "... grasping the cutting tool", "cutting tool = " + cut_tool)
-                add_to_table(curr_step++ + "c", "... lifting the cutting tool", "cutting tool = " + cut_tool)
+                // picking up the object
+                add_to_table(curr_step, "Picking up the pourable object ...", "pourable object = " + selected_food)
+                               
 
-                // deciding on the target
-                if(shape == 'Food') {
-                	target = selected_food
-                } else {
-                	target = selected_food + " " + shape
-                }
-
-                // cutting the food object the necessary amount of times
-                add_to_table(curr_step, "Cutting the target object at the position n time(s) by ...", "target object = " + target + "<br>position = " + pos + "<br>n = " + reps)
-              	add_to_table(curr_step + "a", "... approaching the target object at the position", "target object = " + target + "<br>position = " + pos)
-              	add_to_table(curr_step + "b", "... lowering the cutting tool through the target object", "cutting tool = " + cut_tool + "<br>target object = " + target)
-              	add_to_table(curr_step++ + "c", "... lifting the cutting tool", "cutting tool = " + cut_tool)
-
-				// putting down the tool
-                add_to_table(curr_step, "Placing the cutting tool down by ...", "cutting tool = " + cut_tool)
-                add_to_table(curr_step + "a", "... approaching the target location", "")
-                add_to_table(curr_step + "b", "... releasing the cutting tool", "cutting tool = " + cut_tool)
-                add_to_table(curr_step + "c", "... lifting the empty gripper", "")
+                // pouring the food object with angle
+                add_to_table(curr_step, "Pouring the food object at the angle ...", "food object = " + selected_food + "<br>min angle = " + minangle + "<br>max angle = " + maxangle)
+              
+		// pouring the food object for duration
+                add_to_table(curr_step, "Pouring the food object for the duration ...", "food object = " + selected_food + "<br>min duration = " + minduration + "<br>max duration = " + maxduration)
 			}
 		</script>
 
 		Show me the plan for the following<br> <label for="food-select"><b>task</b>: </label>
 		<select name="verbs" id="verb-select">
-			<option value="cut:Carving">Carving</option>
-			<option value="cut:Chopping">Chopping</option>
-			<option value="cut:Cubing">Cubing</option>
-			<option value="soma:Cutting">Cutting</option>
-			<option value="soma:Dicing">Dicing</option>
-			<option value="cut:Halving">Halving</option>
-			<option value="cut:Julienning">Julienning</option>
-			<option value="cut:Mincing">Mincing</option>
-			<option value="cut:Paring">Paring</option>
-			<option value="cut:Quartering">Quartering</option>
-			<option value="cut:Sawing">Sawing</option>
-			<option value="soma:Slicing">Slicing</option>
-			<option value="cut:Slivering">Slivering</option>
-			<option value="cut:Snipping">Snipping</option>
+			<option value="pour:Pouring">Pour</option>
+			<option value="pour:Draining">Drain</option>
+			<option value="pour:Sprinkling">Sprinkle</option>
 		</select>
 
-		<label for="food-select"> on <b>a / an</b> </label>
+		<label for="food-select"> the following food <b>a / an</b> </label>
 		<select name="foods" id="food-select">
-			<option value="FOODON_00003523">Almond</option>
-			<option value="FOODON_03301710">Apple</option>
-			<option value="FOODON_00004183">Banana</option>
-			<option value="FOODON_03301403">Bean</option>
-			<option value="bread">Bread</option>
-			<option value="FOODON_03301240">Cherry</option>
-			<option value="FOODON_03306596">Citron</option>
-			<option value="FOODON_00003449">Coconut</option>
-			<option value="FOODON_00003415">Cucumber</option>
-			<option value="FOODON_03306597">Kumquat</option>
-			<option value="FOODON_03301441">Lemon</option>
-			<option value="FOODON_00003661">Lime</option>
-			<option value="FOODON_03317509">Olive</option>
-			<option value="FOODON_03309832">Orange</option>
-			<option value="FOODON_00003520">Pepper</option>
-			<option value="FOODON_00003459">Pineapple</option>
-			<option value="FOODON_00003486">Pumpkin</option>
-			<option value="FOODON_00003539">Squash</option>
-			<option value="FOODON_00003443">Strawberry</option>
-			<option value="FOODON_03309927">Tomato</option>
+			<option value="obo:FOODON_03301304">batter</option>
+			<option value="obo:FOODON_03420170">broth</option>
+			<option value="obo:FOODON_03307240">chocolate</option>
+			<option value="obo:FOODON_03301036">coffee</option>
+			<option value="pour:cream">cream</option>
+			<option value="obo:FOODON_03316061">egg</option>
+			<option value="obo:FOODON_03302339">flour</option>
+			<option value="obo:FOODON_03315552">juice</option>
+			<option value="pour:Liquids">liquids</option>
+			<option value="obo:UBERON_0001913">milk</option>
+			<option value="obo:FOODON_03310387">oil</option>
+			<option value="obo:FOODON_03311146">sauce</option>
+			<option value="obo:FOODON_03301073">sugar</option>
+			<option value="obo:FOODON_03303225">syrup</option>
+			<option value="obo:FOODON_03315081">tea</option>
+			<option value="obo:FOODON_03301705">vinegar</option>
+			<option value="obo:ENVO_00003064">water</option>
+			<option value="obo:FOODON_03301338">wine</option>
 		</select>
 
 		<button type="button" onclick="query_and_show()">Query</button> </font>
