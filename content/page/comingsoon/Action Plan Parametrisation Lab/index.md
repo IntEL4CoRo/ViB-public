@@ -51,6 +51,8 @@ Interactive Actions and/or Examples
 {{<action_forms data="ActionButtons">}}
 </br>
 {{<Webinterface>}}
+<hr>
+{{PouringInterface}}
 </br>
 
 For Detailed information click 
