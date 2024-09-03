@@ -1,5 +1,5 @@
 ---
-title: "Actionable Knowledge Graph Laboratory"
+title: "Action Plan Parametrisation Laboratory"
 date: 2019-02-27T14:33:42-04:00
 subtitle: ""
 tags: ["Research"]
