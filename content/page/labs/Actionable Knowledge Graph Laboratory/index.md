@@ -60,7 +60,10 @@ For Detailed information click
 <hr>
 <h2>Parameterising General Action Plans with Web Knowledge</h2>
 
-<font size=3>To achieve our goal of enabling a robotic agent to handle unkown task variations by parameterising general action plans using web knowledge, we employ the following architecture, which is described in[^15]:</font>
+<font size=3>To achieve our goal of enabling a robotic agent to handle unkown task variations by parameterising general action plans using web knowledge, we employ the following architecture.</font>
+
+For more information, please check and cite:<br>
+Kümpel, Michaela, Töberg, Jan-Phillip, Hassouna, Vanessa, Cimiano, Phillip and Beetz, Michael, <b>"Towards a Knowledge Engineering Methodology for Flexible Robot Manipulation in Everyday Tasks"</b>, In <i>Actionable Knowledge Representation and Reasoning for Robots (AKR^3) at European Semantic Web Conference (ESWC)</i>, 2024.<br>
 
 <p align="center">
   <img src="Motivation4.jpg" width="600" alt="Action Plans"/><br>
@@ -154,7 +157,6 @@ More information on the different ways of querying the knowledge graph can be fo
 
 
 ## References
-[^15] M. Kümpel et al., ‘Towards a Knowledge Engineering Methodology for Flexible Robot Manipulation in Everyday Tasks’, in Actionable Knowledge Representation and Reasoning for Robots (AKR^3) at European Semantic Web Conference (ESWC), 2024.
 [^1]: D. Beßler et al., ‘Foundations of the Socio-physical Model of Activities (SOMA) for Autonomous Robotic Agents’, in Formal Ontology in Information Systems, vol. 344, IOS Press, 2022, pp. 159–174. Accessed: Jul. 25, 2022. doi: [10.3233/FAIA210379](https://doi.org/10.3233/FAIA210379).
 [^2]: V. Presutti and A. Gangemi, ‘Dolce+ D&S Ultralite and its main ontology design patterns’, in Ontology Engineering with Ontology Design Patterns: Foundations and Applications, P. Hitzler, A. Gangemi, K. Janowicz, A. Krisnadhi, and V. Presutti, Eds. AKA GmbH Berlin, 2016, pp. 81–103.
 [^3]: G. A. Miller, ‘WordNet: A Lexical Database for English’, Communications of the ACM, vol. 38, no. 11, pp. 39–41, 1995, doi: [10.1145/219717.219748](https://dl.acm.org/doi/10.1145/219717.219748).
