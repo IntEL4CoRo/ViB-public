@@ -15,8 +15,6 @@ In this virtual research lab, we aim to empower robots with the ability to use g
 
 
 <div class="hidde-after-preview">
-  {{<action_forms data="ActionButtons">}}
-  </br>
   {{<Webinterface>}}
   </br>
  <!-- For Detailed information click
@@ -48,11 +46,9 @@ In this virtual research lab, we aim to empower robots with the ability to use g
 
 Interactive Actions and/or Examples
 ---
-{{<action_forms data="ActionButtons">}}
-</br>
 {{<Webinterface>}}
 <hr>
-{{PouringInterface}}
+{{<PouringInterface>}}
 </br>
 
 For Detailed information click 
