@@ -60,7 +60,7 @@
       		    PREFIX qudt: <http://qudt.org/schema/qudt#>
 	  	    PREFIX obo: <http://purl.obolibrary.org/obo/>
                     SELECT ?res WHERE {
-                        ${verb} rdfs:subClassOf ?cons_node.
+                        ${food} rdfs:subClassOf ?cons_node.
                         ?cons_node owl:onProperty pour:hasConsistency.
 			?cons_node owl:someValuesFrom ?consistency.
                         ?union rdf:first*/rdf:rest* ?consistency.
@@ -100,7 +100,7 @@
       		    PREFIX qudt: <http://qudt.org/schema/qudt#>
 	    	    PREFIX obo: <http://purl.obolibrary.org/obo/>
                     SELECT ?res WHERE {
-                        ${verb} rdfs:subClassOf ?cons_node.
+                        ${food} rdfs:subClassOf ?cons_node.
                         ?cons_node owl:onProperty pour:hasConsistency.
 			?cons_node owl:someValuesFrom ?consistency.
                         ?union rdf:first*/rdf:rest* ?consistency.
@@ -139,7 +139,7 @@
       		    PREFIX qudt: <http://qudt.org/schema/qudt#>
 	    	    PREFIX obo: <http://purl.obolibrary.org/obo/>
                     SELECT ?res WHERE {
-                        ${verb} rdfs:subClassOf ?cons_node.
+                        ${food} rdfs:subClassOf ?cons_node.
                         ?cons_node owl:onProperty cut:affordsPosition.
                         ?cons_node owl:someValuesFrom ?consistency.
                         ?union rdf:first*/rdf:rest* ?consistency.
@@ -179,7 +179,7 @@
       		    PREFIX qudt: <http://qudt.org/schema/qudt#>
 	    	    PREFIX obo: <http://purl.obolibrary.org/obo/>
                     SELECT ?res WHERE {
-                        ${verb} rdfs:subClassOf ?cons_node.
+                        ${food} rdfs:subClassOf ?cons_node.
                         ?cons_node owl:onProperty cut:affordsPosition.
                         ?cons_node owl:someValuesFrom ?consistency.
                         ?union rdf:first*/rdf:rest* ?consistency.
