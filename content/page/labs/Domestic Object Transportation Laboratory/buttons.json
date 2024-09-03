@@ -65,22 +65,6 @@
       {
         "name": "Setting & cleaning the table",
         "value": "setting_table"
-      },
-      {
-        "name": "Making Popcorn",
-        "value": "popcorn"
-      },
-      {
-        "name": "Opening box",
-        "value": "opening_box"
-      },
-      {
-        "name": "Cutting objects",
-        "value": "cutting"
-      },
-      {
-        "name": "Pouring",
-        "value": "pouring"
       }
     ]
   },
@@ -104,7 +88,7 @@
         "environments=household|robots=tiago|tasks=setting_table": "household_tiago_setting_table.ipynb",
         "environments=household|robots=pr2|tasks=popcorn": "https://binder.intel4coro.de/v2/gh/IntEL4CoRo/cram_teaching/legacy?urlpath=lab%2Ftree%2Flectures%2Fdemos%2Fpopcorn.ipynb",
         "environments=apartment|robots=stretch|tasks=setting_table": "https://binder.intel4coro.de/v2/gh/maltehue/pycram/stretch?urlpath=lab/tree/demos/stretch_demo.ipynb",
-        "environments=apartment|robots=armar6|tasks=setting_table": "https://binder.intel4coro.de/v2/gh/LucaKro/pycram/armar_binder?labpath=demos/pycram_virtual_building_demos/transporting_actions/transport_demo_armar.ipynb",
+        "environments=apartment|robots=armar6|tasks=setting_table": "https://binder.intel4coro.de/v2/gh/LucaKro/pycram/04b1475e88e101454a0647571e22d6fd32f8994d?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Ftransporting_actions%2Ftransport_demo_armar.ipynb",
         "environments=apartment|robots=multiagent|tasks=setting_table": "https://binder.intel4coro.de/v2/gh/K3cks/pycram/f6b83376cb661a57cb27a48c2135a8a05a1a42f4?urlpath=lab%2Ftree%2Fdemos%2Fpycram_multirobot_demo%2Frobot_demo.ipynb",
         "environments=apartment|robots=justin|tasks=setting_table": "https://binder.intel4coro.de/v2/gh/LucaKro/pycram/1410769d61f9ab6e8b9f8dc3b5ce5eda8c0cc6ca?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Ftransporting_actions%2Ftransport_demo_justin.ipynb"
         
