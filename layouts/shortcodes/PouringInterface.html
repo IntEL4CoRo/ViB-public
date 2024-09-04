@@ -6,30 +6,39 @@
 
 	    // function to check if a tool is needed for the task (input: action verb, output: tool)
             async function get_needed_tool(verb) {
-            	const sparqlQuery = `
-                    PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                    PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>
-		    PREFIX pour: <http://www.ease-crc.org/ont/pouring_food#>
-                    PREFIX soma: <http://www.ease-crc.org/ont/SOMA.owl#>
-                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-		    PREFIX obo: <http://purl.obolibrary.org/obo/>
-                    SELECT ?res WHERE {
+            	const owlPrefix = "http://www.w3.org/2002/07/owl#";
+				const dulPrefix = "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#";
+				const pourPrefix = "http://www.ease-crc.org/ont/pouring_food#";
+				const somaPrefix = "http://www.ease-crc.org/ont/SOMA.owl#";
+				const rdfsPrefix = "http://www.w3.org/2000/01/rdf-schema#";
+				const oboPrefix = "http://purl.obolibrary.org/obo/";
+
+				const sparqlQuery = `
+					PREFIX owl: <${owlPrefix}>
+					PREFIX dul: <${dulPrefix}>
+					PREFIX pour: <${pourPrefix}>
+					PREFIX soma: <${somaPrefix}>
+					PREFIX rdfs: <${rdfsPrefix}>
+					PREFIX obo: <${oboPrefix}>
+
+					 SELECT ?res WHERE {
                         ${verb} rdfs:subClassOf ?sub.
                         ?sub owl:onProperty dul:hasParticipant.
                         ?sub owl:someValuesFrom ?neededtool.
                         BIND(REPLACE(STR(?neededtool), "^.*[#/]", "") AS ?res).
                     }
-                `;
+				`;
 
-            	return query_text(sparqlQuery, '')
+
+            	return query_text_pouring(sparqlQuery, '')
             }
 			
 
 	    // function to query the SPARQL endpoint
-            async function query_text(query, alternative) {
+            async function query_text_pouring(query, alternative) {
             	// UniB SPARQL endpoint URL
-                const endpointUrl = 'http://knowledgedb.informatik.uni-bremen.de:3031/#/dataset/MealPreparation/query'
-
+                const endpointUrl = 'http://knowledgedb.informatik.uni-bremen.de:3031/MealPreparation/query'
+				console.log(query)
                 const requestOptions = {
                     method: 'POST',
                     headers: {
@@ -41,8 +50,10 @@
                 try {
                     const response = await fetch(endpointUrl, requestOptions)
                     const data = await response.json()
-                    const firstObject = data[0];
-                    return firstObject.res
+					console.log(data)
+					console.log(data.results.bindings[0].res.value)
+					const firstObject = data.results.bindings[0].res.value;
+                    return firstObject
                 } catch (error) {
                     console.error('Error:', error)
                     return alternative
@@ -52,15 +63,26 @@
             
 		// function to get the min angle needed for the task (input: food object, output: angle)
             async function get_minangle(food) {
-            	const sparqlQuery = `
-                    PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                    PREFIX pour: <http://www.ease-crc.org/ont/pouring_food#>
-                    PREFIX soma: <http://www.ease-crc.org/ont/SOMA.owl#>
-                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-		    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-      		    PREFIX qudt: <http://qudt.org/schema/qudt#>
-	  	    PREFIX obo: <http://purl.obolibrary.org/obo/>
-                    SELECT ?res WHERE {
+
+                    const owlPrefix = "http://www.w3.org/2002/07/owl#";
+					const pourPrefix = "http://www.ease-crc.org/ont/pouring_food#";
+					const somaPrefix = "http://www.ease-crc.org/ont/SOMA.owl#";
+					const rdfsPrefix = "http://www.w3.org/2000/01/rdf-schema#";
+					const rdfPrefix = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+					const qudtPrefix = "http://qudt.org/schema/qudt#";
+					const oboPrefix = "http://purl.obolibrary.org/obo/";
+
+
+					const sparqlQuery = `
+						PREFIX owl: <${owlPrefix}>
+						PREFIX pour: <${pourPrefix}>
+						PREFIX soma: <${somaPrefix}>
+						PREFIX rdfs: <${rdfsPrefix}>
+						PREFIX rdf: <${rdfPrefix}>
+						PREFIX qudt: <${qudtPrefix}>
+						PREFIX obo: <${oboPrefix}>
+
+						SELECT ?res WHERE {
                         ${food} rdfs:subClassOf ?cons_node.
                         ?cons_node owl:onProperty pour:hasConsistency.
 			?cons_node owl:someValuesFrom ?consistency.
@@ -84,23 +106,33 @@
 			  ?degree1 owl:onProperty qudt:valueQuantity.
 			  ?degree1 owl:minQualifiedCardinality ?res.
                     }
-                `;
+					`;
 
-            	return query_text(sparqlQuery, '0')
+            	return query_text_pouring(sparqlQuery, '0')
             }
 
 
 		// function to get the max angle needed for the task (input: food object, output: angle)
             async function get_maxangle(food) {
-            	const sparqlQuery = `
-                    PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                    PREFIX pour: <http://www.ease-crc.org/ont/pouring_food#>
-                    PREFIX soma: <http://www.ease-crc.org/ont/SOMA.owl#>
-                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-		    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-      		    PREFIX qudt: <http://qudt.org/schema/qudt#>
-	    	    PREFIX obo: <http://purl.obolibrary.org/obo/>
-                    SELECT ?res WHERE {
+            	const owlPrefix = "http://www.w3.org/2002/07/owl#";
+				const pourPrefix = "http://www.ease-crc.org/ont/pouring_food#";
+				const somaPrefix = "http://www.ease-crc.org/ont/SOMA.owl#";
+				const rdfsPrefix = "http://www.w3.org/2000/01/rdf-schema#";
+				const rdfPrefix = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+				const qudtPrefix = "http://qudt.org/schema/qudt#";
+				const oboPrefix = "http://purl.obolibrary.org/obo/";
+
+
+				const sparqlQuery = `
+					PREFIX owl: <${owlPrefix}>
+					PREFIX pour: <${pourPrefix}>
+					PREFIX soma: <${somaPrefix}>
+					PREFIX rdfs: <${rdfsPrefix}>
+					PREFIX rdf: <${rdfPrefix}>
+					PREFIX qudt: <${qudtPrefix}>
+					PREFIX obo: <${oboPrefix}>
+
+					SELECT ?res WHERE {
                         ${food} rdfs:subClassOf ?cons_node.
                         ?cons_node owl:onProperty pour:hasConsistency.
 			?cons_node owl:someValuesFrom ?consistency.
@@ -124,35 +156,48 @@
 			  ?degree1 owl:onProperty qudt:valueQuantity.
 			  ?degree1 owl:maxQualifiedCardinality ?res.
                     }
-                `;
+				`;
 
-            	return query_text(sparqlQuery, '90')
+            	return query_text_pouring(sparqlQuery, '90')
             }
 
 			// function to get the min duration needed for the task (input: food object, output: duration)
             async function get_minduration(food) {
-            	const sparqlQuery = `
-                    PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                    PREFIX pour: <http://www.ease-crc.org/ont/pouring_food#>
-                    PREFIX soma: <http://www.ease-crc.org/ont/SOMA.owl#>
-                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-		    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-      		    PREFIX qudt: <http://qudt.org/schema/qudt#>
-	    	    PREFIX obo: <http://purl.obolibrary.org/obo/>
-                    SELECT ?res WHERE {
+            	const owlPrefix = "http://www.w3.org/2002/07/owl#";
+				const pourPrefix = "http://www.ease-crc.org/ont/pouring_food#";
+				const somaPrefix = "http://www.ease-crc.org/ont/SOMA.owl#";
+				const cutPrefix = "http://www.ease-crc.org/ont/food_cutting#";
+				const rdfsPrefix = "http://www.w3.org/2000/01/rdf-schema#";
+				const rdfPrefix = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+				const qudtPrefix = "http://qudt.org/schema/qudt#";
+
+				const oboPrefix = "http://purl.obolibrary.org/obo/";
+
+
+				const sparqlQuery = `
+					PREFIX owl: <${owlPrefix}>
+					PREFIX pour: <${pourPrefix}>
+					PREFIX cut: <${cutPrefix}>
+					PREFIX soma: <${somaPrefix}>
+					PREFIX rdfs: <${rdfsPrefix}>
+					PREFIX rdf: <${rdfPrefix}>
+					PREFIX qudt: <${qudtPrefix}>
+					PREFIX obo: <${oboPrefix}>
+
+					SELECT ?res WHERE {
                         ${food} rdfs:subClassOf ?cons_node.
-                        ?cons_node owl:onProperty cut:affordsPosition.
-                        ?cons_node owl:someValuesFrom ?consistency.
+                        ?cons_node owl:onProperty pour:hasConsistency.
+			?cons_node owl:someValuesFrom ?consistency.
                         ?union rdf:first*/rdf:rest* ?consistency.
-			  {
-			  ?rest rdf:first*/rdf:rest* ?union.
-			  ?start owl:unionOf ?rest.
-			  ?a owl:someValuesFrom ?start.
-			  }
-			  UNION
  			 {
-			    ?a owl:allValuesFrom ?union.
-			  }
+ 			 ?rest rdf:first*/rdf:rest* ?union.
+  			?start owl:unionOf ?rest.
+ 			 ?a owl:someValuesFrom ?start.
+ 			 }
+ 			 UNION
+ 			 {
+ 			   ?a owl:allValuesFrom ?union.
+ 			 }
  			 ?f rdf:first*/rdf:rest* ?a.
 			  ?r rdf:first*/rdf:rest* ?f.
 			  ?i owl:intersectionOf ?r.
@@ -163,36 +208,48 @@
 			  ?degree1 owl:onProperty qudt:valueQuantity.
 			  ?degree1 owl:minQualifiedCardinality ?res.
                     }
-                `;
+				`;
 
-            	return query_text(sparqlQuery, '0')
+            	return query_text_pouring(sparqlQuery, '0')
             }
 
 		// function to get the max duration needed for the task (input: food object, output: duration)
 			// function to get the min duration needed for the task (input: food object, output: duration)
             async function get_maxduration(food) {
-            	const sparqlQuery = `
-                    PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                    PREFIX pour: <http://www.ease-crc.org/ont/pouring_food#>
-                    PREFIX soma: <http://www.ease-crc.org/ont/SOMA.owl#>
-                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-		    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-      		    PREFIX qudt: <http://qudt.org/schema/qudt#>
-	    	    PREFIX obo: <http://purl.obolibrary.org/obo/>
-                    SELECT ?res WHERE {
+            	const owlPrefix = "http://www.w3.org/2002/07/owl#";
+				const pourPrefix = "http://www.ease-crc.org/ont/pouring_food#";
+				const somaPrefix = "http://www.ease-crc.org/ont/SOMA.owl#";
+				const rdfsPrefix = "http://www.w3.org/2000/01/rdf-schema#";
+				const rdfPrefix = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+				const qudtPrefix = "http://qudt.org/schema/qudt#";
+				const oboPrefix = "http://purl.obolibrary.org/obo/";
+				const cutPrefix = "http://www.ease-crc.org/ont/food_cutting#";
+
+
+				const sparqlQuery = `
+					PREFIX owl: <${owlPrefix}>
+					PREFIX pour: <${pourPrefix}>
+					PREFIX soma: <${somaPrefix}>
+					PREFIX cut: <${cutPrefix}>
+					PREFIX rdfs: <${rdfsPrefix}>
+					PREFIX rdf: <${rdfPrefix}>
+					PREFIX qudt: <${qudtPrefix}>
+					PREFIX obo: <${oboPrefix}>
+
+					 SELECT ?res WHERE {
                         ${food} rdfs:subClassOf ?cons_node.
-                        ?cons_node owl:onProperty cut:affordsPosition.
-                        ?cons_node owl:someValuesFrom ?consistency.
+                        ?cons_node owl:onProperty pour:hasConsistency.
+			?cons_node owl:someValuesFrom ?consistency.
                         ?union rdf:first*/rdf:rest* ?consistency.
-			  {
-			  ?rest rdf:first*/rdf:rest* ?union.
-			  ?start owl:unionOf ?rest.
-			  ?a owl:someValuesFrom ?start.
-			  }
-			  UNION
  			 {
-			    ?a owl:allValuesFrom ?union.
-			  }
+ 			 ?rest rdf:first*/rdf:rest* ?union.
+  			?start owl:unionOf ?rest.
+ 			 ?a owl:someValuesFrom ?start.
+ 			 }
+ 			 UNION
+ 			 {
+ 			   ?a owl:allValuesFrom ?union.
+ 			 }
  			 ?f rdf:first*/rdf:rest* ?a.
 			  ?r rdf:first*/rdf:rest* ?f.
 			  ?i owl:intersectionOf ?r.
@@ -203,14 +260,14 @@
 			  ?degree1 owl:onProperty qudt:valueQuantity.
 			  ?degree1 owl:maxQualifiedCardinality ?res.
                     }
-                `;
+				`;
 
-            	return query_text(sparqlQuery, '10')
+            	return query_text_pouring(sparqlQuery, '10')
             }
 
 			
-            function add_to_table(number, motion, inference) {
-            	var motion_table = document.getElementById("motions");
+            function add_to_table_pouring(number, motion, inference) {
+            	var motion_table = document.getElementById("pouring-motions");
             	var row = motion_table.insertRow(-1);
                 var numb = row.insertCell(0);
                 var mot = row.insertCell(1);
@@ -220,20 +277,20 @@
                 inf.innerHTML = inference;
             }
 
-            function clear_table() {
-            	var motion_table = document.getElementById("motions");
+            function clear_table_pouring() {
+            	var motion_table = document.getElementById("pouring-motions");
             	var rowCount = motion_table.rows.length;
                 for (var i = rowCount - 1; i >= 1; i--) {
                     motion_table.deleteRow(i);
                 }
             }
 
-			async function query_and_show() {
-				var container = document.getElementById("results");
-				var header = document.getElementById("header");
+			async function query_and_show_pouring() {
+				var container = document.getElementById("pouring-results");
+				var header = document.getElementById("pouring-header");
 
-				var verbs = document.getElementById("verb-select");
-				var foods = document.getElementById("food-select");
+				var verbs = document.getElementById("pouring-verb-select");
+				var foods = document.getElementById("pouring-food-select");
                 var selected_verb = verbs.options[verbs.selectedIndex].textContent
                 var selected_food = foods.options[foods.selectedIndex].textContent
 
@@ -245,43 +302,43 @@
 
                 // query the ontology
                 var needed_tool = await get_needed_tool(verbs.value)
-		var minangle = await get_minangle(foods.value)
-		var maxangle = await get_maxangle(foods.value)
-		var minduration = await get_minduration(foods.value)
-		var maxduration = await get_maxduration(foods.value)
+				var minangle = await get_minangle(foods.value)
+				var maxangle = await get_maxangle(foods.value)
+				var minduration = await get_minduration(foods.value)
+				var maxduration = await get_maxduration(foods.value)
              //   var shape = await get_target(verbs.value)
 
                 // create motion list from ontology query
-                clear_table()
+                clear_table_pouring()
                 curr_step = 1
                 target = ''
 
                 // optional preconditions
                 if (needed_tool != '') {
-                	add_to_table(curr_step++, "Use the following tool for the task: " + needed_tool, "requires tool = true<br>needed tool = " + needed_tool)
+                	add_to_table_pouring(curr_step++, "Use the following tool for the task: " + needed_tool, "requires tool = true<br>needed tool = " + needed_tool)
                 }
 
                 // picking up the object
-                add_to_table(curr_step, "Picking up the pourable object ...", "pourable object = " + selected_food)
+                add_to_table_pouring(curr_step, "Picking up the pourable object ...", "pourable object = " + selected_food)
                                
 
                 // pouring the food object with angle
-                add_to_table(curr_step, "Pouring the food object at the angle ...", "food object = " + selected_food + "<br>min angle = " + minangle + "<br>max angle = " + maxangle)
+                add_to_table_pouring(curr_step, "Pouring the food object at the angle ...", "food object = " + selected_food + "<br>min angle = " + minangle + "<br>max angle = " + maxangle)
               
 		// pouring the food object for duration
-                add_to_table(curr_step, "Pouring the food object for the duration ...", "food object = " + selected_food + "<br>min duration = " + minduration + "<br>max duration = " + maxduration)
+                add_to_table_pouring(curr_step, "Pouring the food object for the duration ...", "food object = " + selected_food + "<br>min duration = " + minduration + "<br>max duration = " + maxduration)
 			}
 		</script>
 
-		Show me the plan for the following<br> <label for="food-select"><b>task</b>: </label>
-		<select name="verbs" id="verb-select">
+		Show me the plan for the following<br> <label for="pouring-food-select"><b>task</b>: </label>
+		<select name="pouring-verbs" id="pouring-verb-select">
 			<option value="pour:Pouring">Pour</option>
 			<option value="pour:Draining">Drain</option>
 			<option value="pour:Sprinkling">Sprinkle</option>
 		</select>
 
-		<label for="food-select"> the following food <b>a / an</b> </label>
-		<select name="foods" id="food-select">
+		<label for="pouring-food-select"> the following food <b>a / an</b> </label>
+		<select name="pouring-foods" id="pouring-food-select">
 			<option value="obo:FOODON_03301304">batter</option>
 			<option value="obo:FOODON_03420170">broth</option>
 			<option value="obo:FOODON_03307240">chocolate</option>
@@ -302,11 +359,11 @@
 			<option value="obo:FOODON_03301338">wine</option>
 		</select>
 
-		<button type="button" onclick="query_and_show()">Query</button> </font>
+		<button type="button" onclick="query_and_show_pouring()">Query</button> </font>
 
-		<div id="results" style='display: none'>
-			<p id="header"></p>
-			<table id="motions">
+		<div id="pouring-results" style='display: none'>
+			<p id="pouring-header"></p>
+			<table id="pouring-motions">
             <tr>
               <th>#</th>
               <th>Motions</th>
