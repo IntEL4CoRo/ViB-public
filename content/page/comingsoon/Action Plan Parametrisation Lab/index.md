@@ -16,7 +16,9 @@ In this virtual research lab, we aim to empower robots with the ability to use g
 
 <div class="hidde-after-preview">
   {{<Webinterface>}}
-  </br>
+    <hr>
+{{<PouringInterface>}}
+</br>
  <!-- For Detailed information click
   <a class="btn btn-success" target="_blank" href="actionable-knowledge-graph-laboratory/"><b>here!</b></a>  -->
 </div>
