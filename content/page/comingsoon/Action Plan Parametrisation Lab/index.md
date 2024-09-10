@@ -1,5 +1,5 @@
 ---
-title: "Action Plan Parametrisation Lab"
+title: "Action Plan Parametrisation Laboratory"
 date: 2019-02-27T14:33:42-04:00
 subtitle: ""
 tags: ["Research"]
@@ -16,7 +16,9 @@ In this virtual research lab, we aim to empower robots with the ability to use g
 
 <div class="hidde-after-preview">
   {{<Webinterface>}}
-  </br>
+    <hr>
+{{<PouringInterface>}}
+</br>
  <!-- For Detailed information click
   <a class="btn btn-success" target="_blank" href="actionable-knowledge-graph-laboratory/"><b>here!</b></a>  -->
 </div>

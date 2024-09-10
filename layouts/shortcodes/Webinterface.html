@@ -4,30 +4,39 @@
 
 		<script>
         	async function check_food_part(food, part) {
-            	// Construct your SPARQL query
-                const sparqlQuery = `
-                    PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                    PREFIX cut: <http://www.ease-crc.org/ont/food_cutting#>
-                    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                    PREFIX foodon: <http://purl.obolibrary.org/obo/>
-                    ASK {
-                      foodon:${food} rdfs:subClassOf* ?dis.
-                      ?dis owl:onProperty 	cut:hasPart.
-                      ?dis owl:someValuesFrom ?tar.
-                      ?tar owl:intersectionOf ?tar_int.
-                      ?tar_int rdf:first cut:${part}.
-		      ?tar_int rdf:rest ?rest.
-		      ?rest rdf:first ?first.
-		      ?first owl:onProperty cut:hasEdibility.
-		      {?first owl:someValuesFrom cut:MustBeAvoided.}
-		      UNION
-		      {?first owl:someValuesFrom cut:ShouldBeAvoided.}
-                    }
-                `;
+                const owlPrefix = "http://www.w3.org/2002/07/owl#";
+				const cutPrefix = "http://www.ease-crc.org/ont/food_cutting#";
+				const rdfPrefix = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+				const rdfsPrefix = "http://www.w3.org/2000/01/rdf-schema#";
+				const foodonPrefix = "http://purl.obolibrary.org/obo/";
+
+				const sparqlQuery = `
+					PREFIX owl: <${owlPrefix}>
+					PREFIX cut: <${cutPrefix}>
+					PREFIX rdf: <${rdfPrefix}>
+					PREFIX rdfs: <${rdfsPrefix}>
+					PREFIX foodon: <${foodonPrefix}>
+					ASK {
+					  foodon:${food} rdfs:subClassOf* ?dis.
+					  ?dis owl:onProperty cut:hasPart.
+					  ?dis owl:someValuesFrom ?tar.
+					  ?tar owl:intersectionOf ?tar_int.
+					  ?tar_int rdf:first cut:${part}.
+					  ?tar_int rdf:rest ?rest.
+					  ?rest rdf:first ?first.
+					  ?first owl:onProperty cut:hasEdibility.
+					  {
+						?first owl:someValuesFrom cut:MustBeAvoided.
+					  }
+					  UNION
+					  {
+						?first owl:someValuesFrom cut:ShouldBeAvoided.
+					  }
+					}
+				`;
 
             	// Uni Bremen SPARQL endpoint URL
-                const endpointUrl = 'http://knowledgedb.informatik.uni-bremen.de:3031/#/dataset/MealPreparation/query'
+                const endpointUrl = 'https://knowledgedb.informatik.uni-bremen.de/MealPreparation/query'
 
                 const requestOptions = {
                     method: 'POST',
@@ -38,35 +47,42 @@
                 }
 
                 try {
+					console.log(sparqlQuery)
                     const response = await fetch(endpointUrl, requestOptions)
                     const data = await response.json()
                     return data.boolean
                 } catch (error) {
+					console.log(sparqlQuery)
                     console.error('Error:', error)
                     return false
                 }
             }
 
             async function get_prior_task(verb) {
-            	const sparqlQuery = `
-                    PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                    PREFIX cut: <http://www.ease-crc.org/ont/food_cutting#>
-                    PREFIX soma: <http://www.ease-crc.org/ont/SOMA.owl#>
-                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                    SELECT ?res WHERE {
-                        ${verb} rdfs:subClassOf* ?sub.
-                        ?sub owl:onProperty cut:requiresPriorTask .
-                        ?sub owl:someValuesFrom ?priortask.
-                        BIND(REPLACE(STR(?priortask), "^.*[#/]", "") AS ?res).
-                    }
-                `;
+            	const owlPrefix = "http://www.w3.org/2002/07/owl#";
+				const cutPrefix = "http://www.ease-crc.org/ont/food_cutting#";
+				const somaPrefix = "http://www.ease-crc.org/ont/SOMA.owl#";
+				const rdfsPrefix = "http://www.w3.org/2000/01/rdf-schema#";
 
+				const sparqlQuery = `
+					PREFIX owl: <${owlPrefix}>
+					PREFIX cut: <${cutPrefix}>
+					PREFIX soma: <${somaPrefix}>
+					PREFIX rdfs: <${rdfsPrefix}>
+					SELECT ?res WHERE {
+						${verb} rdfs:subClassOf* ?sub.
+						?sub owl:onProperty cut:requiresPriorTask .
+						?sub owl:someValuesFrom ?priortask.
+						BIND(REPLACE(STR(?priortask), "^.*[#/]", "") AS ?res).
+					}
+				`;
+				console.log(sparqlQuery)
             	return query_text(sparqlQuery, '')
             }
 
             async function query_text(query, alternative) {
             	// Triply SPARQL endpoint URL
-                const endpointUrl = 'http://knowledgedb.informatik.uni-bremen.de:3031/#/dataset/MealPreparation/query'
+                const endpointUrl = 'https://knowledgedb.informatik.uni-bremen.de/MealPreparation/query'
 
                 const requestOptions = {
                     method: 'POST',
@@ -79,8 +95,9 @@
                 try {
                     const response = await fetch(endpointUrl, requestOptions)
                     const data = await response.json()
-                    const firstObject = data[0];
-                    return firstObject.res
+					console.log(data.results.bindings[0].res.value)
+                    const firstObject = data.results.bindings[0].res.value;
+                    return firstObject
                 } catch (error) {
                     console.error('Error:', error)
                     return alternative
@@ -88,139 +105,171 @@
             }
 
             async function get_peel_tool(food) {
-                const sparqlQuery = `
-                    PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                    PREFIX cut: <http://www.ease-crc.org/ont/food_cutting#>
-                    PREFIX soma: <http://www.ease-crc.org/ont/SOMA.owl#>
-                    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                    PREFIX foodon: <http://purl.obolibrary.org/obo/>
-                    SELECT ?res WHERE {
-                        foodon:${food} rdfs:subClassOf* ?peel_dis.
-                        ?peel_dis owl:onProperty soma:hasDisposition.
-                        ?peel_dis owl:someValuesFrom ?peel_dis_vals.
-                        ?peel_dis_vals owl:intersectionOf ?afford_vals.
-                        ?afford_vals rdf:first cut:Peelability.
-                        ?afford_vals rdf:rest ?task_trigger.
-                        ?task_trigger rdf:rest ?trigger.
-                        ?trigger rdf:first ?trigger_wo_nil.
-                        ?trigger_wo_nil owl:onProperty soma:affordsTrigger.
-                        ?trigger_wo_nil owl:allValuesFrom ?trigger_tool.
-                        ?trigger_tool owl:allValuesFrom ?tool.
-                        BIND(REPLACE(STR(?tool), "^.*[#/]", "") AS ?res).
-                    }
-                `;
+                const owlPrefix = "http://www.w3.org/2002/07/owl#";
+				const cutPrefix = "http://www.ease-crc.org/ont/food_cutting#";
+				const somaPrefix = "http://www.ease-crc.org/ont/SOMA.owl#";
+				const rdfPrefix = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+				const rdfsPrefix = "http://www.w3.org/2000/01/rdf-schema#";
+				const foodonPrefix = "http://purl.obolibrary.org/obo/";
+
+				const sparqlQuery = `
+					PREFIX owl: <${owlPrefix}>
+					PREFIX cut: <${cutPrefix}>
+					PREFIX soma: <${somaPrefix}>
+					PREFIX rdf: <${rdfPrefix}>
+					PREFIX rdfs: <${rdfsPrefix}>
+					PREFIX foodon: <${foodonPrefix}>
+					SELECT ?res WHERE {
+						foodon:${food} rdfs:subClassOf* ?peel_dis.
+						?peel_dis owl:onProperty soma:hasDisposition.
+						?peel_dis owl:someValuesFrom ?peel_dis_vals.
+						?peel_dis_vals owl:intersectionOf ?afford_vals.
+						?afford_vals rdf:first cut:Peelability.
+						?afford_vals rdf:rest ?task_trigger.
+						?task_trigger rdf:rest ?trigger.
+						?trigger rdf:first ?trigger_wo_nil.
+						?trigger_wo_nil owl:onProperty soma:affordsTrigger.
+						?trigger_wo_nil owl:allValuesFrom ?trigger_tool.
+						?trigger_tool owl:allValuesFrom ?tool.
+						BIND(REPLACE(STR(?tool), "^.*[#/]", "") AS ?res).
+					}
+				`;
 
             	return query_text(sparqlQuery, 'Peeler')
             }
 
             async function get_cut_tool(food) {
-                const sparqlQuery = `
-                    PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                    PREFIX soma: <http://www.ease-crc.org/ont/SOMA.owl#>
-                    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                    PREFIX foodon: <http://purl.obolibrary.org/obo/>
-                    PREFIX sit_aware: <http://www.ease-crc.org/ont/situation_awareness#>
-                    SELECT ?res WHERE {
-                        foodon:${food} rdfs:subClassOf* ?peel_dis.
-                        ?peel_dis owl:onProperty soma:hasDisposition.
-                        ?peel_dis owl:someValuesFrom ?peel_dis_vals.
-                        ?peel_dis_vals owl:intersectionOf ?afford_vals.
-                        ?afford_vals rdf:first sit_aware:Cuttability.
-                        ?afford_vals rdf:rest ?task_trigger.
-                        ?task_trigger rdf:rest ?trigger.
-                        ?trigger rdf:first ?trigger_wo_nil.
-                        ?trigger_wo_nil owl:onProperty soma:affordsTrigger.
-                        ?trigger_wo_nil owl:allValuesFrom ?trigger_tool.
-                        ?trigger_tool owl:allValuesFrom ?tool.
-                        BIND(REPLACE(STR(?tool), "^.*[#/]", "") AS ?res).
-                    }
-                `;
+					const owlPrefix = "http://www.w3.org/2002/07/owl#";
+					const somaPrefix = "http://www.ease-crc.org/ont/SOMA.owl#";
+					const rdfPrefix = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+					const rdfsPrefix = "http://www.w3.org/2000/01/rdf-schema#";
+					const foodonPrefix = "http://purl.obolibrary.org/obo/";
+					const sitAwarePrefix = "http://www.ease-crc.org/ont/situation_awareness#";
+
+					const sparqlQuery = `
+						PREFIX owl: <${owlPrefix}>
+						PREFIX soma: <${somaPrefix}>
+						PREFIX rdf: <${rdfPrefix}>
+						PREFIX rdfs: <${rdfsPrefix}>
+						PREFIX foodon: <${foodonPrefix}>
+						PREFIX sit_aware: <${sitAwarePrefix}>
+						SELECT ?res WHERE {
+							foodon:${food} rdfs:subClassOf* ?peel_dis.
+							?peel_dis owl:onProperty soma:hasDisposition.
+							?peel_dis owl:someValuesFrom ?peel_dis_vals.
+							?peel_dis_vals owl:intersectionOf ?afford_vals.
+							?afford_vals rdf:first sit_aware:Cuttability.
+							?afford_vals rdf:rest ?task_trigger.
+							?task_trigger rdf:rest ?trigger.
+							?trigger rdf:first ?trigger_wo_nil.
+							?trigger_wo_nil owl:onProperty soma:affordsTrigger.
+							?trigger_wo_nil owl:allValuesFrom ?trigger_tool.
+							?trigger_tool owl:allValuesFrom ?tool.
+							BIND(REPLACE(STR(?tool), "^.*[#/]", "") AS ?res).
+						}
+					`;
+
 
             	return query_text(sparqlQuery, 'Knife')
             }
 
             async function get_target(verb) {
-                const sparqlQuery = `
-                    PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                    PREFIX soma: <http://www.ease-crc.org/ont/SOMA.owl#>
-                    PREFIX cut: <http://www.ease-crc.org/ont/food_cutting#>
-                    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                    SELECT ?res WHERE {
-                      {
-                        ${verb} rdfs:subClassOf* ?inter_node.
-                        ?inter_node owl:intersectionOf ?in_res_node.
-                        ?in_res_node rdf:first ?input_node.
-                        ?input_node owl:onProperty cut:hasInputObject.
-                        ?input_node owl:someValuesFrom ?target.
-                        FILTER NOT EXISTS {
-                            ?target owl:unionOf ?union_node.
-                        }
-                        BIND(REPLACE(STR(?target), "^.*[#/]", "") AS ?res).
-                      }
-                      UNION
-                      {
-                        ${verb} rdfs:subClassOf* ?inter_node.
-                        ?inter_node owl:intersectionOf ?in_res_node.
-                        ?in_res_node rdf:first ?input_node.
-                        ?input_node owl:onProperty cut:hasInputObject.
-                        ?input_node owl:someValuesFrom ?targets_node.
-                        ?targets_node owl:unionOf ?union_node.
-                        ?union_node rdf:first ?target.
-                        BIND(REPLACE(STR(?target), "^.*[#/]", "") AS ?res).
-                      }
-                    }
-                `;
+                const owlPrefix = "http://www.w3.org/2002/07/owl#";
+				const somaPrefix = "http://www.ease-crc.org/ont/SOMA.owl#";
+				const cutPrefix = "http://www.ease-crc.org/ont/food_cutting#";
+				const rdfPrefix = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+				const rdfsPrefix = "http://www.w3.org/2000/01/rdf-schema#";
+
+				const sparqlQuery = `
+					PREFIX owl: <${owlPrefix}>
+					PREFIX soma: <${somaPrefix}>
+					PREFIX cut: <${cutPrefix}>
+					PREFIX rdf: <${rdfPrefix}>
+					PREFIX rdfs: <${rdfsPrefix}>
+					SELECT ?res WHERE {
+					  {
+						${verb} rdfs:subClassOf* ?inter_node.
+						?inter_node owl:intersectionOf ?in_res_node.
+						?in_res_node rdf:first ?input_node.
+						?input_node owl:onProperty cut:hasInputObject.
+						?input_node owl:someValuesFrom ?target.
+						FILTER NOT EXISTS {
+							?target owl:unionOf ?union_node.
+						}
+						BIND(REPLACE(STR(?target), "^.*[#/]", "") AS ?res).
+					  }
+					  UNION
+					  {
+						${verb} rdfs:subClassOf* ?inter_node.
+						?inter_node owl:intersectionOf ?in_res_node.
+						?in_res_node rdf:first ?input_node.
+						?input_node owl:onProperty cut:hasInputObject.
+						?input_node owl:someValuesFrom ?targets_node.
+						?targets_node owl:unionOf ?union_node.
+						?union_node rdf:first ?target.
+						BIND(REPLACE(STR(?target), "^.*[#/]", "") AS ?res).
+					  }
+					}
+				`;
 
             	return query_text(sparqlQuery, 'Food')
             }
 
             async function get_repetitions(verb) {
-            	const sparqlQuery = `
-                    PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                    PREFIX cut: <http://www.ease-crc.org/ont/food_cutting#>
-                    PREFIX soma: <http://www.ease-crc.org/ont/SOMA.owl#>
-                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            	const owlPrefix = "http://www.w3.org/2002/07/owl#";
+				const cutPrefix = "http://www.ease-crc.org/ont/food_cutting#";
+				const somaPrefix = "http://www.ease-crc.org/ont/SOMA.owl#";
+				const rdfsPrefix = "http://www.w3.org/2000/01/rdf-schema#";
 
-                    SELECT ?res WHERE {
-                      {
-                        ${verb} rdfs:subClassOf* ?rep_node.
-                        ?rep_node owl:onProperty cut:repetitions.
-                        FILTER EXISTS {
-                            ?rep_node owl:hasValue ?val.
-                        }
-                        BIND("exactly 1" AS ?res)
-                      }
-                      UNION
-                      {
-                        ${verb} rdfs:subClassOf* ?rep_node.
-                        ?rep_node owl:onProperty cut:repetitions.
-                        FILTER EXISTS {
-                            ?rep_node owl:minQualifiedCardinality ?val.
-                        }
-                        BIND("at least 1" AS ?res)
-                      }
-                    }
-                `;
+				const sparqlQuery = `
+					PREFIX owl: <${owlPrefix}>
+					PREFIX cut: <${cutPrefix}>
+					PREFIX soma: <${somaPrefix}>
+					PREFIX rdfs: <${rdfsPrefix}>
+
+					SELECT ?res WHERE {
+					  {
+						${verb} rdfs:subClassOf* ?rep_node.
+						?rep_node owl:onProperty cut:repetitions.
+						FILTER EXISTS {
+							?rep_node owl:hasValue ?val.
+						}
+						BIND("exactly 1" AS ?res)
+					  }
+					  UNION
+					  {
+						${verb} rdfs:subClassOf* ?rep_node.
+						?rep_node owl:onProperty cut:repetitions.
+						FILTER EXISTS {
+							?rep_node owl:minQualifiedCardinality ?val.
+						}
+						BIND("at least 1" AS ?res)
+					  }
+					}
+				`;
 
             	return query_text(sparqlQuery, '1')
             }
 
             async function get_cutting_position(verb) {
-            	const sparqlQuery = `
-                    PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                    PREFIX cut: <http://www.ease-crc.org/ont/food_cutting#>
-                    PREFIX soma: <http://www.ease-crc.org/ont/SOMA.owl#>
-                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                    SELECT * WHERE {
-                        ${verb} rdfs:subClassOf* ?pos_node.
-                        ?pos_node owl:onProperty cut:affordsPosition.
-                        ?pos_node owl:someValuesFrom ?pos.
-                        BIND(REPLACE(STR(?pos), "^.*[#/]", "") AS ?res).
-                    }
-                `;
+            	const owlPrefix = "http://www.w3.org/2002/07/owl#";
+				const cutPrefix = "http://www.ease-crc.org/ont/food_cutting#";
+				const somaPrefix = "http://www.ease-crc.org/ont/SOMA.owl#";
+				const rdfsPrefix = "http://www.w3.org/2000/01/rdf-schema#";
+
+				const sparqlQuery = `
+					PREFIX owl: <${owlPrefix}>
+					PREFIX cut: <${cutPrefix}>
+					PREFIX soma: <${somaPrefix}>
+					PREFIX rdfs: <${rdfsPrefix}>
+
+					SELECT * WHERE {
+						${verb} rdfs:subClassOf* ?pos_node.
+						?pos_node owl:onProperty cut:affordsPosition.
+						?pos_node owl:someValuesFrom ?pos.
+						BIND(REPLACE(STR(?pos), "^.*[#/]", "") AS ?res).
+					}
+				`;
 
             	return query_text(sparqlQuery, 'middle')
             }
@@ -266,6 +315,7 @@
                 var remove_core = await check_food_part(foods.value, 'Core')
                 var prior_task = await get_prior_task(verbs.value)
                 var peel_tool = await get_peel_tool(foods.value)
+				console.log(peel_tool)
                 var cut_tool = await get_cut_tool(foods.value)
                 var reps = await get_repetitions(verbs.value)
                 var pos = await get_cutting_position(verbs.value)
