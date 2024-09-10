@@ -322,31 +322,59 @@
            };
          })
        },
-      getActionUrl(action) {
-      // Build the selected options string
-      const selectedOptions = this.updatedOptions.map(option => {
-        return `${option.name}=${option.selected.value}`
-      }).join('|');
+    getActionUrl(action) {
+  // Build the selected options string
+  let selectedOptions = this.updatedOptions.map(option => {
+    return `${option.name}=${option.selected.value}`;
+  }).join('|');
 
-      // Check if there's an available URL for the selected options
-      let _url = action.available[selectedOptions];
+  // Check if a specialized task is selected and append it to selectedOptions
+  if (this.showSpecializedCuttingDropdown) {
+    selectedOptions += `|specializedCuttingTask=${this.selectedSpecializedCuttingTask.value}`;
+  } else if (this.showSpecializedMixingDropdown) {
+    selectedOptions += `|specializedMixingTask=${this.selectedSpecializedMixingTask.value}`;
+  } else if (this.showSpecializedPouringDropdown) {
+    selectedOptions += `|specializedPouringTask=${this.selectedSpecializedPouringTask.value}`;
+  } else if (this.showSpecializedTransportingDropdown) {
+    selectedOptions += `|specializedTransportingTask=${this.selectedSpecializedTransportingTask.value}`;
+  }
 
-      // If there's no available URL, use the main URL
-      if (!_url) _url = action.url;
-      if (!_url) return '';
+  // Check if there's an available URL for the selected options
+  let _url = action.available[selectedOptions];
 
-      // Build query string from selected options
-      const queryParams = this.updatedOptions.map(option => {
-        return `${encodeURIComponent(option.name)}=${encodeURIComponent(option.selected.value)}`
-      }).join('&');
+  // If there's no available URL, use the main URL
+  if (!_url) _url = action.url;
+  if (!_url) return '';
 
-      // Append query string to the URL
-      if (queryParams) {
-        _url += (_url.includes('?') ? '&' : '?') + queryParams;
-      }
+  // Build query string from selected options
+  let queryParams = this.updatedOptions.map(option => {
+    return `${option.name}=${option.selected.value}`;
+  }).join('&');
 
-      return _url;
-    },
+  // Check if a specialized task is selected and append it to the query string
+  let specialParam = '';
+  if (this.showSpecializedCuttingDropdown) {
+    specialParam = `&specialized_task=${this.selectedSpecializedCuttingTask.value}`;
+  } else if (this.showSpecializedMixingDropdown) {
+    specialParam =  `&specialized_task=${this.selectedSpecializedMixingTask.value}`;
+  } else if (this.showSpecializedPouringDropdown) {
+    specialParam =  `&specialized_task=${this.selectedSpecializedPouringTask.value}`;
+  } else if (this.showSpecializedTransportingDropdown) {
+    specialParam =  `&specialized_task=${this.selectedSpecializedTransportingTask.value}`;
+  }
+
+  // Append specialParam to queryParams
+  queryParams += specialParam;
+
+  // Manually encode the entire query string, including ?, &, and =
+  const encodedQueryParams = encodeURIComponent(`?${queryParams}`);
+
+  // Append query string to the URL
+  _url += encodedQueryParams;
+
+  return _url;
+},
+
       filterOptions(selectedEnv = '',selectedRobo = ''){
         const availableConfigs = this.actions.reduce((acc, action) => ({...acc, ...action.available}), {});
 
@@ -397,9 +425,9 @@
           //   return 0;
           // })
 
-          // this.updatedOptions[optionIndex].options = []
-          // this.updatedOptions[optionIndex].options = Array.from(OptionList)
-          // this.updatedOptions[optionIndex].selected = this.updatedOptions[optionIndex].options[0]
+          this.updatedOptions[optionIndex].options = []
+          this.updatedOptions[optionIndex].options = Array.from(OptionList)
+          this.updatedOptions[optionIndex].selected = this.updatedOptions[optionIndex].options[0]
 
         }
         // return OptionList;
