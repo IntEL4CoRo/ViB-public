@@ -313,21 +313,37 @@
                 curr_step = 1
                 target = ''
 
-                // optional preconditions
-                if (needed_tool != '') {
-                	add_to_table_pouring(curr_step++, "Use the following tool for the task: " + needed_tool, "requires tool = true<br>needed tool = " + needed_tool)
+				// Check if the required tool is a 'Shaker' and perform the relevant pouring steps
+				if (needed_tool == 'Shaker') {
+                	add_to_table_pouring(curr_step++, "Grasp the required tool for the task", "requires tool = true<br>needed tool = " + needed_tool)
+					add_to_table_pouring(curr_step++, "Lift the required tool above the goal object", "requires tool = true<br>needed tool = " + needed_tool)
+					add_to_table_pouring(curr_step++, "Use the required tool to pour the food object at the angle ...", "food object = " + selected_food + "<br>min angle = " + minangle + "<br>max angle = " + maxangle)
+					add_to_table_pouring(curr_step++, "Pouring the food object for the duration ...", "food object = " + selected_food + "<br>min duration = " + minduration + "<br>max duration = " + maxduration)
+					add_to_table_pouring(curr_step++, "Placing the required tool ", "requires tool = true<br>needed tool = " + needed_tool)
+
                 }
+                // Check if the required tool is a 'Sieve' and perform the relevant pouring steps
+                if (needed_tool == 'Sieve') {
+                	add_to_table_pouring(curr_step++, "Pick up the required tool for the task", "requires tool = true<br>needed tool = " + needed_tool)
+					add_to_table_pouring(curr_step++, "Grasp the container which contains the food product", "food object = " + selected_food)
+					add_to_table_pouring(curr_step++, "Lift the container which contains the food product above the sieve", "food object = " + selected_food + "<br>requires tool = true<br>needed tool = " + needed_tool)
+					add_to_table_pouring(curr_step++, "Pouring the food object through the sieve at the angle ...", "requires tool = true<br>needed tool = " + needed_tool +"<br>food object = " + selected_food + "<br>min angle = " + minangle + "<br>max angle = " + maxangle)
+	                add_to_table_pouring(curr_step++, "Pouring the food object for the duration ...", "food object = " + selected_food + "<br>min duration = " + minduration + "<br>max duration = " + maxduration)
+					add_to_table_pouring(curr_step++, "Placing the required tool and container", "requires tool = true<br>needed tool = " + needed_tool)
 
-                // picking up the object
-                add_to_table_pouring(curr_step, "Picking up the pourable object ...", "pourable object = " + selected_food)
-                               
 
-                // pouring the food object with angle
-                add_to_table_pouring(curr_step, "Pouring the food object at the angle ...", "food object = " + selected_food + "<br>min angle = " + minangle + "<br>max angle = " + maxangle)
-              
-		// pouring the food object for duration
-                add_to_table_pouring(curr_step, "Pouring the food object for the duration ...", "food object = " + selected_food + "<br>min duration = " + minduration + "<br>max duration = " + maxduration)
-			}
+				}
+
+                // If no tool is required, perform the pouring steps directly with the container
+				if (needed_tool == '') {
+					add_to_table_pouring(curr_step++, "Grasp the container which contains the food product " , "food object = " + selected_food)
+					add_to_table_pouring(curr_step++, "Lift the container which contains the food product above the goal object", "food object = " + selected_food)
+					add_to_table_pouring(curr_step++, "Pouring the food object at the angle ...", "food object = " + selected_food + "<br>min angle = " + minangle + "<br>max angle = " + maxangle)
+	                add_to_table_pouring(curr_step++, "Pouring the food object for the duration ...", "food object = " + selected_food + "<br>min duration = " + minduration + "<br>max duration = " + maxduration)
+					add_to_table_pouring(curr_step++, "Placing the container", "")
+
+				}
+				}
 		</script>
 
 		Show me the plan for the following<br> <label for="pouring-food-select"><b>task</b>: </label>
