@@ -2,12 +2,12 @@
 {{ $idSuffix := now.UnixNano }}
 
 <div class="vue-app" id="vueapp{{ $idSuffix }}">
-  <!-- selectboxs -->
-  <div class="row">
 
-    <div class="p-float-label col-md-6" v-for="item in envs">
+  <div class="row">
+     <div v-if="taskes">
+    <div class="p-float-label col-md-12" v-for="item in taskes">
       <p-dropdown v-model="item.selected" :options="item.options" :optionLabel="item.name" :placeholder="item.name"
-        :inputId="item.name" class="col-md-12 mb-3"> 
+        :inputId="item.name" class="col-md-12 mb-3">
         <template #value="slotProps">
           <div v-if="slotProps.value" :title="slotProps.value.value" class="flex h-100 align-items-center"
             :class="{ noImg: item.noImg }">
@@ -35,12 +35,16 @@
           </div>
         </template>
       </p-dropdown>
-      <label :for="item.name" v-text="item.name"></label>
+      <label :for="item.name" v-text="'Action Core'"></label>
+    </div>
     </div>
 
+
+  </div>
+    <div class="row">
     <div class="p-float-label col-md-6" v-for="item in robos">
       <p-dropdown v-model="item.selected" :options="item.options" :optionLabel="item.name" :placeholder="item.name"
-        :inputId="item.name" class="col-md-12 mb-3"> 
+        :inputId="item.name" class="col-md-12 mb-3">
         <template #value="slotProps">
           <div v-if="slotProps.value" :title="slotProps.value.value" class="flex h-100 align-items-center"
             :class="{ noImg: item.noImg }">
@@ -71,10 +75,10 @@
       <label :for="item.name" v-text="item.name"></label>
     </div>
 
-    <div v-if="taskes">
-    <div class="p-float-label col-md-6" v-for="item in taskes">
+
+    <div class="p-float-label full-width-button col-md-6" v-for="item in envs">
       <p-dropdown v-model="item.selected" :options="item.options" :optionLabel="item.name" :placeholder="item.name"
-        :inputId="item.name" class="col-md-12 mb-3"> 
+        :inputId="item.name" class="col-md-12 mb-3">
         <template #value="slotProps">
           <div v-if="slotProps.value" :title="slotProps.value.value" class="flex h-100 align-items-center"
             :class="{ noImg: item.noImg }">
@@ -104,23 +108,108 @@
       </p-dropdown>
       <label :for="item.name" v-text="item.name"></label>
     </div>
+  <!-- Specialized Task Dropdown, visible only if "cutting" is selected -->
+    <!-- Specialized Task Dropdown, visible only if "cutting" is selected -->
+    <div class="p-float-label col-md-6" v-if="showSpecializedCuttingDropdown">
+        <p-dropdown class="dropdown-size" v-model="selectedSpecializedCuttingTask" :options="specializedCuttingTasks" optionLabel="name"
+        placeholder="Specialized Cutting Task" inputId="specializedTaskDropdown" class="col-md-12 mb-3">
+        <template #value="slotProps">
+          <div v-if="slotProps.value" :title="slotProps.value.value" class="flex h-100 align-items-center">
+            <div class="text-capitalize option-name" v-text="slotProps.value.name"></div>
+          </div>
+          <span v-else>
+            <span v-text="slotProps.placeholder"></span>
+          </span>
+        </template>
+        <template #option="slotProps">
+          <div class="flex align-items-center" :title="slotProps.option.value">
+            <div class="text-capitalize option-name" v-text="slotProps.option.name"></div>
+          </div>
+        </template>
+      </p-dropdown>
+       <label :for="selectedSpecializedCuttingTask" v-text="'Specialization'"></label>
+
+  </div>
+
+    <!-- Specialized Task Dropdown, visible only if "mixing" is selected -->
+    <div class="p-float-label col-md-6" v-if="showSpecializedMixingDropdown">
+      <p-dropdown class="dropdown-size" v-model="selectedSpecializedMixingTask" :options="specializedMixingTasks" optionLabel="name"
+        placeholder="Specialized Mixing Task" inputId="specializedMixingDropdown" class="col-md-12 mb-3">
+        <template #value="slotProps">
+          <div v-if="slotProps.value" :title="slotProps.value.value" class="flex h-100 align-items-center">
+            <div class="text-capitalize option-name" v-text="slotProps.value.name"></div>
+          </div>
+          <span v-else>
+            <span v-text="slotProps.placeholder"></span>
+          </span>
+        </template>
+        <template #option="slotProps">
+          <div class="flex align-items-center" :title="slotProps.option.value">
+            <div class="text-capitalize option-name" v-text="slotProps.option.name"></div>
+          </div>
+        </template>
+      </p-dropdown>
+      <label :for="selectedSpecializedMixingTask" v-text="'Specialization'"></label>
     </div>
 
+        <!-- Specialized Task Dropdown, visible only if "mixing" is selected -->
+    <div class="p-float-label col-md-6" v-if="showSpecializedPouringDropdown">
+      <p-dropdown class="dropdown-size" v-model="selectedSpecializedPouringTask" :options="specializedPouringTasks" optionLabel="name"
+        placeholder="Specialized Pouring Task" inputId="specializedPouringDropdown" class="col-md-12 mb-3">
+        <template #value="slotProps">
+          <div v-if="slotProps.value" :title="slotProps.value.value" class="flex h-100 align-items-center">
+            <div class="text-capitalize option-name" v-text="slotProps.value.name"></div>
+          </div>
+          <span v-else>
+            <span v-text="slotProps.placeholder"></span>
+          </span>
+        </template>
+        <template #option="slotProps">
+          <div class="flex align-items-center" :title="slotProps.option.value">
+            <div class="text-capitalize option-name" v-text="slotProps.option.name"></div>
+          </div>
+        </template>
+      </p-dropdown>
+      <label :for="selectedSpecializedPouringTask" v-text="'Specialization'"></label>
+    </div>
+
+              <!-- Specialized Task Dropdown, visible only if "mixing" is selected -->
+    <div class="p-float-label col-md-6" v-if="showSpecializedTransportingDropdown">
+      <p-dropdown class="dropdown-size" v-model="selectedSpecializedTransportingTask" :options="specializedTransportingTasks" optionLabel="name"
+        placeholder="Specialized Transporting Task" inputId="specializedTransportingDropdown" class="col-md-12 mb-3">
+        <template #value="slotProps">
+          <div v-if="slotProps.value" :title="slotProps.value.value" class="flex h-100 align-items-center">
+            <div class="text-capitalize option-name" v-text="slotProps.value.name"></div>
+          </div>
+          <span v-else>
+            <span v-text="slotProps.placeholder"></span>
+          </span>
+        </template>
+        <template #option="slotProps">
+          <div class="flex align-items-center" :title="slotProps.option.value">
+            <div class="text-capitalize option-name" v-text="slotProps.option.name"></div>
+          </div>
+        </template>
+      </p-dropdown>
+      <label :for="selectedSpecializedTransportingTask" v-text="'Specialization'"></label>
+    </div>
+    </div>
+
+
+
+     <!-- Buttons -->
+  <div class="action-buttons">
+    <div class="action-button-wrapper" v-for="action in actions" :class="{ 'disabled-action-button-wrapper': !getActionUrl(action) }">
+      <a class="run-button btn mr-2 mb-2 " target="_blank" v-text="action.name" :title="action.description"
+        :href="getActionUrl(action)"
+        :class="{ 'btn-primary': action.primary,'btn-success': !action.primary, 'disabled': !getActionUrl(action) }"></a>
+    </div>
+  </div>
   </div>
   <!-- error message -->
   <div v-show="errorMsgs.length !== 0">
     <pre class="alert alert-warning" v-text="errorMsgs"></pre>
   </div>
-
-  <!-- Buttons -->
-  <div class="action-buttons">
-    <div class="action-button-wrapper" v-for="action in actions" :class="{ 'disabled-action-button-wrapper': !getActionUrl(action) }">
-      <a class="btn mr-2 mb-2" target="_blank" v-text="action.name" :title="action.description"
-        :href="getActionUrl(action)"
-        :class="{ 'btn-primary': action.primary,'btn-success': !action.primary, 'disabled': !getActionUrl(action) }"></a>
-    </div>
-  </div>
-</div>
 
 <script type="module">
 
@@ -133,26 +222,54 @@
     data() {
       return {
         actions: data.actions,
-        selectOptions: Object.keys(data.options).map(v => {
-          return {
-            name: v,
-            noImg: data.options[v].map(v => !!v.img).filter(v => v).length === 0,
-            selected: data.options[v][0],
-            options: data.options[v]
-          }
-        }),
-        updatedOptions: Object.keys(data.options).map(v => {
-          return {
-            name: v,
-            noImg: data.options[v].map(v => !!v.img).filter(v => v).length === 0,
-            selected: data.options[v][0],
-            options: data.options[v]
+        selectOptions: this.buildOptions('options'),
+        updatedOptions: this.buildOptions('options'),
+         specializedCuttingTasks: [
+          { name: "Halving", value: "halving" },
+          { name: "Slicing", value: "slicing" },
+           { name: "Sawing", value: "sawing" }
+        ],
+        selectedSpecializedCuttingTask: {name: "Halving", value: "halving"},
 
-          }
-        })
+        specializedPouringTasks: [
+          { name: "Pouring", value: "pour" },
+          // { name: "Draining", value: "drain" },
+          // { name: "Sprinkling", value: "sprinkle" }
+        ],
+        selectedSpecializedPouringTask: {name: "Pouring", value: "pour"},
+
+         specializedTransportingTasks: [
+          { name: "Setting the Table", value: "set" },
+          { name: "Cleaning the Table", value: "clean" }
+        ],
+        selectedSpecializedTransportingTask: {name: "Setting the Table", value: "set"},
+         // Define specialized mixing tasks here
+        specializedMixingTasks: [
+          // { name: "Stirring", value: "stirring" },
+          { name: "Whisking", value: "whisking" }
+        ],
+        selectedSpecializedMixingTask: { name: "Whisking", value: "whisking" }
+
       };
     },
     computed: {
+      showSpecializedCuttingDropdown() {
+        // Show the specialized dropdown only if the selected task is "cutting"
+        return this.taskes && this.taskes.length > 0 && this.taskes[0].selected && this.taskes[0].selected.value === "cutting";
+
+      },
+       showSpecializedMixingDropdown() {
+    // Show the specialized dropdown only if the selected task is "mixing"
+      return this.taskes && this.taskes.length > 0 && this.taskes[0].selected && this.taskes[0].selected.value === "mixing";
+    },
+          showSpecializedPouringDropdown() {
+    // Show the specialized dropdown only if the selected task is "mixing"
+      return this.taskes && this.taskes.length > 0 && this.taskes[0].selected && this.taskes[0].selected.value === "pouring";
+    },
+      showSpecializedTransportingDropdown() {
+    // Show the specialized dropdown only if the selected task is "mixing"
+      return this.taskes && this.taskes.length > 0 && this.taskes[0].selected && this.taskes[0].selected.value === "transporting";
+    },
       selectedNotebookId() {
         const newValue = this.selectOptions
           ? this.selectOptions.map(v => v.name + '=' + v.selected.value).join('|')
@@ -196,6 +313,15 @@
       }
     },
     methods: {
+       buildOptions(type) {
+         return Object.keys(data[type]).map(v => {
+           return {
+             name: v,
+             selected: data[type][v][0],
+             options: data[type][v]
+           };
+         })
+       },
       getActionUrl(action) {
       // Build the selected options string
       const selectedOptions = this.updatedOptions.map(option => {
@@ -242,7 +368,7 @@
               regex = new RegExp(`environments=${selectedEnv}\\|robots=${selectedRobo}\\|tasks=([^|]+)`);
               optionIndex = 2
           }
-          
+
           for (const key in availableConfigs) {
               const match = regex.exec(key);
               if (match) {
@@ -258,22 +384,22 @@
               }
           }
 
-          //Sorting available options alphabetically
-          OptionList.sort(function(a,b){
-            var nameA = a.name.toUpperCase();
-            var nameB = b.name.toUpperCase();
-            if (nameA < nameB){
-              return -1;
-            }
-            if (nameA > nameB){
-              return 1;
-            }
-            return 0;
-          })
+          // //Sorting available options alphabetically
+          // OptionList.sort(function(a,b){
+          //   var nameA = a.name.toUpperCase();
+          //   var nameB = b.name.toUpperCase();
+          //   if (nameA < nameB){
+          //     return -1;
+          //   }
+          //   if (nameA > nameB){
+          //     return 1;
+          //   }
+          //   return 0;
+          // })
 
-          this.updatedOptions[optionIndex].options = []
-          this.updatedOptions[optionIndex].options = Array.from(OptionList)
-          this.updatedOptions[optionIndex].selected = this.updatedOptions[optionIndex].options[0]
+          // this.updatedOptions[optionIndex].options = []
+          // this.updatedOptions[optionIndex].options = Array.from(OptionList)
+          // this.updatedOptions[optionIndex].selected = this.updatedOptions[optionIndex].options[0]
 
         }
         // return OptionList;
