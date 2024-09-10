@@ -7,7 +7,7 @@
      <div v-if="taskes">
     <div class="p-float-label col-md-12" v-for="item in taskes">
       <p-dropdown v-model="item.selected" :options="item.options" :optionLabel="item.name" :placeholder="item.name"
-        :inputId="item.name" class="col-md-12 mb-3"
+        :inputId="item.name" class="col-md-12 mb-3">
         <template #value="slotProps">
           <div v-if="slotProps.value" :title="slotProps.value.value" class="flex h-100 align-items-center"
             :class="{ noImg: item.noImg }">
