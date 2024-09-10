@@ -60,7 +60,9 @@
   height: 2rem;
   background-color: #ebebeb;
 }
-
+.full-width-button {
+  width: 100%;
+}
 /* allows disabled buttons to have not-allowed curser */
 .action-button-wrapper {
   display: inline-block;
@@ -68,9 +70,18 @@
 .disabled-action-button-wrapper {
   cursor: not-allowed;
 }
-
+.run-button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
 
 /* make all vue action button alert messages invisible */
 div pre.alert.alert-warning {
   display: none;
+}
+
+.bigger-dropdown .p-dropdown {
+  width: 150%; /* Adjust this value as needed */
+  height: 150%; /* Adjust this value as needed */
 }
