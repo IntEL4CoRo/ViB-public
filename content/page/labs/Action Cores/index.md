@@ -1,6 +1,6 @@
 ---
 title: "Action Cores"
-date: 2019-02-27T14:33:42-04:00
+date: 2023-12-01T10:35:35-06:00
 subtitle: ""
 tags: ["Research"]
 dropCap: false
@@ -30,6 +30,10 @@ task, and robot, and then run it within a software container.
   <a class="btn btn-success" target="_blank" href="action-cores"><b>here!</b></a>
 </div>
 
+
+
+<!--more-->
+
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
   <div style="flex:30%;">
@@ -46,8 +50,6 @@ task, and robot, and then run it within a software container.
   </div>
 
 </div> 
-
-<!--more-->
 Interactive Actions and/or Examples
 ---
 
