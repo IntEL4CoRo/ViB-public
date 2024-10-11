@@ -1,0 +1,11 @@
+{
+  "options": {},
+  "actions": [
+    {
+      "name": "Inspect Knowledge Graph",
+      "value": "run",
+      "description": "KG queries",
+      "url": "https://binder.intel4coro.de/v2/gh/IntEL4CoRo/blockly-playground.git/main?labpath=examples/playground.jpblockly"
+    }
+  ]
+}
