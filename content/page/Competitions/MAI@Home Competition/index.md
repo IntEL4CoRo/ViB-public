@@ -20,10 +20,10 @@ For more information you can check out the <a href="http://ikgrc.org/2025/">comp
 <br><br>
 <!--In the notebook below you can try out some example queries on the knowledge graph and video data-->
 
-<!--<div class="hidde-after-preview">
+<div class="hidde-after-preview">
   For Detailed information click
-  <a class="btn btn-success" target="_blank" href="the-virtual-robocup@home-arena"><b>here!</b></a>
-</div>-->
+  <a class="btn btn-success" target="_blank" href="the-MAI@home-competition"><b>here!</b></a>
+</div>
 
 <!--more-->
 
