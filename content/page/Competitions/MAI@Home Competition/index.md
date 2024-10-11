@@ -22,7 +22,7 @@ For more information you can check out the <a href="http://ikgrc.org/2025/">comp
 
 <div class="hidde-after-preview">
   For Detailed information click
-  <a class="btn btn-success" target="_blank" href="the-MAI@home-competition"><b>here!</b></a>
+  <a class="btn btn-success" target="_blank" href="maihome-competition"><b>here!</b></a>
 </div>
 
 <!--more-->
