@@ -18,11 +18,14 @@ One unique feature of this competition is that we provide spatiotemporal knowled
 <br><br>
 For more information you can check out the <a href="http://ikgrc.org/2025/">competition website</a> and the github.
 <br><br>
-<!--In the notebook below you can try out some example queries on the knowledge graph and video data-->
+In the notebook below you can try out some example queries on the knowledge graph and video data
+
+
 
 <div class="hidde-after-preview">
+  {{<action_form data="ActionButtons">}}
   For Detailed information click
-  <a class="btn btn-success" target="_blank" href="the-MAI@home-competition"><b>here!</b></a>
+  <a class="btn btn-success" target="_blank" href="maihome-competition"><b>here!</b></a>
 </div>
 
 <!--more-->
