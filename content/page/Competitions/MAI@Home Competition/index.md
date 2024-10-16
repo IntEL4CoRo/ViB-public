@@ -22,7 +22,7 @@ In the notebook below you can try out some example queries on the knowledge grap
 
 
 
-<div>
+<div class="hidde-after-preview"> 
   {{<action_form data="ActionButtons">}}
   For Detailed information click
   <a class="btn btn-success" target="_blank" href="maihome-competition"><b>here!</b></a>
