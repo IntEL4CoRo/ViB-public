@@ -74,7 +74,9 @@ And so, PR2 became a better robot, one that understood the subtle, yet vital,
 importance of knowing when to act before it could perceive. Because in a world full of hidden objects, perception wasn’t just about what was visible—it was about what could become visible, with the right actions.
 
 
-
+<p align="center">
+  <img src="img/pr2milk.png" width="600" alt="pr2comic"/><br>
+</p>
 
 
 The Quest
