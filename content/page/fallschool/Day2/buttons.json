@@ -1,0 +1,136 @@
+
+
+{
+  "options": {
+    "environments": [
+      {
+        "name": "Apartment",
+        "value": "apartment",
+        "img": "https://intel4coro.github.io/coai-vib/img/apartment.png"}
+    ],
+    "robots": [
+      {
+        "name": "PR2",
+        "value": "pr2",
+        "img": "https://intel4coro.github.io/coai-vib/img/pr2_urdf_white1.png"
+     },
+      {
+        "name": "ARMAR-6",
+        "value": "armar6",
+        "img": "https://github.com/sunava/pycram/blob/binder-robot-manipulation-actions/demos/pycram_virtual_building_demos/img/A6_cropped_hq_fixed_tablet4_rdax_1200x2048.png?raw=true"
+      },
+        {
+        "name": "Tiago",
+        "value": "tiago",
+        "img": "https://intel4coro.github.io/coai-vib/img/tiago_urdf_white1.png"
+       },
+         {
+        "name": "Justin",
+        "value": "justin",
+        "img": "https://github.com/sunava/pycram/blob/07f83024258983131934ee3f8a4acaa32d1ffc46/demos/pycram_virtual_building_demos/img/justin.png?raw=true"
+           },
+       {
+        "name": "Stretch",
+        "img": "https://github.com/sunava/pycram/blob/binder-robot-manipulation-actions/demos/pycram_virtual_building_demos/img/stretch.png?raw=true",
+        "value": "stretch",
+        "knowledge_bases": "https://data.open-ease.org/QA?neem_id=6526790ced1a1bfc415a1d38&q=findall%28%5BDuration%2C%20Evt%5D%2C%0A%20%20%28%20%20event_interval%28Evt%2C%20Begin%2C%20End%29%2C%0A%20%20%20%20%20number%28End%29%2C%0A%20%20%20%20%20Duration%20is%20End%20-%20Begin%0A%20%20%29%2C%0A%20%20Durations%29%2C%0Amax_member%28%5BMaxDuration%2C%20LongestEvt%5D%2C%20Durations%29"
+      },
+       {
+        "name": "Donbot",
+        "value": "donbot",
+        "img": "https://intel4coro.github.io/coai-vib/img/donbot_urdf_white1.png"
+      },
+        {
+        "name": "HSRB",
+        "value": "hsr",
+        "img": "https://github.com/sunava/pycram/blob/binder-robot-manipulation-actions/demos/pycram_virtual_building_demos/img/hsr.png?raw=true",
+        "knowledge_bases": "https://data.open-ease.org/QA?neem_id=6526790ced1a1bfc415a1d38&q=findall%28%5BDuration%2C%20Evt%5D%2C%0A%20%20%28%20%20event_interval%28Evt%2C%20Begin%2C%20End%29%2C%0A%20%20%20%20%20number%28End%29%2C%0A%20%20%20%20%20Duration%20is%20End%20-%20Begin%0A%20%20%29%2C%0A%20%20Durations%29%2C%0Amax_member%28%5BMaxDuration%2C%20LongestEvt%5D%2C%20Durations%29"
+      },
+          {
+        "name": "iCuB",
+        "value": "icub",
+        "img": "https://github.com/sunava/pycram/blob/binder-robot-manipulation-actions/demos/pycram_virtual_building_demos/img/icub.png?raw=true",
+         "knowledge_bases": "https://data.open-ease.org/QA?neem_id=6526790ced1a1bfc415a1d38&q=findall%28%5BDuration%2C%20Evt%5D%2C%0A%20%20%28%20%20event_interval%28Evt%2C%20Begin%2C%20End%29%2C%0A%20%20%20%20%20number%28End%29%2C%0A%20%20%20%20%20Duration%20is%20End%20-%20Begin%0A%20%20%29%2C%0A%20%20Durations%29%2C%0Amax_member%28%5BMaxDuration%2C%20LongestEvt%5D%2C%20Durations%29"
+      },
+      {
+        "name": "Multi-Agent",
+        "value": "multiagent",
+        "img": "https://github.com/sunava/pycram/blob/binder-robot-manipulation-actions/demos/pycram_virtual_building_demos/img/MultiAgent_pr2_tiago.png?raw=true"
+     }
+
+    ],
+    "tasks": [
+         {
+        "name": "Please Select an Action",
+        "value": "navigating",
+           "img": "https://github.com/sunava/pycram/blob/binder-all-robots/demos/pycram_virtual_building_demos/img/tra.png?raw=true"
+      },
+
+         {
+        "name": "Cutting",
+        "value": "cutting",
+        "img": "https://github.com/sunava/pycram/blob/binder-all-robots/demos/pycram_virtual_building_demos/img/cut.png?raw=true"
+      },
+        {
+        "name": "Pouring",
+        "value": "pouring",
+        "img": "https://github.com/sunava/pycram/blob/binder-all-robots/demos/pycram_virtual_building_demos/img/pour.png?raw=true"
+      },
+       {
+        "name": "Mixing",
+        "value": "mixing",
+        "img": "https://github.com/sunava/pycram/blob/binder-all-robots/demos/pycram_virtual_building_demos/img/mix.png?raw=true"
+      },
+       {
+        "name": "Transporting",
+        "value": "transporting",
+        "img": "https://github.com/sunava/pycram/blob/binder-all-robots/demos/pycram_virtual_building_demos/img/tra.png?raw=true"
+        }
+    ]
+  },
+  "actions": [
+    {
+      "name": "Run Code",
+      "value": "run",
+      "description": "Run code on Binderhub.",
+      "primary": true,
+      "url": "https://binder.intel4coro.de/v2/gh/sunava/pycram/f19dd08d8cb0990b2f606461500d77738f9d1387?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Fstart_demo.ipynb",
+      "options": [
+        "environments",
+        "robots",
+        "tasks"
+      ],
+           "available": {
+        "environments=apartment|robots=pr2|tasks=navigating": "",
+        "environments=apartment|robots=armar6|tasks=navigating": "",
+        "environments=apartment|robots=tiago|tasks=navigating": "",
+        "environments=apartment|robots=justin|tasks=navigating": "",
+        "environments=apartment|robots=stretch|tasks=navigating": "",
+        "environments=apartment|robots=donbot|tasks=navigating": "",
+        "environments=apartment|robots=hsr|tasks=navigating": "",
+        "environments=apartment|robots=icub|tasks=navigating": "",
+        "environments=apartment|robots=multiagent|tasks=navigating": "",
+        "environments=apartment|robots=pr2|tasks=transporting": "",
+
+
+
+
+        "environments=apartment|robots=armar6|tasks=transporting": "https://binder.intel4coro.de/v2/gh/LucaKro/pycram/04b1475e88e101454a0647571e22d6fd32f8994d?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Ftransporting_actions%2Ftransport_demo_armar.ipynb",
+        "environments=apartment|robots=multiagent|tasks=transporting": "https://binder.intel4coro.de/v2/gh/K3cks/pycram/f6b83376cb661a57cb27a48c2135a8a05a1a42f4?urlpath=lab%2Ftree%2Fdemos%2Fpycram_multirobot_demo%2Frobot_demo.ipynb",
+
+        "environments=apartment|robots=tiago|tasks=cutting": "https://binder.intel4coro.de/v2/gh/LucaKro/pycram/0f5b3f06400f39b30cd1b20c9d84070dda11bdc2?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Fcutting_actions%2Fcutting_demo_tiago.ipynb",
+        "environments=apartment|robots=tiago|tasks=transporting": "",
+
+        "environments=apartment|robots=donbot|tasks=transporting": "",
+
+        "environments=apartment|robots=justin|tasks=transporting": "https://binder.intel4coro.de/v2/gh/LucaKro/pycram/1410769d61f9ab6e8b9f8dc3b5ce5eda8c0cc6ca?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Ftransporting_actions%2Ftransport_demo_justin.ipynb",
+        "environments=apartment|robots=justin|tasks=cutting":"https://binder.intel4coro.de/v2/gh/LucaKro/pycram/1410769d61f9ab6e8b9f8dc3b5ce5eda8c0cc6ca?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Fcutting_actions%2Fcutting_demo_justin.ipynb",
+
+        "environments=apartment|robots=pr2|tasks=mixing": "",
+        "environments=apartment|robots=pr2|tasks=cutting":"",
+        "environments=apartment|robots=pr2|tasks=pouring": ""
+
+      }
+    }
+  ]
+}
