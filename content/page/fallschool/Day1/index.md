@@ -1,6 +1,6 @@
 ---
 title: "Day 01 - Creating an Environment URDF"
-date: 2023-12-01T10:35:35-06:00
+date: 2023-13-01T10:35:35-06:00
 subtitle: ""
 tags: ["Research"]
 dropCap: false
