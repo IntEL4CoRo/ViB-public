@@ -101,3 +101,19 @@ Example Videos
 </div>
 
 </div>
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+
+  <div style="flex:30%;">
+      <img src="img/jonas_dech_head.jpg" style="clip-path: circle(35%);">
+  </div>
+
+  <div style="flex:70%;">
+    <h3> Jonas Dech</h3>
+    Tel: +49 421 218 64024 <br>
+    Mail: <a href="mailto:jdech@uni-bremen.de">jdech@uni-bremen.de</a> <br>
+    <a style="color:red" href="https://ai.uni-bremen.de/team/jonas_dech">
+        <span style="font-size: 15px;">Profile Jonas Dech</span>
+    </a>
+</div>
+
+</div>
