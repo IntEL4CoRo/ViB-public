@@ -51,7 +51,7 @@ Throughout these exercises, we will provide code examples to help you move the r
 Interactive Actions and/or Examples
 ---
 
-{{<action_forms data="ActionButtons">}}
+{{<action_forms_dynamics data="ActionButtons">}}
 
 ## Summary
 By the end of the session, you'll have a clearer understanding of basic motion planning and the challenges associated with perception in robotics.
