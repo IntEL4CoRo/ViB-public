@@ -97,3 +97,18 @@ Example Videos
   </div>
 </div>
 
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+
+  <div style="flex:30%;">
+      <img src="img/alina.jpg" style="clip-path: circle(35%);">
+  </div>
+
+  <div style="flex:70%;">
+    <h3> Alina Hawkin</h3>
+    Tel: +49 421 218 64024 <br>
+    Mail: <a href="mailto:hawkin@uni-bremen.de">hawkin@uni-bremen.de</a> <br>
+    <a style="color:red" href="https://ai.uni-bremen.de/team/alina_hawkin">
+        <span style="font-size: 15px;">Profile Alina Hawkin</span>
+    </a>
+</div>
+</div>
