@@ -35,7 +35,7 @@ Today, you'll dive into the basics of robot movement and perception. You will le
 
 ## Prerequisites
 - ?
-- ?
+- Basic understanding of computer vision and OpenCV is beneficial for the perception part of this tutorial, but not required.
 
 ## Theoretical Background
 - We'll cover the basics of robot movement planning and perception systems.
@@ -45,13 +45,19 @@ Today, you'll dive into the basics of robot movement and perception. You will le
 1. **Move the Robot**: Program the robot to navigate to a predefined location near the table.
 2. **Object Detection**: Use a camera sensor to detect and identify the milk carton.
 3. **Perception Challenges**: Experiment with a failed perception attempt when the fridge is closed to understand limitations.
+4. **Perception Tasks**: Learn how our perception executive framework can be adapted to different perception tasks.
 
 Throughout these exercises, we will provide code examples to help you move the robot and utilize computer vision techniques effectively.
 
 Interactive Actions and/or Examples
 ---
+For Hands-On Exercise 1-3, please use the following Virtual Lab first:
 
 {{<action_forms_dynamics data="ActionButtons">}}
+
+For Hands-On Exercise 4, please use this Virtual Lab:
+<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/git/https%3A%2F%2Fgitlab.informatik.uni-bremen.de%2Ffmuehlis%2Frobokudo-lab.git/tutorials">RoboKudo Getting Started Lab</a>
+
 
 ## Summary
 By the end of the session, you'll have a clearer understanding of basic motion planning and the challenges associated with perception in robotics.
