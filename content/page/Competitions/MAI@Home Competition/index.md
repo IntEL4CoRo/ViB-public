@@ -18,29 +18,25 @@ One unique feature of this competition is that we provide spatiotemporal knowled
 <br><br>
 For more information you can check out the <a href="http://ikgrc.org/2025/">competition website</a> and the github.
 <br><br>
-<!--In the notebook below you can try out some example queries on the knowledge graph and video data-->
+In the notebook below you can try out some example queries on the knowledge graph and video data
 
-<div class="hidde-after-preview">
+
+
+<div class="hidde-after-preview"> 
+  {{<action_form data="ActionButtons">}}
   For Detailed information click
   <a class="btn btn-success" target="_blank" href="maihome-competition"><b>here!</b></a>
 </div>
 
 <!--more-->
+<p align="left">
+  <img src="put_food_in_fridge1.gif" width="500" alt="test"/><br>
+</p>
 
-<!-- <div class="main-well-flex-container" style="margin:20px;align-items: center;">
+<p align="center">
+  <img src="put_food_in_fridge1_kg.png" width="500" alt="test"/><br>
+</p>
 
-  <div style="flex:30%;">
-      <img src="profile_picture.png" style="clip-path: circle(35%);">
-  </div>
-
-  <div style="flex:70%;">
-    <h3>Replace with Name</h3>
-    Tel:     +49 XXXXXXXXXX <br>
-    Fax:     +49 XXXXXXXXXX <br>
-    Mail:    <a href="mailto:XXXXXXX@cs.uni-bremen.de">XXXXXX@cs.uni-bremen.de</a> <br>
-    <a style="color:red" href="https://ai.uni-bremen.de/team/XXXXXXXXX">
-    <span style="font-size: 15px;">Profile</span>
-    </a>
-  </div>
-
-</div> -->
+## References
+1. https://github.com/KnowledgeGraphJapan/KGRC-RDF/tree/kgrc4si
+2. https://ikgrc.org/2025/rdf.html
