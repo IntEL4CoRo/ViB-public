@@ -55,7 +55,7 @@ For Hands-On Exercise 1-3, please use the following Virtual Lab first:
 
 {{<action_forms_dynamics data="ActionButtons">}}
 
-For Hands-On Exercise 4, please use this Virtual Lab:
+For Hands-On Exercise 4, please use this Virtual Lab:<br>
 <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/git/https%3A%2F%2Fgitlab.informatik.uni-bremen.de%2Ffmuehlis%2Frobokudo-lab.git/tutorials">RoboKudo Getting Started Lab</a>
 
 
@@ -66,14 +66,18 @@ By the end of the session, you'll have a clearer understanding of basic motion p
 
 ## Further Reading/Exercises
 - For those interested in deepening their knowledge, links to computer vision tutorials and object detection exercises will be provided.
+- RoboKudo is built upon behavior trees. If you want to read more about the general concept of behavior trees, there is an excellent, comprehensive book on [arxiv](arxiv.org) which can be seen [here](https://arxiv.org/abs/1709.00084).
+- For sensor data processing, Robokudo makes heavy use of [OpenCV](https://www.opencv.org) and [Open3D](https://www.open3d.org).
 - **Challenge**: Experiment with different sensor configurations to improve the accuracy of the object detection process.
 
-Example Videos
+Related Videos
 ---
-
+RoboKudo Overview: 
 <figure class="video_container">
-  <iframe width="100%" height="360" src="https://www.youtube.com/embed/some_video_id?si=j3CB2Sj4itd_1qlC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
+  <iframe width="100%" height="360" src="https://www.youtube-nocookie.com/embed/8jvDl-P2ba0?si=AGOn8iCWjDShdMeJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
 </figure>
+
+
 
 
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
