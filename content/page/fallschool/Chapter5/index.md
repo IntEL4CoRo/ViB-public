@@ -1,5 +1,5 @@
 ---
-title: "Day 05 - Logging and Analyzing Execution"
+title: "Chapter 05 - Logging and Analyzing Execution"
 date: 2023-15-05T10:35:35-06:00
 subtitle: ""
 tags: ["Research"]
@@ -12,11 +12,11 @@ resources:
   src: "buttons.json"
 ---
 <div class="hidde-after-preview">
-On Day 5, you will learn how to log and analyze the execution of the milk delivery task.
+On Chapter 5, you will learn how to log and analyze the execution of the milk delivery task.
 This session emphasizes the importance of data logging and how it can be used to improve robotic performance in future tasks.
 
-For Entering Day five click here:
-<a class="btn btn-success" target="_blank" href="day5/"><b>Day 5!</b></a>
+For Entering Chapter five click here:
+<a class="btn btn-success" target="_blank" href="day5/"><b>Chapter 5!</b></a>
 </div>
 
 <!--more-->

@@ -1,5 +1,5 @@
 ---
-title: "Day 01 - Creating an Environment URDF"
+title: "Chapter 01 - Creating an Environment URDF"
 date: 2023-13-01T10:35:35-06:00
 subtitle: ""
 tags: ["Research"]
@@ -12,13 +12,13 @@ resources:
   src: "buttons.json"
 ---
 <div class="hidde-after-preview">
-In Day 1, you will learn to create a simulation environment using the Unified Robot Description Format (URDF). 
+In Chapter 1, you will learn to create a simulation environment using the Unified Robot Description Format (URDF). 
 You’ll set up a basic URDF model that includes essential objects like a fridge and a table, and visualize it. 
 This foundational knowledge will enable you to understand how robots interact with their surroundings.
 
 
-  For Entering Day one click here:
-  <a class="btn btn-success" target="_blank" href="day1/"><b>Day 1!</b></a>
+  For Entering Chapter one click here:
+  <a class="btn btn-success" target="_blank" href="day1/"><b>Chapter 1!</b></a>
 </div>
 
 
@@ -70,7 +70,7 @@ By the end of the session, you will have a working URDF environment, and you wil
 
 
 
-##  For Entering the next Day click here: <a class="btn btn-success" target="_blank" href="day2/"><b>Day 2!</b></a>
+##  For Entering the next Chapter click here: <a class="btn btn-success" target="_blank" href="chapter2/"><b>Chapter 2!</b></a>
 
 
 

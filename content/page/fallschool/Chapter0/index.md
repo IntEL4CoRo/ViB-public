@@ -106,7 +106,7 @@ yet to be determined
 
 The Goal
 ---
-By the end of Day 5, PR2 will be fully equipped to execute this task in a seamless manner in simulation.
+By the end of Chapter 5, PR2 will be fully equipped to execute this task in a seamless manner in simulation.
 
 
 

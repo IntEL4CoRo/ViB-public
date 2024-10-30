@@ -1,5 +1,5 @@
 ---
-title: "Day 04 - Completing the Full Transportation Task"
+title: "Chapter 04 - Completing the Full Transportation Task"
 date: 2023-14-04T10:35:35-06:00
 subtitle: ""
 tags: ["Research"]
@@ -12,11 +12,11 @@ resources:
   src: "buttons.json"
 ---
 <div class="hidde-after-preview">
-On Day 4, you will integrate all components learned in the previous sessions to complete the milk delivery task.
+On Chapter 4, you will integrate all components learned in the previous sessions to complete the milk delivery task.
 You will plan and execute the full sequence of actions from opening the fridge to placing the milk on the table.
 
-For Entering Day four click here:
-<a class="btn btn-success" target="_blank" href="day4/"><b>Day 4!</b></a>
+For Entering Chapter four click here:
+<a class="btn btn-success" target="_blank" href="day4/"><b>Chapter 4!</b></a>
 </div>
 
 <!--more-->
@@ -52,7 +52,7 @@ Interactive Actions and/or Examples
 ## Summary
 By the end of this session, you will have a clear understanding of how to integrate various components to achieve complex robotic tasks.
 
-## For Entering the next Day click here: <a class="btn btn-success" target="_blank" href="day5/"><b>Day 5!</b></a>
+## For Entering the next Chapter click here: <a class="btn btn-success" target="_blank" href="day5/"><b>Chapter 5!</b></a>
 
 ## Further Reading/Exercises
 - Explore alternative strategies for task execution, including different object placements and adjustments to the environment.

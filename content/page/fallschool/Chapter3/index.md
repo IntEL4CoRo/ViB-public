@@ -1,5 +1,5 @@
 ---
-title: "Day 03 - Querying the Knowledge Base System"
+title: "Chapter 03 - Querying the Knowledge Base System"
 date: 2023-13-03T10:35:35-06:00
 subtitle: ""
 tags: ["Research"]
@@ -12,11 +12,11 @@ resources:
   src: "buttons.json"
 ---
 <div class="hidde-after-preview">
-On Day 3, you'll explore the role of a knowledge base in robot decision-making.
+On Chapter 3, you'll explore the role of a knowledge base in robot decision-making.
 You'll learn how to make queries to the knowledge base to determine the actions the robot must take to accomplish its tasks, such as perceiving objects in the environment.
 
-For Entering Day three click here:
-<a class="btn btn-success" target="_blank" href="day3/"><b>Day 3!</b></a>
+For Entering Chapter three click here:
+<a class="btn btn-success" target="_blank" href="day3/"><b>Chapter 3!</b></a>
 </div>
 
 <!--more-->
@@ -60,7 +60,7 @@ By the end of the session, you will have a working URDF environment, and you wil
 
 
 
-##  For Entering the next Day click here: <a class="btn btn-success" target="_blank" href="day2/"><b>Day 2!</b></a>
+##  For Entering the next Chapter click here: <a class="btn btn-success" target="_blank" href="day2/"><b>Chapter 2!</b></a>
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Day 02 - First Plan - Robot Movement and Perception"
+title: "Chapter 02 - First Plan - Robot Movement and Perception"
 date: 2023-13-02T10:35:35-06:00
 subtitle: ""
 tags: ["Research"]
@@ -12,12 +12,12 @@ resources:
   src: "buttons.json"
 ---
 <div class="hidde-after-preview">
-On Day 2, you'll focus on basic robot movements and perception.
+On Chapter 2, you'll focus on basic robot movements and perception.
 You'll learn to move the robot to a table and use its sensors to detect a milk carton.
 Understanding the challenges in perception, such as occlusions, will enhance your knowledge of how robots gather information from their environment.
 
-For Entering Day two click here:
-<a class="btn btn-success" target="_blank" href="day2/"><b>Day 2!</b></a>
+For Entering Chapter two click here:
+<a class="btn btn-success" target="_blank" href="day2/"><b>Chapter 2!</b></a>
 </div>
 
 <!--more-->
@@ -62,7 +62,7 @@ For Hands-On Exercise 4, please use this Virtual Lab:
 ## Summary
 By the end of the session, you'll have a clearer understanding of basic motion planning and the challenges associated with perception in robotics.
 
-## For Entering the next Day click here: <a class="btn btn-success" target="_blank" href="day3/"><b>Day 3!</b></a>
+## For Entering the next Chapter click here: <a class="btn btn-success" target="_blank" href="day3/"><b>Chapter 3!</b></a>
 
 ## Further Reading/Exercises
 - For those interested in deepening their knowledge, links to computer vision tutorials and object detection exercises will be provided.
