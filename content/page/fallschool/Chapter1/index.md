@@ -196,7 +196,7 @@ To proceed to the next chapter of the course, click here: [**Chapter 2!**](chapt
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
   <div style="flex:30%;">
-      <img src="img/yanxiang.jpg" style="clip-path: circle(35%);">
+      <img src="img/yanxiang.jpg" style="clip-path: circle(45%);">
   </div>
 
   <div style="flex:70%;">
@@ -226,7 +226,7 @@ To proceed to the next chapter of the course, click here: [**Chapter 2!**](chapt
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
   <div style="flex:30%;">
-      <img src="img/vanessa.jpg" style="clip-path: circle(35%);">
+      <img src="img/vanessa.jpg" style="clip-path: circle(39%);">
   </div>
 
   <div style="flex:70%;">
