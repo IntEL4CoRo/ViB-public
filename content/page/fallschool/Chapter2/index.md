@@ -125,9 +125,7 @@ RoboKudo Overview:
     </a>
   </div>
 </div>
-
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
-
   <div style="flex:30%;">
       <img src="img/max.jpg" style="clip-path: circle(35%);">
   </div>
