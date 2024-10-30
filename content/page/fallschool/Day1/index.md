@@ -101,7 +101,7 @@ Throughout the exercises, we will provide code examples to demonstrate how to de
 
 To run the interactive Hands-On Tutorial follow please click this button:
 
-<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/IntEL4CoRo/iis-exercises/dev">URDF Hands-On Lab</a>
+<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/IntEL4CoRo/ease_fall_school_2024/main?urlpath=lab%2Ftree%2Fday1%2FURDF.ipynb">URDF Hands-On Lab</a>
 
 ## Further Reading/Exercises
 
@@ -161,7 +161,7 @@ By the end of the session, you have worked on an URDF environment with semantic 
 
 To run the interactive Hands-On Tutorial follow please click this button:
 
-<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/Multiverse-Framework/Multiverse-Docker/ICRA-2025?urlpath=lab%2Ftree%2FMultiverse-Tutorials%2Ftutorials%2Fmultiverse_knowledge_quick_start.ipynb">URDF Hands-On Lab</a>
+<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/Multiverse-Framework/Multiverse-Docker/ICRA-2025?urlpath=lab%2Ftree%2FMultiverse-Tutorials%2Ftutorials%2Fmultiverse_parser_quick_start.ipynb">URDF Hands-On Lab</a>
 
 ## Further Reading/Exercises
 
