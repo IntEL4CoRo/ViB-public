@@ -1,5 +1,5 @@
 ---
-title: "Day 05 - Create your own LLM assistant"
+title: "Chapter 05 - Create your own LLM assistant"
 date: 2023-15-05T10:35:35-06:00
 subtitle: ""
 tags: ["Research"]
@@ -12,7 +12,7 @@ resources:
   src: "buttons.json"
 ---
 <div class="hidde-after-preview">
-On Day 5, you will head into generative Large Language Models (LLMs) and how to fine-tune them. With Retreival Augmented Generation (RAG) you create a specialized assistant that serves as a companion for robot programming.
+In Chapter 5, you will head into generative Large Language Models (LLMs) and how to fine-tune them. With Retreival Augmented Generation (RAG) you create a specialized assistant that serves as a companion for robot programming.
 
 For Entering Chapter five click here:
 <a class="btn btn-success" target="_blank" href="day5/"><b>Chapter 5!</b></a>
