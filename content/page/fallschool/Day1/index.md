@@ -1,5 +1,5 @@
 ---
-title: "Day 01 - Creating an Environment URDF"
+title: "Chapter 01 - Creating an Environment URDF"
 date: 2023-13-01T10:35:35-06:00
 subtitle: ""
 tags: ["Research"]
@@ -12,13 +12,13 @@ resources:
   src: "buttons.json"
 ---
 <div class="hidde-after-preview">
-In Day 1, you will learn to create a simulation environment using the Unified Robot Description Format (URDF). 
+In Chapter 1, you will learn to create a simulation environment using the Unified Robot Description Format (URDF). 
 You’ll set up a basic URDF model that includes essential objects like a fridge and a table, and visualize it. 
 This foundational knowledge will enable you to understand how robots interact with their surroundings.
 
 
-  For Entering Day one click here:
-  <a class="btn btn-success" target="_blank" href="day1/"><b>Day 1!</b></a>
+  For Entering Chapter 1 click here:
+  <a class="btn btn-success" target="_blank" href="Chapter1/"><b>Chapter 1!</b></a>
 </div>
 
 
@@ -35,7 +35,7 @@ This foundational knowledge will enable you to understand how robots interact wi
 
 </div> 
 
-# Welcome to the First Day of Our Hands-On Course!
+# Welcome to the First Chapter of Our Hands-On Course!
 
 
 In dynamic robotic environments, scene graphs are a way to represent complex spatial relationships. They act as the backbone of a robot’s understanding, mapping “who is where” and “what connects to what” in complex, dynamic spaces. With scene graphs, robots can navigate, adapt, and interact intelligently, as you'll see in the video of our lab simulation. This technology is essential for enabling robots to perform tasks in real-world-like settings—think seamless object handling, precise navigation, and real-time adaptability. By additionally linking the scene graph to a semantic knowledge base, robots gain a higher level of contextual awareness, allowing them to reason about the environment, anticipate changes, and make informed decisions, bringing us closer than ever to fully autonomous, perceptive machines.
@@ -47,7 +47,7 @@ In dynamic robotic environments, scene graphs are a way to represent complex spa
   </video>
 </figure>
 
-Today, you'll learn how to create a scene graph using URDF (Unified Robot Description Format). URDF is essential because it helps define the structure, shape, and physical properties of objects, allowing robots to interact with them accurately in a simulated environment. After creating the scene graph you will extend it with semantic information, creating a semantic digital twin.
+In this chapter, you'll learn how to create a scene graph using URDF (Unified Robot Description Format). URDF is essential because it helps define the structure, shape, and physical properties of objects, allowing robots to interact with them accurately in a simulated environment. After creating the scene graph you will extend it with semantic information, creating a semantic digital twin.
 
 # Part 1: Introduction to Scene Graphs in URDF
 
@@ -177,7 +177,7 @@ Explore the concept of Semantic Digital Twins in more detail through provided re
 - **Challenge**: Try creating an OWL from your own environment and find interesting queries!
 
 ## Next Steps
-To proceed to the next day of the course, click here: [**Day 2!**](day2/)
+To proceed to the next chapter of the course, click here: [**Chapter 2!**](chapter2/)
 
 
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
