@@ -65,7 +65,6 @@ By the end of the session, you'll have a clearer understanding of basic motion p
 ## For Entering the next Chapter click here: <a class="btn btn-success" target="_blank" href="day3/"><b>Chapter 3!</b></a>
 
 ## Further Reading/Exercises
-- For those interested in deepening their knowledge, links to computer vision tutorials and object detection exercises will be provided.
 - RoboKudo is built upon behavior trees. If you want to read more about the general concept of behavior trees, there is an excellent, comprehensive book on [arxiv](arxiv.org) which can be seen [here](https://arxiv.org/abs/1709.00084).
 - For sensor data processing, Robokudo makes heavy use of [OpenCV](https://www.opencv.org) and [Open3D](https://www.open3d.org).
 - **Challenge**: Experiment with different sensor configurations to improve the accuracy of the object detection process.
