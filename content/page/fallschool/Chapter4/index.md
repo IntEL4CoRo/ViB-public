@@ -33,26 +33,46 @@ Today, you will focus on executing the complete task of transporting milk from t
 **Goal**: By the end of the session, you will have successfully completed the full milk delivery task, demonstrating how to combine perception, planning, and knowledge retrieval.
 
 ## Prerequisites
-- ?
+- Ensure you have completed Chapters 1-3 and have a solid understanding of URDF, perception, and planning.
 
 ## Theoretical Background
 - We will recap all components involved in the task: URDF, perception, planning, and knowledge base utilization.
 - You will learn about common simulation gaps and limitations that may arise during task execution.
+- Discover the concept of Multiverse and how various physical simulations can address distinct challenges.
+#### Bullet World
+The Bullet World in PyCRAM serves as a simulation environment based on the Bullet physics engine, allowing for detailed robotic task simulation. Here’s a breakdown to include in your tutorial:
 
+**What is Bullet World?**
+Bullet World is a physics-based simulation space within PyCRAM, which provides essential physics support for simulating robots, objects, and interactions. 
+It uses the Bullet physics engine to simulate aspects like collision detection, rigid body dynamics, and constraints, all of which are crucial for realistic robotic task planning and execution.
+
+**Key Features of Bullet World**
+- **Object Handling**: Bullet World lets you spawn, move, and interact with objects in a 3D simulated space. 
+Robots and objects are imported using URDF (Unified Robot Description Format) files, enabling detailed representations of their structure and properties.
+
+- **Collision Detection**: The environment includes built-in collision detection, allowing the robot to interact naturally 
+with objects and other entities in the world. This feature is essential for tasks involving manipulation, grasping, and placing objects.
+
+- **Environment Control**: Bullet World provides commands to control the environment, like resetting positions, 
+adding or removing objects, and stepping through the simulation. This control is useful for creating specific scenarios or repeating tasks for testing.
+#### Multiverse
+
+Multiverse is a simulation framework designed to integrate multiple advanced physics engines such as MuJoCo, Project Chrono, 
+and SOFA along with various photo-realistic graphics engines like Unreal Engine and Omniverse. Additionally, 
+Multiverse provides the capability to generate knowledge graphs dynamically during runtime.
 ## Step-by-Step Hands-On Exercises
 1. **Create a Task Plan**: Develop a comprehensive plan that incorporates all previous learnings.
 2. **Simulate the Full Task**: Execute the task by opening the fridge, perceiving the milk, picking it up, and placing it on the table.
-3. **Code Examples**: You will work with a complete script that combines all sub-tasks into one cohesive execution.
+
 
 Interactive Actions and/or Examples
 ---
 
-{{<action_forms_dynamics data="ActionButtons">}}
+For Hands-On Exercises please use the following Virtual Lab: <a class="btn btn-success" target="_blank" href="404">Plan Executive</a>
+
 
 ## Summary
 By the end of this session, you will have a clear understanding of how to integrate various components to achieve complex robotic tasks.
-
-## For Entering the next Chapter click here: <a class="btn btn-success" target="_blank" href="day5/"><b>Chapter 5!</b></a>
 
 ## Further Reading/Exercises
 - Explore alternative strategies for task execution, including different object placements and adjustments to the environment.
@@ -60,10 +80,18 @@ By the end of this session, you will have a clear understanding of how to integr
 
 Example Videos
 ---
+Multiverse Overview: 
 
-<figure class="video_container">
-  <iframe width="100%" height="360" src="https://www.youtube.com/embed/some_video_id?si=j3CB2Sj4itd_1qlC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
-</figure>
+<video controls width="600">
+  <source src="img/268483153-e2509d42-39ad-4fa1-8224-2bcc55ef098f.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<video controls width="600">
+  <source src="img/Video_4%20(1).mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
 
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
@@ -79,4 +107,42 @@ Example Videos
       <span style="font-size: 15px;">Profile Vanessa Hassouna</span>
     </a>
   </div>
+
+
 </div>
+
+
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+
+  <div style="flex:30%;">
+      <img src="img/bassiouny2024.jpg" style="clip-path: circle(35%);">
+  </div>
+
+  <div style="flex:70%;">
+   <h3>Abdelrhman Bassiouny</h3>
+   Room: TAB 2.88 <br>
+   Mail: <a href="mailto:bassioun@uni-bremen.de">bassioun(at)uni-bremen[dot]de</a> <br>
+   <a style="color:red" href="https://ai.uni-bremen.de/team/abdelrhman_bassiouny">
+      <span style="font-size: 15px;">Profile Abdelrhman Bassiouny</span>
+   </a>
+</div>
+
+
+</div>
+
+
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+
+  <div style="flex:30%;">
+      <img src="img/hoanggia2.jpg" style="clip-path: circle(35%);">
+  </div>
+
+  <div style="flex:70%;">
+       <h3>Giang Nguyen</h3>
+    Mail:     <a href="mailto:hoanggia@cs.uni-bremen.de">hoanggia@cs.uni-bremen.de</a> <br>
+      <a style="color:red" href="https://ai.uni-bremen.de/team/giang_nguyen">
+      <span style="font-size: 15px;">Profile Giang Nguyen</span>
+    </a>
+  </div>
+</div>
+
