@@ -16,7 +16,7 @@ On Chapter 4, you will integrate all components learned in the previous sessions
 You will plan and execute the full sequence of actions from opening the fridge to placing the milk on the table.
 
 For Entering Chapter four click here:
-<a class="btn btn-success" target="_blank" href="day4/"><b>Chapter 4!</b></a>
+<a class="btn btn-success" target="_blank" href="chapter4/"><b>Chapter 4!</b></a>
 </div>
 
 <!--more-->

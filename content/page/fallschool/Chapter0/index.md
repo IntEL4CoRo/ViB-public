@@ -16,7 +16,7 @@ To understand the course, we will provide a brief overview of the entire course.
 
 
   For Entering the Story click here:
-  <a class="btn btn-success" target="_blank" href="day0/"><b>Story Mode Activate!</b></a>
+  <a class="btn btn-success" target="_blank" href="chapter0/"><b>Story Mode Activate!</b></a>
 </div>
 
 

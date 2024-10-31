@@ -16,7 +16,7 @@ On Chapter 3, you'll explore the role of a knowledge base in robot decision-maki
 You'll learn how to make queries to the knowledge base to determine the actions the robot must take to accomplish its tasks, such as perceiving objects in the environment.
 
 For Entering Chapter three click here:
-<a class="btn btn-success" target="_blank" href="day3/"><b>Chapter 3!</b></a>
+<a class="btn btn-success" target="_blank" href="chapter3/"><b>Chapter 3!</b></a>
 </div>
 
 <!--more-->

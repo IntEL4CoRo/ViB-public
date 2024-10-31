@@ -15,7 +15,7 @@ resources:
 In Chapter 5, you will head into generative Large Language Models (LLMs) and how to fine-tune them. With Retreival Augmented Generation (RAG) you create a specialized assistant that serves as a companion for robot programming.
 
 For Entering Chapter five click here:
-<a class="btn btn-success" target="_blank" href="day5/"><b>Chapter 5!</b></a>
+<a class="btn btn-success" target="_blank" href="chapter5/"><b>Chapter 5!</b></a>
 </div>
 
 <!--more-->

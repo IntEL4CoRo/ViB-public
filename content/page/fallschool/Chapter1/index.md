@@ -17,7 +17,7 @@ You’ll set up a basic URDF model that includes essential objects like a fridge
 This foundational knowledge will enable you to understand how robots interact with their surroundings.
 
   For Entering Chapter one click here:
-  <a class="btn btn-success" target="_blank" href="day1/"><b>Chapter 1!</b></a>
+  <a class="btn btn-success" target="_blank" href="chapter1/"><b>Chapter 1!</b></a>
 </div>
 
 

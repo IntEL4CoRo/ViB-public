@@ -17,7 +17,7 @@ You'll learn to move the robot to a table and use its sensors to detect a milk c
 Understanding the challenges in perception, such as occlusions, will enhance your knowledge of how robots gather information from their environment.
 
 For Entering Chapter two click here:
-<a class="btn btn-success" target="_blank" href="day2/"><b>Chapter 2!</b></a>
+<a class="btn btn-success" target="_blank" href="chapter2/"><b>Chapter 2!</b></a>
 </div>
 
 <!--more-->
