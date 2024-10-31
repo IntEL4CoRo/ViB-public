@@ -123,6 +123,19 @@ RoboKudo Overview:
     <a style="color:red" href="https://ai.uni-bremen.de/team/jonas_dech">
         <span style="font-size: 15px;">Profile Jonas Dech</span>
     </a>
+  </div>
 </div>
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+  <div style="flex:30%;">
+      <img src="img/max.jpg" style="clip-path: circle(35%);">
+  </div>
 
+  <div style="flex:70%;">
+    <h3> Max Gandyra </h3>
+    Tel: +49 421 218 64024 <br>
+    Mail: <a href="mailto:gandyra@uni-bremen.de">jdech@uni-bremen.de</a> <br>
+    <a style="color:red" href="https://ai.uni-bremen.de/team/max_gandyra_dech">
+        <span style="font-size: 15px;">Profile Max Gandyra</span>
+    </a>
+  </div>
 </div>
