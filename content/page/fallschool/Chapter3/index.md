@@ -33,14 +33,38 @@ Today, you will focus on understanding how a knowledge base supports robotic dec
 **Goal**: By the end of the session, you will have successfully made queries to the knowledge base, enabling the robot to determine the steps required to complete its tasks.
 
 ## Prerequisites
-- Ensure you finished Chapter 1 and Chapter 2.
+- Ensure you finished Chapter 1 and understood the basics of URDF.
+- In Chapter 2 you learned about robot movement and perception. This knowledge will be beneficial for understanding the robot's actions in this chapter.
 - A basic understanding of logical queries and rules will be helpful.
 
 ## Theoretical Background
 - We will provide an overview of how knowledge bases operate in the context of robotics.
 - You'll learn how the robot can understand the need to open the fridge door to perceive the milk inside.
 
+#### KnowRob: Knowledge processing for robots
+KnowRob is a knowledge processing system that combines knowledge representation and reasoning methods with techniques 
+for acquiring knowledge and for grounding the knowledge in a physical system and can serve as a common semantic framework for integrating information from different sources. 
+KnowRob combines static encyclopedic knowledge, common-sense knowledge, task descriptions, environment models, 
+object information and information about observed actions that has been acquired from various sources (manually axiomatized, derived from observations, or imported from the web).
+For more information check out the [KnowRob Documentation](https://knowrob.org/).
+#### Ontologies
+KnowRob has been employing ontologies in order to conceptualize the world in which the robot acts since more then a decade. 
+In the early days, KnowRob's knowledge modeling was inspired by definitions in Cyc. More recently, 
+and as a consequence of working closely with linguistic researchers in CRC EASE, KnowRob's knowledge modeling was revised. 
+The most fundamental change is that KnowRob's knowledge modeling was aligned to and derived from more abstract concepts defined in a carefully designed foundational ontology.
+KnowRob employs the DUL foundational ontology which is a slim version of the Descriptive Ontology for Linguistic and Cognitive Engineering (DOLCE). 
+DUL and DOLCE have a clear cognitive bias, and are both well established in the knowledge engineering community.
 
+As a foundational ontology, however, DUL does not define very specific concepts such as fork or dish. 
+However, these concepts are needed for our robots that do everyday activities. 
+[SOMA](https://ease-crc.github.io/soma/) is an ontological model, developped in CRC EASE, that attempts to equip robotic agents with abstract 
+knowledge to enable them performing activities in a more flexible and robust manner. 
+The main focus of SOMA is the characterization of physical and social activity context, 
+as well as the motions carried out by agents, and the interactions caused by them. SOMA is continuously deployed here,
+and can be loaded with common ontology tools such as [WebVOWL](https://visualdataweb.de/webvowl/#iri=https://ease-crc.github.io/soma/owl/current/SOMA.owl).
+![soma-vowl-zoomed.png](img%2Fsoma-vowl-zoomed.png)
+Finally, ontologies maintained as part of KnowRob are thought to be specifically for the robot usecase.
+For example, a concept “fork” would not be defined in these ontologies, but concepts such as “sensor” or “robot control system” would belong in these ontologies.
 
 ## Step-by-Step Hands-On Exercises
 1. **Query the Knowledge Base**: Start by querying the knowledge base to understand the current state of the environment.
@@ -52,6 +76,7 @@ Throughout the exercises, code examples will demonstrate how to perform basic qu
 Interactive Actions and/or Examples
 ---
 
+For Hands-On Exercises please use the following Virtual Lab: <a class="btn btn-success" target="_blank" href="404">Knowledge Base Queries</a>
 
 
 ## Summary
@@ -61,7 +86,7 @@ You will have learned how to query the knowledge base to determine the necessary
 
 ## Further Reading/Exercises
 - For those interested in exploring more checkout PyCram Documentation about queries: [PyCram Documentation](https://pycram.readthedocs.io/en/latest/queries.html)
-- 
+
 
 
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
