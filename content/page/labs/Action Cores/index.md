@@ -30,6 +30,9 @@ task, and robot, and then run it within a software container.
   <a class="btn btn-success" target="_blank" href="action-cores"><b>here!</b></a>
 </div>
 
+</br>
+{{<Webinterface>}}
+</br>
 
 
 <!--more-->

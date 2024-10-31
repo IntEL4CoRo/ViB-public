@@ -204,7 +204,12 @@
         :class="{ 'btn-primary': action.primary,'btn-success': !action.primary, 'disabled': !getActionUrl(action) }"></a>
     </div>
   </div>
+  		<button type="button" onclick="getWebInterface()">Query</button> </font>
+
   </div>
+
+<!--  <button type="button" onclick="getWebInterface(action)">Query</button> </font>-->
+
   <!-- error message -->
   <div v-show="errorMsgs.length !== 0">
     <pre class="alert alert-warning" v-text="errorMsgs"></pre>
@@ -321,6 +326,26 @@
            };
          })
        },
+
+    getWebInterface() {
+            // Build the selected options string
+      let selectedOptions = this.updatedOptions.map(option => {
+        return `${option.name}=${option.selected.value}`;
+      }).join('|');
+
+      // Check if a specialized task is selected and append it to selectedOptions
+      if (this.showSpecializedCuttingDropdown) {
+        selectedOptions += `|specializedCuttingTask=${this.selectedSpecializedCuttingTask.value}`;
+      } else if (this.showSpecializedMixingDropdown) {
+        selectedOptions += `|specializedMixingTask=${this.selectedSpecializedMixingTask.value}`;
+      } else if (this.showSpecializedPouringDropdown) {
+        selectedOptions += `|specializedPouringTask=${this.selectedSpecializedPouringTask.value}`;
+      } else if (this.showSpecializedTransportingDropdown) {
+        selectedOptions += `|specializedTransportingTask=${this.selectedSpecializedTransportingTask.value}`;
+      }
+      query_and_show(this.selectedSpecializedCuttingTask.value)
+
+    },
     getActionUrl(action) {
   // Build the selected options string
   let selectedOptions = this.updatedOptions.map(option => {

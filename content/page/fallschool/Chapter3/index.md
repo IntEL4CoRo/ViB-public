@@ -27,18 +27,20 @@ For Entering Chapter three click here:
   </div>
 </div> 
 
-<h1> Welcome to the third day of our hands-on course!</h1>
+<h1> Welcome to the third Chapter of our hands-on course!</h1>
 Today, you will focus on understanding how a knowledge base supports robotic decision-making. You’ll learn to query the knowledge base to identify necessary actions for tasks, like how to perceive the milk inside the fridge.
 
 **Goal**: By the end of the session, you will have successfully made queries to the knowledge base, enabling the robot to determine the steps required to complete its tasks.
 
 ## Prerequisites
-- Ensure you have a knowledge base system installed (e.g., KnowRob, Prolog).
+- Ensure you finished Chapter 1 and Chapter 2.
 - A basic understanding of logical queries and rules will be helpful.
 
 ## Theoretical Background
 - We will provide an overview of how knowledge bases operate in the context of robotics.
 - You'll learn how the robot can understand the need to open the fridge door to perceive the milk inside.
+
+
 
 ## Step-by-Step Hands-On Exercises
 1. **Query the Knowledge Base**: Start by querying the knowledge base to understand the current state of the environment.
@@ -51,34 +53,15 @@ Interactive Actions and/or Examples
 ---
 
 
-{{<action_forms data="ActionButtons">}}
-
-
 
 ## Summary
-By the end of the session, you will have a working URDF environment, and you will understand the process of creating and visualizing a simulated setup.
-
-
-
-##  For Entering the next Chapter click here: <a class="btn btn-success" target="_blank" href="day2/"><b>Chapter 2!</b></a>
-
-
+By the end of the session, you will have a robot opening the fridge and perceiving the milk inside. 
+You will have learned how to query the knowledge base to determine the necessary actions for the robot to complete its tasks.
 
 
 ## Further Reading/Exercises
-- For those interested in exploring more, we’ll provide links to additional ROS URDF tutorials and Gazebo documentation.
-- **Challenge**: Try adding a new object, like a cup, to your environment and adjust its position to fit the scene. This will help reinforce your understanding of how to modify URDF files.
-
-
-
-
-Example Videos
----
-
-<figure class="video_container">
-  <iframe width="100%" height="360" src="https://www.youtube.com/embed/pv_n9FQRoZQ?si=j3CB2Sj4itd_1qlC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
-</figure>
-
+- For those interested in exploring more checkout PyCram Documentation about queries: [PyCram Documentation](https://pycram.readthedocs.io/en/latest/queries.html)
+- 
 
 
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">

@@ -293,13 +293,13 @@
                 }
             }
 
-			async function query_and_show() {
+			async function query_and_show(verb_select) {
 				var container = document.getElementById("results");
 				var header = document.getElementById("header");
 
 				var verbs = document.getElementById("verb-select");
 				var foods = document.getElementById("food-select");
-                var selected_verb = verbs.options[verbs.selectedIndex].textContent
+                var selected_verb = verb_select  // or selectedSpecializedCuttingTask from Vue instance
                 var selected_food = foods.options[foods.selectedIndex].textContent
 
 				// changing the container visibility
@@ -408,8 +408,10 @@
 			<option value="FOODON_00003443">Strawberry</option>
 			<option value="FOODON_03309927">Tomato</option>
 		</select>
+	</div>
+  		<button type="button" onclick="getWebInterface('Cubing')">Query</button> </font>
 
-		<button type="button" onclick="query_and_show()">Query</button> </font>
+  </div>
 
 		<div id="results" style='display: none'>
 			<p id="header"></p>

@@ -121,6 +121,7 @@
     </div>
   </div>
 </div>
+<button type="button" onclick="query_and_show()" style="background-color: yellow;">Query</button>
 
 <script type="module">
 
@@ -275,4 +276,367 @@
   const app = createApp(App);
   app.use(primevue.config.default);
   app.mount('#vueapp{{ $idSuffix }}');
+
+        	async function check_food_part(food, part) {
+                const owlPrefix = "http://www.w3.org/2002/07/owl#";
+				const cutPrefix = "http://www.ease-crc.org/ont/food_cutting#";
+				const rdfPrefix = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+				const rdfsPrefix = "http://www.w3.org/2000/01/rdf-schema#";
+				const foodonPrefix = "http://purl.obolibrary.org/obo/";
+
+				const sparqlQuery = `
+					PREFIX owl: <${owlPrefix}>
+					PREFIX cut: <${cutPrefix}>
+					PREFIX rdf: <${rdfPrefix}>
+					PREFIX rdfs: <${rdfsPrefix}>
+					PREFIX foodon: <${foodonPrefix}>
+					ASK {
+					  foodon:${food} rdfs:subClassOf* ?dis.
+					  ?dis owl:onProperty cut:hasPart.
+					  ?dis owl:someValuesFrom ?tar.
+					  ?tar owl:intersectionOf ?tar_int.
+					  ?tar_int rdf:first cut:${part}.
+					  ?tar_int rdf:rest ?rest.
+					  ?rest rdf:first ?first.
+					  ?first owl:onProperty cut:hasEdibility.
+					  {
+						?first owl:someValuesFrom cut:MustBeAvoided.
+					  }
+					  UNION
+					  {
+						?first owl:someValuesFrom cut:ShouldBeAvoided.
+					  }
+					}
+				`;
+
+            	// Uni Bremen SPARQL endpoint URL
+                const endpointUrl = 'https://knowledgedb.informatik.uni-bremen.de/MealPreparation/query'
+
+                const requestOptions = {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/sparql-query',
+                    },
+                    body: sparqlQuery,
+                }
+
+                try {
+					console.log(sparqlQuery)
+                    const response = await fetch(endpointUrl, requestOptions)
+                    const data = await response.json()
+                    return data.boolean
+                } catch (error) {
+					console.log(sparqlQuery)
+                    console.error('Error:', error)
+                    return false
+                }
+            }
+
+            async function get_prior_task(verb) {
+            	const owlPrefix = "http://www.w3.org/2002/07/owl#";
+				const cutPrefix = "http://www.ease-crc.org/ont/food_cutting#";
+				const somaPrefix = "http://www.ease-crc.org/ont/SOMA.owl#";
+				const rdfsPrefix = "http://www.w3.org/2000/01/rdf-schema#";
+
+				const sparqlQuery = `
+					PREFIX owl: <${owlPrefix}>
+					PREFIX cut: <${cutPrefix}>
+					PREFIX soma: <${somaPrefix}>
+					PREFIX rdfs: <${rdfsPrefix}>
+					SELECT ?res WHERE {
+						${verb} rdfs:subClassOf* ?sub.
+						?sub owl:onProperty cut:requiresPriorTask .
+						?sub owl:someValuesFrom ?priortask.
+						BIND(REPLACE(STR(?priortask), "^.*[#/]", "") AS ?res).
+					}
+				`;
+				console.log(sparqlQuery)
+            	return query_text(sparqlQuery, '')
+            }
+
+            async function query_text(query, alternative) {
+            	// Triply SPARQL endpoint URL
+                const endpointUrl = 'https://knowledgedb.informatik.uni-bremen.de/MealPreparation/query'
+
+                const requestOptions = {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/sparql-query',
+                    },
+                    body: query,
+                }
+
+                try {
+                    const response = await fetch(endpointUrl, requestOptions)
+                    const data = await response.json()
+					console.log(data.results.bindings[0].res.value)
+                    const firstObject = data.results.bindings[0].res.value;
+                    return firstObject
+                } catch (error) {
+                    console.error('Error:', error)
+                    return alternative
+                }
+            }
+
+            async function get_peel_tool(food) {
+                const owlPrefix = "http://www.w3.org/2002/07/owl#";
+				const cutPrefix = "http://www.ease-crc.org/ont/food_cutting#";
+				const somaPrefix = "http://www.ease-crc.org/ont/SOMA.owl#";
+				const rdfPrefix = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+				const rdfsPrefix = "http://www.w3.org/2000/01/rdf-schema#";
+				const foodonPrefix = "http://purl.obolibrary.org/obo/";
+
+				const sparqlQuery = `
+					PREFIX owl: <${owlPrefix}>
+					PREFIX cut: <${cutPrefix}>
+					PREFIX soma: <${somaPrefix}>
+					PREFIX rdf: <${rdfPrefix}>
+					PREFIX rdfs: <${rdfsPrefix}>
+					PREFIX foodon: <${foodonPrefix}>
+					SELECT ?res WHERE {
+						foodon:${food} rdfs:subClassOf* ?peel_dis.
+						?peel_dis owl:onProperty soma:hasDisposition.
+						?peel_dis owl:someValuesFrom ?peel_dis_vals.
+						?peel_dis_vals owl:intersectionOf ?afford_vals.
+						?afford_vals rdf:first cut:Peelability.
+						?afford_vals rdf:rest ?task_trigger.
+						?task_trigger rdf:rest ?trigger.
+						?trigger rdf:first ?trigger_wo_nil.
+						?trigger_wo_nil owl:onProperty soma:affordsTrigger.
+						?trigger_wo_nil owl:allValuesFrom ?trigger_tool.
+						?trigger_tool owl:allValuesFrom ?tool.
+						BIND(REPLACE(STR(?tool), "^.*[#/]", "") AS ?res).
+					}
+				`;
+
+            	return query_text(sparqlQuery, 'Peeler')
+            }
+
+            async function get_cut_tool(food) {
+					const owlPrefix = "http://www.w3.org/2002/07/owl#";
+					const somaPrefix = "http://www.ease-crc.org/ont/SOMA.owl#";
+					const rdfPrefix = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+					const rdfsPrefix = "http://www.w3.org/2000/01/rdf-schema#";
+					const foodonPrefix = "http://purl.obolibrary.org/obo/";
+					const sitAwarePrefix = "http://www.ease-crc.org/ont/situation_awareness#";
+
+					const sparqlQuery = `
+						PREFIX owl: <${owlPrefix}>
+						PREFIX soma: <${somaPrefix}>
+						PREFIX rdf: <${rdfPrefix}>
+						PREFIX rdfs: <${rdfsPrefix}>
+						PREFIX foodon: <${foodonPrefix}>
+						PREFIX sit_aware: <${sitAwarePrefix}>
+						SELECT ?res WHERE {
+							foodon:${food} rdfs:subClassOf* ?peel_dis.
+							?peel_dis owl:onProperty soma:hasDisposition.
+							?peel_dis owl:someValuesFrom ?peel_dis_vals.
+							?peel_dis_vals owl:intersectionOf ?afford_vals.
+							?afford_vals rdf:first sit_aware:Cuttability.
+							?afford_vals rdf:rest ?task_trigger.
+							?task_trigger rdf:rest ?trigger.
+							?trigger rdf:first ?trigger_wo_nil.
+							?trigger_wo_nil owl:onProperty soma:affordsTrigger.
+							?trigger_wo_nil owl:allValuesFrom ?trigger_tool.
+							?trigger_tool owl:allValuesFrom ?tool.
+							BIND(REPLACE(STR(?tool), "^.*[#/]", "") AS ?res).
+						}
+					`;
+
+
+            	return query_text(sparqlQuery, 'Knife')
+            }
+
+            async function get_target(verb) {
+                const owlPrefix = "http://www.w3.org/2002/07/owl#";
+				const somaPrefix = "http://www.ease-crc.org/ont/SOMA.owl#";
+				const cutPrefix = "http://www.ease-crc.org/ont/food_cutting#";
+				const rdfPrefix = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+				const rdfsPrefix = "http://www.w3.org/2000/01/rdf-schema#";
+
+				const sparqlQuery = `
+					PREFIX owl: <${owlPrefix}>
+					PREFIX soma: <${somaPrefix}>
+					PREFIX cut: <${cutPrefix}>
+					PREFIX rdf: <${rdfPrefix}>
+					PREFIX rdfs: <${rdfsPrefix}>
+					SELECT ?res WHERE {
+					  {
+						${verb} rdfs:subClassOf* ?inter_node.
+						?inter_node owl:intersectionOf ?in_res_node.
+						?in_res_node rdf:first ?input_node.
+						?input_node owl:onProperty cut:hasInputObject.
+						?input_node owl:someValuesFrom ?target.
+						FILTER NOT EXISTS {
+							?target owl:unionOf ?union_node.
+						}
+						BIND(REPLACE(STR(?target), "^.*[#/]", "") AS ?res).
+					  }
+					  UNION
+					  {
+						${verb} rdfs:subClassOf* ?inter_node.
+						?inter_node owl:intersectionOf ?in_res_node.
+						?in_res_node rdf:first ?input_node.
+						?input_node owl:onProperty cut:hasInputObject.
+						?input_node owl:someValuesFrom ?targets_node.
+						?targets_node owl:unionOf ?union_node.
+						?union_node rdf:first ?target.
+						BIND(REPLACE(STR(?target), "^.*[#/]", "") AS ?res).
+					  }
+					}
+				`;
+
+            	return query_text(sparqlQuery, 'Food')
+            }
+
+            async function get_repetitions(verb) {
+            	const owlPrefix = "http://www.w3.org/2002/07/owl#";
+				const cutPrefix = "http://www.ease-crc.org/ont/food_cutting#";
+				const somaPrefix = "http://www.ease-crc.org/ont/SOMA.owl#";
+				const rdfsPrefix = "http://www.w3.org/2000/01/rdf-schema#";
+
+				const sparqlQuery = `
+					PREFIX owl: <${owlPrefix}>
+					PREFIX cut: <${cutPrefix}>
+					PREFIX soma: <${somaPrefix}>
+					PREFIX rdfs: <${rdfsPrefix}>
+
+					SELECT ?res WHERE {
+					  {
+						${verb} rdfs:subClassOf* ?rep_node.
+						?rep_node owl:onProperty cut:repetitions.
+						FILTER EXISTS {
+							?rep_node owl:hasValue ?val.
+						}
+						BIND("exactly 1" AS ?res)
+					  }
+					  UNION
+					  {
+						${verb} rdfs:subClassOf* ?rep_node.
+						?rep_node owl:onProperty cut:repetitions.
+						FILTER EXISTS {
+							?rep_node owl:minQualifiedCardinality ?val.
+						}
+						BIND("at least 1" AS ?res)
+					  }
+					}
+				`;
+
+            	return query_text(sparqlQuery, '1')
+            }
+
+            async function get_cutting_position(verb) {
+            	const owlPrefix = "http://www.w3.org/2002/07/owl#";
+				const cutPrefix = "http://www.ease-crc.org/ont/food_cutting#";
+				const somaPrefix = "http://www.ease-crc.org/ont/SOMA.owl#";
+				const rdfsPrefix = "http://www.w3.org/2000/01/rdf-schema#";
+
+				const sparqlQuery = `
+					PREFIX owl: <${owlPrefix}>
+					PREFIX cut: <${cutPrefix}>
+					PREFIX soma: <${somaPrefix}>
+					PREFIX rdfs: <${rdfsPrefix}>
+
+					SELECT * WHERE {
+						${verb} rdfs:subClassOf* ?pos_node.
+						?pos_node owl:onProperty cut:affordsPosition.
+						?pos_node owl:someValuesFrom ?pos.
+						BIND(REPLACE(STR(?pos), "^.*[#/]", "") AS ?res).
+					}
+				`;
+
+            	return query_text(sparqlQuery, 'middle')
+            }
+
+            function add_to_table(number, motion, inference) {
+            	var motion_table = document.getElementById("motions");
+            	var row = motion_table.insertRow(-1);
+                var numb = row.insertCell(0);
+                var mot = row.insertCell(1);
+                var inf = row.insertCell(2);
+              	numb.innerHTML = number + ".";
+                mot.innerHTML = motion;
+                inf.innerHTML = inference;
+            }
+
+            function clear_table() {
+            	var motion_table = document.getElementById("motions");
+            	var rowCount = motion_table.rows.length;
+                for (var i = rowCount - 1; i >= 1; i--) {
+                    motion_table.deleteRow(i);
+                }
+            }
+
+			async function query_and_show() {
+				var container = document.getElementById("results");
+				var header = document.getElementById("header");
+
+				var verbs = document.getElementById("verb-select");
+				var foods = document.getElementById("food-select");
+                var selected_verb = verbs.options[verbs.selectedIndex].textContent
+                var selected_food = foods.options[foods.selectedIndex].textContent
+
+				// changing the container visibility
+				container.style.display = "block";
+
+				// changing the header
+				header.textContent = "Motions for " + selected_verb + " a / an " + selected_food + ":"
+
+                // query the ontology
+                var remove_peel = await check_food_part(foods.value, 'Peel')
+                var remove_shell = await check_food_part(foods.value, 'Shell')
+                var remove_stem = await check_food_part(foods.value, 'Stem')
+                var remove_core = await check_food_part(foods.value, 'Core')
+                var prior_task = await get_prior_task(verbs.value)
+                var peel_tool = await get_peel_tool(foods.value)
+				console.log(peel_tool)
+                var cut_tool = await get_cut_tool(foods.value)
+                var reps = await get_repetitions(verbs.value)
+                var pos = await get_cutting_position(verbs.value)
+                var shape = await get_target(verbs.value)
+
+                // create motion list from ontology query
+                clear_table()
+                curr_step = 1
+                target = ''
+
+                // optional preconditions
+                if (remove_peel || remove_shell) {
+                	add_to_table(curr_step++, "Peeling using a peeling tool", "has peel = true<br>peeling tool = " + peel_tool)
+                }
+                if (remove_stem) {
+                	add_to_table(curr_step++, "Removing the stem", "has stem = true")
+                }
+                if (remove_core) {
+                	add_to_table(curr_step++, "Removing the core", "has core = true")
+                }
+                if (prior_task != '') {
+                	add_to_table(curr_step++, "Execute a prior task: " + prior_task, "has prior task = true<br>prior task = " + prior_task)
+                }
+
+                // picking up the tool
+                add_to_table(curr_step, "Picking up the cutting tool by ...", "cutting tool = " + cut_tool)
+                add_to_table(curr_step + "a", " ... approaching the cutting tool", "cutting tool = " + cut_tool)
+                add_to_table(curr_step + "b", "... grasping the cutting tool", "cutting tool = " + cut_tool)
+                add_to_table(curr_step++ + "c", "... lifting the cutting tool", "cutting tool = " + cut_tool)
+
+                // deciding on the target
+                if(shape == 'Food') {
+                	target = selected_food
+                } else {
+                	target = selected_food + " " + shape
+                }
+
+                // cutting the food object the necessary amount of times
+                add_to_table(curr_step, "Cutting the target object at the position n time(s) by ...", "target object = " + target + "<br>position = " + pos + "<br>n = " + reps)
+              	add_to_table(curr_step + "a", "... approaching the target object at the position", "target object = " + target + "<br>position = " + pos)
+              	add_to_table(curr_step + "b", "... lowering the cutting tool through the target object", "cutting tool = " + cut_tool + "<br>target object = " + target)
+              	add_to_table(curr_step++ + "c", "... lifting the cutting tool", "cutting tool = " + cut_tool)
+
+				// putting down the tool
+                add_to_table(curr_step, "Placing the cutting tool down by ...", "cutting tool = " + cut_tool)
+                add_to_table(curr_step + "a", "... approaching the target location", "")
+                add_to_table(curr_step + "b", "... releasing the cutting tool", "cutting tool = " + cut_tool)
+                add_to_table(curr_step + "c", "... lifting the empty gripper", "")
+			}
 </script>
