@@ -87,7 +87,6 @@ For Hands-On Exercise 4, please use this Virtual Lab:<br>
 By the end of the session, you'll have a clearer understanding of basic motion planning and the challenges associated with perception in robotics.
 
 
-## For Entering the next Chapter click here: <a class="btn btn-success" target="_blank" href="day3/"><b>Chapter 3!</b></a>
 
 ## Further Reading/Exercises
 - For those interested in the interface between PyCram and RoboKudo, check out the [PyCram Documentation](https://pycram.readthedocs.io/en/latest/notebooks/interface_examples/robokudo.html).
