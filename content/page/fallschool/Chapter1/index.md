@@ -124,7 +124,6 @@ SOMA (Socio-physical Model of Activities) is an example of a robot ontology that
   <img src="img/soma-vowl-zoomed.png">
 </div>
 
-
 ### What is a Semantic Digital Twin and Why is it Important?
 
 A semantic digital twin is an enriched digital representation of a real-world entity that includes not just physical details, but also semantic information about the relationships, roles, and functions of objects. In robotics, a semantic digital twin allows a robot to understand both the physical properties of objects (e.g., shape and material) and their intended use or role in tasks. This semantic layer is crucial for enabling robots to perform complex tasks involving interactions with multiple objects and adapting to changing environments. By incorporating semantic knowledge, robots can reason more effectively about how to complete a task, making them more capable of handling unpredictable scenarios.
@@ -132,6 +131,19 @@ A semantic digital twin is an enriched digital representation of a real-world en
 <div style="flex:30%;">
   <img src="img/kitchen-scenegraph.png">
 </div>
+
+## Hands-On Exercise 2
+
+### Step-by-Step Hands-On Exercises
+1. **Query the Knowledge Base**: Query the Knowledge Base in our: 
+<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/sasjonge/semantic-map-lab.git/dfl_reasoner?labpath=notebooks%2Fsemantic_map.ipynb">KnowRob Lab</a>
+
+
+
+
+
+## Extended Material for Scene Description (Optional)
+
 
 ### What is USD and How Do We Use it to Create a Knowledge Graph?
 [Universal Scene Description (USD)](https://openusd.org/release/index.html) is a powerful format for representing complex scenes and environments in 3D. In robotics, USD can be used to create a unified scene graph that integrates data from different sources like URDF, MJCF, and SDF. This standardization into USD makes it easier to enrich the scene with semantic information. Using USD, we can create a semantic map by linking scene graph nodes to concepts in a robot ontology, such as SOMA or KnowRob, effectively transforming a scene graph into a knowledge graph.
@@ -179,21 +191,10 @@ the scene graph imports the TBox USD layer and uses a custom API to tag prims wi
   <img src="img/multiverse_knowledge.png">
 </div>
 
-## Hands-On Exercise 2
-
-### Step-by-Step Hands-On Exercises
-
-1. **Integrate with Knowledge Base**: Connect your USD environment to a knowledge base, allowing the robot to reason about the scene.
-2. **Query the Knowledge Base**: Query the Knowledge Base using KnowRob
-
-### Summary
-By the end of the session, you have worked on an URDF environment, converted into USD with semantic annotations and understand how this enhances the robot's interaction capabilities.
-
-To run the interactive Hands-On Tutorial follow please click this button:
-
+## Playground
+To get further information on how **USD's** are processed play around in our: 
 <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/Multiverse-Framework/Multiverse-Docker/main?urlpath=lab%2Ftree%2FMultiverse-Tutorials%2Ftutorials%2Fmultiverse_knowledge.ipynb">Multiverse Knowledge Lab</a>
 
-<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/sasjonge/semantic-map-lab.git/dfl_reasoner?labpath=notebooks%2Fsemantic_map.ipynb">KnowRob Lab</a>
 
 ## Further Reading/Exercises
 
@@ -210,9 +211,6 @@ Explore the concept of Semantic Digital Twins in more detail through provided re
   - [KnowRob 2.0 – A 2nd Generation Knowledge Processing Framework for Cognition-enabled Robotic Agents (Michael Beetz, Daniel Beßler, Andrei Haidu, Mihai Pomarlan, Asil Kaan Bozcuoglu and Georg Bartels), In International Conference on Robotics and Automation (ICRA), 2018](https://ai.uni-bremen.de/papers/beetz18knowrob.pdf)
 - openEASE Knowledge Service Laboratory, can be found [here](http://localhost:1313/page/labs/openease-knowledge-service-laboratory/)
 - **Challenge**: Try creating an OWL from your own environment and find interesting queries!
-
-## Next Steps
-To proceed to the next chapter of the course, click here: [**Chapter 2!**](chapter2/)
 
 
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
