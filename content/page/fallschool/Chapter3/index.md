@@ -21,11 +21,6 @@ For Entering Chapter three click here:
 
 <!--more-->
 
-<div class="main-well-flex-container" style="margin:20px;align-items: center;">
-  <div style="flex:30%;">
-      <img src="knowledge_base.png" width="200" style="clip-path: circle(35%);">
-  </div>
-</div> 
 
 <h1> Welcome to the third Chapter of our hands-on course!</h1>
 Today, you will focus on understanding how a knowledge base supports robotic decision-making. You’ll learn to query the knowledge base to identify necessary actions for tasks, like how to perceive the milk inside the fridge.

@@ -51,7 +51,7 @@ URDF stands for Unified Robot Description Format. As the name suggests, it was o
 
 However, URDF is not limited to describing robots. In this course, we use it as a tool for defining and simulating an entire environment as a scene graph. This means we use URDF to model various elements in the environment, such as furniture, objects, and other items with which the robot will interact.
 
-URDF helps create a virtual representation of an environment, as seen in the video below, by defining the structure, shape, and physical properties of the objects involved. This details are crucial for creating realistic interactions in simulations, enabling robots to understand their surroundings and perform tasks effectively.
+URDF helps create a virtual representation of an environment, as seen in the video above, by defining the structure, shape, and physical properties of the objects involved. This details are crucial for creating realistic interactions in simulations, enabling robots to understand their surroundings and perform tasks effectively.
 
 ### Links and Joints in URDF
 A link in a URDF model represents a physical object in the environment, which could be as simple as a box or as complex as a piece of furniture. A link is defined by several parameters, including:
