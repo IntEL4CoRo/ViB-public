@@ -22,11 +22,6 @@ For Entering Chapter two click here:
 
 <!--more-->
 
-<div class="main-well-flex-container" style="margin:20px;align-items: center;">
-  <div style="flex:30%;">
-      <img src="robot_perception.png" width="200" style="clip-path: circle(35%);">
-  </div>
-</div> 
 
 <h1> Welcome to the second day of our hands-on course!</h1>
 Today, you'll dive into the basics of robot movement and perception. You will learn how to navigate the robot to a designated location (like a table) and utilize sensors to detect objects, specifically focusing on a milk carton.
