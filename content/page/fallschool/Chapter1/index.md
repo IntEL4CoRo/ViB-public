@@ -22,13 +22,6 @@ This foundational knowledge will enable you to understand how robots interact wi
 
 
 
-<!--more-->
-
-<div class="main-well-flex-container" style="margin:20px;align-items: center;">
-  <div style="flex:30%;">
-    <img src="VHuMK3.png" width="200" style="clip-path: circle(35%);">
-  </div>
-</div> 
 
 # Welcome to the First Chapter of Our Hands-On Course!
 
