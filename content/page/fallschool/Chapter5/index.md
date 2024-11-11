@@ -26,9 +26,10 @@ Today, you will head into generative Large Language Models (LLMs) and how to fin
 **Goal**: By the end of this session, you will know how to fine-tune an existing LLM with a knowledgebase in the fashion of RAG, and define the assistants behavior through (initial) prompt-engineering.
 
 ## Prerequisites
-- Laptop with internet connection
+- <a href="https://vib.ai.uni-bremen.de/page/fallschool/chapter2/">Chapter 2 - PyCRAM lecture</a>
+- <a href="https://nc.uni-bremen.de/index.php/s/W86jfpykMRAwaWp">Documentation files in TXT or PDF</a>
 
-(Optional) If run on your own machine:
+We host RAGFlow for you on our server, but if you want to run it on your own machine:
 - 16GB RAM
 - GPU recommended
 
@@ -37,21 +38,26 @@ Today, you will head into generative Large Language Models (LLMs) and how to fin
 - Prompt-engineer to constraint and form an assistants behavior.
 - Refine your model to improve the assistent.
 
-## Step-by-Step Hands-On Exercises
-1. **Scope and Recap**: We will get an overview of useful lecture material, presented over the past week, to refresh your memory and collect that as training data.
+
+
+###  **Scope and Recap**: 
+We will get an overview of useful lecture material, presented over the past week, to refresh your memory and collect that as training data.
+
 2. **Introduction to RAGflow**: What is Retreival Augmented Generation and how can you set it up for any kind of application you need?
 3. **Discuss first impressions**: Gather our first ideas on strength and weakness of generative LLMs and RAG.
 4. **Refine your assistant**: Exceed boundaries and try to break the system, explore creative ways of forming your assistant.
 5. **Share experiences**: Condense the experience we made by sharing them with your peers.
 
-Access to RAGFlow
+Enter RAGFlow
 ---
-TBD
+http://ibis.informatik.uni-bremen.de
 
-Interactive Actions and/or Examples
----
 
-{{<action_forms data="ActionButtons">}}
+
+
+
+
+
 
 ## Summary
 By the end of this session you will have experience with the difficulties of configuring your own assistant, and in what ways fine-tuning can change the assistants behavior.
@@ -70,7 +76,21 @@ Example Videos
 </figure>
 
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
+  <div style="flex:30%;">
+      <img src="img/arthur.jpg" style="clip-path: circle(35%);">
+  </div>
+  
+  <div style="flex:70%;">
+       <h3> Arthur Niedzwiecki</h3>
+    Tel:  +49 421 218 64033 <br>
+    Mail:     <a href="mailto:aniedz@cs.uni-bremen.de">aniedz@cs.uni-bremen.de</a> <br>
+      <a style="color:red" href="https://ai.uni-bremen.de/team/arthur_niedzwiecki">
+      <span style="font-size: 15px;">Profile Arthur Niedzwiecki</span>
+    </a>
+  </div>
+</div>
 
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
   <div style="flex:30%;">
       <img src="img/vanessa.jpg" style="clip-path: circle(35%);">
   </div>
@@ -83,17 +103,20 @@ Example Videos
       <span style="font-size: 15px;">Profile Vanessa Hassouna</span>
     </a>
   </div>
+</div>
 
+
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
   <div style="flex:30%;">
-      <img src="img/arthur.jpg" style="clip-path: circle(35%);">
+      <img src="img/jonas_dech_head.jpg" style="clip-path: circle(35%);">
   </div>
-  
+
   <div style="flex:70%;">
-       <h3> Arthur Niedzwiecki</h3>
-    Tel:  +49 421 218 64033 <br>
-    Mail:     <a href="mailto:aniedz@cs.uni-bremen.de">aniedz@cs.uni-bremen.de</a> <br>
-      <a style="color:red" href="https://ai.uni-bremen.de/team/arthur_niedzwiecki">
-      <span style="font-size: 15px;">Profile Arthur Niedzwiecki</span>
+    <h3> Jonas Dech</h3>
+    Tel: +49 421 218 64024 <br>
+    Mail: <a href="mailto:jdech@uni-bremen.de">jdech@uni-bremen.de</a> <br>
+    <a style="color:red" href="https://ai.uni-bremen.de/team/jonas_dech">
+        <span style="font-size: 15px;">Profile Jonas Dech</span>
     </a>
   </div>
 </div>
