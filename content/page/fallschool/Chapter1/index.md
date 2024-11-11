@@ -172,6 +172,17 @@ def Xform "world" () {
 }
 ```
 
+#### USD as the Translation Medium for Scene Descriptions
+
+Each simulation software uses its own scene description format: MuJoCo employs MJCF, Unreal Engine uses FBX, Omniverse utilizes USD, and ROS is compatible with URDF. In the previous tutorial, we generated an environment scene description in URDF. Now, we need to convert this URDF scene into USD. For this, we use the [Multiverse Parser](https://binder.intel4coro.de/v2/gh/Multiverse-Framework/Multiverse-Docker/main?urlpath=lab%2Ftree%2FMultiverse-Tutorials%2Ftutorials%2Fmultiverse_parser_quick_start.ipynb), which can convert and standardize scenes across various formats. The parser optimizes, standardizes, and translates scenes into USD, making it easier to convert them into other formats when needed.
+
+<div style="flex:30%;">
+  <img src="img/MultiverseParser.png">
+</div>
+
+
+#### Translation USD Scene Descriptions into Knowledge Graphs
+
 The translation of a USD scene into a knowledge graph involves three steps. The first step is to establish a USD layer containing class prims representing the TBox ontology. Another layer representing
 the scene graph imports the TBox USD layer and uses a custom API to tag prims with ontological concepts. The semantic USD scene graph are then translated into the KG.
 
@@ -190,7 +201,7 @@ This will only be your first step into KnowRob to get a first idea on how to use
 1. **Semantic Tagging (Optional)**: To get further information on how **USD's** are processed play around in our: 
 <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/Multiverse-Framework/Multiverse-Docker/main?urlpath=lab%2Ftree%2FMultiverse-Tutorials%2Ftutorials%2Fmultiverse_knowledge.ipynb">Multiverse Knowledge Lab</a>
 
-2**Query the Knowledge Base**:<br> Reason about the environment model ("semantic map") in our: 
+2. **Query the Knowledge Base**:<br> Reason about the environment model ("semantic map") in our: 
 <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/sasjonge/semantic-map-lab.git/dfl_reasoner?labpath=notebooks%2Fsemantic_map.ipynb">KnowRob Lab</a>
 
 
