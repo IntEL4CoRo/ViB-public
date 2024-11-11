@@ -13,5 +13,5 @@ Remark:
 - Please only open one instance of the course at a time.
 - If you use a MAC, please use Chrome or Firefox as your browser. Safari is not supported.
 - If a session dies, please refresh the page and re-enter the course. States are not saved.
-
+- For any copy and paste actions, please use the keyboard shortcuts (Ctrl+C, Ctrl+V) as the right-click is disabled.
 </div>
