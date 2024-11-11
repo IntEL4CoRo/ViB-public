@@ -93,10 +93,24 @@ TODO PLAY AROUND WITH CHAT
 
 Download <a href="https://nc.uni-bremen.de/index.php/s/W86jfpykMRAwaWp">the necessary teaching material here</a>. 
 
+## Intermediate Survey
+
+
+## Do Initial Instructions
+
+
+## Summary
+
+
+## Posterior Survey
+
 2. **Introduction to RAGflow**: What is Retreival Augmented Generation and how can you set it up for any kind of application you need?
 3. **Discuss first impressions**: Gather our first ideas on strength and weakness of generative LLMs and RAG.
 4. **Refine your assistant**: Exceed boundaries and try to break the system, explore creative ways of forming your assistant.
 5. **Share experiences**: Condense the experience we made by sharing them with your peers.
+
+
+
 
 Enter RAGFlow
 ---
