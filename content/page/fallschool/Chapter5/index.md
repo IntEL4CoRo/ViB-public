@@ -20,12 +20,6 @@ For Entering Chapter five click here:
 
 <!--more-->
 
-<div class="main-well-flex-container" style="margin:20px;align-items: center;">
-  <div style="flex:30%;">
-      <img src="logging_analysis.png" width="200" style="clip-path: circle(35%);">
-  </div>
-</div> 
-
 <h1> Welcome to the fifth day of our hands-on course!</h1>
 Today, you will head into generative Large Language Models (LLMs) and how to fine-tune them. With Retreival Augmented Generation (RAG) you create a specialized assistant that serves as a companion for robot programming. The software used is completely open-source and can be installed on your personal machines. For this course we offer the webservice <a href="https://ragflow.io/">RAGflow</a>, utilizing models from Ollama to digest and extend its knowledge.
 
