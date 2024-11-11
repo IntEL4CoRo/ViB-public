@@ -162,9 +162,8 @@ RoboKudo Overview:
 
   <div style="flex:70%;">
     <h3> Max Gandyra </h3>
-    Tel: +49 421 218 64024 <br>
-    Mail: <a href="mailto:gandyra@uni-bremen.de">jdech@uni-bremen.de</a> <br>
-    <a style="color:red" href="https://ai.uni-bremen.de/team/max_gandyra_dech">
+    Mail: <a href="mailto:gandyra@uni-bremen.de">gandyra@uni-bremen.de</a> <br>
+    <a style="color:red" href="https://ai.uni-bremen.de/team/max_gandyra">
         <span style="font-size: 15px;">Profile Max Gandyra</span>
     </a>
   </div>
