@@ -141,7 +141,7 @@ To do so, we will use the [KnowRob](https://knowrob.org/) framework. It allows y
 
 This will only be your first step into KnowRob to get a first idea on how to use it in conjunction with our environment model. A more detailed introduction will be done in <a  target="_blank" href="../chapter3/"><b>Chapter 3</b></a>.
 
-1. **Query the Knowledge Base**: Query the Knowledge Base in our: 
+1. **Query the Knowledge Base**:<br> Reason about the environment model ("semantic map") in our: 
 <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/sasjonge/semantic-map-lab.git/dfl_reasoner?labpath=notebooks%2Fsemantic_map.ipynb">KnowRob Lab</a>
 
 
