@@ -203,11 +203,11 @@ the scene graph imports the TBox USD layer and uses a custom API to tag prims wi
 ## Hands-On Exercise 2
 
 ### Step-by-Step Hands-On Exercises
-1. (Optional) To get further information on how **USD's** are processed play around in our: 
+1. **Semantic Tagging (Optional)**: To get further information on how **USD's** are processed play around in our: 
 <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/Multiverse-Framework/Multiverse-Docker/main?urlpath=lab%2Ftree%2FMultiverse-Tutorials%2Ftutorials%2Fmultiverse_knowledge.ipynb">Multiverse Knowledge Lab</a>
 
 
-2**Query the Knowledge Base**: Query the Knowledge Base in our: 
+2 **Query the Knowledge Base**: Query the Knowledge Base in our: 
 <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/sasjonge/semantic-map-lab.git/dfl_reasoner?labpath=notebooks%2Fsemantic_map.ipynb">KnowRob Lab</a>
 
 
