@@ -169,7 +169,7 @@ Courses and/or Turorial
   </div>
 
   <div style="flex:70%;">
-       <h3> Supervisor Prof. Michael Beetz PhD</h3>
+       <h3> Prof. Michael Beetz PhD</h3>
     Tel:  +49 421 218 64001 <br>
     Mail:     <a href="mailto:beetz@cs.uni-bremen.de">beetz@cs.uni-bremen.de</a> <br>
       <a style="color:red" href="https://ai.uni-bremen.de/team/michael_beetz">
