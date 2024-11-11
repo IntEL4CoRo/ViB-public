@@ -75,7 +75,7 @@ Throughout these exercises, we will provide code examples to help you move the r
 
 Interactive Actions and/or Examples
 ---
-For Hands-On Exercise 1-3, please use the following Virtual Lab first: <a class="btn btn-success" target="_blank" href="404">Robot Simulation Perception</a>
+For Hands-On Exercise 1-3, please use the following Virtual Lab first: <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/sunava/pycram/49563155f1614cddfe2fc9bc486e429c32ba8a0a?urlpath=lab%2Ftree%2Fdemos%2Fpycram_fallschool_2024%2F02_robot_simulation_perception.ipynb">Robot Simulation Perception</a>
 
 
 
