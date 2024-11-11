@@ -135,6 +135,12 @@ A semantic digital twin is an enriched digital representation of a real-world en
 ## Hands-On Exercise 2
 
 ### Step-by-Step Hands-On Exercises
+
+In the following exercise, we want to make use of the represented knowledge. 
+To do so, we will use the [KnowRob](https://knowrob.org/) framework. It allows you to ask questions ("queries") about the stored knowledge in order to infer required parameters to proceed with higher-level tasks like setting a table for breakfast. This involves for example the reasoning about likely storage locations for breakfast items.
+
+This will only be your first step into KnowRob to get a first idea on how to use it in conjunction with our environment model. A more detailed introduction will be done in <a  target="_blank" href="../chapter3/"><b>Chapter 3</b></a>.
+
 1. **Query the Knowledge Base**: Query the Knowledge Base in our: 
 <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/sasjonge/semantic-map-lab.git/dfl_reasoner?labpath=notebooks%2Fsemantic_map.ipynb">KnowRob Lab</a>
 
