@@ -92,7 +92,7 @@ Step 4: Open the Fridge
 Now that the fridge is open, PR2 can scan and detect the milk carton inside. Help it to successfully fetch the milk and place it on the table.
 
 Step 5: The Final Task
-yet to be determined
+You will head into generative Large Language Models (LLMs) and how to fine-tune them. With Retreival Augmented Generation (RAG) you create a specialized assistant that serves as a companion for robot programming.
 
 The Goal
 ---
