@@ -21,27 +21,77 @@ For Entering Chapter five click here:
 <!--more-->
 
 <h1> Welcome to the fifth day of our hands-on course!</h1>
-Today, you will head into generative Large Language Models (LLMs) and how to fine-tune them. With Retreival Augmented Generation (RAG) you create a specialized assistant that serves as a companion for robot programming. The software used is completely open-source and can be installed on your personal machines. For this course we offer the webservice <a href="https://ragflow.io/">RAGflow</a>, utilizing models from Ollama to digest and extend its knowledge.
+Today, you will head into generative Large Language Models (LLMs) and how to fine-tune them. With Retreival Augmented Generation (RAG) you create a specialized assistant that serves as a companion for robot programming. The software used is completely open-source and can be installed on your personal machines. For this course we offer the webservice <a href="https://ragflow.io/">RAGflow</a>, utilizing models from OLLaMA to digest and extend its knowledge.
 
 **Goal**: By the end of this session, you will know how to fine-tune an existing LLM with a knowledgebase in the fashion of RAG, and define the assistants behavior through (initial) prompt-engineering.
 
 ## Prerequisites
-- <a href="https://vib.ai.uni-bremen.de/page/fallschool/chapter2/">Chapter 2 - PyCRAM lecture</a>
-- <a href="https://nc.uni-bremen.de/index.php/s/W86jfpykMRAwaWp">Documentation files in TXT or PDF</a>
+- Participation in <a href="https://vib.ai.uni-bremen.de/page/fallschool/chapter2/">Chapter 2 - PyCRAM lecture</a>
+- Download <a href="https://nc.uni-bremen.de/index.php/s/W86jfpykMRAwaWp">documentation files in TXT or PDF</a>
 
-We host RAGFlow for you on our server, but if you want to run it on your own machine:
-- 16GB RAM
-- GPU recommended
+## A-priori survey
+
+How experienced would you consider yourself with AI assistants? https://particify.zmml.de/p/73823831
+
 
 ## Theoretical Background
-- Build your LLM knowledgebase with the content of the past weeks lectures.
-- Prompt-engineer to constraint and form an assistants behavior.
-- Refine your model to improve the assistent.
+
+In this lecture we use the Large Language Model **LLaMA3.2**, an openly available and pre-trained model by Meta, designed to be extended for research purposes. We prime the model with **initial instructions** and extend its knowledge with **Retreival Augmented Generation**.
+
+**Large Language Models** (LLMs) have been trained on the vast array of text available on the internet, and optimized to generate natural language in various styles and formats. There are multiple ways to change the behavior a model. Improvements are done by specializing a base model for a specific domain, its task, and how it should act. Example foundational models are GPT, BERT, T5, DALL-E and LLaMA. This chapter uses LLaMA.
+
+**Fine-Tuning** is the general act of adding more knowledge to an existing LLM and specializing its purpose. Pre-trained LLMs are available in masses, but they are trained to respond with general knowledge about a broad field. To fine-tune a model, a relatively small but crucial set of knowledge is added to the model. Similarly, to make an LLM suitable as a tool for a specific task, its focus needs to be set straight. In this chapter, fine-tuning is achieved by giving an LLM the teaching-material for online courses on how to work with the PyCRAM architecture, authored by the architects.
+
+**Initial instructions** specify how the assistant is meant to behave. Here are a few points that prime an assistant:
+
+1. Define the Purpose and Scope
+2. Specify Tone and Style
+3. Provide Example Prompts and Responses
+4. Incorporate Ethical and Safety Guidelines
+5. Highlight Desired Behavior and Limitation
+6. Set Specific Formatting or Structure Requirements
+7. Include Feedback Mechanisms
+
+Examples are given in the practical part.
+
+**Prompt engineering** is the ongoing extension of the initial instructions: request (prompt), response and refinement, such that the answer eventually contains the most desireable content, scope and depth of information. This can reach from the answers length, writing style, to strict datastructures in program code or json-objects. The more precise the request, the better the answer. To refine the answer, keep the context of the conversation, refer back to the LLMs answer, so to specify in what way the current answer is unsatisfying, and provide constraints on how to improve the answer. With few-shot examples the prompts can be given more context, which again makes the answer more specific, therefore, make the request more specific regarding what the LLM should focus on in its response by giving it the knowledge required.
+
+**Training** Requires a lot of example data as request and response. Most available models are already pre-trained for a sepcific purpose and ready to use.
+
+**Retreival-Augmented Generation (RAG)** is a way to extend the knowledge of the LLM by giving it structured knowledge about the domain, in our case: the lecture material for PyCRAM. This specializes the LLM
+to its specific usecase, defining what kind of tool the LLM is used as. For example, when the LLM is provided with program code and explanatory documentation, it can answer just like a teacher, explaining the program and refine their answer on demand. 
 
 
+## Set up your RAGFlow
 
-###  **Scope and Recap**: 
-We will get an overview of useful lecture material, presented over the past week, to refresh your memory and collect that as training data.
+Go to http://ibis.informatik.uni-bremen.de and create an account.
+
+
+### Link the Ollama chat model
+
+1. Go to your profile in the top-right corner
+2. From the list on the left select `Model Providers`
+3. Select Ollama
+4. In the pop-up, enter the following fields
+* Model type: chat
+* Model name: llama3.2:3b
+* Base url: http://ollama:11434
+
+Hit OK. There should now be Ollama showing in the list.
+
+TODO ADD PICTURE
+
+### Set model defaults
+
+TODO SET DEFAULT MODELS
+
+## Create a chat
+
+TODO PLAY AROUND WITH CHAT
+
+## Create a Knowledge Base
+
+Download <a href="https://nc.uni-bremen.de/index.php/s/W86jfpykMRAwaWp">the necessary teaching material here</a>. 
 
 2. **Introduction to RAGflow**: What is Retreival Augmented Generation and how can you set it up for any kind of application you need?
 3. **Discuss first impressions**: Gather our first ideas on strength and weakness of generative LLMs and RAG.
