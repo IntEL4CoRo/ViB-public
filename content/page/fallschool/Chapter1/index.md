@@ -132,24 +132,6 @@ A semantic digital twin is an enriched digital representation of a real-world en
   <img src="img/kitchen-scenegraph.png">
 </div>
 
-## Hands-On Exercise 2
-
-### Step-by-Step Hands-On Exercises
-
-In the following exercise, we want to make use of the represented knowledge. 
-To do so, we will use the [KnowRob](https://knowrob.org/) framework. It allows you to ask questions ("queries") about the stored knowledge in order to infer required parameters to proceed with higher-level tasks like setting a table for breakfast. This involves for example the reasoning about likely storage locations for breakfast items.
-
-This will only be your first step into KnowRob to get a first idea on how to use it in conjunction with our environment model. A more detailed introduction will be done in <a  target="_blank" href="../chapter3/"><b>Chapter 3</b></a>.
-
-1. **Query the Knowledge Base**:<br> Reason about the environment model ("semantic map") in our: 
-<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/sasjonge/semantic-map-lab.git/dfl_reasoner?labpath=notebooks%2Fsemantic_map.ipynb">KnowRob Lab</a>
-
-
-
-
-
-## Extended Material for Scene Description (Optional)
-
 
 ### What is USD and How Do We Use it to Create a Knowledge Graph?
 [Universal Scene Description (USD)](https://openusd.org/release/index.html) is a powerful format for representing complex scenes and environments in 3D. In robotics, USD can be used to create a unified scene graph that integrates data from different sources like URDF, MJCF, and SDF. This standardization into USD makes it easier to enrich the scene with semantic information. Using USD, we can create a semantic map by linking scene graph nodes to concepts in a robot ontology, such as SOMA or KnowRob, effectively transforming a scene graph into a knowledge graph.
@@ -197,21 +179,19 @@ the scene graph imports the TBox USD layer and uses a custom API to tag prims wi
   <img src="img/multiverse_knowledge.png">
 </div>
 
-
-
-
 ## Hands-On Exercise 2
 
 ### Step-by-Step Hands-On Exercises
+
+In the following exercise, we want to make use of the represented knowledge. 
+To do so, we will use the [KnowRob](https://knowrob.org/) framework. It allows you to ask questions ("queries") about the stored knowledge in order to infer required parameters to proceed with higher-level tasks like setting a table for breakfast. This involves for example the reasoning about likely storage locations for breakfast items.
+
+This will only be your first step into KnowRob to get a first idea on how to use it in conjunction with our environment model. A more detailed introduction will be done in <a  target="_blank" href="../chapter3/"><b>Chapter 3</b></a>.
 1. **Semantic Tagging (Optional)**: To get further information on how **USD's** are processed play around in our: 
 <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/Multiverse-Framework/Multiverse-Docker/main?urlpath=lab%2Ftree%2FMultiverse-Tutorials%2Ftutorials%2Fmultiverse_knowledge.ipynb">Multiverse Knowledge Lab</a>
 
-
-2 **Query the Knowledge Base**: Query the Knowledge Base in our: 
+2**Query the Knowledge Base**:<br> Reason about the environment model ("semantic map") in our: 
 <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/sasjonge/semantic-map-lab.git/dfl_reasoner?labpath=notebooks%2Fsemantic_map.ipynb">KnowRob Lab</a>
-
-
-
 
 
 
