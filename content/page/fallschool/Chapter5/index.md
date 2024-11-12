@@ -72,26 +72,36 @@ Go to http://ibis.informatik.uni-bremen.de and create an account.
 1. Go to your profile in the top-right corner
 2. From the list on the left select `Model Providers`
 3. Select Ollama
-4. In the pop-up, enter the following fields
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="img/ragflow_instruction_1.png" alt="RAGFlow add Ollama model" style="width: 90%;"/>
+  <!--img src="img/boxy.webp" alt="Image 2" style="width: 45%;"/-->
+</div>
+
+4. In the pop-up, enter the following fields:
 * Model type: chat
 * Model name: llama3.2:3b
 * Base url: http://ollama:11434
 
-Hit OK. There should now be Ollama showing in the list.
+<img src="img/ragflow_instruction_2.png" alt="RAGFlow add the llama3.2 model" style="width: 70%;"/>
 
-TODO ADD PICTURE
+Hit OK. There should now be Ollama showing in the list.
 
 ### Set model defaults
 
-TODO SET DEFAULT MODELS
+Set the default chat model to the freshly added link to llama3.2:3b
 
-## Create a chat
+<img src="img/ragflow_instruction_3.png" alt="RAGFlow add the llama3.2 model" style="width: 80%;"/>
 
-TODO PLAY AROUND WITH CHAT
+Hit OK and the defaults should be set just right!
 
 ## Create a Knowledge Base
 
 Download <a href="https://nc.uni-bremen.de/index.php/s/W86jfpykMRAwaWp">the necessary teaching material here</a>. 
+
+## Create a chat
+
+TODO PLAY AROUND WITH CHAT
 
 ## Intermediate Survey
 
