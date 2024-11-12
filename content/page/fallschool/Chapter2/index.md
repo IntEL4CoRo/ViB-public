@@ -78,9 +78,9 @@ Interactive Actions and/or Examples
 For Hands-On Exercise 1-3, please use the following Virtual Lab first: <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/sunava/pycram/49563155f1614cddfe2fc9bc486e429c32ba8a0a?urlpath=lab%2Ftree%2Fdemos%2Fpycram_fallschool_2024%2F02_robot_simulation_perception.ipynb">Robot Simulation Perception</a>
 
 
-
 For Hands-On Exercise 4, please use this Virtual Lab:<br>
-<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/git/https%3A%2F%2Fgitlab.informatik.uni-bremen.de%2Ffmuehlis%2Frobokudo-lab.git/tutorials">RoboKudo Getting Started Lab</a>
+<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/git/https%3A%2F%2Fgitlab.informatik.uni-bremen.de%2Ffmuehlis%2Frobokudo-lab.git/tutorials?urlpath=lab%2Ftree%2Frobokudo.jupyterlab-workspace">RoboKudo Getting Started Lab</a>
+
 
 
 ## Summary
@@ -162,10 +162,27 @@ RoboKudo Overview:
 
   <div style="flex:70%;">
     <h3> Max Gandyra </h3>
-    Tel: +49 421 218 64024 <br>
-    Mail: <a href="mailto:gandyra@uni-bremen.de">jdech@uni-bremen.de</a> <br>
-    <a style="color:red" href="https://ai.uni-bremen.de/team/max_gandyra_dech">
+    Mail: <a href="mailto:gandyra@uni-bremen.de">gandyra@uni-bremen.de</a> <br>
+    <a style="color:red" href="https://ai.uni-bremen.de/team/max_gandyra">
         <span style="font-size: 15px;">Profile Max Gandyra</span>
     </a>
   </div>
 </div>
+
+
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+
+  <div style="flex:30%;">
+      <img src="../mbeetza.jpg" style="clip-path: circle(35%);">
+  </div>
+
+  <div style="flex:70%;">
+       <h3> Prof. Michael Beetz PhD</h3>
+    Tel:  +49 421 218 64001 <br>
+    Mail:     <a href="mailto:beetz@cs.uni-bremen.de">beetz@cs.uni-bremen.de</a> <br>
+      <a style="color:red" href="https://ai.uni-bremen.de/team/michael_beetz">
+      <span style="font-size: 15px;">Profile Michael Beetz</span>
+    </a>
+  </div>
+</div>
+
