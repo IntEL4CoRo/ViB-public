@@ -83,7 +83,7 @@ Go to http://ibis.informatik.uni-bremen.de and create an account.
 * Model name: llama3.2:3b
 * Base url: http://ollama:11434
 
-<img src="img/ragflow_instruction_2.png" alt="RAGFlow add the llama3.2 model" style="width: 70%;"/>
+<img src="img/ragflow_instruction_2.png" alt="RAGFlow: add the llama3.2 model" style="width: 70%;"/>
 
 Hit OK. There should now be Ollama showing in the list.
 
@@ -91,11 +91,16 @@ Hit OK. There should now be Ollama showing in the list.
 
 Set the default chat model to the freshly added link to llama3.2:3b
 
-<img src="img/ragflow_instruction_3.png" alt="RAGFlow add the llama3.2 model" style="width: 80%;"/>
+<img src="img/ragflow_instruction_3.png" alt="RAGFlow: set default chat model" style="width: 80%;"/>
 
 Hit OK and the defaults should be set just right!
 
 ## Create a Knowledge Base
+
+Go to the `Knowledge Base` section at the top and add a new one.
+
+<img src="img/ragflow_add_kb.png" alt="RAGFlow add the llama3.2 model" style="width: 80%;"/>
+
 
 Download <a href="https://nc.uni-bremen.de/index.php/s/W86jfpykMRAwaWp">the necessary teaching material here</a>. 
 
