@@ -56,22 +56,23 @@ Examples are given in the practical part.
 
 **Prompt engineering** is the ongoing extension of the initial instructions: request (prompt), response and refinement, such that the answer eventually contains the most desireable content, scope and depth of information. This can reach from the answers length, writing style, to strict datastructures in program code or json-objects. The more precise the request, the better the answer. To refine the answer, keep the context of the conversation, refer back to the LLMs answer, so to specify in what way the current answer is unsatisfying, and provide constraints on how to improve the answer. With few-shot examples the prompts can be given more context, which again makes the answer more specific, therefore, make the request more specific regarding what the LLM should focus on in its response by giving it the knowledge required.
 
-**Training** Requires a lot of example data as request and response. Most available models are already pre-trained for a sepcific purpose and ready to use.
+**Training** requires a lot of example data as request and response. Most available models are already pre-trained for a sepcific purpose and ready to use.
 
 **Retreival-Augmented Generation (RAG)** is a way to extend the knowledge of the LLM by giving it structured knowledge about the domain, in our case: the lecture material for PyCRAM. This specializes the LLM
 to its specific usecase, defining what kind of tool the LLM is used as. For example, when the LLM is provided with program code and explanatory documentation, it can answer just like a teacher, explaining the program and refine their answer on demand. 
 
+---
 
 ## Set up your RAGFlow
 
-Go to http://ibis.informatik.uni-bremen.de and create an account.
+Go to http://ibis.informatik.uni-bremen.de and `sign up`.
 
 
 ### Link the Ollama chat model
 
-1. Go to your profile in the top-right corner
+1. Go to your `profile` in the top-right corner
 2. From the list on the left select `Model Providers`
-3. Select Ollama
+3. Select `Ollama` to add the model
 
 <div style="display: flex; justify-content: space-between;">
   <img src="img/ragflow_instruction_1.png" alt="RAGFlow add Ollama model" style="width: 90%;"/>
@@ -79,9 +80,9 @@ Go to http://ibis.informatik.uni-bremen.de and create an account.
 </div>
 
 4. In the pop-up, enter the following fields:
-* Model type: chat
-* Model name: llama3.2:3b
-* Base url: http://ollama:11434
+* Model type: `chat`
+* Model name: `llama3.2:3b`
+* Base url: `http://ollama:11434`
 
 <img src="img/ragflow_instruction_2.png" alt="RAGFlow: add the llama3.2 model" style="width: 70%;"/>
 
@@ -89,22 +90,44 @@ Hit OK. There should now be Ollama showing in the list.
 
 ### Set model defaults
 
-Set the default chat model to the freshly added link to llama3.2:3b
+Open the `System Model Settings` in the top-right.
+
+Set the Chat model to `llama3.2:3b`
 
 <img src="img/ragflow_instruction_3.png" alt="RAGFlow: set default chat model" style="width: 80%;"/>
 
 Hit OK and the defaults should be set just right!
 
-## Create a Knowledge Base
+---
 
-Go to the `Knowledge Base` section at the top and add a new one.
+## Retrieval Augmented Generation (RAG)
 
-<img src="img/ragflow_add_kb.png" alt="RAGFlow add the llama3.2 model" style="width: 80%;"/>
+Now that RAGFlow is set up we can start to build our assistant. For that we first need a Knowledge Base consisting of lecture material, and a chatbot, whose knowledge will be extended.
+
+### Create a Knowledge Base
+
+Go to the `Knowledge Base` section at the top and add a new one. Choose the name to your liking.
+
+<img src="img/ragflow_add_kb.png" alt="RAGFlow add the llama3.2 model" style="width: 100%;"/>
+
+Once you created the Knowledge Base, scroll through the parameters, especially `Auto keywords`, `Auto questions` and `Chunk token number`. Check the tool tips, but leave them at their default values for now. At the bottom hit `Save`.
+
+Switch to the `File Management` section in the top row. This is where to upload the documents to extend a Knowledge Base. Download <a href="https://nc.uni-bremen.de/index.php/s/W86jfpykMRAwaWp">the Fall School material here</a>. Upload the whole folder to your File Management.
+
+<img src="img/ragflow_add_files.png" alt="RAGFlow add files" style="width: 100%;"/>
+
+Now link the folder to the Knowledge Base that you just created.
+
+<img src="img/ragflow_link_file_to_kb.png" alt="RAGFlow link files to KB" style="width: 100%;"/>
+
+Go back to `Knowledge Base` at the top, then open our knowledge base and on the left go to `Dataset`. You will see all the files added to the dataset. The files are not parsed yet.
+
+Hit the play button next to the files that you want to process.
+
+<img src="img/ragflow_parse_dataset.png" alt="RAGFlow parse file" style="width: 100%;"/>
 
 
-Download <a href="https://nc.uni-bremen.de/index.php/s/W86jfpykMRAwaWp">the necessary teaching material here</a>. 
-
-## Create a chat
+### Create a chat
 
 TODO PLAY AROUND WITH CHAT
 
