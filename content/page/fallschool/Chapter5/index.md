@@ -21,9 +21,9 @@ For Entering Chapter five click here:
 <!--more-->
 
 <h1> Welcome to the fifth day of our hands-on course!</h1>
-Today, you will head into generative Large Language Models (LLMs) and how to fine-tune them. With Retreival Augmented Generation (RAG) you create a specialized assistant that serves as a companion for robot programming. The software used is completely open-source and can be installed on your personal machines. For this course we offer the webservice <a href="https://ragflow.io/">RAGflow</a>, utilizing models from OLLaMA to digest and extend its knowledge.
+Today, you will head into generative Large Language Models (LLMs) and how to fine-tune them. With Retrieval Augmented Generation (RAG) you create a specialized assistant that serves as a companion for robot programming. The software used is completely open-source and can be installed on your personal machines. For this course we offer the web service <a href="https://ragflow.io/">RAGflow</a>, utilizing models from OLLaMA to digest and extend its knowledge.
 
-**Goal**: By the end of this session, you will know how to fine-tune an existing LLM with a knowledgebase in the fashion of RAG, and define the assistants behavior through (initial) prompt-engineering.
+**Goal**: By the end of this session, you will know how to fine-tune an existing LLM with a knowledge base in the fashion of RAG, and define the assistants behavior through (initial) prompt-engineering.
 
 ## Prerequisites
 - Participation in any of the previous hands-on lectures
@@ -35,7 +35,7 @@ How experienced would you consider yourself with AI assistants? Please enter in 
 
 ## Theoretical Background
 
-In this lecture we use the Large Language Model **LLaMA3.2**, an openly available and pre-trained model by Meta, designed to be extended for research purposes. We prime the model with **initial instructions** and extend its knowledge with **Retreival Augmented Generation**.
+In this lecture we use the Large Language Model **LLaMA3.2**, an openly available and pre-trained model by Meta, designed to be extended for research purposes. We prime the model with **initial instructions** and extend its knowledge with **Retrieval Augmented Generation**.
 
 **Large Language Models** (LLMs) have been trained on the vast array of text available on the internet, and optimized to generate natural language in various styles and formats. There are multiple ways to change the behavior a model. Improvements are done by specializing a base model for a specific domain, its task, and how it should act. Example foundational models are GPT, BERT, T5, DALL-E and LLaMA. This chapter uses LLaMA.
 
@@ -55,10 +55,10 @@ In this lecture we use the Large Language Model **LLaMA3.2**, an openly availabl
 
 Examples are given later, when defining the initial instructions for your assistant.
 
-**Prompt engineering** is the ongoing extension of the initial instructions: request (prompt), response and refinement, such that the answer eventually contains the most desireable content, scope and depth of information. This can reach from the answers length, writing style, to strict datastructures in program code or json-objects. The more precise the request, the better the answer. To refine the answer, keep the context of the conversation, refer back to the LLMs answer, so to specify in what way the current answer is unsatisfying, and provide constraints on how to improve the answer. With few-shot examples the prompts can be given more context, which again makes the answer more specific, therefore, make the request more specific regarding what the LLM should focus on in its response by giving it the knowledge required.
+**Prompt engineering** is the ongoing extension of the initial instructions: request (prompt), response and refinement, such that the answer eventually contains the most desirable content, scope and depth of information. This can reach from the answers length, writing style, to strict data structures in program code or JSON-objects. The more precise the request, the better the answer. To refine the answer, keep the context of the conversation, refer back to the LLMs answer, so to specify in what way the current answer is unsatisfying, and provide constraints on how to improve the answer. With few-shot examples the prompts can be given more context, which again makes the answer more specific, therefore, make the request more specific regarding what the LLM should focus on in its response by giving it the knowledge required.
 
-**Retreival-Augmented Generation (RAG)** is a way to extend the knowledge of the LLM by giving it structured knowledge about the domain, in our case: the hands-on material for this Fall School. This specializes the LLM
-to its specific usecase, defining what kind of tool the LLM is used as. For example, when the LLM is provided with program code and explanatory documentation, it can answer just like a teacher, explaining the program and refine their answer on demand. 
+**Retrieval-Augmented Generation (RAG)** is a way to extend the knowledge of the LLM by giving it structured knowledge about the domain, in our case: the hands-on material for this Fall School. This specializes the LLM
+to its specific use-case, defining what kind of tool the LLM is used as. For example, when the LLM is provided with program code and explanatory documentation, it can answer just like a teacher, explaining the program and refine their answer on demand. 
 
 ---
 
@@ -98,7 +98,7 @@ Hit OK and the defaults should be set just right!
 
 ## Retrieval Augmented Generation (RAG)
 
-Now that RAGFlow is set up we can start to build our assistant. For that we first need a Knowledge Base consisting of lecture material, and a chatbot, whose knowledge will be extended.
+Now that RAGFlow is set up we can start to build our assistant. For that we first need a Knowledge Base consisting of lecture material, and a chat-bot, whose knowledge will be extended.
 
 ### Create a Knowledge Base
 
@@ -118,7 +118,7 @@ Now link the folder to the Knowledge Base that you just created.
 <img src="img/ragflow_link_file_to_kb.png" alt="RAGFlow link files to KB" style="width: 100%;"/>
 
 <br/>
-Go back to `Knowledge Base` at the top, then open our knowledge base and on the left go to `Dataset`. You will see all the files added to the dataset. The files are not parsed yet.
+Go back to `Knowledge Base` at the top, then open our knowledge base and on the left go to `Dataset`. You will see all the files added to the data set. The files are not parsed yet.
 
 Hit the play button next to the files that you want to process.
 
@@ -127,7 +127,7 @@ Hit the play button next to the files that you want to process.
 
 ### Create a chat
 
-Now that we have a knowledge base, let's use the knowledgebase with a chatbot.
+Now that we have a knowledge base, let's use the knowledge base with a chat-bot.
 
 Go to `Chat` at the top, then `Create an Assistant`. Enter any name for the assistant, and at the bottom, choose the `Knowledge Base` you created in the section before. Hit `OK` to create the assistant. 
 
@@ -153,11 +153,11 @@ Furthermore we will tweak a few parameters.
 
 In the end there is going to be a final **survey** on your assistants improvements, so please remember the changes you make to report on them. Enter the survey again to keep track of your progress: https://particify.zmml.de/p/73823831
 
-**Tip:** Use one prompt and compare answers before and after tuning. An example prompt could be 'What is PyCRAM?' or 'How do I move the robot?' What prompts you choose depends on the Dataset you provide.
+**Tip:** Use one prompt and compare answers before and after tuning. An example prompt could be 'What is PyCRAM?' or 'How do I move the robot?' What prompts you choose depends on the data set you provide.
 
 ### Initial Instructions
 
-Create another assistant an **change the initial instructions.** Go to the `Prompt Engine` to set the initial instructions. For your new assistant the initial instructions can be found when creating it. Choosing the right instructions has tremendous influence on the assisants performance. 
+Create another assistant an **change the initial instructions.** Go to the `Prompt Engine` to set the initial instructions. For your new assistant the initial instructions can be found when creating it. Choosing the right instructions has tremendous influence on the assistants performance. 
 
 <img src="img/ragflow_initial_prompt.png" alt="RAGFlow initial prompt" style="width: 70%;"/>
 
@@ -190,14 +190,14 @@ In the `Model Settings` you can find two parameters to tweak:
 
 ### Knowledge Base - Data preparation
 
-Let us investigate how to prepare the data to retreive. 
+Let us investigate how to prepare the data to retrieve. 
 
-Go to the `Knowledge Base` **create a new Knowledgebase** and adjust the configuration parameters.
+Go to the `Knowledge Base` **create a new knowledge base** and adjust the configuration parameters.
 * Change the `Embedding model` (e.g. one from jinaai)
 * Change the `Chunk method` (e.g. Knowledge Graph)
 * Change the `Auto Keywords` (e.g to 3)
 * Change the `Auto Questions` (e.g. to 1)
-* Decrease the `Chunk token number` (e.g. to 64. If chunks are too big, the model doen't understand it.)
+* Decrease the `Chunk token number` (e.g. to 64. If chunks are too big, the model doesn't understand it.)
 * Save the KB
 * Go to `Files Management` and link your favorite files to the newly created knowledge base
 * Go to the knowledge base `Dataset` and hit the play-button next to a file (or parse them in bulk)
