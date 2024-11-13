@@ -64,7 +64,7 @@ to its specific use-case, defining what kind of tool the LLM is used as. For exa
 
 ## Set up your RAGFlow
 
-Go to http://ibis.informatik.uni-bremen.de and `sign up`.
+Go to the RAGFlow page sent to you by mail and `sign up`.
 
 
 ### Link the Ollama chat model
