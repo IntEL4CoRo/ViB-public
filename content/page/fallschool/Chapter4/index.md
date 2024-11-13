@@ -68,7 +68,7 @@ Multiverse provides the capability to generate knowledge graphs dynamically duri
 Interactive Actions and/or Examples
 ---
 
-For Hands-On Exercises please use the following Virtual Lab: <a class="btn btn-success" target="_blank" href="404">Plan Executive</a>
+For Hands-On Exercises please use the following Virtual Lab: <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/sunava/pycram/6dc265e85637794c734f85638d005ac050763491?urlpath=lab%2Ftree%2Fdemos%2Fpycram_fallschool_2024%2F04_full_robot_simulation.ipynb">Plan Executive</a>
 
 
 ## Summary
