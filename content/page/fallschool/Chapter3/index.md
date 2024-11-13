@@ -71,7 +71,7 @@ Throughout the exercises, code examples will demonstrate how to perform basic qu
 Interactive Actions and/or Examples
 ---
 
-For Hands-On Exercises please use the following Virtual Lab: <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/sunava/pycram/1c841157cef84c9d36d1cca4992be198e2af2be5?urlpath=lab%2Ftree%2Fdemos%2Fpycram_fallschool_2024%2F03_Knowledge_Base_Queries.ipynb">Knowledge Base Queries</a>
+For Hands-On Exercises please use the following Virtual Lab: <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/sunava/pycram/6dc265e85637794c734f85638d005ac050763491?urlpath=lab%2Ftree%2Fdemos%2Fpycram_fallschool_2024%2F03_Knowledge_Base_Queries.ipynb">Knowledge Base Queries</a>
 
 
 ## Summary
