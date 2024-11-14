@@ -29,11 +29,18 @@ Today, you will head into generative Large Language Models (LLMs) and how to fin
 - Participation in any of the previous hands-on lectures
 - Download <a href="https://nc.uni-bremen.de/index.php/s/W86jfpykMRAwaWp">documentation files in TXT or PDF</a>
 
-## Survey: Prior experience
+---
 
-How experienced would you consider yourself with AI assistants? Please enter in the following survey: https://particify.zmml.de/p/73823831
 
-## Theoretical Background
+## Part 1 - Common ways to optimize an LLM
+
+How experienced would you consider yourself with AI assistants? This part will refresh your memory. The terminology in this chapter is influenced by OpenAIs lingo, though similar concepts get different names in different work. 
+
+### Survey
+
+Please enter in the following survey to assess your prior experience: https://particify.zmml.de/p/73823831
+
+### Theoretical Background
 
 In this lecture we use the Large Language Model **LLaMA3.2**, an openly available and pre-trained model by Meta, designed to be extended for research purposes. We prime the model with **initial instructions** and extend its knowledge with **Retrieval Augmented Generation**.
 
@@ -41,9 +48,9 @@ In this lecture we use the Large Language Model **LLaMA3.2**, an openly availabl
 
 **Training** requires a lot of example data as request and response. Most available models are already pre-trained for a specific purpose and ready to use.
 
-**Fine-Tuning** is the general act of adding more knowledge to an existing LLM and specializing its purpose. Pre-trained LLMs are available in masses, but they are trained to respond with general knowledge about a broad field. To fine-tune a model, a relatively small but crucial set of knowledge is added to the model. Similarly, to make an LLM suitable as a tool for a specific task, its focus needs to be set straight. In this chapter, fine-tuning is achieved by giving an LLM the teaching-material for online courses on how to work with the PyCRAM architecture, authored by the architects.
+**Fine-Tuning** (or optimization) is the general act of adding more knowledge to an existing LLM and specializing its purpose. Pre-trained LLMs are available in masses, but they are trained to respond with general knowledge about a broad field. To fine-tune a model, a relatively small but crucial set of knowledge is added to the model. Similarly, to make an LLM suitable as a tool for a specific task, its focus needs to be set straight. In this chapter, fine-tuning is achieved by giving an LLM the teaching-material for online courses on how to work with the PyCRAM architecture, authored by the architects.
 
-**Initial instructions** specify how the assistant is meant to behave. Here are a few points that prime an assistant:
+**Initial instructions** is a special way of prompt engineering, and specifies how the assistant is meant to behave. Here are a few points that help organize priming an assistant:
 
 1. Define the Purpose and Scope
 2. Specify Tone and Style
@@ -62,9 +69,9 @@ to its specific use-case, defining what kind of tool the LLM is used as. For exa
 
 ---
 
-## Set up your RAGFlow
+## Part 2 - Set up your default assistant
 
-Go to the RAGFlow page sent to you by mail and `sign up`.
+Go to the RAGFlow page sent to you by email and `sign up`.
 
 
 ### Link the Ollama chat model
@@ -96,11 +103,9 @@ Hit OK and the defaults should be set just right!
 
 ---
 
-## Retrieval Augmented Generation (RAG)
+### Create a Knowledge Base
 
 Now that RAGFlow is set up we can start to build our assistant. For that we first need a Knowledge Base consisting of lecture material, and a chat-bot, whose knowledge will be extended.
-
-### Create a Knowledge Base
 
 Go to the `Knowledge Base` section at the top and add a new one. Choose the name to your liking.
 
@@ -137,13 +142,13 @@ If there is no knowledge base to choose from, go back to your knowledge base and
 
 Select your assistant and start a new chat with the blue `+` sign. 
 
-## Survey: default assistant
+### Survey: How is your default assistant performing?
 
 With your first assistant set up, what is your experience with its performance? Are you satisfied yet? 
 
 Please enter the survey again: https://particify.zmml.de/p/73823831
 
-## Fine-Tune the assistant
+## Part 3 - Optimize the assistant
 
 To fine-tune the assistant we focus on two major approaches
 * Prompt-Engineering on initial instructions
@@ -153,7 +158,7 @@ Furthermore we will tweak a few parameters.
 
 In the end there is going to be a final **survey** on your assistants improvements, so please remember the changes you make to report on them. Enter the survey again to keep track of your progress: https://particify.zmml.de/p/73823831
 
-**Tip:** Use one prompt and compare answers before and after tuning. An example prompt could be 'What is PyCRAM?' or 'How do I move the robot?' What prompts you choose depends on the data set you provide.
+**Tip:** Use one prompt and compare answers before and after changing settings. An example prompt could be 'What is a LocationDesignator?' or 'How do I move the robot?' What prompts you choose depends on the data set you provide.
 
 ### Initial Instructions
 
@@ -195,20 +200,24 @@ Let us investigate how to prepare the data to retrieve.
 Go to the `Knowledge Base` **create a new knowledge base** and adjust the configuration parameters.
 * Change the `Embedding model` (e.g. one from jinaai)
 * Change the `Chunk method` (e.g. Knowledge Graph)
-* Change the `Auto Keywords` (e.g to 3)
-* Change the `Auto Questions` (e.g. to 1)
-* Decrease the `Chunk token number` (e.g. to 64. If chunks are too big, the model doesn't understand it.)
+* Change the `Auto Keywords` (e.g to 3) - keywords in the prompt help find the right chunk
+* Change the `Auto Questions` (e.g. to 1) - get example questions for your prompt
+* Decrease the `Chunk token number` (e.g. to 64.) - if chunks are too big, the model doesn't understand it.
+
 * Save the KB
+
 * Go to `Files Management` and link your favorite files to the newly created knowledge base
 * Go to the knowledge base `Dataset` and hit the play-button next to a file (or parse them in bulk)
 
 When a file is parsed, click on its name. You now see the chunks of information in the file, a question generated for that paragraph, and its keywords. 
 
-You can choose your own files if you want. We tested TXT and PDF files. If you use TXT files with Markdown formatting, add # and ` to the delimiters
+### Create your own assistant
+
+What's your topic? Get some resources and throw them into a knowledge base. Go to the previous lessons and export the teaching material. You can choose your own files if you want. We tested TXT and PDF files, but try HTML and get a whole website. If you use TXT files with Markdown formatting, add # and ` to the delimiters, this helps with the chunking.
 
 For every file you can choose the `Chunk Method` individually, just click on the wrench-symbol next to it. 
 
-## Survey: Post-fine-tune
+### Survey: How do you optimize your assistant?
 
 Create your individual assistant using the methods above. Build more than one knowledge base and combine them for your chat assistant.
 
