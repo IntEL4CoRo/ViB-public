@@ -71,7 +71,7 @@ Throughout the exercises, code examples will demonstrate how to perform basic qu
 Interactive Actions and/or Examples
 ---
 
-For Hands-On Exercises please use the following Virtual Lab: <a class="btn btn-success" target="_blank" href="404">Knowledge Base Queries</a>
+For Hands-On Exercises please use the following Virtual Lab: <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/sunava/pycram/e7abce84a79ce9665f9eb87a1c6b8c6bf1869d70?urlpath=lab%2Ftree%2Fdemos%2Fpycram_fallschool_2024%2F03_Knowledge_Base_Queries.ipynb">Knowledge Base Queries</a>
 
 
 ## Summary
@@ -115,3 +115,21 @@ You will have learned how to query the knowledge base to determine the necessary
     </a>
 </div>
 </div>
+
+
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+
+  <div style="flex:30%;">
+      <img src="../mbeetza.jpg" style="clip-path: circle(35%);">
+  </div>
+
+  <div style="flex:70%;">
+       <h3> Prof. Michael Beetz PhD</h3>
+    Tel:  +49 421 218 64001 <br>
+    Mail:     <a href="mailto:beetz@cs.uni-bremen.de">beetz@cs.uni-bremen.de</a> <br>
+      <a style="color:red" href="https://ai.uni-bremen.de/team/michael_beetz">
+      <span style="font-size: 15px;">Profile Michael Beetz</span>
+    </a>
+  </div>
+</div>
+

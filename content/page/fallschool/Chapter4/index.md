@@ -79,7 +79,7 @@ To enable Pycram to execute complex plans, it leverages multiple simulations tai
 Interactive Actions and/or Examples
 ---
 
-For Hands-On Exercises please use the following Virtual Lab: <a class="btn btn-success" target="_blank" href="404">Plan Executive</a>
+For Hands-On Exercises please use the following Virtual Lab: <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/sunava/pycram/6dc265e85637794c734f85638d005ac050763491?urlpath=lab%2Ftree%2Fdemos%2Fpycram_fallschool_2024%2F04_full_robot_simulation.ipynb">Plan Executive</a>
 
 
 ## Summary
@@ -158,6 +158,23 @@ Isaac Sim Integration with ROS1
     Mail:     <a href="mailto:hoanggia@cs.uni-bremen.de">hoanggia@cs.uni-bremen.de</a> <br>
       <a style="color:red" href="https://ai.uni-bremen.de/team/giang_nguyen">
       <span style="font-size: 15px;">Profile Giang Nguyen</span>
+    </a>
+  </div>
+</div>
+
+
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+
+  <div style="flex:30%;">
+      <img src="../mbeetza.jpg" style="clip-path: circle(35%);">
+  </div>
+
+  <div style="flex:70%;">
+       <h3> Prof. Michael Beetz PhD</h3>
+    Tel:  +49 421 218 64001 <br>
+    Mail:     <a href="mailto:beetz@cs.uni-bremen.de">beetz@cs.uni-bremen.de</a> <br>
+      <a style="color:red" href="https://ai.uni-bremen.de/team/michael_beetz">
+      <span style="font-size: 15px;">Profile Michael Beetz</span>
     </a>
   </div>
 </div>
