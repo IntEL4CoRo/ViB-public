@@ -57,9 +57,20 @@ with objects and other entities in the world. This feature is essential for task
 adding or removing objects, and stepping through the simulation. This control is useful for creating specific scenarios or repeating tasks for testing.
 #### Multiverse
 
-Multiverse is a simulation framework designed to integrate multiple advanced physics engines such as MuJoCo, Project Chrono, 
-and SOFA along with various photo-realistic graphics engines like Unreal Engine and Omniverse. Additionally, 
-Multiverse provides the capability to generate knowledge graphs dynamically during runtime.
+[Multiverse](multiverseframework.readthedocs.io) is a simulation framework designed to integrate multiple advanced physics engines such as MuJoCo, Project Chrono, and SOFA along with various photo-realistic graphics engines like Unreal Engine and Omniverse. Additionally, Multiverse provides the capability to generate knowledge graphs dynamically during runtime.
+
+<div style="flex:30%;">
+  <img src="img/MultiverseServerClient.png">
+</div>
+
+A distinctive feature of Multiverse is its capability to integrate various physics and graphics engines and operate them simultaneously. This capability is grounded in a star architecture, with the server at the core, coordinating data sharing among different client simulators.
+
+In this framework, “simulator” encompasses a broad range of entities, including not only physics engines and graphics engines but also VR headsets that interpret objects geometry, position, and orientation to render them, and controllers that compute forces and torques based on physics data. It can also include Python scripts to manipulate and analyze this data. The possibilities are endless, making it adaptable to many different scenarios. The Multiverse Server-Client is the essential foundation that makes this versatility possible.
+
+### Pycram-Multiverse integration
+
+To enable Pycram to execute complex plans, it leverages multiple simulations tailored to different tasks. At its core, Pycram’s Bullet World supports physics simulation of rigid and soft bodies only. In complex scenarios, like object cutting or human-robot interaction in VR, a single simulation proves insufficient due to limited features. Adding more simulations can lead to code complexity and duplication. Multiverse addresses this issue by providing a unified API that abstracts the simulation environment, allowing seamless switching between simulators, such as Isaac Sim and MuJoCo, without altering the API. Moreover, users can easily connect different simulators and software across various platforms, such as ROS1 on Ubuntu 20.04, ROS2 on Ubuntu 24.04, and VR on Windows 10/11. The TCP-based connection enables real-time simulation.
+
 ## Step-by-Step Hands-On Exercises
 1. **Create a Task Plan**: Develop a comprehensive plan that incorporates all previous learnings.
 2. **Simulate the Full Task**: Execute the task by opening the fridge, perceiving the milk, picking it up, and placing it on the table.
@@ -68,7 +79,8 @@ Multiverse provides the capability to generate knowledge graphs dynamically duri
 Interactive Actions and/or Examples
 ---
 
-For Hands-On Exercises please use the following Virtual Lab: <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/sunava/pycram/6dc265e85637794c734f85638d005ac050763491?urlpath=lab%2Ftree%2Fdemos%2Fpycram_fallschool_2024%2F04_full_robot_simulation.ipynb">Plan Executive</a>
+For Hands-On Exercises please use the following Virtual Lab: <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/sunava/pycram/1a68c62696a07e1c288613cee303364f47041461?urlpath=lab%2Ftree%2Fdemos%2Fpycram_fallschool_2024%2F04_full_robot_simulation.ipynb
+">Plan Executive</a>
 
 
 ## Summary
@@ -78,20 +90,31 @@ By the end of this session, you will have a clear understanding of how to integr
 - Explore alternative strategies for task execution, including different object placements and adjustments to the environment.
 - Discuss the differences between real-world gaps versus simulation limitations and how to manage them effectively.
 
-Example Videos
+Multiverse Application:
 ---
-Multiverse Overview: 
+Box Opening and Object Storage Reasoning:
+<figure class="video_container">
+  <video width="100%%" height="300" autoplay loop muted controls>
+    <source src="img/268483153-e2509d42-39ad-4fa1-8224-2bcc55ef098f.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</figure>
 
-<video controls width="600">
-  <source src="img/268483153-e2509d42-39ad-4fa1-8224-2bcc55ef098f.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-<video controls width="600">
-  <source src="img/Video_4%20(1).mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+Human-Robot Interaction in VR:
+<figure class="video_container">
+  <video width="100%%" height="300" autoplay loop muted controls>
+    <source src="img/Pr2DemoX2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</figure>
 
-
+Isaac Sim Integration with ROS1
+<figure class="video_container">
+  <video width="100%%" height="300" autoplay loop muted controls>
+    <source src="img/IsaacSimShort.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</figure>
 
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
