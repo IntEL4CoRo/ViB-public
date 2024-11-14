@@ -20,13 +20,13 @@ To understand the course, we will provide a brief overview of the entire course.
 </div>
 
 <p align="center">
-  <img src="img/Michigan_Wolverines_Block_M.png" width="600" alt="pr2comic"/><br>
+  <img src="img/Michigan_Wolverines_Block_M.png" width="100" alt="pr2comic"/><br>
 </p>
 
 
 <!--more-->
 
- <h1> Welcome to PR2's first Mission!</h1>
+ <h1> Tutorial by Michigan Robotics</h1>
 
 **The Story**:
 Once upon a time, there was a robot named PR2, tasked with helping its human companions in their daily routines. 
@@ -122,32 +122,17 @@ Courses and/or Turorial
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
   <div style="flex:30%;">
-      <img src="img/vanessa.jpg" style="clip-path: circle(35%);">
+      <img src="img/chad.jpeg" style="clip-path: circle(35%);">
   </div>
 
   <div style="flex:70%;">
-       <h3> Vanessa Hassouna</h3>
+       <h3> Chad Jenkins</h3>
     Tel:  +49 421 218 99651 <br>
     Mail:     <a href="mailto:hassouna@cs.uni-bremen.de">hassouna@cs.uni-bremen.de</a> <br>
       <a style="color:red" href="https://ai.uni-bremen.de/team/vanessa_hassouna">
-      <span style="font-size: 15px;">Profile Vanessa Hassouna</span>
+      <span style="font-size: 15px;">Profile Chad Jenkins</span>
     </a>
   </div>
 </div>
 
-<div class="main-well-flex-container" style="margin:20px;align-items: center;">
-
-  <div style="flex:30%;">
-      <img src="../mbeetza.jpg" style="clip-path: circle(35%);">
-  </div>
-
-  <div style="flex:70%;">
-       <h3> Prof. Michael Beetz PhD</h3>
-    Tel:  +49 421 218 64001 <br>
-    Mail:     <a href="mailto:beetz@cs.uni-bremen.de">beetz@cs.uni-bremen.de</a> <br>
-      <a style="color:red" href="https://ai.uni-bremen.de/team/michael_beetz">
-      <span style="font-size: 15px;">Profile Michael Beetz</span>
-    </a>
-  </div>
-</div>
 
