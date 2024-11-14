@@ -92,22 +92,28 @@ By the end of this session, you will have a clear understanding of how to integr
 Multiverse Application:
 ---
 Box Opening and Object Storage Reasoning:
-<video controls width="600">
-  <source src="img/268483153-e2509d42-39ad-4fa1-8224-2bcc55ef098f.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<figure class="video_container">
+  <video width="100%%" height="300" autoplay loop muted controls>
+    <source src="img/268483153-e2509d42-39ad-4fa1-8224-2bcc55ef098f.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</figure>
 
 Human-Robot Interaction in VR:
-<video controls width="600">
-  <source src="img/Pr2DemoX2.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<figure class="video_container">
+  <video width="100%%" height="300" autoplay loop muted controls>
+    <source src="img/Pr2DemoX2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</figure>
 
 Isaac Sim Integration with ROS1
-<video controls width="600">
-  <source src="img/IsaacSimShort.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<figure class="video_container">
+  <video width="100%%" height="300" autoplay loop muted controls>
+    <source src="img/IsaacSimShort.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</figure>
 
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
