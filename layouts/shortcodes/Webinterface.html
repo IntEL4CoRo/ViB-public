@@ -1,7 +1,5 @@
 <html>
-
 	<body>
-
 		<script>
         	async function check_food_part(food, part) {
                 const owlPrefix = "http://www.w3.org/2002/07/owl#";
@@ -408,22 +406,20 @@
 			<option value="FOODON_00003443">Strawberry</option>
 			<option value="FOODON_03309927">Tomato</option>
 		</select>
-	</div>
-  		<button type="button" onclick="getWebInterface('Cubing')">Query</button> </font>
 
-  </div>
+		<div>
+			<button type="button" onclick="getWebInterface('Cubing')">Query</button>
+		</div>
 
 		<div id="results" style='display: none'>
 			<p id="header"></p>
 			<table id="motions">
-            <tr>
-              <th>#</th>
-              <th>Motions</th>
-              <th>Inference</th>
-            </tr>
-          </table>
+				<tr>
+				<th>#</th>
+				<th>Motions</th>
+				<th>Inference</th>
+				</tr>
+			</table>
 		</div>
 	</body>
-
-
 </html>
