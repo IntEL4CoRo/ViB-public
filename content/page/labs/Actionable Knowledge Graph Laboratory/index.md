@@ -1,6 +1,6 @@
 ---
 title: "Actionable Knowledge Graph Laboratory"
-date: 2019-02-27T14:33:42-04:00
+date: 2023-12-01T10:35:35-07:00
 subtitle: ""
 tags: ["Research"]
 dropCap: false
@@ -15,14 +15,15 @@ In this virtual research lab, we aim to empower robots with the ability to trans
 
 
 <div class="hidde-after-preview">
-  {{<action_forms data="ActionButtons">}}
-  </br>
-  {{<Webinterface>}}
-  </br>
+  <param class="hidde-after-preview">
+    {{<action_forms data="ActionButtons">}}
+    
+    {{<Webinterface>}}
+    
     {{<PouringInterface>}}
-  For Detailed information click
-  <a class="btn btn-success" target="_blank" href="actionable-knowledge-graph-laboratory/"><b>here!</b></a>
 </div>
+
+
 
 <!--more-->
 
