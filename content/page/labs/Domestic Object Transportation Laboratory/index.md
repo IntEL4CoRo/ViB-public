@@ -23,7 +23,7 @@ entire apartments to kitchen environments and the plan is adaptable to various
 robots. You can customize the execution by selecting the appropriate environment,
 task, and robot, and then run it within a software container.
 
-<param class="hidde-after-preview">
+
 {{<action_forms_dynamics data="ActionButtons">}}
 
 <div class="hidde-after-preview">
@@ -33,34 +33,11 @@ task, and robot, and then run it within a software container.
 
 <!--more-->
 
-<!-- <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
-  <div style="flex:30%;">
-      <img src="profile_picture.png" style="clip-path: circle(35%);">
-  </div>
-
-  <div style="flex:70%;">
-    <h3>Replace with Name</h3>
-    Tel:     +49 XXXXXXXXXX <br>
-    Fax:     +49 XXXXXXXXXX <br>
-    Mail:    <a href="mailto:XXXXXXX@cs.uni-bremen.de">XXXXXX@cs.uni-bremen.de</a> <br>
-    <a style="color:red" href="https://ai.uni-bremen.de/team/XXXXXXXXX">
-      <span style="font-size: 15px;">Profile</span>
-    </a>
-  </div>
-
-</div> -->
 
 ![](https://iris.informatik.uni-bremen.de/textbook/content/picking_up_actions.png)
 
 ***"The EASE household challenge is subject of the IEEE spectrum article 'It's (Still) Really Hard for Robots to Autonomously Do Household Chores'"*** by Evan Ackerman (IEEE Spectrum, 17.06.2021)
-
-
-Interactive Actions and/or Examples
----
-
-{{<action_forms data="ActionButtons">}}
-
 
 Description
 ---
@@ -85,6 +62,40 @@ Publications
 
 - [Gayane Kazhoyan, Arthur Niedzwiecki and Michael Beetz, "Towards Plan Transformations for Real-World Mobile Fetch and Place," 2020 IEEE International Conference on Robotics and Automation (ICRA), Paris, France, 2020, pp. 11011-11017, doi: 10.1109/ICRA40945.2020.9197446](https://ieeexplore.ieee.org/document/9197446)\
 
+
+Authors
+---
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+
+  <div style="flex:30%;">
+      <img src="img/vanessa.jpg" style="clip-path: circle(35%);">
+  </div>
+
+  <div style="flex:70%;">
+       <h3> Vanessa Hassouna</h3>
+    Tel:  +49 421 218 99651 <br>
+    Mail:     <a href="mailto:hassouna@cs.uni-bremen.de">hassouna@cs.uni-bremen.de</a> <br>
+      <a style="color:red" href="https://ai.uni-bremen.de/team/vanessa_hassouna">
+      <span style="font-size: 15px;">Profile Vanessa Hassouna</span>
+    </a>
+  </div>
+</div>
+
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+
+  <div style="flex:30%;">
+      <img src="img/mbeetza.jpg" style="clip-path: circle(35%);">
+  </div>
+
+  <div style="flex:70%;">
+       <h3> Prof. Michael Beetz PhD</h3>
+    Tel:  +49 421 218 64001 <br>
+    Mail:     <a href="mailto:beetz@cs.uni-bremen.de">beetz@cs.uni-bremen.de</a> <br>
+      <a style="color:red" href="https://ai.uni-bremen.de/team/michael_beetz">
+      <span style="font-size: 15px;">Profile Michael Beetz</span>
+    </a>
+  </div>
+</div>
 
 Software Components
 ---
