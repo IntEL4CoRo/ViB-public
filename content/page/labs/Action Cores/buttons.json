@@ -33,7 +33,7 @@
         "name": "Stretch",
         "img": "https://github.com/sunava/pycram/blob/binder-robot-manipulation-actions/demos/pycram_virtual_building_demos/img/stretch.png?raw=true",
         "value": "stretch",
-        "knowledge_bases": "https://data.open-ease.org/QA?neem_id=6526790ced1a1bfc415a1d38&q=findall%28%5BDuration%2C%20Evt%5D%2C%0A%20%20%28%20%20event_interval%28Evt%2C%20Begin%2C%20End%29%2C%0A%20%20%20%20%20number%28End%29%2C%0A%20%20%20%20%20Duration%20is%20End%20-%20Begin%0A%20%20%29%2C%0A%20%20Durations%29%2C%0Amax_member%28%5BMaxDuration%2C%20LongestEvt%5D%2C%20Durations%29"
+        "knowledge_bases": "coming_soon"
       },
        {
         "name": "Donbot",
@@ -44,13 +44,13 @@
         "name": "HSRB",
         "value": "hsr",
         "img": "https://github.com/sunava/pycram/blob/binder-robot-manipulation-actions/demos/pycram_virtual_building_demos/img/hsr.png?raw=true",
-        "knowledge_bases": "https://data.open-ease.org/QA?neem_id=6526790ced1a1bfc415a1d38&q=findall%28%5BDuration%2C%20Evt%5D%2C%0A%20%20%28%20%20event_interval%28Evt%2C%20Begin%2C%20End%29%2C%0A%20%20%20%20%20number%28End%29%2C%0A%20%20%20%20%20Duration%20is%20End%20-%20Begin%0A%20%20%29%2C%0A%20%20Durations%29%2C%0Amax_member%28%5BMaxDuration%2C%20LongestEvt%5D%2C%20Durations%29"
+        "knowledge_bases": "coming_soon"
       },
           {
         "name": "iCuB",
         "value": "icub",
         "img": "https://github.com/sunava/pycram/blob/binder-robot-manipulation-actions/demos/pycram_virtual_building_demos/img/icub.png?raw=true",
-         "knowledge_bases": "https://data.open-ease.org/QA?neem_id=6526790ced1a1bfc415a1d38&q=findall%28%5BDuration%2C%20Evt%5D%2C%0A%20%20%28%20%20event_interval%28Evt%2C%20Begin%2C%20End%29%2C%0A%20%20%20%20%20number%28End%29%2C%0A%20%20%20%20%20Duration%20is%20End%20-%20Begin%0A%20%20%29%2C%0A%20%20Durations%29%2C%0Amax_member%28%5BMaxDuration%2C%20LongestEvt%5D%2C%20Durations%29"
+         "knowledge_bases": "coming_soon"
       },
       {
         "name": "Multi-Agent",

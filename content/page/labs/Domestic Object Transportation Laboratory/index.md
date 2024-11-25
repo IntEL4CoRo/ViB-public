@@ -24,7 +24,7 @@ robots. You can customize the execution by selecting the appropriate environment
 task, and robot, and then run it within a software container.
 
 <param class="hidde-after-preview">
-{{<action_forms data="ActionButtons">}}
+{{<action_forms_dynamics data="ActionButtons">}}
 
 <div class="hidde-after-preview">
   For Detailed information click

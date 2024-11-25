@@ -85,3 +85,8 @@ div pre.alert.alert-warning {
   width: 150%; /* Adjust this value as needed */
   height: 150%; /* Adjust this value as needed */
 }
+
+.text-reddish {
+  color: #ff4d4d; /* A light reddish color */
+  font-weight: bold; /* Optional to emphasize */
+}
