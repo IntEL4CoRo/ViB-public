@@ -199,12 +199,21 @@
       getActionUrl(action) {
         if (!action.url) return ''
         let _url = action.url
+
         if (action.options && action.available) {
           let _notebookUrl = action.available[this.selectedNotebookIdUpdated]
           if (!_notebookUrl) return ''
           if (isAbsoluteUrl(_notebookUrl)) return _notebookUrl
           _url += _notebookUrl
         }
+          // Build query string from selected options
+        const queryParams = this.selectOptions.map(option => {
+          return `${encodeURIComponent(option.name)}=${encodeURIComponent(option.selected.value)}`}).join('&')
+
+        // Append query string to the URL for Binder
+      if (queryParams) {
+        _url += (_url.includes('?') ? '&' : '?') + queryParams
+      }
         return _url
       },
       filterOptions(selectedEnv = '',selectedRobo = ''){
@@ -228,7 +237,7 @@
               regex = new RegExp(`environments=${selectedEnv}\\|robots=${selectedRobo}\\|tasks=([^|]+)`);
               optionIndex = 2
           }
-          
+
           for (const key in availableConfigs) {
               const match = regex.exec(key);
               if (match) {
@@ -275,4 +284,6 @@
   const app = createApp(App);
   app.use(primevue.config.default);
   app.mount('#vueapp{{ $idSuffix }}');
+
+
 </script>
