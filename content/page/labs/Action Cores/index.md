@@ -11,18 +11,9 @@ resources:
 - name: ActionButtons
   src: "buttons.json"
 ---
+This laboratory focuses on advancing robotic capabilities in performing core actions such as cutting, mixing, pouring, and transporting within dynamic, human-centered environments like homes.
 
-This laboratory is dedicated to advancing the capabilities of robot agents in seamlessly executing object transportation tasks within human-centric environments such as homes and retail spaces. It provides a versatile platform for exploring and refining generalized robot plans that manage the movement of diverse objects across varied settings for multiple purposes. By focusing on the adaptability and scalability of robotic programming, the lab aims to enhance the understanding and application of robotics in everyday contexts ultimately improving their generalizability, transferability, and effectiveness in real-world scenarios.
 
-
-In the laboratory, you are equipped with a generalized open-source robotic plan
-capable of executing various object transportation-related tasks, including both table
-setting and cleaning, across diverse domestic settings. These settings range from
-entire apartments to kitchen environments and the plan is adaptable to various
-robots. You can customize the execution by selecting the appropriate environment,
-task, and robot, and then run it within a software container.
-
-<param class="hidde-after-preview">
 {{<action_forms_dynamics data="ActionButtons">}}
 
 <div class="hidde-after-preview">
@@ -37,25 +28,34 @@ task, and robot, and then run it within a software container.
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
   <div style="flex:30%;">
-      <img src="VHuMK3.png" width="200" style="clip-path: circle(35%);">
+      <img src="img/vanessa.jpg" style="clip-path: circle(35%);">
   </div>
 
   <div style="flex:70%;">
-    <h3> Vanessa Hassouna</h3>
+       <h3> Vanessa Hassouna</h3>
     Tel:  +49 421 218 99651 <br>
     Mail:     <a href="mailto:hassouna@cs.uni-bremen.de">hassouna@cs.uni-bremen.de</a> <br>
       <a style="color:red" href="https://ai.uni-bremen.de/team/vanessa_hassouna">
       <span style="font-size: 15px;">Profile Vanessa Hassouna</span>
     </a>
   </div>
+</div>
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
-</div> 
-Interactive Actions and/or Examples
----
+  <div style="flex:30%;">
+      <img src="img/mbeetza.jpg" style="clip-path: circle(35%);">
+  </div>
 
+  <div style="flex:70%;">
+       <h3> Prof. Michael Beetz PhD</h3>
+    Tel:  +49 421 218 64001 <br>
+    Mail:     <a href="mailto:beetz@cs.uni-bremen.de">beetz@cs.uni-bremen.de</a> <br>
+      <a style="color:red" href="https://ai.uni-bremen.de/team/michael_beetz">
+      <span style="font-size: 15px;">Profile Michael Beetz</span>
+    </a>
+  </div>
+</div>
 
-
-{{<action_forms_dynamics data="ActionButtons">}}
 
 ![](https://iris.informatik.uni-bremen.de/textbook/content/picking_up_actions.png)
 ***"The EASE household challenge is subject of the IEEE spectrum article 'It's (Still) Really Hard for Robots to Autonomously Do Household Chores'"*** by Evan Ackerman (IEEE Spectrum, 17.06.2021)
