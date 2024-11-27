@@ -34,7 +34,7 @@
 				`;
 
             	// Uni Bremen SPARQL endpoint URL
-                const endpointUrl = 'https://knowledgedb.informatik.uni-bremen.de/MealPreparation/query'
+                const endpointUrl = 'https://knowledgedb.informatik.uni-bremen.de/mealprepDB/MealPreparation/query'
 
                 const requestOptions = {
                     method: 'POST',
@@ -80,7 +80,7 @@
 
             async function query_text(query, alternative) {
             	// Triply SPARQL endpoint URL
-                const endpointUrl = 'https://knowledgedb.informatik.uni-bremen.de/MealPreparation/query'
+                const endpointUrl = 'https://knowledgedb.informatik.uni-bremen.de/mealprepDB/MealPreparation/query'
 
                 const requestOptions = {
                     method: 'POST',
@@ -408,7 +408,8 @@
 		</select>
 
 		<div>
-			<button type="button" onclick="getWebInterface('Cubing')">Query</button>
+			<!--			<button type="button" onclick="getWebInterface('Cubing')">Query</button>-->
+			<button type="button" onclick="query_and_show()">Query</button>
 		</div>
 
 		<div id="results" style='display: none'>

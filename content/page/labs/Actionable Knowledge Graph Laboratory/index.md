@@ -45,8 +45,7 @@ In this virtual research lab, we aim to empower robots with the ability to trans
 
 Interactive Actions and/or Examples
 ---
-{{<Webinterface>}}
-</br>
+
 
 For Detailed information click 
 <a href="https://food-ninja.github.io/WebKat-MealRobot//">here!</a> 
