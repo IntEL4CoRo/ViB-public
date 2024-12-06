@@ -84,21 +84,21 @@ Exercises
     target="_blank"
     style="display:flex; flex-direction:column;"
     class="btn btn-default">
-      <img src="https://iris.informatik.uni-bremen.de/textbook/content/Ch01/18-joint-action.png" alt="household">
+      <img src="https://ivan.informatik.uni-bremen.de/textbook/content/Ch01/18-joint-action.png" alt="household">
       <div>Household Environment</div>
   </a>
   <a href="https://binder.intel4coro.de/v2/gh/hawkina/COAI/save-state?urlpath=lab/tree/notebooks/retail_donbot.ipynb"
     target="_blank"
     style="display:flex; flex-direction:column;"
     class="btn btn-default">
-      <img src="https://iris.informatik.uni-bremen.de/textbook/content/Ch01/14-retail-robots.png">
+      <img src="https://ivan.informatik.uni-bremen.de/textbook/content/Ch01/14-retail-robots.png">
       <div>Retail Environment</div>
   </a>
   <a href="https://binder.intel4coro.de/v2/gh/IntEL4CoRo/cram_teaching/legacy?urlpath=lab%2Ftree%2Flectures%2Fdemos%2Fpopcorn.ipynb"
     target="_blank"
     style="display:flex; flex-direction:column;"
     class="btn btn-default">
-      <img src="https://iris.informatik.uni-bremen.de/textbook/content/Ch01/01-holding-pot.png">
+      <img src="https://ivan.informatik.uni-bremen.de/textbook/content/Ch01/01-holding-pot.png">
       <div>Popcorn Making</div>
   </a>
   <a href="https://binder.intel4coro.de/v2/git/https%3A%2F%2Fgitlab.informatik.uni-bremen.de%2Fyanxiang%2Frobokudo.git/binderhub"

@@ -59,11 +59,11 @@ Software Components
 
 - ### [SoftwareName1 <img class="sc-image" src="TODOSoftwareImage1" height=50>](TODOSoftwareMainPageLink1)
   TODOShortSoftwareDescription1\
-  [<img class="sc-image" src="https://iris.informatik.uni-bremen.de/images/github.svg" height=10> source code](TODOGithubLink1)
+  [<img class="sc-image" src="https://github.githubassets.com/favicons/favicon.svg" height=10> source code](TODOGithubLink1)
 
 - ### [TODOSoftwareName2 <img class="sc-image" src="vSoftwareImage2" height=50>](vSoftwareMainPageLink2)
   TODOShortSoftwareDescription2\
-  [<img class="sc-image" src="https://iris.informatik.uni-bremen.de/images/github.svg" height=10> source code](TODOGithubLink2)
+  [<img class="sc-image" src="https://github.githubassets.com/favicons/favicon.svg" height=10> source code](TODOGithubLink2)
 
 
 Courses and/or Turorial

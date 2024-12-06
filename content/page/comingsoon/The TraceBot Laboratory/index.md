@@ -108,17 +108,17 @@ Software Components
 
 - ### [URoboSim](https://github.com/urobosim/DemoProject)
   is a UE4/5 plugin to simulate robots.\
-  [<img class="sc-image" src="https://iris.informatik.uni-bremen.de/images/github.svg" height=10> source code](https://github.com/urobosim/URoboSim)
+  [<img class="sc-image" src="https://github.githubassets.com/favicons/favicon.svg" height=10> source code](https://github.com/urobosim/URoboSim)
 
 - ### [KnowRob <img class="sc-image" src="https://ai.uni-bremen.de/_media/projects/knowrob.png" height=60>](https://www.knowrob.org/)
   is a knowledge processing system for robots.\
-  [<img class="sc-image" src="https://iris.informatik.uni-bremen.de/images/github.svg" height=10> source code](https://github.com/knowrob/knowrob)
+  [<img class="sc-image" src="https://github.githubassets.com/favicons/favicon.svg" height=10> source code](https://github.com/knowrob/knowrob)
 
 - ### [OpenEASE <img class="sc-image" src="https://ai.uni-bremen.de/_media/team/oe-logo2.png" height=50>](http://www.open-ease.org/)
   is a web-based knowledge service providing robot and human activity data.\
-  [<img class="sc-image" src="https://iris.informatik.uni-bremen.de/images/github.svg" height=10> source code](https://github.com/ease-crc/openease)
+  [<img class="sc-image" src="https://github.githubassets.com/favicons/favicon.svg" height=10> source code](https://github.com/ease-crc/openease)
 
 - ### [ROBOKUDO <img class="sc-image" src="https://ai.uni-bremen.de/_media/team/rk_logo_v3-300px.png" height=25>](https://robokudo.ai.uni-bremen.de/)
   is a perception framework targeted for robot manipulation tasks.\
-  [<img class="sc-image" src="https://iris.informatik.uni-bremen.de/images/github.svg" height=10> source code](https://gitlab.informatik.uni-bremen.de/robokudo/robokudo)
+  [<img class="sc-image" src="https://github.githubassets.com/favicons/favicon.svg" height=10> source code](https://gitlab.informatik.uni-bremen.de/robokudo/robokudo)
 
