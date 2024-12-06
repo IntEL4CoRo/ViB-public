@@ -169,25 +169,25 @@ Software Components
 
 - ### [CRAM <img class="sc-image" src="https://ai.uni-bremen.de/_media/team/cramlogocropped.png" height=50>](https://cram-system.org/)
   is a software toolbox for the implementation of autonomous robots.\
-  [<img class="sc-image" src="https://iris.informatik.uni-bremen.de/images/github.svg" height=10> source code](https://github.com/cram2/cram)
+  [<img class="sc-image" src="https://github.githubassets.com/favicons/favicon.svg" height=10> source code](https://github.com/cram2/cram)
   
 - ### [KnowRob <img class="sc-image" src="https://ai.uni-bremen.de/_media/projects/knowrob.png" height=60>](https://www.knowrob.org/)
   is a knowledge processing system for robots.\
-  [<img class="sc-image" src="https://iris.informatik.uni-bremen.de/images/github.svg" height=10> source code](https://github.com/knowrob/knowrob)
+  [<img class="sc-image" src="https://github.githubassets.com/favicons/favicon.svg" height=10> source code](https://github.com/knowrob/knowrob)
 
 - ### [OpenEASE <img class="sc-image" src="https://ai.uni-bremen.de/_media/team/oe-logo2.png" height=50>](http://www.open-ease.org/)
   is a web-based knowledge service providing robot and human activity data.\
-  [<img class="sc-image" src="https://iris.informatik.uni-bremen.de/images/github.svg" height=10> source code](https://github.com/ease-crc/openease)
+  [<img class="sc-image" src="https://github.githubassets.com/favicons/favicon.svg" height=10> source code](https://github.com/ease-crc/openease)
 
 - ### [GISKARD <img class="sc-image" src="https://ai.uni-bremen.de/_media/team/giskard_logo_tmp.png" height=20>](https://github.com/SemRoCo/giskardpy)
   is a framework for constraint- and optimization-based robot motion and planning control.\
-  [<img class="sc-image" src="https://iris.informatik.uni-bremen.de/images/github.svg" height=10> source code](https://github.com/SemRoCo/giskardpy)
+  [<img class="sc-image" src="https://github.githubassets.com/favicons/favicon.svg" height=10> source code](https://github.com/SemRoCo/giskardpy)
 
 - ### [ROBOKUDO <img class="sc-image" src="https://ai.uni-bremen.de/_media/team/rk_logo_v3-300px.png" height=25>](https://robokudo.ai.uni-bremen.de/)
   is a perception framework targeted for robot manipulation tasks.\
-  [<img class="sc-image" src="https://iris.informatik.uni-bremen.de/images/github.svg" height=10> source code](https://gitlab.informatik.uni-bremen.de/robokudo/robokudo)
+  [<img class="sc-image" src="https://github.githubassets.com/favicons/favicon.svg" height=10> source code](https://gitlab.informatik.uni-bremen.de/robokudo/robokudo)
 
 - ### [PyCRAM <img class="sc-image" src="https://pycram.readthedocs.io/en/latest/_images/pycram_logo.png" height=50>](https://pycram.readthedocs.io/en/latest/index.html)
   is the Python 3 re-implementation of [CRAM](https://cram-system.org/). [PyCRAM](https://pycram.readthedocs.io/en/latest/index.html) is a toolbox for designing, implementing and deploying software on autonomous robots.\
-  [<img class="sc-image" src="https://iris.informatik.uni-bremen.de/images/github.svg" height=10> source code](https://github.com/cram2/pycram)
+  [<img class="sc-image" src="https://github.githubassets.com/favicons/favicon.svg" height=10> source code](https://github.com/cram2/pycram)
 

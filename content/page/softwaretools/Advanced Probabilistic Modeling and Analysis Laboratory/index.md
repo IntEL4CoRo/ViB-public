@@ -74,17 +74,17 @@ Software Components
 
 - ### [Random-Events <img class="sc-image" src="https://random-events.readthedocs.io/en/latest/_static/Tomato.png" height=25>](https://random-events.readthedocs.io/en/latest/#) 
   is a python package for product sigma algebras and serves as query language for probabilistic models.\
-  [<img class="sc-image" src="https://iris.informatik.uni-bremen.de/images/github.svg" height=10> source code](https://github.com/tomsch420/random-events)
+  [<img class="sc-image" src="https://github.githubassets.com/favicons/favicon.svg" height=10> source code](https://github.com/tomsch420/random-events)
 
 - ### [Probabilistic-Model <img class="sc-image" src="https://probabilistic-model.readthedocs.io/en/latest/_static/Logo.svg" height=25>](https://probabilistic-model.readthedocs.io/en/latest/)
   is a package probabilistic circuits and other tractable probabilistic models in python.\
-  [<img class="sc-image" src="https://iris.informatik.uni-bremen.de/images/github.svg" height=10> source code](https://github.com/tomsch420/probabilistic_model)
+  [<img class="sc-image" src="https://github.githubassets.com/favicons/favicon.svg" height=10> source code](https://github.com/tomsch420/probabilistic_model)
 
 - ### [GUI-Probabilistic-Model](https://github.com/MrSkooma/gui-probabilistic-model/blob/main/README.md)
   is an interactive querying and visualization tool for probabilistic models.\
-  [<img class="sc-image" src="https://iris.informatik.uni-bremen.de/images/github.svg" height=10> source code](https://github.com/MrSkooma/gui-probabilistic-model)
+  [<img class="sc-image" src="https://github.githubassets.com/favicons/favicon.svg" height=10> source code](https://github.com/MrSkooma/gui-probabilistic-model)
 
 - ### [PyCRAM <img class="sc-image" src="https://pycram.readthedocs.io/en/latest/_images/pycram_logo.png" height=50>](https://pycram.readthedocs.io/en/latest/index.html)
   is the Python 3 re-implementation of [CRAM](https://cram-system.org/). [PyCRAM](https://pycram.readthedocs.io/en/latest/index.html) is a toolbox for designing, implementing and deploying software on autonomous robots.\
-  [<img class="sc-image" src="https://iris.informatik.uni-bremen.de/images/github.svg" height=10> source code](https://github.com/cram2/pycram)
+  [<img class="sc-image" src="https://github.githubassets.com/favicons/favicon.svg" height=10> source code](https://github.com/cram2/pycram)
 

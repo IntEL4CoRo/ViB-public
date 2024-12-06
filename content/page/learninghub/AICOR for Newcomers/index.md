@@ -57,6 +57,6 @@ Try out our online playground:
 
 ### Example Video
 <video width="100%" height="480" controls>
-  <source src="https://iris.informatik.uni-bremen.de/videos/blockly-demo.mp4" type="video/mp4">
+  <source src="https://ivan.informatik.uni-bremen.de/videos/blockly-demo.mp4" type="video/mp4">
 </video>
 

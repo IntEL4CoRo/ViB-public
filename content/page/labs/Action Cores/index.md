@@ -57,7 +57,7 @@ This laboratory focuses on advancing robotic capabilities in performing core act
 </div>
 
 
-![](https://iris.informatik.uni-bremen.de/textbook/content/picking_up_actions.png)
+![](https://ivan.informatik.uni-bremen.de/textbook/content/picking_up_actions.png)
 ***"The EASE household challenge is subject of the IEEE spectrum article 'It's (Still) Really Hard for Robots to Autonomously Do Household Chores'"*** by Evan Ackerman (IEEE Spectrum, 17.06.2021)
 
 

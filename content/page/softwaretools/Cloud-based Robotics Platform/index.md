@@ -166,7 +166,7 @@ Before making changes to the repo we need to know about the two folders and file
     RUN mkdir /neem_data && chown ${NB_USER}:users /neem_data
     USER ${NB_USER}
     RUN cd /neem_data && \
-        wget https://iris.informatik.uni-bremen.de/data/example_neem.zip -O example_neem.zip && \
+        wget https://ivan.informatik.uni-bremen.de/data/example_neem.zip -O example_neem.zip && \
         unzip example_neem.zip && \
         mv example_neem/* ./ && \
         rm -r example_neem example_neem.zip
