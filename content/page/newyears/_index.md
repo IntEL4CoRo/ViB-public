@@ -1,4 +1,4 @@
----
+~~---
 title: "New Year's"
 date: 2023-12-01T10:35:35-05:00
 subtitle: ""
@@ -16,11 +16,27 @@ resources:
 
 
 <p align="center">
-  <img src="karte_dinlang_v2.jpg" width="1600" alt="New Years Card"/><br>
+  <img src="vorderseite_karte_blau.jpg" width="1600" alt="New Years Card"/><br>
 </p>
 
-New Year's is a time of reflection and celebration, a moment to look back on the past year and look forward to the new one.
-It's a time to set goals, make resolutions, and embrace new beginnings. Whether you're celebrating with family and friends or taking a quiet moment to yourself, New Year's is a time to appreciate the journey you've been on and the adventures that lie ahead.
+Happy New Year!
 
-<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/pkehr/pycram/5d830d134fb56f3d563ca5e8ddd60520411d4a38?urlpath=lab%2Ftree%2Fdemos%2Fpycram_multirobot_demo%2Fmultirobot_demo.ipynb">Party Lab</a>
+ 
+
+Wishing you an amazing 2025 filled with success, joy, and exciting opportunities.
+
+ 
+
+My team and I would love for you to celebrate with us in our Virtual Research Building and help expand our robot community. And for the robots working in your labs, we look forward to seeing them join the party next year!
+
+ 
+
+Here is to a successful and healthy 2025 together!
+
+ 
+
+Best wishes,
+
+Michael & Team
+<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/pkehr/pycram/5d830d134fb56f3d563ca5e8ddd60520411d4a38?urlpath=lab%2Ftree%2Fdemos%2Fpycram_multirobot_demo%2Fmultirobot_demo.ipynb">Click: Opening Party Lab</a>~~
 
