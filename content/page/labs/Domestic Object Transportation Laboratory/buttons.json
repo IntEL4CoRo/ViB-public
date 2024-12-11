@@ -95,7 +95,7 @@
       "value": "run",
       "description": "Run code on Binderhub.",
       "primary": true,
-      "url": "https://binder.intel4coro.de/v2/gh/sunava/pycram/f19dd08d8cb0990b2f606461500d77738f9d1387?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Fstart_demo.ipynb",
+      "url": "https://binder.intel4coro.de/v2/gh/sunava/pycram/7d3b726fdd698a908586cba9bb6bba53f69442c7?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Fstart_demo.ipynb",
       "options": [
         "environments",
         "robots",
