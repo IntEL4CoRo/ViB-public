@@ -115,7 +115,8 @@
         "environments=apartment|robots=armar|tasks=transporting": "",
         "environments=apartment|robots=donbot|tasks=transporting": "",
         "environments=apartment|robots=justin|tasks=transporting": "",
-        "environments=apartment|robots=tiago|tasks=transporting": ""
+        "environments=apartment|robots=tiago|tasks=transporting": "",
+        "environments=apartment|robots=icub|tasks=transporting": ""
 
       }
     },
