@@ -1,5 +1,5 @@
 ---
-title: "New Years Card 2025"
+title: "New Year's Card 2025"
 date: 2023-12-01T10:35:35-08:00
 subtitle: ""
 tags: ["Research", "Lab", "Transportation", "Live-Experiment"]
