@@ -1,8 +1,8 @@
-~~---
-title: "New Year's"
-date: 2023-12-01T10:35:35-05:00
+---
+title: "New Years Card 2025"
+date: 2023-12-01T10:35:35-08:00
 subtitle: ""
-tags: [""]
+tags: ["Research", "Lab", "Transportation", "Live-Experiment"]
 dropCap: false
 displayInMenu: false
 displayInList: true
@@ -18,6 +18,7 @@ resources:
 <p align="center">
   <img src="vorderseite_karte_blau.jpg" width="1600" alt="New Years Card"/><br>
 </p>
+
 
 Happy New Year!
 
@@ -38,5 +39,5 @@ Here is to a successful and healthy 2025 together!
 Best wishes,
 
 Michael & Team
-<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/pkehr/pycram/5d830d134fb56f3d563ca5e8ddd60520411d4a38?urlpath=lab%2Ftree%2Fdemos%2Fpycram_multirobot_demo%2Fmultirobot_demo.ipynb">Click: Opening Party Lab</a>~~
+<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/pkehr/pycram/5d830d134fb56f3d563ca5e8ddd60520411d4a38?urlpath=lab%2Ftree%2Fdemos%2Fpycram_multirobot_demo%2Fmultirobot_demo.ipynb">Click: Opening Party Lab</a>
 
