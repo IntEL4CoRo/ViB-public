@@ -115,16 +115,15 @@
         "environments=apartment|robots=stretch|tasks=navigating": "",
         "environments=apartment|robots=hsr|tasks=navigating": "",
         "environments=apartment|robots=icub|tasks=navigating": "",
-        "environments=apartment|robots=multiagent|tasks=navigating": "",
         "environments=apartment|robots=pr2|tasks=transporting": "",
         "environments=apartment|robots=armar|tasks=transporting": "",
         "environments=apartment|robots=donbot|tasks=transporting": "",
         "environments=apartment|robots=justin|tasks=transporting": "",
         "environments=apartment|robots=tiago|tasks=transporting": "",
         "environments=apartment|robots=icub|tasks=transporting": "",
-        "environments=apartment|robots=fetch|tasks=transporting": ""
-
-      }
+        "environments=apartment|robots=fetch|tasks=transporting": "",
+        "environments=apartment|robots=multiagent|tasks=navigating": ""
+         }
     },
      {
       "name": "Experimental Data",
