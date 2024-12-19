@@ -91,7 +91,7 @@ pygmentsCodefencesGuessSyntax = true
     url = "page/fallschool/"
     weight = 9
 [[menu.main]]
-    name = "New Year's Card 2025"
+    name = "New Year’s Party"
     url = "page/newyears/"
     weight = 1
 
