@@ -40,7 +40,7 @@
       "available": {
         "lecture=coordinates": "https://binder.intel4coro.de/v2/gh/artnie/rpwr-assignments.git/HEAD?urlpath=lab%2Ftree%2Frpwr-assignments%2F02_coordinates-tf%2Fa2_coordinates-tf.ipynb",
         "lecture=ros": "https://binder.intel4coro.de/v2/gh/artnie/rpwr-assignments.git/HEAD?urlpath=lab%2Ftree%2Frpwr-assignments%2F03_ros%2Fa3_ros.ipynb",
-        "lecture=kinematics": "https://binder.intel4coro.de/v2/gh/artnie/rpwr-assignments.git/HEAD?urlpath=lab%2Ftree%2Frpwr-assignments%2F04_kinematics%2Fa4_kinematics.ipynb",
+        "lecture=kinematics": "https://binder.intel4coro.de/v2/gh/artnie/rpwr-assignments.git/HEAD?urlpath=lab%2Ftree%2Frpwr-assignments%2F04_kinematics%2Fa4_kinematics-design.ipynb",
         "lecture=sensors": "https://binder.intel4coro.de/v2/gh/artnie/rpwr-assignments.git/HEAD?urlpath=lab%2Ftree%2Frpwr-assignments%2F05_sensors%2Fa5_sensors.ipynb",
         "lecture=navigation": "https://binder.intel4coro.de/v2/gh/artnie/rpwr-assignments.git/HEAD?urlpath=lab%2Ftree%2Frpwr-assignments%2F06_navigation%2Fa6_navigation.ipynb",
         "lecture=control": "https://binder.intel4coro.de/v2/gh/artnie/rpwr-assignments.git/HEAD?urlpath=lab%2Ftree%2Frpwr-assignments%2F07_control%2Fa7_control.ipynb"
