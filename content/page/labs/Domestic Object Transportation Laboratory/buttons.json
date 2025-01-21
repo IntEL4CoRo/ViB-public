@@ -179,6 +179,7 @@
         "environments=isr|robots=fetch|tasks=navigating": "",
         "environments=isr|robots=pr2|tasks=transporting": "",
 
+        "environments=apartment|robots=pr2|tasks=transporting": "",
         "environments=apartment|robots=armar|tasks=transporting": "",
         "environments=apartment|robots=donbot|tasks=transporting": "",
         "environments=apartment|robots=justin|tasks=transporting": "",
