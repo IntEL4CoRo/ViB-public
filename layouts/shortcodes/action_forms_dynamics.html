@@ -49,34 +49,42 @@
 
 
     <div class="p-float-label col-md-6" v-for="item in envs">
-      <p-dropdown v-model="item.selected" :options="item.options" :optionLabel="item.name" :placeholder="item.name"
+       <p-dropdown v-model="item.selected" :options="item.options" :optionLabel="item.name" :placeholder="item.name"
         :inputId="item.name" class="col-md-12 mb-3">
         <template #value="slotProps">
-          <div v-if="slotProps.value" :title="slotProps.value.value" class="flex h-100 align-items-center"
-            :class="{ noImg: item.noImg }">
-            <img v-if="slotProps.value.img" class="selected-img" :alt="slotProps.value.name"
-              :src="slotProps.value.img" />
-            <div class="image-missing" v-else></div>
-            <div class="text-capitalize option-name" v-text="slotProps.value.name"></div>
-            <a class="text-xs" target="_blank" title="Knowledge Bases in OpenEASE"
-              v-if="slotProps.value.knowledge_bases" :href="slotProps.value.knowledge_bases"
-              onclick="event.stopPropagation()">Knowledge Bases</a>
-          </div>
-          <span v-else>
-            <span v-text="slotProps.placeholder"></span>
-          </span>
-        </template>
-        <template #option="slotProps">
-          <div class="flex align-items-center" :title="slotProps.option.value" :class="{ noImg: item.noImg }">
-            <img v-if="slotProps.option.img" class="option-img" :alt="slotProps.option.name"
-              :src="slotProps.option.img" />
-            <div class="image-missing" v-else></div>
-            <div class="text-capitalize option-name" v-text="slotProps.option.name"></div>
-            <a class="text-xs" target="_blank" title="Knowledge Bases in OpenEASE"
-              v-if="slotProps.option.knowledge_bases" :href="slotProps.option.knowledge_bases"
-              onclick="event.stopPropagation()">Knowledge Bases</a>
-          </div>
-        </template>
+        <div v-if="slotProps.value" :title="slotProps.value.value" class="flex h-100 align-items-center" :class="{ noImg: item.noImg }">
+          <img v-if="slotProps.value.img" class="selected-img" :alt="slotProps.value.name" :src="slotProps.value.img" />
+          <div class="image-missing" v-else></div>
+          <div class="text-capitalize option-name" v-text="slotProps.value.name"></div>
+          <a
+            class="text-xs"
+            target="_blank"
+            title="Knowledge Bases in OpenEASE"
+            v-if="slotProps.value.knowledge_bases && slotProps.value.knowledge_bases !== 'coming_soon'"
+            :href="slotProps.value.knowledge_bases"
+            onclick="event.stopPropagation()">Knowledge Bases</a>
+          <span v-else-if="slotProps.value.knowledge_bases === 'coming_soon'" style="color: red; font-size: smaller;" title="Coming Soon">Coming Soon</span>
+        </div>
+        <span v-else>
+          <span v-text="slotProps.placeholder"></span>
+        </span>
+      </template>
+    <template #option="slotProps">
+    <div class="flex align-items-center" :title="slotProps.option.value">
+      <img v-if="slotProps.option.img" class="option-img" :alt="slotProps.option.name" :src="slotProps.option.img" />
+      <div class="image-missing" v-else></div>
+      <div class="text-capitalize option-name" v-text="slotProps.option.name"></div>
+      <a class="text-xs" target="_blank" title="Knowledge Bases in OpenEASE"
+         v-if="slotProps.option.knowledge_bases && slotProps.option.knowledge_bases !== 'coming_soon'"
+         :href="slotProps.option.knowledge_bases"
+         onclick="event.stopPropagation()">Knowledge Bases</a>
+      <span v-else-if="slotProps.option.knowledge_bases === 'coming_soon'"
+            style="color: red; font-size: smaller;"
+            title="Coming Soon">
+        Coming Soon
+      </span>
+    </div>
+  </template>
       </p-dropdown>
       <label :for="item.name" v-text="item.name"></label>
     </div>

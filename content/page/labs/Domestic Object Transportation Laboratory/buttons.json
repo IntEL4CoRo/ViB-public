@@ -4,18 +4,36 @@
   "options": {
     "environments": [
       {
-        "name": "Apartment",
+        "name": "Apartment (IAI-Bremen)",
         "value": "apartment",
         "img": "https://intel4coro.github.io/coai-vib/img/apartment.png",
         "knowledge_bases": "https://data.open-ease.org/QA?neem_id=64ccbe76181caf1b5ed3c19c&q=findall([Duration%2C Evt]%2C ( event_interval(Evt%2C Begin%2C End)%2C number(End)%2C Duration is End - Begin )%2C Durations)%2C max_member([MaxDuration%2C LongestEvt]%2C Durations)."
         },
       {
-        "name": "Kitchen",
+        "name": "Kitchen (IAI-Bremen)",
         "value": "kitchen",
         "img": "https://intel4coro.github.io/coai-vib/img/household.png",
         "knowledge_bases": "coming_soon"
+      },
+         {
+        "name": "RoboCup-Suturo (IAI-Bremen)",
+        "value": "suturo",
+        "img": "https://github.com/sunava/pycram/blob/binder-all-robots/demos/pycram_virtual_building_demos/img/PXL_20250121_160152125.jpg?raw=true",
+        "knowledge_bases": "coming_soon"
+      },
+            {
+        "name": "Computer Science Department (Miami)",
+        "value": "miami",
+        "img": "https://github.com/sunava/pycram/blob/binder-all-robots/demos/pycram_virtual_building_demos/img/3AFAD606-5D47-4565-A44A-F241C6DFE726.jpg?raw=true",
+        "knowledge_bases": "coming_soon"
+      },
+      {
+        "name": "Institute for Systems and Robotics (ISR/IST)",
+        "value": "isr",
+        "img": "https://github.com/sunava/pycram/blob/binder-all-robots/demos/pycram_virtual_building_demos/img/isr_testbed.png?raw=true",
+        "knowledge_bases": "coming_soon"
       }
-      ],
+    ],
     "robots": [
       {
         "name": "PR2",
@@ -116,13 +134,59 @@
         "environments=apartment|robots=hsr|tasks=navigating": "",
         "environments=apartment|robots=icub|tasks=navigating": "",
         "environments=apartment|robots=fetch|tasks=navigating": "",
-        "environments=apartment|robots=pr2|tasks=transporting": "",
+
+        "environments=kitchen|robots=pr2|tasks=navigating": "",
+        "environments=kitchen|robots=armar|tasks=navigating": "",
+        "environments=kitchen|robots=tiago|tasks=navigating": "",
+        "environments=kitchen|robots=donbot|tasks=navigating": "",
+        "environments=kitchen|robots=justin|tasks=navigating": "",
+        "environments=kitchen|robots=stretch|tasks=navigating": "",
+        "environments=kitchen|robots=hsr|tasks=navigating": "",
+        "environments=kitchen|robots=icub|tasks=navigating": "",
+        "environments=kitchen|robots=fetch|tasks=navigating": "",
+        "environments=kitchen|robots=pr2|tasks=transporting": "",
+
+          "environments=suturo|robots=pr2|tasks=navigating": "",
+        "environments=suturo|robots=armar|tasks=navigating": "",
+        "environments=suturo|robots=tiago|tasks=navigating": "",
+        "environments=suturo|robots=donbot|tasks=navigating": "",
+        "environments=suturo|robots=justin|tasks=navigating": "",
+        "environments=suturo|robots=stretch|tasks=navigating": "",
+        "environments=suturo|robots=hsr|tasks=navigating": "",
+        "environments=suturo|robots=icub|tasks=navigating": "",
+        "environments=suturo|robots=fetch|tasks=navigating": "",
+        "environments=suturo|robots=pr2|tasks=transporting": "",
+
+        "environments=miami|robots=pr2|tasks=navigating": "",
+        "environments=miami|robots=armar|tasks=navigating": "",
+        "environments=miami|robots=tiago|tasks=navigating": "",
+        "environments=miami|robots=donbot|tasks=navigating": "",
+        "environments=miami|robots=justin|tasks=navigating": "",
+        "environments=miami|robots=stretch|tasks=navigating": "",
+        "environments=miami|robots=hsr|tasks=navigating": "",
+        "environments=miami|robots=icub|tasks=navigating": "",
+        "environments=miami|robots=fetch|tasks=navigating": "",
+        "environments=miami|robots=pr2|tasks=transporting": "",
+
+         "environments=isr|robots=pr2|tasks=navigating": "",
+        "environments=isr|robots=armar|tasks=navigating": "",
+        "environments=isr|robots=tiago|tasks=navigating": "",
+        "environments=isr|robots=donbot|tasks=navigating": "",
+        "environments=isr|robots=justin|tasks=navigating": "",
+        "environments=isr|robots=stretch|tasks=navigating": "",
+        "environments=isr|robots=hsr|tasks=navigating": "",
+        "environments=isr|robots=icub|tasks=navigating": "",
+        "environments=isr|robots=fetch|tasks=navigating": "",
+        "environments=isr|robots=pr2|tasks=transporting": "",
+
         "environments=apartment|robots=armar|tasks=transporting": "",
         "environments=apartment|robots=donbot|tasks=transporting": "",
         "environments=apartment|robots=justin|tasks=transporting": "",
         "environments=apartment|robots=tiago|tasks=transporting": "",
         "environments=apartment|robots=icub|tasks=transporting": "",
         "environments=apartment|robots=fetch|tasks=transporting": "",
+
+
         "environments=apartment|robots=multiagent|tasks=navigating": ""
          }
     },
