@@ -16,7 +16,7 @@
         "knowledge_bases": "coming_soon"
       },
          {
-        "name": "RoboCup-Suturo (IAI-Bremen)",
+        "name": "Suturo Lab (IAI-Bremen)",
         "value": "suturo",
         "img": "https://github.com/sunava/pycram/blob/binder-all-robots/demos/pycram_virtual_building_demos/img/PXL_20250121_160152125.jpg?raw=true",
         "knowledge_bases": "coming_soon"
