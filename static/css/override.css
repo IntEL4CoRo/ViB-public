@@ -144,9 +144,9 @@ div.right-main-well-flex {
   }
 }
 @media only screen and (min-width: 960px) {
-  .intro-header {
+  /* .intro-header {
     margin-top: 90px;
-  }
+  } */
   .intro-header.big-img {
     margin-top: 51px;  /* Full navbar is small navbar + 20px padding on each side when expanded */
   }
