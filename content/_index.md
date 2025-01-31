@@ -1,7 +1,5 @@
 [comment]: <> (without this comment hugo fails)
 <h1>AICOR Virtual Research Building (VRB)</h1>
-<p>Happy New Year! 🎉🍾</p>
- Experience our <a class="btn btn-success" target="_blank" href="https://vib.ai.uni-bremen.de/page/newyears/">New Year's Virtual Lab</a>—just click the blue box to begin.
 
 
 Welcome to the AICOR Virtual Research Building (VRB), which aims to be a hub where the future of AI-powered and cognition-enabled robotics unfolds. Inside the AICOR VRB, you can visit our cutting-edge research laboratories including those in development and dedicated to software components. Here innovation meets collaboration pushing the boundaries of research and technology. Engage with the first chapter of our interactive textbook to discover the foundational principles and insights that guide our research, complemented by practical programming exercises in the virtual labs. Explore the seminal work that underpins our functional laboratories offering a glimpse into how we envision the intelligent robots of the future. Join us on this journey to transcend the imaginable today.
