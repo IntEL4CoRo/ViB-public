@@ -12,8 +12,7 @@
       {
         "name": "Kitchen (IAI-Bremen)",
         "value": "kitchen",
-        "img": "https://intel4coro.github.io/coai-vib/img/household.png",
-        "knowledge_bases": "coming_soon"
+        "img": "https://intel4coro.github.io/coai-vib/img/household.png"
       },
          {
         "name": "Suturo Lab (IAI-Bremen)",
@@ -23,7 +22,7 @@
       },
             {
         "name": "RoboCanes Lab (Miami)",
-        "value": "miami",
+        "value": "robocane",
         "img": "https://github.com/sunava/pycram/blob/binder-all-robots/demos/pycram_virtual_building_demos/img/3AFAD606-5D47-4565-A44A-F241C6DFE726.jpg?raw=true",
         "knowledge_bases": "coming_soon"
       },
@@ -118,7 +117,7 @@
       "value": "run",
       "description": "Run code on Binderhub.",
       "primary": true,
-      "url": "https://binder.intel4coro.de/v2/gh/sunava/pycram/e2d1c9feb35ca6997165ddbf9de171827ff6c2d5?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Fstart_demo.ipynb",
+      "url": "https://binder.intel4coro.de/v2/gh/sunava/pycram/0f490f96a6b38060afb1612500e9196a0bc66e74?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Fstart_demo.ipynb",
       "options": [
         "environments",
         "robots",
@@ -144,9 +143,8 @@
         "environments=kitchen|robots=hsr|tasks=navigating": "",
         "environments=kitchen|robots=icub|tasks=navigating": "",
         "environments=kitchen|robots=fetch|tasks=navigating": "",
-        "environments=kitchen|robots=pr2|tasks=transporting": "",
 
-          "environments=suturo|robots=pr2|tasks=navigating": "",
+        "environments=suturo|robots=pr2|tasks=navigating": "",
         "environments=suturo|robots=armar|tasks=navigating": "",
         "environments=suturo|robots=tiago|tasks=navigating": "",
         "environments=suturo|robots=donbot|tasks=navigating": "",
@@ -157,16 +155,15 @@
         "environments=suturo|robots=fetch|tasks=navigating": "",
         "environments=suturo|robots=pr2|tasks=transporting": "",
 
-        "environments=miami|robots=pr2|tasks=navigating": "",
-        "environments=miami|robots=armar|tasks=navigating": "",
-        "environments=miami|robots=tiago|tasks=navigating": "",
-        "environments=miami|robots=donbot|tasks=navigating": "",
-        "environments=miami|robots=justin|tasks=navigating": "",
-        "environments=miami|robots=stretch|tasks=navigating": "",
-        "environments=miami|robots=hsr|tasks=navigating": "",
-        "environments=miami|robots=icub|tasks=navigating": "",
-        "environments=miami|robots=fetch|tasks=navigating": "",
-        "environments=miami|robots=pr2|tasks=transporting": "",
+        "environments=robocane|robots=pr2|tasks=navigating": "",
+        "environments=robocane|robots=armar|tasks=navigating": "",
+        "environments=robocane|robots=tiago|tasks=navigating": "",
+        "environments=robocane|robots=donbot|tasks=navigating": "",
+        "environments=robocane|robots=justin|tasks=navigating": "",
+        "environments=robocane|robots=stretch|tasks=navigating": "",
+        "environments=robocane|robots=hsr|tasks=navigating": "",
+        "environments=robocane|robots=icub|tasks=navigating": "",
+        "environments=robocane|robots=fetch|tasks=navigating": "",
 
          "environments=isr|robots=pr2|tasks=navigating": "",
         "environments=isr|robots=armar|tasks=navigating": "",
@@ -186,9 +183,13 @@
         "environments=apartment|robots=tiago|tasks=transporting": "",
         "environments=apartment|robots=icub|tasks=transporting": "",
         "environments=apartment|robots=fetch|tasks=transporting": "",
-         "environments=kitchen|robots=pr2|tasks=transporting": "",
+
+        "environments=kitchen|robots=pr2|tasks=transporting": "",
+        "environments=robocane|robots=pr2|tasks=transporting": "",
+
 
         "environments=apartment|robots=multiagent|tasks=navigating": ""
+
          }
     },
      {
