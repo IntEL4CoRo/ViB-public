@@ -1,0 +1,11 @@
+{
+  "options": {},
+  "actions": [
+    {
+      "name": "Interactive Visualizations",
+      "value": "graphs",
+      "description": "Go to the website with the interactive visualizations.",
+      "url": "https://dml.uni-bremen.de/ease/review/"
+    }
+  ]
+}
