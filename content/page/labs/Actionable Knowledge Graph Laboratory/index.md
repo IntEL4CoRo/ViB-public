@@ -1,6 +1,6 @@
 ---
 title: "Actionable Knowledge Graph Laboratory"
-date: 2023-12-01T10:35:35-07:00
+date: 2023-12-01T10:35:35-06:00
 subtitle: ""
 tags: ["Research"]
 dropCap: false
