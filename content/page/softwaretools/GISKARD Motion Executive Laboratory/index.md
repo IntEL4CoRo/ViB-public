@@ -53,6 +53,7 @@ Interactive Actions and/or Examples
 
 <div>
 <!-- <a class="btn btn-primary" target="_blank" href="">Run Code</a> -->
+<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/maltehue/giskard-examples/giskard_vrb?urlpath=lab/tree/notebooks/giskard_examples.ipynb">Run Code</a>
 <a class="btn btn-success" target="_blank" href="https://github.com/SemRoCo/giskardpy">Source Code</a>
 </div>
  
