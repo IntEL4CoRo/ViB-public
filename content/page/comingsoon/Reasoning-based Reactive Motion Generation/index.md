@@ -1,5 +1,5 @@
 ---
-title: "Reasoning-based Reactive Motion Generation"
+title: "Knowledge-Based Servoing: Plugging Symbolic Theories into Robotic Controllers"
 date: 2010-11-03T9:35:35-05:00
 subtitle: ""
 tags: ["Reasoning", "Motion Control", "Image Schema"]
@@ -13,7 +13,8 @@ resources:
   src: "buttons.json"
 ---
 
-This virtual research lab explores reactive motion generation through reasoning. We propose image schema-based reasoning for decision-making within motion controllers. Our reasoner is tightly coupled with the controller, continuously monitoring actions and inferring motion primitives to adapt to dynamic environments. By providing real-time feedback, the reasoner enables the controller to make informed decisions and generate appropriate motion responses.
+This virtual research lab explores reactive motion generation through reasoning. We propose image schema-based reasoning for decision-making within motion controllers. Our reasoner is tightly coupled with the controller, continuously monitoring actions and inferring motion primitives to adapt to dynamic environments.
+The symbolic theory and the reasoner evaluating it can be exchanged in a plug and play way. By providing real-time feedback, the reasoner enables the controller to make informed decisions and generate appropriate motion responses.
 
 {{<action_form data="ActionButtons">}}
 
@@ -39,9 +40,74 @@ Source code
 Publications
 ---
 
-- [Malte Huerkamp, Kaviya Dhanabalachandran, Mihai Pomarlan, Simon Stelter, and Michael Beetz.
-Towards generalized robotic pouring: Qualitative physics reasoning applied to constraint-based whole-
-body control. submitted to 2024 25th IEEE-RAS International Conference on Humanoid Robots]()
+- [Huerkamp, M.; Dhanabalachandran, K.; Pomarlan, M.; Stelter, S. and Beetz, M. (2025). A Modular Framework for Knowledge-Based Servoing: Plugging Symbolic Theories into Robotic Controllers.  In Proceedings of the 17th International Conference on Agents and Artificial Intelligence - Volume 1, ISBN 978-989-758-737-5, ISSN 2184-433X, pages 886-897.]()
 
 - [Mihai Pomarlan, Kaviya Dhanabalachandran, and Michael Beetz. Towards reactive robotics with a
 pinch of image-schematic reasoning. In ISD, 2023](https://ceur-ws.org/Vol-3511/paper_08.pdf)
+
+
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+
+  <div style="flex:30%;">
+      <img src="img/huerkamp.jpg" style="clip-path: circle(40%);">
+  </div>
+
+  <div style="flex:70%;">
+       <h3> Malte Huerkamp</h3>
+    Tel:  +49 421 218 64020 <br>
+    Mail:     <a href="mailto:huerkamp@uni-bremen.de">huerkamp@uni-bremen.de</a> <br>
+      <a style="color:red" href="https://ai.uni-bremen.de/team/malte_huerkamp">
+      <span style="font-size: 15px;">Profile Malte Huerkamp</span>
+    </a>
+  </div>
+</div>
+
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+
+  <div style="flex:30%;">
+      <img src="img/kaviya2.jpg" style="clip-path: circle(33%);">
+  </div>
+
+  <div style="flex:70%;">
+       <h3> Kaviya Dhanabalachandran</h3>
+    Tel:  +49 421 218 64000 <br>
+    Mail:     <a href="mailto:kaviya@cs.uni-bremen.de">kaviya@cs.uni-bremen.de</a> <br>
+      <a style="color:red" href="https://ai.uni-bremen.de/team/kaviya_dhanabalachandran">
+      <span style="font-size: 15px;">Profile Kaviya Dhanabalachandran</span>
+    </a>
+  </div>
+</div>
+
+
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+
+  <div style="flex:30%;">
+      <img src="img/simon.jpg" style="clip-path: circle(33%);">
+  </div>
+
+  <div style="flex:70%;">
+       <h3> Simon Stelter</h3>
+    Tel:  +49 421 218 64014 <br>
+    Mail:     <a href="mailto:stelter@cs.uni-bremen.de">stelter@cs.uni-bremen.de</a> <br>
+      <a style="color:red" href="https://ai.uni-bremen.de/team/simon_stelter">
+      <span style="font-size: 15px;">Profile Simon Stelter</span>
+    </a>
+  </div>
+</div>
+
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+
+  <div style="flex:30%;">
+      <img src="../../fallschool/mbeetza.jpg" style="clip-path: circle(40%);">
+  </div>
+
+  <div style="flex:70%;">
+       <h3> Prof. Michael Beetz PhD</h3>
+    Tel:  +49 421 218 64001 <br>
+    Mail:     <a href="mailto:beetz@cs.uni-bremen.de">beetz@cs.uni-bremen.de</a> <br>
+      <a style="color:red" href="https://ai.uni-bremen.de/team/michael_beetz">
+      <span style="font-size: 15px;">Profile Michael Beetz</span>
+    </a>
+  </div>
+</div>
+
