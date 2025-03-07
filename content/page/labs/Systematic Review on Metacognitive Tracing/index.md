@@ -26,7 +26,7 @@ Ultimately, The Metacognition Lab fosters a deeper understanding of the reviewâ€
 
 <div class="hidde-after-preview">
   For Detailed information click
-  <a class="btn btn-success" target="_blank" href="survey-on-metacognitive-tracing"><b>here!</b></a>
+  <a class="btn btn-success" target="_blank" href="systematic-review-on-metacognitive-tracing"><b>here!</b></a>
 </div>
 
 <!--more-->
