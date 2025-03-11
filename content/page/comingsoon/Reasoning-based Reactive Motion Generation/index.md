@@ -78,6 +78,20 @@ pinch of image-schematic reasoning. In ISD, 2023](https://ceur-ws.org/Vol-3511/p
   </div>
 </div>
 
+<div class="main-well-flex-container" style="margin:20px;align-items: center;">
+
+  <div style="flex:30%;">
+      <img src="img/mihai-1.jpg" style="clip-path: circle(33%);">
+  </div>
+
+  <div style="flex:70%;">
+       <h3> Mihai Pomarlan</h3>
+    Tel:  +49 421 218 64421 <br>
+    Mail:     <a href="mailto:mpomarlan@yahoo.co.uk">mpomarlan@yahoo.co.uk</a> <br>
+      
+  </div>
+</div>
+
 
 <div class="main-well-flex-container" style="margin:20px;align-items: center;">
 
