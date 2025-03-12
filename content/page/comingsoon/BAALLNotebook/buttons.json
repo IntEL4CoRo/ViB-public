@@ -1,0 +1,13 @@
+
+{
+  "options": {
+  },
+  "actions": [
+    {
+      "name": "Run Code",
+      "value": "run",
+      "primary": true,
+      "url": "https://binder.intel4coro.de/v2/gh/mpomarlan/BAALLNotebook/main?labpath=notebook%2Fbaall.ipynb"
+    }
+  ]
+}
