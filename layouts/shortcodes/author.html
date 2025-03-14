@@ -1,0 +1,65 @@
+{{- $name := cond (.IsNamedParams) (.Get "name") (.Get 0) -}}
+{{- $mail := cond (.IsNamedParams) (.Get "mail") (.Get 1) -}}
+{{- $img := cond (.IsNamedParams) (.Get "img") (.Get 2) -}}
+{{- $profile := cond (.IsNamedParams) (.Get "profile") (.Get 3) -}}
+{{- $phone := cond (.IsNamedParams) (.Get "phone") (.Get 4) -}}
+{{- $fax := cond (.IsNamedParams) (.Get "fax") (.Get 5) -}}
+{{- $linkedin := cond (.IsNamedParams) (.Get "linkedin") (.Get 6) -}}
+{{- $github := cond (.IsNamedParams) (.Get "github") (.Get 7) -}}
+<div class="author-well-flex-container author-well-flex-container-center">
+
+  <div style="flex:30%;">
+    <img src="{{ $img }}" style="clip-path: circle(35%);">
+  </div>
+
+  <div style="flex:70%;">
+    <h3>{{ $name }}</h3>
+    <p>
+      {{- with $phone -}}
+        Tel: {{ . }}<br>
+      {{- end -}}
+      {{- with $fax -}}
+        Fax: {{ . }}<br>
+      {{- end -}}
+      {{- with $mail -}}
+        Mail: <a href="mailto:{{ $mail }}">{{ $mail }}</a><br>
+      {{- end -}}
+    </p>
+    {{- if or $linkedin $github -}}
+      <div class="author-well-flex-container author-well-flex-container-left">
+        {{- with $profile -}}
+          <div style="flex:50%;">
+            <a style="color:red" href="{{ . }}">
+              <span style="font-size: 15px;">Profile {{ $name }}</span>
+            </a>
+          </div>
+        {{- end -}}
+        {{- $rightBuffer := 50 -}}
+        {{- with $linkedin -}}
+          {{- $rightBuffer = sub $rightBuffer 10 -}}
+          <div style="flex:10%;">
+            <a href="{{ $linkedin }}">
+                <img src="https://edent.github.io/SuperTinyIcons/images/svg/linkedin.svg" height="30" alt="LinkedIn: {{ $name }}"/>
+            </a>
+          </div>
+        {{- end -}}
+        {{- with $github -}}
+          {{- $rightBuffer = sub $rightBuffer 10 -}}
+          <div style="flex:10%;">
+            <a href="{{ $github }}">
+                <img src="https://edent.github.io/SuperTinyIcons/images/svg/github.svg" height="30" alt="Github: {{ $name }}"/>
+            </a>
+          </div>
+        {{- end -}}
+        <div style="flex:{{ $rightBuffer }}%;"></div>
+      </div>
+    {{- else -}}
+      {{- with $profile -}}
+        <a style="color:red" href="{{ . }}">
+          <span style="font-size: 15px;">Profile {{ $name }}</span>
+        </a>
+      {{- end -}}
+    {{- end -}}
+  </div>
+
+</div>

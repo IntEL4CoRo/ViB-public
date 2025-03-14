@@ -59,7 +59,7 @@ TODO
 - Event segmentation on data generated from videos
   <figure class="video_container">
     <video width="100%" height="300" muted controls>
-      <source src="picking_placing_3-2025.mp4" type="video/mp4">
+      <source src="vid/picking_placing_3-2025.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </figure>
@@ -68,7 +68,7 @@ TODO
 - Event segmentation on VR Data
   <figure class="video_container">
     <video width="100%" height="300" muted controls>
-      <source src="fallschool_demo-2024.mp4" type="video/mp4">
+      <source src="vid/fallschool_demo-2024.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </figure>
@@ -76,7 +76,7 @@ TODO
 - Mental Simulation During Robot Execution in the Multiverse
   <figure class="video_container">
     <video width="100%" height="300" muted controls>
-      <source src="segment_pick_up.mp4" type="video/mp4">
+      <source src="vid/segment_pick_up.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </figure>
@@ -101,3 +101,4 @@ TODO
   </div>
 </div>
 <br>
+

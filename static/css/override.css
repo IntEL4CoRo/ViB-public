@@ -437,3 +437,25 @@ a > h2.post-title:hover {
 .img-hover-visible-hotspot:hover {
     opacity: 0.2;
 }
+
+
+/* rowwise flex conatiner for the authors of an webpage*/
+div.author-well-flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+div.author-well-flex-container-center {
+  align-items: center;
+  margin:20px;
+}
+div.author-well-flex-container-left {
+  align-items: left;
+  text-align: left;
+  margin:0px;
+}
+div.author-well-flex-container-right {
+  align-items: right;
+  text-align: right;
+  margin:0px;
+}
