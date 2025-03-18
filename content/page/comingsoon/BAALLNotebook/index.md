@@ -21,13 +21,14 @@ For more information, you can
 <a class="btn btn-success" target="_blank" href="https://www.dfki.de/web/anwendungen-industrie/living-labs/bremen-ambient-assisted-living-lab-baall"><b>visit the webpage</b></a>
 of BAALL to get a better idea of the complete project.
 
+
+<!--more-->
+
+
 To try out the ontology queries:
 
 {{<action_form data="ActionButtons">}}
 
----
-
----
 
 Publications
 ---
