@@ -9,6 +9,8 @@ displayInList: true
 draft: false
 ---
 
+<img class="img" src="img/fame_logo.jpg" align="left" style="padding: 20px;" alt="">
+
 The FAME (Future Action Modelling Engine) Lab stands at the cutting edge of
 robotics research, operating as a virtual research laboratory under the auspices of the
 ERC project bearing the same name. This ambitious project is dedicated to
@@ -25,9 +27,6 @@ acquiring a wide range of skills and competencies. A practical application of th
 research could enable a robot to adeptly cut any fruit, using any tool, for any
 purpose, in any context, showcasing the potential for robots to achieve a remarkable
 level of autonomous functionality and versatility.
-
-![](img/fame_logo.jpg)
-
 
 ## Approaching the Problem
 
