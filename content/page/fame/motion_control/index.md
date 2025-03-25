@@ -39,7 +39,7 @@ In human-robot interaction, smooth and adaptive motion is expected, often achiev
 
 ### Solutions
 
-- Implement reactive control using Dynamic Fabrics with flexible non-linear collision avoidance.
+- Implement reactive control using [Dynamic Fabrics](https://arxiv.org/abs/2205.08454) with flexible non-linear collision avoidance.
 - Utilize MuJoCo-MPC as the baseline for the framework developed directly in C/C++, taking advantage of the highly-performant & physics-accurate engine API.
 - Incorporate Discrete Differential Geometry (DDG) in object geometric analysis to help with providing more object-centric characteristic info to design more effective cost function for MPC task by coupling object geometric features + manipulation tasks.
 
@@ -47,20 +47,21 @@ In human-robot interaction, smooth and adaptive motion is expected, often achiev
 ## Example Videos
 
 - Object target tracking while avoiding dynamic obstacles
-<figure class="video_container">
-  <video width="100%" height="500" loop muted controls>
-    <source src="vid/fab_dynamic_particle.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</figure>
+  <figure class="video_container">
+    <video width="100%" height="500" loop muted controls>
+      <source src="vid/fab_dynamic_particle.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </figure>
+  </br>
 
 - Panda robot following dynamic green goal, avoiding dynamic red obstacles
-<figure class="video_container">
-  <video width="100%" height="500" loop muted controls>
-    <source src="vid/fab_panda_follow_dynamic_goal_obst.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</figure>
+  <figure class="video_container">
+    <video width="100%" height="500" loop muted controls>
+      <source src="vid/fab_panda_follow_dynamic_goal_obst.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </figure>
 
 
 ## Navigate to FAME Parts
@@ -68,21 +69,24 @@ In human-robot interaction, smooth and adaptive motion is expected, often achiev
 <div>
   For Detailed information on the differents parts of FAME click:<br>
   <div class="btn-group" style="width:100%">
-    <a class="btn btn-primary" style="width:100%;" target="_blank" href="../"><b>Fame Main Page</b></a>
+    <a class="btn btn-primary" style="width:100%;" target="_blank" href="../"><b>FAME Main Page</b></a>
   </div>
   <div class="btn-group" style="width:100%">
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../pose6d"><b>Computer Vision</b></a>
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../action_segmentation"><b>Scene Understanding</b></a>
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../prob_learning"><b>Probabilistic Models</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../perception"><b>Object Perception</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../scene_understanding"><b>Scene Understanding</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../probabilistic_learning"><b>Probabilistic Learning</b></a>
   </div>
   <div class="btn-group" style="width:100%">
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../motion_control"><b>Geometric Control</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../motion_control"><b>Motion Control</b></a>
     <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../geometric_learning"><b>Geometric Deep Learning</b></a>
     <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../enviroment"><b>Environment Generation</b></a>
   </div>
 </div>
 <br>
 
-# Authors
-{{< author name="Duc Than" img="img/duc.jpg" mail="than@uni-bremen.de" profile="https://ai.uni-bremen.de/team/duc_than" >}}
-{{< author name="Alessandro Santonicola" img="img/alessandro.jpg" mail="ale_san@uni-bremen.de" profile="https://ai.uni-bremen.de/team/alessandro_santonicola" >}}
+
+## Authors
+
+{{< author name="Duc Than" img="../main/img/duc.jpg" mail="than@uni-bremen.de" profile="https://ai.uni-bremen.de/team/duc_than" >}}
+{{< author name="Alessandro Santonicola" img="../main/img/santonicola.jpg" mail="ale_san@uni-bremen.de" profile="https://ai.uni-bremen.de/team/alessandro_santonicola" >}} 
+

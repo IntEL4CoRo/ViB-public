@@ -52,18 +52,23 @@ TODO
 <div>
   For Detailed information on the differents parts of FAME click:<br>
   <div class="btn-group" style="width:100%">
-    <a class="btn btn-primary" style="width:100%;" target="_blank" href="../"><b>Fame Main Page</b></a>
+    <a class="btn btn-primary" style="width:100%;" target="_blank" href="../"><b>FAME Main Page</b></a>
   </div>
   <div class="btn-group" style="width:100%">
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../pose6d"><b>Computer Vision</b></a>
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../action_segmentation"><b>Scene Understanding</b></a>
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../prob_learning"><b>Probabilistic Models</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../perception"><b>Object Perception</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../scene_understanding"><b>Scene Understanding</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../probabilistic_learning"><b>Probabilistic Learning</b></a>
   </div>
   <div class="btn-group" style="width:100%">
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../motion_control"><b>Geometric Control</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../motion_control"><b>Motion Control</b></a>
     <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../geometric_learning"><b>Geometric Deep Learning</b></a>
     <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../enviroment"><b>Environment Generation</b></a>
   </div>
 </div>
 <br>
+
+
+## Authors
+
+{{< author name="Zhiyuan Gao" img="../main/img/gao.jpg" phone="+49 421 218 64000" fax="+49 421 218 64047" mail="gao@uni-bremen.de" profile="https://ai.uni-bremen.de/team/zhiyuan_gao" >}}
 

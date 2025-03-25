@@ -32,9 +32,9 @@ level of autonomous functionality and versatility.
 
 <div style="position: relative; width: 100%:">
   <img class="img" src="img/FAME_flow_chart.png" alt="">
-  <a title="Computer Vision" class="img-hover-visible-hotspot" style="position:absolute; top:12%; left:29%; height:13%; width:16%; background: red;" href="../pose6d" target="_self"></a>
-  <a title="Scene Understanding" class="img-hover-visible-hotspot" style="position:absolute; top:12%; left:75%; height:13%; width:16%; background: red;" href="../action_segmentation" target="_self"></a>
-  <a title="Probabilistic Models" class="img-hover-visible-hotspot" style="position:absolute; top:68%; left:76%; height:13%; width:16%; background: red;" href="../prob_learning" target="_self"></a>
+  <a title="Object Perception" class="img-hover-visible-hotspot" style="position:absolute; top:12%; left:29%; height:13%; width:16%; background: red;" href="../perception" target="_self"></a>
+  <a title="Scene Understanding" class="img-hover-visible-hotspot" style="position:absolute; top:12%; left:75%; height:13%; width:16%; background: red;" href="../scene_understanding" target="_self"></a>
+  <a title="Probabilistic Models" class="img-hover-visible-hotspot" style="position:absolute; top:68%; left:76%; height:13%; width:16%; background: red;" href="../probabilistic_learning" target="_self"></a>
   <a title="Geometric Control" class="img-hover-visible-hotspot" style="position:absolute; top:69%; left:21%; height:13%; width:16%; background: red;" href="../motion_control" target="_self"></a>
   <a title="CRAM" class="img-hover-visible-hotspot" style="position:absolute; top:43%; left:44%; height:20%; width:25%; background: red;" href="../../fallschool/chapter2" target="_self"></a>
 </div>
@@ -115,18 +115,20 @@ level of autonomous functionality and versatility.
 <div>
   For Detailed information on the differents parts of FAME click:<br>
   <div class="btn-group" style="width:100%">
-    <a class="btn btn-primary" style="width:100%;" target="_blank" href="../"><b>Fame Main Page</b></a>
+    <a class="btn btn-primary" style="width:100%;" target="_blank" href="../"><b>FAME Main Page</b></a>
   </div>
   <div class="btn-group" style="width:100%">
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../pose6d"><b>Computer Vision</b></a>
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../action_segmentation"><b>Scene Understanding</b></a>
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../prob_learning"><b>Probabilistic Models</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../perception"><b>Object Perception</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../scene_understanding"><b>Scene Understanding</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../probabilistic_learning"><b>Probabilistic Learning</b></a>
   </div>
   <div class="btn-group" style="width:100%">
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../motion_control"><b>Geometric Control</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../motion_control"><b>Motion Control</b></a>
     <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../geometric_learning"><b>Geometric Deep Learning</b></a>
     <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../enviroment"><b>Environment Generation</b></a>
   </div>
 </div>
 <br>
 
+
+[comment]: <> ({{< author name="Prof. Michael Beetz PhD" img="../main/img/mbeetza.jpg" phone="+49 421 218 64001" mail="beetz@cs.uni-bremen.de" profile="https://ai.uni-bremen.de/team/michael_beetz" >}} {{< author name="Abdelrhman Bassiouny" img="../main/img/bass.jpg" mail="bassioun@uni-bremen.de" profile="https://ai.uni-bremen.de/team/abdelrhman_bassiouny" >}} {{< author name="Max Gandyra" img="../main/img/max.jpg" mail="mgandyra@uni-bremen.de" profile="https://ai.uni-bremen.de/team/max_gandyra" >}} {{< author name="Zhiyuan Gao" img="../main/img/gao.jpg" phone="+49 421 218 64000" fax="+49 421 218 64047" mail="gao@uni-bremen.de" profile="https://ai.uni-bremen.de/team/zhiyuan_gao" >}} {{< author name="Alessandro Santonicola" img="../main/img/santonicola.jpg" mail="ale_san@uni-bremen.de" profile="https://ai.uni-bremen.de/team/alessandro_santonicola" >}} {{< author name="Tom Schierenbeck" img="../main/img/tom.jpg" fax="+49 -421 218 64032" mail="tom_sch@uni-bremen.de" profile="https://ai.uni-bremen.de/team/tom_schierenbeck" >}} {{< author name="Duc Than" img="../main/img/duc.jpg" mail="than@uni-bremen.de" profile="https://ai.uni-bremen.de/team/duc_than" >}})
