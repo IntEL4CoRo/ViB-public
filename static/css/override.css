@@ -451,7 +451,7 @@ a > h2.post-title:hover {
 }
 
 
-/* rowwise flex conatiner for the authors of an webpage*/
+/* row-wise flex conatiner for the authors of an webpage*/
 div.author-well-flex-container {
   display: flex;
   flex-direction: row;

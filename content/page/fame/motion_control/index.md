@@ -69,17 +69,17 @@ In human-robot interaction, smooth and adaptive motion is expected, often achiev
 <div>
   For Detailed information on the differents parts of FAME click:<br>
   <div class="btn-group" style="width:100%">
-    <a class="btn btn-primary" style="width:100%;" target="_blank" href="../"><b>FAME Main Page</b></a>
+    <a class="btn btn-primary" style="width:100%;" target="_self" href="../"><b>FAME Main Page</b></a>
   </div>
   <div class="btn-group" style="width:100%">
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../perception"><b>Object Perception</b></a>
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../scene_understanding"><b>Scene Understanding</b></a>
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../probabilistic_learning"><b>Probabilistic Learning</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_self" href="../perception"><b>Object Perception</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_self" href="../scene_understanding"><b>Scene Understanding</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_self" href="../probabilistic_learning"><b>Probabilistic Learning</b></a>
   </div>
   <div class="btn-group" style="width:100%">
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../motion_control"><b>Motion Control</b></a>
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../geometric_learning"><b>Geometric Deep Learning</b></a>
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../enviroment"><b>Environment Generation</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_self" href="../motion_control"><b>Motion Control</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_self" href="../geometric_learning"><b>Geometric Deep Learning</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_self" href="../enviroment"><b>Environment Generation</b></a>
   </div>
 </div>
 <br>
@@ -89,4 +89,5 @@ In human-robot interaction, smooth and adaptive motion is expected, often achiev
 
 {{< author name="Duc Than" img="../main/img/duc.jpg" mail="than@uni-bremen.de" profile="https://ai.uni-bremen.de/team/duc_than" >}}
 {{< author name="Alessandro Santonicola" img="../main/img/santonicola.jpg" mail="ale_san@uni-bremen.de" profile="https://ai.uni-bremen.de/team/alessandro_santonicola" >}} 
+{{< author name="Prof. Michael Beetz PhD" img="../main/img/mbeetza.jpg" phone="+49 421 218 64001" mail="beetz@cs.uni-bremen.de" profile="https://ai.uni-bremen.de/team/michael_beetz" >}}
 

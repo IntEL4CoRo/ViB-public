@@ -90,10 +90,6 @@ pygmentsCodefencesGuessSyntax = true
     name = "Fallschool"
     url = "page/fallschool/"
     weight = 9
-[[menu.main]]
-    name = "FAME"
-    url = "page/fame/main"
-    weight = 26
 
 [[menu.main]]
     name = "About"

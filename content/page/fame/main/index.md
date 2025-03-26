@@ -32,11 +32,11 @@ level of autonomous functionality and versatility.
 
 <div style="position: relative; width: 100%:">
   <img class="img" src="img/FAME_flow_chart.png" alt="">
-  <a title="Object Perception" class="img-hover-visible-hotspot" style="position:absolute; top:12%; left:29%; height:13%; width:16%; background: red;" href="../perception" target="_self"></a>
-  <a title="Scene Understanding" class="img-hover-visible-hotspot" style="position:absolute; top:12%; left:75%; height:13%; width:16%; background: red;" href="../scene_understanding" target="_self"></a>
-  <a title="Probabilistic Models" class="img-hover-visible-hotspot" style="position:absolute; top:68%; left:76%; height:13%; width:16%; background: red;" href="../probabilistic_learning" target="_self"></a>
-  <a title="Geometric Control" class="img-hover-visible-hotspot" style="position:absolute; top:69%; left:21%; height:13%; width:16%; background: red;" href="../motion_control" target="_self"></a>
-  <a title="CRAM" class="img-hover-visible-hotspot" style="position:absolute; top:43%; left:44%; height:20%; width:25%; background: red;" href="../../fallschool/chapter2" target="_self"></a>
+  <a title="Object Perception" class="img-hover-visible-hotspot" style="position:absolute; top:12%; left:29%; height:13%; width:16%; background: red;" href="../perception" target="_blank"></a>
+  <a title="Scene Understanding" class="img-hover-visible-hotspot" style="position:absolute; top:12%; left:75%; height:13%; width:16%; background: red;" href="../scene_understanding" target="_blank"></a>
+  <a title="Probabilistic Models" class="img-hover-visible-hotspot" style="position:absolute; top:68%; left:76%; height:13%; width:16%; background: red;" href="../probabilistic_learning" target="_blank"></a>
+  <a title="Geometric Control" class="img-hover-visible-hotspot" style="position:absolute; top:69%; left:21%; height:13%; width:16%; background: red;" href="../motion_control" target="_blank"></a>
+  <a title="CRAM" class="img-hover-visible-hotspot" style="position:absolute; top:43%; left:44%; height:20%; width:25%; background: red;" href="../../fallschool/chapter2" target="_blank"></a>
 </div>
 <p style="text-align:center;"><b>Click</b> the part you are interesset in!</p>
 
@@ -115,17 +115,17 @@ level of autonomous functionality and versatility.
 <div>
   For Detailed information on the differents parts of FAME click:<br>
   <div class="btn-group" style="width:100%">
-    <a class="btn btn-primary" style="width:100%;" target="_blank" href="../"><b>FAME Main Page</b></a>
+    <a class="btn btn-primary" style="width:100%;" target="_self" href="../"><b>FAME Main Page</b></a>
   </div>
   <div class="btn-group" style="width:100%">
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../perception"><b>Object Perception</b></a>
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../scene_understanding"><b>Scene Understanding</b></a>
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../probabilistic_learning"><b>Probabilistic Learning</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_self" href="../perception"><b>Object Perception</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_self" href="../scene_understanding"><b>Scene Understanding</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_self" href="../probabilistic_learning"><b>Probabilistic Learning</b></a>
   </div>
   <div class="btn-group" style="width:100%">
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../motion_control"><b>Motion Control</b></a>
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../geometric_learning"><b>Geometric Deep Learning</b></a>
-    <a class="btn btn-success" style="width:33.3%;" target="_blank" href="../enviroment"><b>Environment Generation</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_self" href="../motion_control"><b>Motion Control</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_self" href="../geometric_learning"><b>Geometric Deep Learning</b></a>
+    <a class="btn btn-success" style="width:33.3%;" target="_self" href="../enviroment"><b>Environment Generation</b></a>
   </div>
 </div>
 <br>
