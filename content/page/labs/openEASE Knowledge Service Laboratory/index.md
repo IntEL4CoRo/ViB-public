@@ -13,29 +13,29 @@ resources:
   src: "buttons.json"
 ---
 
-openEASE is a cutting-edge, web-based knowledge service that leverages the
-KnowRob robot knowledge representation and reasoning system to offer a
+[openEASE](https://www.open-ease.org/) is a cutting-edge, web-based knowledge service that leverages the
+[KnowRob](https://knowrob.github.io/knowrob/) robot knowledge representation and reasoning system to offer a
 machine-understandable and processable platform for sharing knowledge and
 reasoning capabilities. It encompasses a broad spectrum of knowledge, including
 insights into agents (notably robots and humans), their environments (spanning
 objects and substances), tasks, actions, and detailed manipulation episodes involving
 both robots and humans. These episodes are richly documented through
 robot-captured images, sensor data streams, and full-body poses, providing a
-comprehensive understanding of interactions. OpenEASE is equipped with a robust
+comprehensive understanding of interactions. The [openEASE](https://www.open-ease.org/) is equipped with a robust
 query language and advanced inference tools, enabling users to conduct semantic
 queries and reason about the data to extract specific information. This functionality
 allows robots to articulate insights about their actions, motivations, methodologies,
 outcomes, and observations, thereby facilitating a deeper understanding of robotic
 operations and interactions within their environments.
 
-In this laboratory, you have access to openEASE, a web-based interactive platform
-that offers knowledge services. Through openEASE, you can choose from various
+In this laboratory, you have access to [openEASE](https://www.open-ease.org/), a web-based interactive platform
+that offers knowledge services. Through [openEASE](https://www.open-ease.org/), you can choose from various
 knowledge bases, each representing a robotic experiment or an episode where humans
 demonstrate tasks to robots. To start, select a knowledge base—for instance,
 ”ease-2020-urobosim-fetch-and-place”—and activate it. Then, by clicking on the
 ”examples” button, you can choose specific knowledge queries to run on the selected
 experiment’s knowledge bases, facilitating a deeper understanding and interaction
-with the data. For a detailed overview of the episodes in openEASE click [here](https://data.open-ease.org/).
+with the data.
 
 <div class="hidde-after-preview">
   {{<action_form data="ActionButtons">}}
@@ -77,7 +77,7 @@ Description
 The information collected in the openEASE database consists of
 semantically labelled episodic memories. In order to make use of it, and to
 enhance it by additional meta information, we use and develop a set of
-knowledge processing tools. One of these tools is KnowRob, which is the
+knowledge processing tools. One of these tools is [KnowRob](https://knowrob.github.io/knowrob/), which is the
 base system for running the openEASE web console. It supplies a large
 set of logical Prolog predicates that allow access to, and reasoning
 about the information stored in the database. Furthermore, meta
@@ -85,7 +85,7 @@ information enhancing tools such as a labelling tool for recorded
 sequences are available. In the labelling tool, sequences of recorded
 activity can be annotated with semantic labels of what action was
 performed, using which tools, and with which outcome. The collected episodic 
-memories are uploaded to the [NEEMHub](/ViB-public/page/softwaretools/neemhub/). 
+memories are uploaded to the [NEEMHub](https://neemgit.informatik.uni-bremen.de/neems). 
 
 Example Videos
 ---
@@ -103,7 +103,7 @@ Publications
 
 - [Daniel Beßler, Robert Porzel, Mihai Pomarlan, Abhijit Vyas, Sebastian Höffner, Michael Beetz, Rainer Malaka and John Bateman, "Foundations of the Socio-physical Model of Activities (SOMA) for Autonomous Robotic Agents", In Formal Ontology in Information Systems - Proceedings of the 12th International Conference, FOIS 2021, Bozen-Bolzano, Italy, September 13-16, 2021, IOS Press, 2021, doi:10.3233/FAIA210379](https://ai.uni-bremen.de/papers/bessler21soma.pdf)
 
-- [KnowRob 2.0 – A 2nd Generation Knowledge Processing Framework for Cognition-enabled Robotic Agents (Michael Beetz, Daniel Beßler, Andrei Haidu, Mihai Pomarlan, Asil Kaan Bozcuoglu and Georg Bartels), In International Conference on Robotics and Automation (ICRA), 2018](https://ai.uni-bremen.de/papers/beetz18knowrob.pdf)
+- [[KnowRob](https://knowrob.github.io/knowrob/) 2.0 – A 2nd Generation Knowledge Processing Framework for Cognition-enabled Robotic Agents (Michael Beetz, Daniel Beßler, Andrei Haidu, Mihai Pomarlan, Asil Kaan Bozcuoglu and Georg Bartels), In International Conference on Robotics and Automation (ICRA), 2018](https://ai.uni-bremen.de/papers/beetz18knowrob.pdf)
 
 
 Courses and/or Turorial
