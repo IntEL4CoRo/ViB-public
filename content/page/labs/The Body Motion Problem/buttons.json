@@ -1,0 +1,19 @@
+{
+  "actions": [
+    {
+      "name": "Run Code",
+      "value": "run",
+      "description": "Run code on Binderhub.",
+      "primary": true,
+      "url": "https://binder.intel4coro.de/v2/gh/maltehue/giskard-examples/",
+      "options": [
+        "robots",
+        "tasks"
+      ],
+      "available": {
+        "tasks=pouring|robots=hsr": "mujoco_actions_devel?urlpath=lab/tree/notebooks/reasoning_based_pouring.ipynb",
+        "tasks=draining|robots=pr2": "draining_vrb?urlpath=lab/tree/notebooks/reasoning_based_draining.ipynb"
+      }
+    }
+  ]
+}
