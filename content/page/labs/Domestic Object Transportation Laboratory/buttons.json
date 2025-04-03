@@ -116,7 +116,7 @@
       "value": "run",
       "description": "Run code on Binderhub.",
       "primary": true,
-      "url": "https://binder.intel4coro.de/v2/gh/sunava/pycram/fc03b96998637beaec2c2e8b1c5d60ad545a3173?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Fstart_demo.ipynb",
+      "url": "https://binder.intel4coro.de/v2/gh/sunava/pycram/d42a16bf1e8890314d8f0ef67238c93c545c94c5?urlpath=lab%2Ftree%2Fdemos%2Fpycram_virtual_building_demos%2Fstart_demo.ipynb",
       "options": [
         "environments",
         "robots",
@@ -186,6 +186,7 @@
         "environments=kitchen|robots=pr2|tasks=transporting": "",
         "environments=robocane|robots=pr2|tasks=transporting": "",
 
+        "environments=kitchen|robots=tiago|tasks=transporting": "",
 
         "environments=apartment|robots=multiagent|tasks=navigating": ""
 
