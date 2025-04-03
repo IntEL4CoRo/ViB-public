@@ -22,9 +22,9 @@ task queries, such as locating a milk box in a fridge, and crafts specialized
 perception processes in the form of PPTs, integrating appropriate computer vision
 methods to accomplish the tasks at hand.
 <div class="hidde-after-preview">
-<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/git/https%3A%2F%2Fgitlab.informatik.uni-bremen.de%2Fyanxiang%2Frobokudo.git/binderhub">Run Code</a>
-<a class="btn btn-success" target="_blank" href="https://gitlab.informatik.uni-bremen.de/robokudo/robokudo">Source Code</a>
-<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/git/https%3A%2F%2Fgitlab.informatik.uni-bremen.de%2Ffmuehlis%2Frobokudo.git/binderhub">Getting Started Lab</a>
+  <a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/git/https%3A%2F%2Fgitlab.informatik.uni-bremen.de%2Ffmuehlis%2Frobokudo.git/binderhub">Run Code</a>
+  <a class="btn btn-success" target="_blank" href="https://gitlab.informatik.uni-bremen.de/robokudo/robokudo">Source Code</a>
+  <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/git/https%3A%2F%2Fgitlab.informatik.uni-bremen.de%2Fyanxiang%2Frobokudo.git/binderhub">Advanced Lab</a>
 </div>
 
 <div class="hidde-after-preview">
@@ -70,10 +70,10 @@ Interactive Actions and/or Examples
 ---
 
 <div>
-<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/git/https%3A%2F%2Fgitlab.informatik.uni-bremen.de%2Fyanxiang%2Frobokudo.git/binderhub">Run Code</a>
-<a class="btn btn-success" target="_blank" href="https://gitlab.informatik.uni-bremen.de/robokudo/robokudo">Source Code</a>
-<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/git/https%3A%2F%2Fgitlab.informatik.uni-bremen.de%2Ffmuehlis%2Frobokudo.git/binderhub">Getting Started Lab</a>
-<a class="btn btn-success" target="_blank" href="https://robokudo.ai.uni-bremen.de/">Website</a>
+  <a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/git/https%3A%2F%2Fgitlab.informatik.uni-bremen.de%2Ffmuehlis%2Frobokudo.git/binderhub">Run Code</a>
+  <a class="btn btn-success" target="_blank" href="https://gitlab.informatik.uni-bremen.de/robokudo/robokudo">Source Code</a>
+  <a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/git/https%3A%2F%2Fgitlab.informatik.uni-bremen.de%2Fyanxiang%2Frobokudo.git/binderhub">Advanced Lab</a>
+  <a class="btn btn-success" target="_blank" href="https://robokudo.ai.uni-bremen.de/">Website</a>
 </div>
 
 Publications
