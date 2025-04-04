@@ -19,7 +19,6 @@ The Bremen Ambient Assisted Living Laboratory (BAALL) ontology is a hierarchical
 In this laboratory you will see how to query a fragment of the ontology, and in so doing, also get an intro to ontologies and description logic.
 
 <param class="hidde-after-preview">
-{{<action_form data="ActionButtons">}}
 
 For more information, you can
 <a class="btn btn-success" target="_blank" href="http://www.dfki.de/web/anwendungen-industrie/living-labs/bremen-ambient-assisted-living-lab-baall"><b>visit the webpage</b></a>
