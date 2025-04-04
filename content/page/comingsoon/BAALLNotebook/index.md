@@ -15,10 +15,18 @@ resources:
 The Bremen Ambient Assisted Living Laboratory (BAALL) ontology is a hierarchically structured ontology that has been developed over the past years for modelling
  - (dis)abilities and assistance by service robots (e.g. autonomous wheelchairs) for the Bremen Assisted Living Lab;
  - food, cooking, and diets, including dietary recommendations and restrictions.
- 
+
 In this laboratory you will see how to query a fragment of the ontology, and in so doing, also get an intro to ontologies and description logic.
 
-<param class="hidde-after-preview">
+<div class="hidde-after-preview">
+  To try out the ontology queries in a notebook, click the button below:
+  {{<action_form data="ActionButtons">}}
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="baallnotebook"><b>here!</b></a>
+</div>
+
+<!--more-->
+
 
 For more information, you can
 <a class="btn btn-success" target="_blank" href="http://www.dfki.de/web/anwendungen-industrie/living-labs/bremen-ambient-assisted-living-lab-baall"><b>visit the webpage</b></a>
@@ -27,12 +35,9 @@ of BAALL to get a better idea of the complete project. The BAALL ontology itself
 <a class="btn btn-success" target="_blank" href="https://foodon.org/">FoodOn ontology</a>.
 
 To try out the ontology queries in a notebook, click the button below:
-
 {{<action_form data="ActionButtons">}}
+<br>
 
----
-
----
 
 Publications
 ---

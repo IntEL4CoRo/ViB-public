@@ -13,7 +13,13 @@ Human beings are able to partition the world in flexible ways such that handling
 
 While we could train artificial agents to recognize such parts based on pre-annotated sets, or trust large scale foundational models to come up with creative partitions on the fly, it may also be interesting to look at this problem in a more principled in transparent way: how can perception mechanisms be arranged such that they can create new concepts for object and event parts based on observations of real events and objects?
 
-<param class="hidde-after-preview">
+<div class="hidde-after-preview">
+  For Detailed information click
+  <a class="btn btn-success" target="_blank" href="semanticeventsegmentation"><b>here!</b></a>
+</div>
+
+<!--more-->
+
 
 We present here our initial steps in this direction: a perception module that combines classical machine vision, deep learning, and reasoning, to create a system that is able to:
 
@@ -50,10 +56,9 @@ You can access the perception module at <a href="https://github.com/heideggerian
 The repository provides installation instructions -- the module can run on Unix and Windows -- as well as some examples showcasing event and object semantic segmentation.
 
 Unfortunately, as it uses OpenGL, this perception module is not yet available to use over Jupyer Lab. Therefore, if you wish to try it out you will need to git clone the repo and try it locally on your machine for now.
+<br>
+<br>
 
----
-
----
 
 Publications
 ---
