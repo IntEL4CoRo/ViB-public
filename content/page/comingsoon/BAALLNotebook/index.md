@@ -21,10 +21,10 @@ In this laboratory you will see how to query a fragment of the ontology, and in 
 <param class="hidde-after-preview">
 
 For more information, you can
-<a href="http://www.dfki.de/web/anwendungen-industrie/living-labs/bremen-ambient-assisted-living-lab-baall"><b>visit the webpage</b></a>
+<a class="btn btn-success" target="_blank" href="http://www.dfki.de/web/anwendungen-industrie/living-labs/bremen-ambient-assisted-living-lab-baall"><b>visit the webpage</b></a>
 of BAALL to get a better idea of the complete project. The BAALL ontology itself also has a <a class="btn btn-success" target="_blank" href="http://ontologies.baall.de"><b>website</b></a>. The ontology will be provided soon, under a suitable licence that will allow free use for academic purposes. Work is in progress to integrate its food related parts with the 
-<a href="https://ease-crc.org/soma/">SOMA ontology</a> and the 
-<a href="https://foodon.org/">FoodOn ontology</a>.
+<a class="btn btn-success" target="_blank" href="https://ease-crc.org/soma/">SOMA ontology</a> and the 
+<a class="btn btn-success" target="_blank" href="https://foodon.org/">FoodOn ontology</a>.
 
 To try out the ontology queries in a notebook, click the button below:
 
