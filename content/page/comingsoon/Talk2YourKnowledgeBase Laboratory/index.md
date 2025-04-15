@@ -33,8 +33,4 @@ The entire process runs seamlessly within Docker containers, ensuring consistenc
 ![Talk 2 Your Graph Architecture](talk2yourgraph.png)
 <h>**Showcase**:</h>
 <figure class="video_container">
-  <video width="100%%" height="300" autoplay loop muted controls>
-    <source src="Talk2YourKnowledgeBase-2x.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</figure>
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/n_Zy8P5BCVE" title="Ontology-Based CAD Analysis with LLMs: Natural Language Querying of Boundary Representations" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></figure>
