@@ -14,7 +14,7 @@ resources:
 
 This simulation setup introduces a structured method for testing whether robot behaviors meet defined acceptance criteria (AC), using a pick-and-place task in a simulation environment. Instead of relying on manual evaluations or ambiguous rulebooks, we apply Behaviour-Driven Development (BDD), a technique from software engineering that describes expected behavior in the form Given–When–Then scenarios.
 
-In this setup, you’ll use Isaac Sim to run automated acceptance tests on a robotic system. The tests are defined using a domain-specific language and executed against different robot and environment configurations. This allows you to observe how small changes impact performance, making it easier to validate and understand robotic behavior in a systematic way. This [tutorial](https://secorolab.github.io/bdd-dsl/bdd-concepts.html) for modelling test scenarios can be referred to write your own acceptance tests.
+In this setup, you’ll use Isaac Sim to run automated acceptance tests on a robotic system. The tests are defined using a domain-specific language and executed against different robot and environment configurations. This allows you to observe how small changes impact performance, making it easier to validate and understand robotic behavior in a systematic way. This [tutorial](https://secorolab.github.io./bdd-dsl/) for modelling test scenarios can be referred to write your own acceptance tests.
 
 <!-- To begin, load the pick-and-place application in Isaac Sim, select a test scenario, and run the simulation to evaluate the system’s compliance with its acceptance criteria. -->
 
@@ -31,7 +31,7 @@ In this setup, you’ll use Isaac Sim to run automated acceptance tests on a rob
 {{<action_form data="ActionButtons">}}
 
 <div class="hidde-after-preview">
-<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/secorolab/bdd-virtual-research-building/HEAD">Run Code</a>
+<a class="btn btn-primary" target="_blank" href="https://binder.secoro.intel4coro.de/v2/gh/secorolab/bdd-virtual-research-building/HEAD?labpath=notebooks%2Fisaac-sim.ipynb">Run Code</a>
 </div>
 
 <div class="hidde-after-preview">
@@ -59,7 +59,22 @@ In this setup, you’ll use Isaac Sim to run automated acceptance tests on a rob
 Description
 ---
 
---Detailed description--
+This section provides an overview of using this virtual lab. For a detailed conceptual understanding of the project, please refer to the [tutorial](https://secorolab.github.io./bdd-dsl/).
+
+This lab enables users to run test cases using the Behavior Driven Development (BDD) technique in the Isaac Sim simulation environment. Since Isaac Sim is a graphics-intensive application, GPU-enabled containers are dedicated to running these simulations.
+
+Each user is assigned a dedicated container, which communicates with GPU-enabled containers to execute the simulation and render the visualization of the simulation environment.
+
+Feature files are generated within the user’s assigned container and then transferred to the GPU containers, where the simulation is executed in headless mode. The rendered output is streamed back to the user’s container via a WebRTC client.
+
+The GitHub repository for using this testing setup is available at [bdd-virtual-research-building](https://github.com/secorolab/bdd-virtual-research-building). Follow the instructions in the sample notebook located at `notebooks/issac-sim.ipynb` to communicate with the containers with GPU access with a set of APIs.
+
+To run a custom notebook, clone the repository and modify the demo notebook or add new notebook. Then open the [BinderHub](https://binder.secoro.intel4coro.de/) page and specify the branch and the relative path to your notebook. For instance, to use the demo notebook, enter `notebooks/issac-sim.ipynb` in the `Path to a notebook file (optional)` field and click on `launch`. 
+
+Link to load the demo notebook: <a href="https://binder.secoro.intel4coro.de/v2/gh/secorolab/bdd-virtual-research-building/HEAD?labpath=notebooks%2Fisaac-sim.ipynb">
+  <img src="https://binder.secoro.intel4coro.de/badge_logo.svg" style="display:inline; vertical-align:middle; margin:0;">
+</a>
+
 
 
 Example Videos
@@ -84,7 +99,7 @@ Authors
 
   <div style="flex:70%;">
        <h3> Minh Nguyen</h3>
-    Tel:  +49 421 --- ---- <br>
+    Tel:  +49 421 218 64332 <br>
     Mail:     <a href="mailto:minh.nguyen@uni-bremen.de">minh.nguyen@uni-bremen.de</a> <br>
       <a style="color:red" href="https://www.uni-bremen.de/software-engineering-for-cognitive-robots-and-systems/team/scientific-staff">
       <span style="font-size: 15px;">Profile Minh Nguyen</span>

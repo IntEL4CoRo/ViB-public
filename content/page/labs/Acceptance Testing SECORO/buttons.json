@@ -7,10 +7,7 @@
       "value": "run",
       "description": "Run code on Binderhub.",
       "primary": true,
-      "url": "https://binder.intel4coro.de/v2/gh/secorolab/bdd-virtual-research-building/HEAD"
+      "url": "https://binder.secoro.intel4coro.de/v2/gh/secorolab/bdd-virtual-research-building/HEAD?labpath=notebooks%2Fisaac-sim.ipynb"
     }
   ]
 }
-
-
-
