@@ -1,5 +1,5 @@
 ---
-title: "Acceptance Tests using Behavior Driven Development - SECORO"
+title: "Automated Behaviour-Driven Acceptance Testing of Robotic Systems"
 date: 2025-25-07T10:35:35-05:00
 subtitle: ""
 tags: ["Research","Testing"]
@@ -54,28 +54,9 @@ In this setup, you’ll use Isaac Sim to run automated acceptance tests on a rob
 
 {{<action_form data="ActionButtons">}} -->
 
-
-
-Description
----
-
-This section provides an overview of using this virtual lab. For a detailed conceptual description of the project, please refer to the [tutorial](https://secorolab.github.io./bdd-dsl/).
-
-This virtual lab enables users to run test cases using the Behavior Driven Development (BDD) technique in the Isaac Sim simulation environment. Since Isaac Sim is a graphics-intensive application, GPU-enabled containers are dedicated to running these simulations.
-
-Each user is assigned a dedicated container, where the feature file is generated. This file is trasfered to the GPU-enabled containers to execute the simulation in headless mode.  and render the visualization of the simulation environment. The rendered output is streamed back to the user’s container via a WebRTC client.
-
-The GitHub repository for using this testing setup is available at [bdd-virtual-research-building](https://github.com/secorolab/bdd-virtual-research-building). Description of the APIs to communicate with the containers with GPU access and to execute the acceptance tests for sorting task is available in the demo notebook `notebooks/issac-sim.ipynb`.
-
-To run a custom notebook, clone the repository and modify the demo notebook or add new notebook. Then open the [BinderHub](https://binder.secoro.intel4coro.de/) page and specify the branch and the relative path to your notebook. For instance, to use the demo notebook, enter `notebooks/issac-sim.ipynb` in the `Path to a notebook file (optional)` field and click on `launch`. 
-
 Link to load the demo notebook: <a href="https://binder.secoro.intel4coro.de/v2/gh/secorolab/bdd-virtual-research-building/HEAD?urlpath=lab/tree/notebooks/isaac-sim.ipynb">
   <img src="https://binder.secoro.intel4coro.de/badge_logo.svg" style="display:inline; vertical-align:middle; margin:0;">
 </a>
-
-**Note**: 
-- Please remember to update the *Server* IP in the WebRTC client with the IP assigned when the user is registered in the notebook using *register_user* API end-point
-- At the end of using this virtual lab, please shutdown the JupyterLab *(File->Shut Down)*, as it immediately frees resources for other users
 
 Example Videos
 ---
@@ -115,7 +96,7 @@ Authors
   </div>
 
   <div style="flex:70%;">
-       <h3> Prof. Dr.-Ing. Sebastian Wrede</h3>
+       <h3> Dr.-Ing. Sebastian Wrede</h3>
     Tel:  +49 521 106 5148   <br>
     Mail:     <a href="mailto:sebastian.wrede@uni-bielefeld.de">sebastian.wrede@uni-bielefeld.de</a> <br>
       <a style="color:red" href="https://ekvv.uni-bielefeld.de/pers_publ/publ/PersonDetail.jsp?personId=76091">
