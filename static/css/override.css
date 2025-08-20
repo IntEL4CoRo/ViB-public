@@ -298,37 +298,102 @@ a.btn-success {
   color: #fff;
   background-color: #0068b4;
   border-color: #89b4e1;
+  opacity: 1.0;
 }
-a.btn-success:hover,
-a.btn-success:focus {
+a.btn-success:focus,
+a.btn-success.focus {
   color: #fff;
   background-color: #00326d;
   border-color: #0068b4;
+  opacity: 1.0;
 }
-a.btn-success[disabled]:hover,
-a.btn-success[disabled]:focus {
+a.btn-success:hover {
   color: #fff;
   background-color: #0068b4;
   border-color: #89b4e1;
+  opacity: 0.8;
 }
-
+a.btn-success:active,
+a.btn-success.active  {
+  color: #fff;
+  background-color: #00326d;
+  border-color: #0068b4;
+  opacity: 1.0;
+}
+a.btn-success:active:focus,
+a.btn-success.active:focus,
+a.btn-success:active.focus,
+a.btn-success.active.focus,
+a.btn-success:active:hover,
+a.btn-success.active:hover  {
+  color: #fff;
+  background-color: #00326d;
+  border-color: #0068b4;
+  opacity: 1.0;
+}
+a.btn-success.disabled:focus,
+a.btn-success[disabled]:focus,
+a.btn-success.disabled.focus,
+a.btn-success[disabled].focus,
+a.btn-success.disabled:hover,
+a.btn-success[disabled]:hover,
+a.btn-success.disabled:active,
+a.btn-success[disabled]:active {
+  color: #fff;
+  background-color: #0068b4;
+  border-color: #89b4e1;
+  opacity: 1.0;
+}
 
 a.btn-primary {
   color: #fff;
   background-color: #d50c2f;
   border-color: #f39ca9;
+  opacity: 1.0;
 }
-a.btn-primary:hover,
-a.btn-primary:focus {
+a.btn-primary:focus,
+a.btn-primary.focus {
   color: #fff;
   background-color: #9d2246;
   border-color: #d50c2f;
+  opacity: 1.0;
 }
-a.btn-primary[disabled]:hover,
-a.btn-primary[disabled]:focus {
+a.btn-primary:hover {
   color: #fff;
   background-color: #d50c2f;
   border-color: #f39ca9;
+  opacity: 0.8;
+}
+a.btn-primary:active,
+a.btn-primary.active  {
+  color: #fff;
+  background-color: #9d2246;
+  border-color: #d50c2f;
+  opacity: 1.0;
+}
+a.btn-primary:active:focus,
+a.btn-primary.active:focus,
+a.btn-primary:active.focus,
+a.btn-primary.active.focus,
+a.btn-primary:active:hover,
+a.btn-primary.active:hover  {
+  color: #fff;
+  background-color: #9d2246;
+  border-color: #d50c2f;
+  opacity: 1.0;
+}
+a.btn-primary.disabled:focus,
+a.btn-primary[disabled]:focus,
+a.btn-primary.disabled.focus,
+a.btn-primary[disabled].focus,
+a.btn-primary.disabled:hover,
+a.btn-primary[disabled]:hover,
+a.btn-primary.disabled:active,
+a.btn-primary[disabled]:active {
+  color: #fff;
+  background-color: #d50c2f;
+  border-color: #f39ca9;
+  opacity: 1.0;
 }
 
 
@@ -375,3 +440,34 @@ a > h2.post-title:hover {
 /*h2.post-title::after {
  content: "\1F446";
 }*/
+
+
+/* makes hyperlink over parts of an image in-/visible via mouse hovering */
+.img-hover-visible-hotspot {
+    opacity: 0.0;
+}
+.img-hover-visible-hotspot:hover {
+    opacity: 0.2;
+}
+
+
+/* row-wise flex conatiner for the authors of an webpage*/
+div.author-well-flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+div.author-well-flex-container-center {
+  align-items: center;
+  margin:20px;
+}
+div.author-well-flex-container-left {
+  align-items: left;
+  text-align: left;
+  margin:0px;
+}
+div.author-well-flex-container-right {
+  align-items: right;
+  text-align: right;
+  margin:0px;
+}

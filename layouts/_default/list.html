@@ -7,11 +7,15 @@
             {{.}}
           </div>
         {{ end }}
-        <div class="posts-list">
-          {{ range .Paginator.Pages }}
-            {{ partial "post_preview.html" .}}
-          {{ end }}
-        </div>
+
+        {{ if not .Params.noContentListing }}
+          <div class="posts-list">
+            {{ range .Paginator.Pages }}
+              {{ partial "post_preview.html" .}}
+            {{ end }}
+          </div>
+        {{ end }}
+
         {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
           <ul class="pager main-pager">
             {{ if .Paginator.HasPrev }}
