@@ -31,12 +31,12 @@ In this setup, you’ll use Isaac Sim to run automated acceptance tests on a rob
 {{<action_form data="ActionButtons">}}
 
 <div class="hidde-after-preview">
-<a class="btn btn-primary" target="_blank" href="https://binder.secoro.intel4coro.de/v2/gh/secorolab/bdd-virtual-research-building/HEAD?urlpath=lab/tree/notebooks/isaac-sim.ipynb">Run Code</a>
+  <a class="btn btn-primary" target="_blank" href="https://binder.secoro.intel4coro.de/v2/gh/secorolab/bdd-virtual-research-building/HEAD?urlpath=lab/tree/notebooks/isaac-sim.ipynb">Run Code</a>
 </div>
 
 <div class="hidde-after-preview">
   For Detailed information click
-  <a class="btn btn-success" target="_blank" href="acceptance-testing-secoro"><b>here!</b></a>
+  <a class="btn btn-success" target="_blank" href="acceptance-testing"><b>here!</b></a>
 </div>
 
 
@@ -54,8 +54,7 @@ In this setup, you’ll use Isaac Sim to run automated acceptance tests on a rob
 
 {{<action_form data="ActionButtons">}} -->
 
-Link to load the demo notebook: <a href="https://binder.secoro.intel4coro.de/v2/gh/secorolab/bdd-virtual-research-building/HEAD?urlpath=lab/tree/notebooks/isaac-sim.ipynb">
-  <img src="https://binder.secoro.intel4coro.de/badge_logo.svg" style="display:inline; vertical-align:middle; margin:0;">
+Link to load the demo notebook: <a class="btn btn-primary" target="_blank" href="https://binder.secoro.intel4coro.de/v2/gh/secorolab/bdd-virtual-research-building/HEAD?urlpath=lab/tree/notebooks/isaac-sim.ipynb">Run Code</a>
 </a>
 
 Example Videos
