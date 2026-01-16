@@ -79,7 +79,7 @@ For Hands-On Exercise 1-3, please use the following Virtual Lab first: <a class=
 
 
 For Hands-On Exercise 4, please use this Virtual Lab:<br>
-<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/git/https%3A%2F%2Fgitlab.informatik.uni-bremen.de%2Ffmuehlis%2Frobokudo-lab.git/tutorials?urlpath=lab%2Ftree%2Frobokudo.jupyterlab-workspace">RoboKudo Getting Started Lab</a>
+<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/git/https%3A%2F%2Fgitlab.informatik.uni-bremen.de%2Ffmuehlis%2Frobokudo-lab.git/74f0ed78fbb103a6b4d190bf0e1acae5703c73f4?urlpath=lab%2Ftree%2Frobokudo.jupyterlab-workspace">RoboKudo Getting Started Lab</a>
 
 
 

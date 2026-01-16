@@ -90,7 +90,7 @@ Throughout the exercises, we will provide code examples to demonstrate how to de
 
 To run the interactive Hands-On Tutorial follow please click this button:
 
-<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/IntEL4CoRo/ease_fall_school_2024/main?urlpath=lab%2Ftree%2Fday1%2FURDF.ipynb">URDF Hands-On Lab</a>
+<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/IntEL4CoRo/ease_fall_school_2024/33c5e5c?urlpath=lab%2Ftree%2Fday1%2FURDF.ipynb">URDF Hands-On Lab</a>
 
 ## Further Reading/Exercises
 
@@ -174,7 +174,7 @@ def Xform "world" () {
 
 #### USD as the Translation Medium for Scene Descriptions
 
-Each simulation software uses its own scene description format: MuJoCo employs MJCF, Unreal Engine uses FBX, Omniverse utilizes USD, and ROS is compatible with URDF. In the previous tutorial, we generated an environment scene description in URDF. Now, we need to convert this URDF scene into USD. For this, we use the [Multiverse Parser](https://binder.intel4coro.de/v2/gh/Multiverse-Framework/Multiverse-Docker/main?urlpath=lab%2Ftree%2FMultiverse-Tutorials%2Ftutorials%2Fmultiverse_parser_quick_start.ipynb), which can convert and standardize scenes across various formats. The parser optimizes, standardizes, and translates scenes into USD, making it easier to convert them into other formats when needed.
+Each simulation software uses its own scene description format: MuJoCo employs MJCF, Unreal Engine uses FBX, Omniverse utilizes USD, and ROS is compatible with URDF. In the previous tutorial, we generated an environment scene description in URDF. Now, we need to convert this URDF scene into USD. For this, we use the [Multiverse Parser](https://binder.intel4coro.de/v2/gh/Multiverse-Framework/Multiverse-Docker/c578396?urlpath=lab%2Ftree%2FMultiverse-Tutorials%2Ftutorials%2Fmultiverse_parser_quick_start.ipynb), which can convert and standardize scenes across various formats. The parser optimizes, standardizes, and translates scenes into USD, making it easier to convert them into other formats when needed.
 
 <div style="flex:30%;">
   <img src="img/MultiverseParser.png">
@@ -199,10 +199,10 @@ To do so, we will use the [KnowRob](https://knowrob.org/) framework. It allows y
 
 This will only be your first step into KnowRob to get a first idea on how to use it in conjunction with our environment model. A more detailed introduction will be done in <a  target="_blank" href="../chapter3/"><b>Chapter 3</b></a>.
 1. **Semantic Tagging (Optional)**: To get further information on how **USD's** are processed play around in our: 
-<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/Multiverse-Framework/Multiverse-Docker/main?urlpath=lab%2Ftree%2FMultiverse-Tutorials%2Ftutorials%2Fmultiverse_knowledge.ipynb">Multiverse Knowledge Lab</a>
+<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/Multiverse-Framework/Multiverse-Docker/c578396?urlpath=lab%2Ftree%2FMultiverse-Tutorials%2Ftutorials%2Fmultiverse_knowledge.ipynb">Multiverse Knowledge Lab</a>
 
 2. **Query the Knowledge Base**:<br> Reason about the environment model ("semantic map") in our: 
-<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/sasjonge/semantic-map-lab.git/dfl_reasoner?labpath=notebooks%2Fsemantic_map.ipynb">KnowRob Lab</a>
+<a class="btn btn-success" target="_blank" href="https://binder.intel4coro.de/v2/gh/sasjonge/semantic-map-lab.git/b146ce1?labpath=notebooks%2Fsemantic_map.ipynb">KnowRob Lab</a>
 
 
 
