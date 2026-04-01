@@ -1,0 +1,16 @@
+{
+  "options": {},
+  "actions": [
+    {
+      "name": "Try it out!",
+      "value": "run",
+      "description": "openEASE",
+      "url": "https://data.open-ease.org/user/sign-in"
+    },
+    {
+      "name": "Source Code",
+      "value": "source",
+      "url": "https://github.com/ease-crc/openease"
+    }
+  ]
+}
